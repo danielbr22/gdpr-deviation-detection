@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+
+# Claude Code session context (internal, not for public repo)
+CLAUDE.md
+
+# Course materials, presentations, and reference PDFs
+PDFs/
