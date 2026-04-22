@@ -1,29 +1,14 @@
 # Detecting Deviations Between External and Internal Regulatory Requirements
 **TUM Master Praktikum — NLP for Information Systems, SS26**
-**Student:** Daniel Bier | **Supervisor:** Catherine Sai (catherine.sai@tum.de)
 
 ## Project Overview
 
 This project extends Sai et al. (2023) by replacing their classical NLP pipeline with LLM-based methods for detecting deviations between external regulatory documents and internal company privacy policies.
 
 **External regulation:** GDPR (Articles 5–43)
-**Internal policy:** Hetzner Online GmbH — real-world privacy policy (retrieved April 2025)
+**Internal policy:** Hetzner Online GmbH — publicly available privacy policy (retrieved April 2026, policy version April 16, 2025)
 
-Rather than a synthetically generated policy, this project uses a publicly available real-world document, making detected deviations genuine compliance gaps rather than planted ground truth.
-
-## Key Deadlines
-
-| Date | Event |
-|------|-------|
-| **Tue. 28.04** | **Intermediate Presentation** |
-| **Tue. 19.05** | **Final Presentations + Submission** |
-
-## Grading
-
-- 40% Python implementation (this repo)
-- 20% Report (6–7 pages PDF)
-- 30% Presentations (10% intermediate + 20% final)
-- 10% Participation
+A gold standard is constructed by using an LLM to introduce deliberate deviations of known types into a modified version of this policy. The detection pipeline runs against the modified policy; the introduced deviations serve as ground truth for evaluation.
 
 ## Repository Structure
 
