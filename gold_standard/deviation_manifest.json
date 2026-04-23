@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dev_001",
+    "rcasr": "RCASR3",
+    "deviation_type": "constraint_coverage",
+    "policy_constraint_id": "pol_023",
+    "gdpr_articles_affected": ["Art. 20"],
+    "section": "5. What rights do I have when it comes to my data?",
+    "original_text": "Right to data portability: You have the right to receive your data in a structured, commonly used, and machine-readable format. You can also request that we transfer the data directly to a third party, if technically feasible.",
+    "modified_text": null,
+    "change_description": "The entire 'Right to data portability' paragraph has been removed from Section 5.",
+    "rationale": "RCASR3 tests constraint coverage: every constraint in the regulatory document must have a counterpart in the realization. Art. 20 GDPR grants data subjects the right to receive their personal data in a structured, machine-readable format and to transmit it to another controller. The original Hetzner policy covers this right explicitly. In the modified policy, the paragraph is deleted entirely, meaning the GDPR Art. 20 constraint has no counterpart in the realization. This deviation is detectable at the retrieval stage: the GDPR constraint(s) for Art. 20 will appear in unmapped_gdpr.json after re-running embed_and_match.py on the modified policy."
+  },
+  {
+    "id": "dev_002",
+    "rcasr": "RCASR5",
+    "deviation_type": "execution_style",
+    "policy_constraint_id": "pol_022",
+    "gdpr_articles_affected": ["Art. 18"],
+    "section": "5. What rights do I have when it comes to my data?",
+    "original_text": "If, for example, you dispute the accuracy of your data or believe that the processing is unlawful, you can request that we restrict the processing of your data.",
+    "modified_text": "If, for example, you dispute the accuracy of your data or believe that the processing is unlawful, you must submit a written request by post to our data protection officer to restrict the processing of your data.",
+    "change_description": "The HOW of exercising the restriction right has been changed: from a simple informal request (any channel) to a mandatory written postal submission.",
+    "rationale": "RCASR5 (execution style deviation) occurs when the responsibility part and the data part of a constraint pair match, but the task part — referring to HOW something must be done — deviates. Here: responsibility (data subject = 'you') is unchanged; data ('your data') is unchanged; but the task differs. The GDPR (Art. 18) requires only that the data subject assert the right — it imposes no formal channel requirement. The modified policy adds a burdensome procedural requirement (written post) that conflicts with GDPR Art. 12(2), which obliges controllers to 'facilitate the exercise of the data subject's rights' and not create unnecessary obstacles."
+  },
+  {
+    "id": "dev_003",
+    "rcasr": "RCASR6",
+    "deviation_type": "negation",
+    "policy_constraint_id": "pol_020",
+    "gdpr_articles_affected": ["Art. 17"],
+    "section": "5. What rights do I have when it comes to my data?",
+    "original_text": "You can request the deletion of your data if it is no longer required for its original purpose.",
+    "modified_text": "You cannot request the deletion of your data solely on the grounds that it is no longer required for its original purpose.",
+    "change_description": "The erasure right has been negated: 'can request' has become 'cannot request', directly contradicting the data subject's right under GDPR Art. 17(1)(a).",
+    "rationale": "RCASR6 (negation deviation) occurs when a constraint pair has similar responsibility, task and data parts, but the task in one document is negated relative to the other. Here: responsibility (data subject) and data (deletion of personal data) remain the same between the GDPR constraint and the policy sentence. However, the task is inverted — GDPR Art. 17(1)(a) grants the right to erasure when data is no longer necessary for its original purpose, while the modified policy explicitly denies this ground for deletion. This is the clearest possible negation deviation and would score negation similarity near -1 in the RCASR6 definition (sim(c_d|task, c_r|task) negative due to lexical negation)."
+  },
+  {
+    "id": "dev_004",
+    "rcasr": "RCASR7",
+    "deviation_type": "responsibility",
+    "policy_constraint_id": "pol_027",
+    "gdpr_articles_affected": ["Art. 12", "Art. 37"],
+    "section": "5. What rights do I have when it comes to my data?",
+    "original_text": "If you would like to make use of any of these rights, please contact our data protection officer directly.",
+    "modified_text": "If you would like to make use of any of these rights, please contact our customer service team directly.",
+    "change_description": "The responsible party for handling data subject rights requests has been changed from 'data protection officer' to 'customer service team'.",
+    "rationale": "RCASR7 (responsibility deviation) occurs when the task part and the data part of a constraint pair match, but the responsibility part — referring to WHO executes the task — deviates. Here: task (contact to exercise rights) and data (personal data rights) are unchanged. The deviation is in the responsible party: GDPR Art. 12(2) requires controllers to facilitate data subject rights, and Art. 37–39 establish the Data Protection Officer as the legally mandated designated contact for data subject rights requests. Replacing 'data protection officer' with 'customer service team' misidentifies the legally required resource."
+  },
+  {
+    "id": "dev_005",
+    "rcasr": "RCASR8",
+    "deviation_type": "data",
+    "policy_constraint_id": "pol_019",
+    "gdpr_articles_affected": ["Art. 16"],
+    "section": "5. What rights do I have when it comes to my data?",
+    "original_text": "If the data we have stored about you is incorrect or incomplete, you can request its correction or completion.",
+    "modified_text": "If the account information we have stored about you is incorrect or incomplete, you can request its correction or completion.",
+    "change_description": "The data category covered by the rectification right has been narrowed from 'data' (implying all personal data) to 'account information' (a subset).",
+    "rationale": "RCASR8 (data deviation) occurs when responsibility and task parts of a constraint pair match, but the data part — referring to WHAT is being acted upon — deviates. Here: responsibility (data subject / Hetzner) and task (request correction or completion) are unchanged. The deviation is in scope of data: GDPR Art. 16 grants the right to rectify 'inaccurate personal data' broadly, with no restriction to any data category. The modified policy limits this right to 'account information', which is a narrower subset (implying e.g. that rectification of data held in other contexts, such as marketing profiles or application files, would not be covered). This matches the RCASR8 definition: sim(c_d|data, c_r|data) falls below threshold because 'personal data' and 'account information' are semantically distinct categories."
+  }
+]
