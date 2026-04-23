@@ -26,6 +26,7 @@ Each record:
   }
 """
 
+import argparse
 import json
 import re
 import warnings
@@ -244,6 +245,15 @@ def extract_policy_constraints(path: Path, nlp, classifier) -> list[dict]:
 # ---------------------------------------------------------------------------
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--policy", type=Path, default=POLICY_TEXT,
+                        help="Path to policy text file (default: hetzner_privacy_policy.txt)")
+    parser.add_argument("--output-policy", type=Path, default=OUT_DIR / "policy_constraints.json",
+                        help="Output path for policy constraints JSON")
+    parser.add_argument("--skip-gdpr", action="store_true",
+                        help="Skip GDPR extraction (reuse existing gdpr_constraints.json)")
+    args = parser.parse_args()
+
     print("Loading spaCy model ...")
     nlp = spacy.load("en_core_web_sm")
     nlp.max_length = 2_000_000
@@ -255,22 +265,26 @@ def main() -> None:
         device=-1,  # CPU
     )
 
-    print(f"Extracting GDPR constraints from {GDPR_TEXT.name} ...")
-    gdpr = extract_gdpr_constraints(GDPR_TEXT)
-    out_gdpr = OUT_DIR / "gdpr_constraints.json"
-    out_gdpr.write_text(json.dumps(gdpr, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"  → {len(gdpr)} constraints saved to {out_gdpr.name}")
+    if not args.skip_gdpr:
+        print(f"Extracting GDPR constraints from {GDPR_TEXT.name} ...")
+        gdpr = extract_gdpr_constraints(GDPR_TEXT)
+        out_gdpr = OUT_DIR / "gdpr_constraints.json"
+        out_gdpr.write_text(json.dumps(gdpr, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"  → {len(gdpr)} constraints saved to {out_gdpr.name}")
 
-    print(f"Extracting policy constraints from {POLICY_TEXT.name} ...")
+    policy_path = Path(args.policy)
+    print(f"Extracting policy constraints from {policy_path.name} ...")
     print(f"  ZSC threshold: {ZSC_THRESHOLD}  |  label: '{ZSC_LABELS[0]}'")
-    policy = extract_policy_constraints(POLICY_TEXT, nlp, classifier)
-    out_pol = OUT_DIR / "policy_constraints.json"
+    policy = extract_policy_constraints(policy_path, nlp, classifier)
+    out_pol = Path(args.output_policy)
+    out_pol.parent.mkdir(parents=True, exist_ok=True)
     out_pol.write_text(json.dumps(policy, indent=2, ensure_ascii=False), encoding="utf-8")
     print(f"  → {len(policy)} constraints saved to {out_pol.name}")
 
-    print("\nDone. Sample GDPR constraints:")
-    for c in gdpr[:3]:
-        print(f"  [{c['id']}] Art.{c['article']}: {c['text'][:90]}...")
+    if not args.skip_gdpr:
+        print("\nDone. Sample GDPR constraints:")
+        for c in gdpr[:3]:
+            print(f"  [{c['id']}] Art.{c['article']}: {c['text'][:90]}...")
     print("\nPolicy constraints extracted:")
     for c in policy:
         print(f"  [{c['id']}] score={c['zsc_score']} | {c['text'][:90]}")

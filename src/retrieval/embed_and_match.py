@@ -91,12 +91,20 @@ def main() -> None:
                         help="Cosine similarity threshold (default: 0.7)")
     parser.add_argument("--model", default="all-MiniLM-L6-v2",
                         help="Sentence-transformer model name")
+    parser.add_argument("--policy-constraints", type=Path,
+                        default=CONSTRAINTS_DIR / "policy_constraints.json",
+                        help="Path to policy constraints JSON")
+    parser.add_argument("--output-dir", type=Path, default=OUT_DIR,
+                        help="Directory for matched_pairs.json, unmapped_gdpr.json, run_metadata.json")
     args = parser.parse_args()
+
+    out_dir = Path(args.output_dir)
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     print(f"Model: {args.model}  |  γ = {args.gamma}")
 
     gdpr = load_constraints(CONSTRAINTS_DIR / "gdpr_constraints.json")
-    policy = load_constraints(CONSTRAINTS_DIR / "policy_constraints.json")
+    policy = load_constraints(Path(args.policy_constraints))
     print(f"Loaded {len(gdpr)} GDPR constraints, {len(policy)} policy constraints")
 
     print("Encoding …")
@@ -118,9 +126,9 @@ def main() -> None:
         "coverage_rate": round(len(matched) / len(gdpr), 3),
     }
 
-    out_matched = OUT_DIR / "matched_pairs.json"
-    out_unmapped = OUT_DIR / "unmapped_gdpr.json"
-    out_meta = OUT_DIR / "run_metadata.json"
+    out_matched = out_dir / "matched_pairs.json"
+    out_unmapped = out_dir / "unmapped_gdpr.json"
+    out_meta = out_dir / "run_metadata.json"
 
     out_matched.write_text(json.dumps(matched, indent=2, ensure_ascii=False))
     out_unmapped.write_text(json.dumps(unmapped, indent=2, ensure_ascii=False))
