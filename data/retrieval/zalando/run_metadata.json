@@ -1,0 +1,9 @@
+{
+  "model": "all-MiniLM-L6-v2",
+  "gamma": 0.5,
+  "n_gdpr": 279,
+  "n_policy": 49,
+  "n_matched": 204,
+  "n_unmapped": 75,
+  "coverage_rate": 0.731
+}

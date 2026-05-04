@@ -1,0 +1,498 @@
+[
+  {
+    "gdpr_id": "gdpr_014",
+    "best_similarity": 0.4465,
+    "best_policy_id": "pol_012",
+    "gdpr_article": 6,
+    "gdpr_text": "Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_015",
+    "best_similarity": 0.4217,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 6,
+    "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Union law; or",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_016",
+    "best_similarity": 0.4,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 6,
+    "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Member State law to which the controller is subject.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_029",
+    "best_similarity": 0.3935,
+    "best_policy_id": "pol_006",
+    "gdpr_article": 8,
+    "gdpr_text": "Paragraph 1 shall not affect the general contract law of Member States such as the rules on the validity, formation or effect of a contract in relation to a child.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_050",
+    "best_similarity": 0.3899,
+    "best_policy_id": "pol_006",
+    "gdpr_article": 12,
+    "gdpr_text": "The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_051",
+    "best_similarity": 0.3849,
+    "best_policy_id": "pol_049",
+    "gdpr_article": 12,
+    "gdpr_text": "The information to be provided to data subjects pursuant to Articles 13 and 14 may be provided in combination with standardised icons in order to give in an easily visible, intelligible and clearly legible manner a meaningful overview of the intended processing. Where the icons are presented electronically they shall be machine-readable.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_052",
+    "best_similarity": 0.454,
+    "best_policy_id": "pol_006",
+    "gdpr_article": 12,
+    "gdpr_text": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92 for the purpose of determining the information to be presented by the icons and the procedures for providing standardised icons.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_084",
+    "best_similarity": 0.4646,
+    "best_policy_id": "pol_016",
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: the data subject already has the information;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_109",
+    "best_similarity": 0.436,
+    "best_policy_id": "pol_034",
+    "gdpr_article": 17,
+    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for reasons of public interest in the area of public health in accordance with points (h) and (i) of Article 9(2) as well as Article 9(3);",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_110",
+    "best_similarity": 0.4963,
+    "best_policy_id": "pol_011",
+    "gdpr_article": 17,
+    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_123",
+    "best_similarity": 0.4493,
+    "best_policy_id": "pol_049",
+    "gdpr_article": 20,
+    "gdpr_text": "The right referred to in paragraph 1 shall not adversely affect the rights and freedoms of others.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_127",
+    "best_similarity": 0.4583,
+    "best_policy_id": "pol_018",
+    "gdpr_article": 21,
+    "gdpr_text": "At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_137",
+    "best_similarity": 0.4527,
+    "best_policy_id": "pol_043",
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_139",
+    "best_similarity": 0.3678,
+    "best_policy_id": "pol_043",
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the specification of the controller or categories of controllers;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_149",
+    "best_similarity": 0.4301,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 27,
+    "gdpr_text": "Where Article 3(2) applies, the controller or the processor shall designate in writing a representative in the Union.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_152",
+    "best_similarity": 0.472,
+    "best_policy_id": "pol_021",
+    "gdpr_article": 27,
+    "gdpr_text": "The representative shall be established in one of the Member States where the data subjects, whose personal data are processed in relation to the offering of goods or services to them, or whose behaviour is monitored, are.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_153",
+    "best_similarity": 0.4899,
+    "best_policy_id": "pol_039",
+    "gdpr_article": 27,
+    "gdpr_text": "The representative shall be mandated by the controller or processor to be addressed in addition to or instead of the controller or the processor by, in particular, supervisory authorities and data subjects, on all issues related to processing, for the purposes of ensuring compliance with this Regulation.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_154",
+    "best_similarity": 0.4527,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 27,
+    "gdpr_text": "The designation of a representative by the controller or processor shall be without prejudice to legal actions which could be initiated against the controller or the processor themselves.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_156",
+    "best_similarity": 0.4276,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 28,
+    "gdpr_text": "The processor shall not engage another processor without prior specific or general written authorisation of the controller. In the case of general written authorisation, the processor shall inform the controller of any intended changes concerning the addition or replacement of other processors, thereby giving the controller the opportunity to object to such changes.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_165",
+    "best_similarity": 0.4387,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 28,
+    "gdpr_text": "With regard to point (h) of the first subparagraph, the processor shall immediately inform the controller if, in its opinion, an instruction infringes this Regulation or other Union or Member State data protection provisions.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_168",
+    "best_similarity": 0.4857,
+    "best_policy_id": "pol_039",
+    "gdpr_article": 28,
+    "gdpr_text": "Without prejudice to Articles 82, 83 and 84, if a processor infringes this Regulation by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_176",
+    "best_similarity": 0.4855,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 30,
+    "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, a general description of the technical and organisational security measures referred to in Article 32(1).",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_181",
+    "best_similarity": 0.4499,
+    "best_policy_id": "pol_025",
+    "gdpr_article": 30,
+    "gdpr_text": "The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_182",
+    "best_similarity": 0.4945,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 30,
+    "gdpr_text": "The controller or the processor and, where applicable, the controller's or the processor's representative, shall make the record available to the supervisory authority on request.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_184",
+    "best_similarity": 0.4798,
+    "best_policy_id": "pol_039",
+    "gdpr_article": 31,
+    "gdpr_text": "The controller and the processor and, where applicable, their representatives, shall cooperate, on request, with the supervisory authority in the performance of its tasks.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_191",
+    "best_similarity": 0.4855,
+    "best_policy_id": "pol_038",
+    "gdpr_article": 33,
+    "gdpr_text": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_192",
+    "best_similarity": 0.4565,
+    "best_policy_id": "pol_039",
+    "gdpr_article": 33,
+    "gdpr_text": "The processor shall notify the controller without undue delay after becoming aware of a personal data breach.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_193",
+    "best_similarity": 0.4382,
+    "best_policy_id": "pol_035",
+    "gdpr_article": 33,
+    "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_194",
+    "best_similarity": 0.489,
+    "best_policy_id": "pol_001",
+    "gdpr_article": 33,
+    "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_195",
+    "best_similarity": 0.4685,
+    "best_policy_id": "pol_001",
+    "gdpr_article": 33,
+    "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the likely consequences of the personal data breach;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_196",
+    "best_similarity": 0.405,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 33,
+    "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_210",
+    "best_similarity": 0.4509,
+    "best_policy_id": "pol_035",
+    "gdpr_article": 35,
+    "gdpr_text": "Prior to the adoption of the lists referred to in paragraphs 4 and 5, the competent supervisory authority shall apply the consistency mechanism referred to in Article 63 where such lists involve processing activities which are related to the offering of goods or services to data subjects or to the monitoring of their behaviour in several Member States, or may substantially affect the free movement of personal data within the Union.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_212",
+    "best_similarity": 0.4962,
+    "best_policy_id": "pol_034",
+    "gdpr_article": 35,
+    "gdpr_text": "The assessment shall contain at least: an assessment of the necessity and proportionality of the processing operations in relation to the purposes;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_220",
+    "best_similarity": 0.446,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 36,
+    "gdpr_text": "Where the supervisory authority is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the supervisory authority shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the supervisory authority has obtained information it has requested for the purposes of the consultation.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_221",
+    "best_similarity": 0.4341,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 36,
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_222",
+    "best_similarity": 0.4898,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 36,
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_226",
+    "best_similarity": 0.468,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 36,
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: any other information requested by the supervisory authority.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_245",
+    "best_similarity": 0.4418,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 40,
+    "gdpr_text": "The Member States, the supervisory authorities, the Board and the Commission shall encourage the drawing up of codes of conduct intended to contribute to the proper application of this Regulation, taking account of the specific features of the various processing sectors and the specific needs of micro, small and medium-sized enterprises.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_247",
+    "best_similarity": 0.4816,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 40,
+    "gdpr_text": "A code of conduct referred to in paragraph 2 of this Article shall contain mechanisms which enable the body referred to in Article 41(1) to carry out the mandatory monitoring of compliance with its provisions by the controllers or processors which undertake to apply it, without prejudice to the tasks and powers of supervisory authorities competent pursuant to Article 55 or 56.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_248",
+    "best_similarity": 0.486,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 40,
+    "gdpr_text": "Associations and other bodies referred to in paragraph 2 of this Article which intend to prepare a code of conduct or to amend or extend an existing code shall submit the draft code, amendment or extension to the supervisory authority which is competent pursuant to Article 55. The supervisory authority shall provide an opinion on whether the draft code, amendment or extension complies with this Regulation and shall approve that draft code, amendment or extension if it finds that it provides sufficient appropriate safeguards.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_249",
+    "best_similarity": 0.4862,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 40,
+    "gdpr_text": "Where the draft code, or amendment or extension is approved in accordance with paragraph 5, and where the code of conduct concerned does not relate to processing activities in several Member States, the supervisory authority shall register and publish the code.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_250",
+    "best_similarity": 0.4686,
+    "best_policy_id": "pol_002",
+    "gdpr_article": 40,
+    "gdpr_text": "Where a draft code of conduct relates to processing activities in several Member States, the supervisory authority which is competent pursuant to Article 55 shall, before approving the draft code, amendment or extension, submit it in the procedure referred to in Article 63 to the Board which shall provide an opinion on whether the draft code, amendment or extension complies with this Regulation or, in the situation referred to in paragraph 3 of this Article, provides appropriate safeguards.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_251",
+    "best_similarity": 0.433,
+    "best_policy_id": "pol_006",
+    "gdpr_article": 40,
+    "gdpr_text": "Where the opinion referred to in paragraph 7 confirms that the draft code, amendment or extension complies with this Regulation, or, in the situation referred to in paragraph 3, provides appropriate safeguards, the Board shall submit its opinion to the Commission.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_252",
+    "best_similarity": 0.4654,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 40,
+    "gdpr_text": "The Commission may, by way of implementing acts, decide that the approved code of conduct, amendment or extension submitted to it pursuant to paragraph 8 of this Article have general validity within the Union. Those implementing acts shall be adopted in accordance with the examination procedure set out in Article 93(2).",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_253",
+    "best_similarity": 0.4269,
+    "best_policy_id": "pol_006",
+    "gdpr_article": 40,
+    "gdpr_text": "The Commission shall ensure appropriate publicity for the approved codes which have been decided as having general validity in accordance with paragraph 9.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_254",
+    "best_similarity": 0.4447,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 40,
+    "gdpr_text": "The Board shall collate all approved codes of conduct, amendments and extensions in a register and shall make them publicly available by way of appropriate means.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_255",
+    "best_similarity": 0.4232,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 41,
+    "gdpr_text": "The competent supervisory authority shall submit the draft criteria for accreditation of a body as referred to in paragraph 1 of this Article to the Board pursuant to the consistency mechanism referred to in Article 63.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_257",
+    "best_similarity": 0.4148,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 41,
+    "gdpr_text": "The competent supervisory authority shall revoke the accreditation of a body as referred to in paragraph 1 if the conditions for accreditation are not, or are no longer, met or where actions taken by the body infringe this Regulation.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_261",
+    "best_similarity": 0.4332,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 42,
+    "gdpr_text": "The certification shall be voluntary and available via a process that is transparent.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_263",
+    "best_similarity": 0.4248,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 42,
+    "gdpr_text": "The controller or processor which submits its processing to the certification mechanism shall provide the certification body referred to in Article 43, or where applicable, the competent supervisory authority, with all information and access to its processing activities which are necessary to conduct the certification procedure.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_264",
+    "best_similarity": 0.3635,
+    "best_policy_id": "pol_025",
+    "gdpr_article": 42,
+    "gdpr_text": "Certification shall be issued to a controller or processor for a maximum period of three years and may be renewed, under the same conditions, provided that the relevant requirements continue to be met. Certification shall be withdrawn, as applicable, by the certification bodies referred to in Article 43 or by the competent supervisory authority where the requirements for the certification are not or are no longer met.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_265",
+    "best_similarity": 0.4284,
+    "best_policy_id": "pol_021",
+    "gdpr_article": 42,
+    "gdpr_text": "The Board shall collate all certification mechanisms and data protection seals and marks in a register and shall make them publicly available by any appropriate means.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_268",
+    "best_similarity": 0.3426,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 43,
+    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: demonstrated their independence and expertise in relation to the subject-matter of the certification to the satisfaction of the competent supervisory authority;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_269",
+    "best_similarity": 0.3561,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 43,
+    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: undertaken to respect the criteria referred to in Article 42(5) and approved by the supervisory authority which is competent pursuant to Article 55 or 56 or by the Board pursuant to Article 63;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_270",
+    "best_similarity": 0.4102,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 43,
+    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: established procedures for the issuing, periodic review and withdrawal of data protection certification, seals and marks;",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_271",
+    "best_similarity": 0.4369,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 43,
+    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: established procedures and structures to handle complaints about infringements of the certification or the manner in which the certification has been, or is being, implemented by the controller or processor, and to make those procedures and structures transparent to data subjects and the public; and",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_272",
+    "best_similarity": 0.3705,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 43,
+    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: demonstrated, to the satisfaction of the competent supervisory authority, that their tasks and duties do not result in a conflict of interests.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_273",
+    "best_similarity": 0.4079,
+    "best_policy_id": "pol_009",
+    "gdpr_article": 43,
+    "gdpr_text": "The accreditation of certification bodies as referred to in paragraphs 1 and 2 of this Article shall take place on the basis of criteria approved by the supervisory authority which is competent pursuant to Article 55 or 56 or by the Board pursuant to Article 63. In the case of accreditation pursuant to point (b) of paragraph 1 of this Article, those requirements shall complement those envisaged in Regulation (EC) No 765/2008 and the technical rules that describe the methods and procedures of the certification bodies.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_274",
+    "best_similarity": 0.4402,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 43,
+    "gdpr_text": "The certification bodies referred to in paragraph 1 shall be responsible for the proper assessment leading to the certification or the withdrawal of such certification without prejudice to the responsibility of the controller or processor for compliance with this Regulation. The accreditation shall be issued for a maximum period of five years and may be renewed on the same conditions provided that the certification body meets the requirements set out in this Article.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_275",
+    "best_similarity": 0.4503,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 43,
+    "gdpr_text": "The certification bodies referred to in paragraph 1 shall provide the competent supervisory authorities with the reasons for granting or withdrawing the requested certification.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_277",
+    "best_similarity": 0.3811,
+    "best_policy_id": "pol_052",
+    "gdpr_article": 43,
+    "gdpr_text": "Without prejudice to Chapter VIII, the competent supervisory authority or the national accreditation body shall revoke an accreditation of a certification body pursuant to paragraph 1 of this Article where the conditions for the accreditation are not, or are no longer, met or where actions taken by a certification body infringe this Regulation.",
+    "deviation_type": "missing_coverage"
+  },
+  {
+    "gdpr_id": "gdpr_279",
+    "best_similarity": 0.4437,
+    "best_policy_id": "pol_046",
+    "gdpr_article": 43,
+    "gdpr_text": "The Commission may adopt implementing acts laying down technical standards for certification mechanisms and data protection seals and marks, and mechanisms to promote and recognise those certification mechanisms, seals and marks. Those implementing acts shall be adopted in accordance with the examination procedure referred to in Article 93(2).",
+    "deviation_type": "missing_coverage"
+  }
+]

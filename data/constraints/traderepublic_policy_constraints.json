@@ -1,0 +1,387 @@
+[
+  {
+    "id": "pol_001",
+    "source": "policy",
+    "section": "",
+    "zsc_score": 0.9677,
+    "text": "We will inform you in this Privacy Notice when this is the case so far this is legally necessary."
+  },
+  {
+    "id": "pol_002",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.7345,
+    "text": "We will explicitly mention whether a processing activity is based on your consent, is performed to fulfill our contractual obligation, is performed to fulfill our legal obligations or based on our legitimate interest."
+  },
+  {
+    "id": "pol_003",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.7676,
+    "text": "1.1 Consent - Art. 6 (1) lit."
+  },
+  {
+    "id": "pol_004",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.8951,
+    "text": "1.2 Performance of a Contract - Art. 6 (1) lit."
+  },
+  {
+    "id": "pol_005",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.7593,
+    "text": "GDPR, if the processing is done in order to provide our Services based on the contract we concluded with you."
+  },
+  {
+    "id": "pol_006",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.8992,
+    "text": "1.3 Legal obligation - Art. 6 (1) lit."
+  },
+  {
+    "id": "pol_007",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.9675,
+    "text": "GDPR due to our legal obligations as a bank."
+  },
+  {
+    "id": "pol_008",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.8793,
+    "text": "We are subject to various legal obligations, such as statutory requirements (e.g., German Banking Act, German Money Laundering Act, German Securities Trading Act, German tax laws) and banking supervisory requirements (e.g., of the European Central Bank, the European Banking Authority, the Deutsche Bundesbank, and the German Federal Financial Supervisory Authority - BaFin)."
+  },
+  {
+    "id": "pol_009",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.8976,
+    "text": "These include, in particular, the obligation to conduct identity and age checks, to prevent fraud and money laundering, specific customer complaints procedures or the fulfillment of control and reporting obligations under tax law."
+  },
+  {
+    "id": "pol_010",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.6196,
+    "text": "With regard to the Trade Republic Website, these obligations especially include the provision of a secure service and login process."
+  },
+  {
+    "id": "pol_011",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.5219,
+    "text": "This means that our interest in processing your data is not overridden by your interests or your fundamental rights and freedoms."
+  },
+  {
+    "id": "pol_012",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.5206,
+    "text": "We carry out this analysis in order to verify that these processing activities do not harm your data protection rights."
+  },
+  {
+    "id": "pol_013",
+    "source": "policy",
+    "section": "1. Purpose and Legal Basis of our Data Processing",
+    "zsc_score": 0.7474,
+    "text": "This includes the following purposes: - assertion of legal claims and defense in legal disputes; - ensuring our IT security and the overall IT operation; - prevention and investigation of criminal acts; - non-marketing related email correspondence; - testing and optimisation of demand analysis procedures including customer segmentation; - direct marketing or market research regarding functionality and performance of our Services and our Website; - measures for the further development of the performance of our Services (for example our App) and our Website."
+  },
+  {
+    "id": "pol_014",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.5878,
+    "text": "Which Data does Trade Republic Process Most of the personal data we process is provided by you (for example your name or email address or your transactions)."
+  },
+  {
+    "id": "pol_015",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.7977,
+    "text": "The legal basis for the processing of this data is our legitimate interest pursuant to Article 6 (1) lit."
+  },
+  {
+    "id": "pol_016",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.6977,
+    "text": "In so far the collection of the data is not technically necessary, the legal basis for the collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
+    "id": "pol_017",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.8805,
+    "text": "We use Cookies and process personal data collected by Cookies to fulfill our contractual obligations (e.g., login cookies or technically necessary cookies to provide the Website), based on our legitimate interest (e.g., to secure our Website) or based on your consent (e.g., marketing activities)."
+  },
+  {
+    "id": "pol_018",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.7659,
+    "text": "We process your data in order to fulfill our contractual obligations insofar you are a customer and the processing is necessary to provide you information connected to our contractual relationship."
+  },
+  {
+    "id": "pol_019",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.6181,
+    "text": "Otherwise we process your data in line with our legitimate interest in processing customer care requests from non-customers."
+  },
+  {
+    "id": "pol_020",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.8378,
+    "text": "Since we do not have a direct contractual relationship with these persons, we process their data based on our legitimate interest to provide our services to our customers and to adhere to our legal obligations."
+  },
+  {
+    "id": "pol_021",
+    "source": "policy",
+    "section": "2. Which Data does Trade Republic Process",
+    "zsc_score": 0.9137,
+    "text": "We collect and process this data in order to fulfill our legal obligations and to fulfill our contractual obligations."
+  },
+  {
+    "id": "pol_022",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.895,
+    "text": "3. Data Retention and Deletion We will generally keep your account data only as long as we need it to provide you with our Services or to adhere to our legal obligations."
+  },
+  {
+    "id": "pol_023",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.8504,
+    "text": "As a bank, there are different statutory data retention rules that apply to us and that determine for how long we are legally obliged to store data."
+  },
+  {
+    "id": "pol_024",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.8738,
+    "text": "These laws also apply, even if you explicitly request us to delete your data."
+  },
+  {
+    "id": "pol_025",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.9212,
+    "text": "We process and retain your data in line with statutory retention periods in order to fulfill our legal obligations."
+  },
+  {
+    "id": "pol_026",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.8039,
+    "text": "In so far we retain your data in line with statutory limitation periods to ensure our own claims, we process your data with our legitimate interest."
+  },
+  {
+    "id": "pol_027",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.9031,
+    "text": "When you contact us as a non-customer, we will retain your data in line with statutory retention periods in order to fulfill our legal obligations."
+  },
+  {
+    "id": "pol_028",
+    "source": "policy",
+    "section": "3. Data Retention and Deletion",
+    "zsc_score": 0.7799,
+    "text": "We retain your data for this period of time in line with our legitimate interest (Art. 6 (1) lit."
+  },
+  {
+    "id": "pol_029",
+    "source": "policy",
+    "section": "4. Marketing Activities and Social Media",
+    "zsc_score": 0.5732,
+    "text": "With regard to personal data being processed by the respective Social Network in order to provide Company Profile statistics, we are joint controllers together with the respective Social Network in line with Art."
+  },
+  {
+    "id": "pol_030",
+    "source": "policy",
+    "section": "4. Marketing Activities and Social Media",
+    "zsc_score": 0.8365,
+    "text": "26 GDPR."
+  },
+  {
+    "id": "pol_031",
+    "source": "policy",
+    "section": "4. Marketing Activities and Social Media",
+    "zsc_score": 0.5269,
+    "text": "Your participation in a raffle is voluntary and we process your data based on our contractual obligations with regard to running the raffle and, if collected, based on your consent."
+  },
+  {
+    "id": "pol_032",
+    "source": "policy",
+    "section": "5. Communication, SMS and Customer Service",
+    "zsc_score": 0.8902,
+    "text": "This processing is done to provide you with our Services requested by you and, in so far legally necessary, to adhere to our legal obligations."
+  },
+  {
+    "id": "pol_033",
+    "source": "policy",
+    "section": "5. Communication, SMS and Customer Service",
+    "zsc_score": 0.8306,
+    "text": "We send such reminders only if our original request has the purpose of fulfilling legal obligations we are required to follow as a financial services provider."
+  },
+  {
+    "id": "pol_034",
+    "source": "policy",
+    "section": "5. Communication, SMS and Customer Service",
+    "zsc_score": 0.9475,
+    "text": "This processing is done to adhere to our legal obligations or, with regard to decreasing risks and prevent harm from you, us or third parties, in order to preserve our legitimate interest."
+  },
+  {
+    "id": "pol_035",
+    "source": "policy",
+    "section": "5. Communication, SMS and Customer Service",
+    "zsc_score": 0.8693,
+    "text": "We process your data in order to fulfill our contractual obligations."
+  },
+  {
+    "id": "pol_036",
+    "source": "policy",
+    "section": "5. Communication, SMS and Customer Service",
+    "zsc_score": 0.5113,
+    "text": "When we process your data in order to improve our Services (including our customer service), we process your data for our legitimate interest."
+  },
+  {
+    "id": "pol_037",
+    "source": "policy",
+    "section": "6. Recipients or categories of recipients",
+    "zsc_score": 0.8285,
+    "text": "Recipients or categories of recipients We only transfer your data to third parties (data processors as well as other data controllers) if this is in line with applicable law."
+  },
+  {
+    "id": "pol_038",
+    "source": "policy",
+    "section": "6. Recipients or categories of recipients",
+    "zsc_score": 0.6172,
+    "text": "Data controllers process your data within their own responsibility and you can exercise your data subject rights directly against them."
+  },
+  {
+    "id": "pol_039",
+    "source": "policy",
+    "section": "6. Recipients or categories of recipients",
+    "zsc_score": 0.6602,
+    "text": "Data processors process your data based on our instruction and under our responsibility."
+  },
+  {
+    "id": "pol_040",
+    "source": "policy",
+    "section": "6. Recipients or categories of recipients",
+    "zsc_score": 0.5722,
+    "text": "Depending on how you use our Website or Services, we may transfer your personal data to the following categories of recipients: - public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud and crime prevention, enforcement of claims or legal defense of claims; - External advisors or lawyers for purposes of fulfilling legal obligations, fraud and crime prevention, enforcement of claims or legal defense of claims; - other credit and financial services institutions to which Trade Republic transfers personal data in order to carry out the business relationship with you; e.g. escrow banks, payment service providers, stock exchanges or credit agencies; - service providers that provide technical services, such as sending SMS messages or performing video identifications, customer service support services or text analysis service (including artificial intelligence services); - service providers for risk screenings, background checks, diligence reports or solvency scores; - service providers regarding crypto assets custody; - service providers which host and provide the IT infrastructure for us or ensure our IT security; - Marketing services like Social Networks, email service providers, customer data platforms, technical service providers for marketing campaigns or raffles and advertising networks."
+  },
+  {
+    "id": "pol_041",
+    "source": "policy",
+    "section": "7. Transfer of personal data to third countries",
+    "zsc_score": 0.7794,
+    "text": "45 (1) GDPR; - Binding Corporate Rules have been established by the recipient; - The EU Standard Data Protection Clauses as adopted by the European Commission have been agreed upon between us and the third party; or - You have consented to the transfer."
+  },
+  {
+    "id": "pol_042",
+    "source": "policy",
+    "section": "8. Automated decision making",
+    "zsc_score": 0.9339,
+    "text": "22 GDPR, when profiling customers in order to fulfill our legal obligation as a bank."
+  },
+  {
+    "id": "pol_043",
+    "source": "policy",
+    "section": "8. Automated decision making",
+    "zsc_score": 0.6344,
+    "text": "These are, for example, requirements to combat money laundering, terrorist financing and crimes that endanger assets."
+  },
+  {
+    "id": "pol_044",
+    "source": "policy",
+    "section": "8. Automated decision making",
+    "zsc_score": 0.7545,
+    "text": "22 GDPR affecting you as a regular visitor of our Website."
+  },
+  {
+    "id": "pol_045",
+    "source": "policy",
+    "section": "8. Automated decision making",
+    "zsc_score": 0.705,
+    "text": "22 GDPR and provide you with further information."
+  },
+  {
+    "id": "pol_046",
+    "source": "policy",
+    "section": "8. Automated decision making",
+    "zsc_score": 0.9629,
+    "text": "This processing is done to adhere to our legal obligations."
+  },
+  {
+    "id": "pol_047",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.6029,
+    "text": "Your Privacy Rights and Contact You have the following privacy rights: - the right to access your personal data (Art. 15 GDPR); - the right to rectification (Art."
+  },
+  {
+    "id": "pol_048",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.8861,
+    "text": "16 GDPR); - the right to deletion (Art. 17 GDPR); - the right to restriction of processing (Art. 18 GDPR); - a right to object to processing (Art. 21 GDPR)."
+  },
+  {
+    "id": "pol_049",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.6495,
+    "text": "With regard to the right to access your data and the right to erasure, the restrictions pursuant to Art."
+  },
+  {
+    "id": "pol_050",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.8329,
+    "text": "17 (3) GDPR and pursuant to local laws must be taken into account."
+  },
+  {
+    "id": "pol_051",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.7086,
+    "text": "You have the right to revoke your consent at any time with effect for the future (Art. 7 (3) sentence 1 GDPR)."
+  },
+  {
+    "id": "pol_052",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.6897,
+    "text": "In addition, there is the right to complain to the data protection supervisory authority pursuant to Art."
+  },
+  {
+    "id": "pol_053",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.8389,
+    "text": "GDPR in conjunction with Section 19 German Federal Data Protection Act since we are located in Germany."
+  },
+  {
+    "id": "pol_054",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.6836,
+    "text": "In case of general questions or if you want to exercise your privacy rights, you must submit a written request by registered post to our data protection team at Trade Republic Bank GmbH, Brunnenstr."
+  },
+  {
+    "id": "pol_055",
+    "source": "policy",
+    "section": "9. Your Privacy Rights and Contact",
+    "zsc_score": 0.7289,
+    "text": "For a direct contact regarding data protection matters, please send a letter to Trade Republic Bank GmbH, Customer Service, Brunnenstr."
+  }
+]
