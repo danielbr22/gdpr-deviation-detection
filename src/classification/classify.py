@@ -37,16 +37,18 @@ def check_ollama() -> None:
 
 
 def call_ollama(gdpr_text: str, gdpr_article: int, policy_text: str) -> str:
+    user_msg = "/no_think\n" + build_user_prompt(gdpr_text, gdpr_article, policy_text)
     payload = {
         "model": MODEL,
         "stream": False,
         "format": "json",
+        "think": False,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": build_user_prompt(gdpr_text, gdpr_article, policy_text)},
+            {"role": "user", "content": user_msg},
         ],
     }
-    r = requests.post(OLLAMA_URL, json=payload, timeout=180)
+    r = requests.post(OLLAMA_URL, json=payload, timeout=300)
     r.raise_for_status()
     return r.json()["message"]["content"]
 
