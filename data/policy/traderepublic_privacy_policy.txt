@@ -1,0 +1,527 @@
+Trade Republic Bank GmbH — Privacy Notice for the Trade Republic Website
+Source: https://traderepublic.com (PDF: Privacy-Website_en-DE.pdf)
+Version: 2025-06-23
+Retrieved: 2026-04-28
+
+================================================================================
+Privacy Notice for the Trade Republic Website
+================================================================================
+
+This Privacy Notice informs you about the collection and processing of your data by
+Trade Republic in accordance with Art. 13 and 14 General Data Protection Regulation
+("GDPR") when you visit the website www.traderepublic.com (hereinafter "Trade Republic
+Website" or "Website"). It includes information on how we use cookies on our website
+and how you can log into your Trade Republic Account on the Website.
+
+If you are looking for general information on how Trade Republic processes your data
+with regard to your use of the Trade Republic Application and Web Application
+(hereinafter "Trade Republic App" or "App") and to the (financial) services offered by
+us and our social media pages (together referred to "Services"), you will find more
+information in the Trade Republic Privacy Notice for its App.
+
+The App Privacy Notice is available in your account in the App and Web Application when
+you are logged in and during your registration which can only be done via the Trade
+Republic App.
+
+The data controller and service provider is:
+Trade Republic Bank GmbH ("Trade Republic" or "we"), Brunnenstr. 19-21, 10119 Berlin,
+Germany
+
+In some cases, we may also act as joint controllers or third parties may process your
+data on their own behalf as data controllers. We will inform you in this Privacy Notice
+when this is the case so far this is legally necessary.
+
+================================================================================
+1. Purpose and Legal Basis of our Data Processing
+================================================================================
+
+We rely on the following purposes and legal bases when processing your personal data.
+
+Additionally, we provide further information on the purpose and legal basis of the
+respective processing activity when we explain it below in this document. We will
+explicitly mention whether a processing activity is based on your consent, is performed
+to fulfill our contractual obligation, is performed to fulfill our legal obligations or
+based on our legitimate interest.
+
+--------------------------------------------------------------------------------
+1.1 Consent - Art. 6 (1) lit. a GDPR
+--------------------------------------------------------------------------------
+
+We process your personal data based on Art. 6 (1) lit. a GDPR, if you have consented
+to the specific processing activity. Your consent is voluntary and may be revoked by
+you at any time. You will always receive further details on the processing activity
+based on your consent. Please note that revoking your consent has no retroactive
+effect; processing that took place before is not affected.
+
+--------------------------------------------------------------------------------
+1.2 Performance of a Contract - Art. 6 (1) lit. b GDPR
+--------------------------------------------------------------------------------
+
+We process your personal data based on Art. 6 (1) lit. b GDPR, if the processing is
+done in order to provide our Services based on the contract we concluded with you. This
+includes processing in the banking, trading or crypto context. For example the
+processing is carried out to allow you to log into your account on the Website.
+
+--------------------------------------------------------------------------------
+1.3 Legal obligation - Art. 6 (1) lit. c GDPR
+--------------------------------------------------------------------------------
+
+We process your personal data based on Art. 6 (1) lit. c GDPR due to our legal
+obligations as a bank. We are subject to various legal obligations, such as statutory
+requirements (e.g., German Banking Act, German Money Laundering Act, German Securities
+Trading Act, German tax laws) and banking supervisory requirements (e.g., of the
+European Central Bank, the European Banking Authority, the Deutsche Bundesbank, and the
+German Federal Financial Supervisory Authority - BaFin). These include, in particular,
+the obligation to conduct identity and age checks, to prevent fraud and money
+laundering, specific customer complaints procedures or the fulfillment of control and
+reporting obligations under tax law. With regard to the Trade Republic Website, these
+obligations especially include the provision of a secure service and login process.
+
+--------------------------------------------------------------------------------
+1.4 Legitimate interest - Art. 6 (1) lit. f GDPR
+--------------------------------------------------------------------------------
+
+We process your personal data based on Art. 6 (1) lit. f GDPR, if we have a legitimate
+interest to do so. This means that our interest in processing your data is not
+overridden by your interests or your fundamental rights and freedoms. Whether this is
+the case will be determined by us on a generic basis and prior to the initiation of a
+processing activity. We will consider the purposes below and assess the particular
+circumstances in the individual situation while taking into consideration the reasonable
+expectations you may have based on your relation to us. We carry out this analysis in
+order to verify that these processing activities do not harm your data protection
+rights.
+
+This includes the following purposes:
+- assertion of legal claims and defense in legal disputes;
+- ensuring our IT security and the overall IT operation;
+- prevention and investigation of criminal acts;
+- non-marketing related email correspondence;
+- testing and optimisation of demand analysis procedures including customer
+  segmentation;
+- direct marketing or market research regarding functionality and performance of our
+  Services and our Website;
+- measures for the further development of the performance of our Services (for example
+  our App) and our Website.
+
+If you want more information about the aforementioned considerations or would like to
+opt out from specific processing activities which are based on our legitimate interest
+due to your specific circumstances, please contact us and we can further evaluate your
+situation and the processing taking place.
+
+================================================================================
+2. Which Data does Trade Republic Process
+================================================================================
+
+Most of the personal data we process is provided by you (for example your name or email
+address or your transactions). We also process data from your device that we collect
+during your use of our App or Website and, so far permissible, data we may collect from
+third parties or public sources.
+
+--------------------------------------------------------------------------------
+2.1 Data collected automatically when visiting the Website
+--------------------------------------------------------------------------------
+
+When you visit our website, we collect the data transmitted automatically by your
+browser to our web server on a regular basis, such as your IP address, the URLs of the
+websites from which you have accessed our websites, the browser used, browser language,
+operating system and interface used, the access device with which the services are used,
+the date and time of access, the accessed pages of our website and the time you spend
+on our website. The data is stored for a limited period and then automatically deleted.
+
+The legal basis for the processing of this data is our legitimate interest pursuant to
+Article 6 (1) lit. f GDPR. We use this information:
+- to enable the retrieval and visit of the website;
+- to continuously improve our website and offerings and to further adapt them to the
+  needs of our users;
+- to carry out internal quality controls;
+- to detect, eliminate and prevent errors, malfunctions and possible misuse;
+- to generate statistics on access channels and site usage.
+
+In so far the collection of the data is not technically necessary, the legal basis for
+the collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.
+
+--------------------------------------------------------------------------------
+2.2 Cookies and similar technologies
+--------------------------------------------------------------------------------
+
+We use cookies and similar technologies like pixels (together referred to as "Cookies")
+to provide you with our Website, analyze and improve the performance of our Website and
+for marketing purposes. These Cookies may also collect personal data. We use Cookies
+and process personal data collected by Cookies to fulfill our contractual obligations
+(e.g., login cookies or technically necessary cookies to provide the Website), based on
+our legitimate interest (e.g., to secure our Website) or based on your consent (e.g.,
+marketing activities). The default setting is already set so that no cookies are set for
+marketing and analysis purposes ("privacy by default") without your consent.
+
+Please note that when you reject Cookies, this does not have an effect on your customer
+profile or in-App settings, since these systems are not connected to each other.
+
+Your cookie preference settings will be saved by us in a cookie. This allows us to not
+have to ask for your consent every time you visit our Website. You can change your
+Cookie settings anytime you want by clicking on Cookies in the Footer of the Website.
+
+--------------------------------------------------------------------------------
+2.3 Adjust
+--------------------------------------------------------------------------------
+
+Adjust is a service offered by adjust GmbH, Saarbrücker Str. 37A, 10405 Berlin,
+Germany ("Adjust"). We use Adjust for marketing purposes; namely in order to track how
+our campaigns perform and improve them, display (or not display) personalized ads to
+you, to prevent marketing fraud and to attribute sign ups or other customers behavior to
+specific campaigns, affiliate marketing partners or influencers. Adjust does not collect
+or forward clear data like your name, email address, phone number and it does also not
+collect specific information regarding the value of your account, financial instruments
+you traded, etc.
+
+We will only collect data through Adjust on our Website in line with your Cookie
+preference. You are free to consent to this processing or not and we will process your
+data based on your consent.
+
+--------------------------------------------------------------------------------
+2.4 Data collected when you login to your customer account on the Website
+--------------------------------------------------------------------------------
+
+While we do not offer the possibility to register a new account on our Website
+(registration can only be done via the App), we enable our customers to log into their
+account on our Website, the so-called Web Application.
+
+To log into your account on our Website, you will need to enter your phone number and
+your pin. Afterwards, we will send a notification to your Trade Republic App which
+includes a verification code; you can also request to receive the code via regular
+message to your phone. You will need to enter this code to access your account.
+
+--------------------------------------------------------------------------------
+2.5 Data collected when you contact us
+--------------------------------------------------------------------------------
+
+You can contact our customer care team via email and for specific cases via a webform.
+Logged in customers can also use a chat functionality on the Website. We process the
+personal data that you share with us when you reach out; this includes the content of
+our communication, your name and email address.
+
+We process your data in order to fulfill our contractual obligations insofar you are a
+customer and the processing is necessary to provide you information connected to our
+contractual relationship. Otherwise we process your data in line with our legitimate
+interest in processing customer care requests from non-customers.
+
+--------------------------------------------------------------------------------
+2.6 Data of non-customers
+--------------------------------------------------------------------------------
+
+We process personal data of non-customers when they transfer money to or receive money
+from our customers. This includes displaying their information in customer account
+statements as well as processing their data for fraud prevention purposes, to prevent
+misuse and similar purposes.
+
+Since we do not have a direct contractual relationship with these persons, we process
+their data based on our legitimate interest to provide our services to our customers
+and to adhere to our legal obligations.
+
+--------------------------------------------------------------------------------
+2.7 Savings Patrons
+--------------------------------------------------------------------------------
+
+We offer Junior Accounts to minors. Custodians of minors (usually their parents) can
+invite others to contribute to the savings of the minor ("Savings Patrons"). Savings
+Patrons do not need to have a regular customer account with us.
+
+If you receive such an invite, you can click on the link and set up a direct debit
+mandate by entering your name, IBAN and email address (which needs to be verified). You
+can be a Savings Patron for more than one minor. We enable you to see past and scheduled
+contributions and to adapt or cancel your direct debit mandate for the future at any
+time. You will also be able to review your transactions for up to 13 months after your
+last activity as Savings Patron. We save your data for up to 3 years after your last
+activity as Savings Patron.
+
+We collect and process this data in order to fulfill our legal obligations and to
+fulfill our contractual obligations.
+
+================================================================================
+3. Data Retention and Deletion
+================================================================================
+
+We will generally keep your data only as long as we need it to provide you with our
+Services or to adhere to our legal obligations.
+
+As a bank, there are different statutory data retention rules that apply to us and that
+determine for how long we are legally obliged to store data. These laws also apply,
+even if you explicitly request us to delete your data.
+
+Regarding your use of the Website, the following data retention timelines apply:
+
+--------------------------------------------------------------------------------
+3.1 Cookies and Cookie lifetime
+--------------------------------------------------------------------------------
+
+Data collected via Cookies is only stored for a limited amount of time. This so-called
+cookie lifetime depends on the purpose of the cookie. In the case of cookies used for
+marketing purposes, the lifetime is usually shorter, whereas cookies used for analytical
+purposes or in order to secure your use of our Website the lifetime is usually longer.
+
+Since cookies are stored in your browser, we do not have access to the cookies or the
+information retained in them if you are not visiting our Website. On the other hand,
+you are free to delete these cookies anytime and can do so in your browser settings.
+
+We process and retain your data in line with statutory retention periods in order to
+fulfill our legal obligations. In so far we retain your data in line with statutory
+limitation periods to ensure our own claims, we process your data with our legitimate
+interest.
+
+--------------------------------------------------------------------------------
+3.2 Communication
+--------------------------------------------------------------------------------
+
+When you contact us as a non-customer, we will retain your data in line with statutory
+retention periods in order to fulfill our legal obligations.
+
+In case no legal obligation applies, we will retain your data for a limited period of
+time (usually three years beginning at the end of a calendar year and depending on the
+applicable law and statute of limitation). We retain your data for this period of time
+in line with our legitimate interest (Art. 6 (1) lit. f GDPR) to defend ourselves in
+case of lawsuits and to enforce possible legal claims.
+
+================================================================================
+4. Marketing Activities and Social Media
+================================================================================
+
+We process personal data for our marketing activities and in connection with our use of
+social media.
+
+You can object to this processing at any time by contacting us.
+
+The processing of your data for advertising purposes, unless consent is required, is
+based on our legitimate interest in direct advertising and marketing.
+
+We only use tracking data based on your consent for marketing purposes and you are free
+to withdraw your consent in your profile settings at any time or to reject Cookies on
+our Website.
+
+--------------------------------------------------------------------------------
+4.1 Company Profile on Social Media Pages
+--------------------------------------------------------------------------------
+
+We have company pages or company profiles ("Company Profiles") on the following
+networks: TikTok, X, LinkedIn, Facebook, Youtube, Snapchat and Instagram (together
+"Social Network").
+
+When you interact with our Company Profiles or with our content shared through the
+Company Profiles, the respective Social Network collects your personal data.
+Additionally, if you directly interact with us, for example messaging us, posting under
+our content, etc, we also collect your personal data which includes the content you
+shared with us, your profile picture, profile handle and other publicly visible profile
+information.
+
+As a general rule, no Social Network provides us with personal data which allows us to
+identify specific visitors of our Company Profiles or users who have seen our
+advertisements. Any statistics we receive from Social Networks cannot be linked to
+individual users by us.
+
+With regard to personal data being processed by the respective Social Network in order
+to provide Company Profile statistics, we are joint controllers together with the
+respective Social Network in line with Art. 26 GDPR.
+
+--------------------------------------------------------------------------------
+4.2 Marketing Activities
+--------------------------------------------------------------------------------
+
+4.2.1 Raffles and comparable promotions
+
+If you decide to participate in a raffle or a comparable promotion, we will process
+your data to the extent necessary to run the raffle and determine the winners. Your
+participation in a raffle is voluntary and we process your data based on our contractual
+obligations with regard to running the raffle and, if collected, based on your consent.
+
+4.2.2 Online Display Advertising and Social Network Advertising
+
+We use different display ad networks, including Google Display Network offered by
+Google, and affiliate networks when showing you ads online outside of Social Networks.
+Additionally and based on your consent, we might also use Website usage data collected
+through Cookies to show you personalized ads online.
+
+When advertising on Social Networks (for example, YouTube, Facebook, Instagram),
+advertisers have the option to target specific user groups based on data collected by
+the respective Social Network or the option to forward encrypted information regarding
+the advertisers' customers like email addresses or advertising IDs.
+
+--------------------------------------------------------------------------------
+4.3 Market Research and Surveys
+--------------------------------------------------------------------------------
+
+If you decide to participate in a survey, we will process the data and answers you
+provide to the extent necessary to conduct the survey and analyze the results. Your
+participation in our surveys is voluntary and we process your data based on our
+legitimate interest to conduct surveys and improve our Services and, in so far granted,
+based on your consent.
+
+================================================================================
+5. Communication, SMS and Customer Service
+================================================================================
+
+--------------------------------------------------------------------------------
+5.1 Communication
+--------------------------------------------------------------------------------
+
+We provide different possibilities to contact us and if you do so, we will process your
+personal data to provide you with a response. This processing is done to provide you
+with our Services requested by you and, in so far legally necessary, to adhere to our
+legal obligations.
+
+If you are not a customer and do not use our Services, we will only send you marketing
+emails based on your consent.
+
+--------------------------------------------------------------------------------
+5.2 SMS and SMS verification
+--------------------------------------------------------------------------------
+
+5.2.1 General information on SMS
+
+To pair your device with your account and to increase your account security and prevent
+fraud, we send SMS messages. We send these messages based on the phone number provided
+by you in the onboarding process.
+
+We may also use these SMS services to send you reminders regarding important
+communications you receive from us. We send such reminders only if our original request
+has the purpose of fulfilling legal obligations we are required to follow as a financial
+services provider.
+
+This processing is done to adhere to our legal obligations or, with regard to
+decreasing risks and prevent harm from you, us or third parties, in order to preserve
+our legitimate interest.
+
+5.2.2 Receiving SMS that were not requested by you
+
+Sometimes users accidentally or wrongfully enter a wrong number when trying to register
+or log in. In such cases, we may send an SMS to persons who have not requested this.
+This does not have an effect on the account security of existing accounts and it does
+also not mean that an account in the name of the phone number owner has been opened or
+that their personal data besides their phone number has been processed by us.
+
+--------------------------------------------------------------------------------
+5.3 Customer Care
+--------------------------------------------------------------------------------
+
+You can contact our customer care team via email and - if you are logged in - via chat.
+When entering the chat, you will be assisted by our chatbot. When the chatbot is not
+able to resolve your request, you have the chance to submit your request which will
+then be taken care of by a customer service agent.
+
+We process the personal data that you share with us when you reach out; this includes
+the content of our communication, your name and email address.
+
+Additionally, if available, we also store additional information such as your login
+status, your preferred language and your app version together with the content of your
+communication. This information helps us to provide better support to you.
+
+We process your data in order to fulfill our contractual obligations. When we process
+your data in order to improve our Services (including our customer service), we process
+your data for our legitimate interest.
+
+================================================================================
+6. Recipients or categories of recipients
+================================================================================
+
+We only transfer your data to third parties (data processors as well as other data
+controllers) if this is in line with applicable law. Data controllers process your data
+within their own responsibility and you can exercise your data subject rights directly
+against them. Data processors process your data based on our instruction and under our
+responsibility.
+
+Depending on how you use our Website or Services, we may transfer your personal data to
+the following categories of recipients:
+- public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking
+  Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud
+  and crime prevention, enforcement of claims or legal defense of claims;
+- External advisors or lawyers for purposes of fulfilling legal obligations, fraud and
+  crime prevention, enforcement of claims or legal defense of claims;
+- other credit and financial services institutions to which Trade Republic transfers
+  personal data in order to carry out the business relationship with you; e.g. escrow
+  banks, payment service providers, stock exchanges or credit agencies;
+- service providers that provide technical services, such as sending SMS messages or
+  performing video identifications, customer service support services or text analysis
+  service (including artificial intelligence services);
+- service providers for risk screenings, background checks, diligence reports or
+  solvency scores;
+- service providers regarding crypto assets custody;
+- service providers which host and provide the IT infrastructure for us or ensure our
+  IT security;
+- Marketing services like Social Networks, email service providers, customer data
+  platforms, technical service providers for marketing campaigns or raffles and
+  advertising networks.
+
+You can reach out to us, if you want to receive further information on the respective
+recipients of personal data.
+
+================================================================================
+7. Transfer of personal data to third countries
+================================================================================
+
+We only transfer personal data to third parties outside of the European Economic Area,
+when at least one of the following transfer mechanisms is given to ensure an appropriate
+level of data protection:
+- If the third country has been confirmed by the EU Commission to have an adequate level
+  of data protection pursuant to Art. 45 (1) GDPR;
+- Binding Corporate Rules have been established by the recipient;
+- The EU Standard Data Protection Clauses as adopted by the European Commission have
+  been agreed upon between us and the third party; or
+- You have consented to the transfer.
+
+You can reach out to us, if you want to receive further information on the respective
+transfer mechanism and the service providers we use.
+
+================================================================================
+8. Automated decision making
+================================================================================
+
+We make automated decisions in the meaning of Art. 22 GDPR, when profiling customers
+in order to fulfill our legal obligation as a bank. These are, for example, requirements
+to combat money laundering, terrorist financing and crimes that endanger assets. For
+this purpose, we process your personal data and especially information relating to your
+transactions, the transaction value, recent changes in your personal data, etc. You can
+request a manual review by a person of an automated decision at any time.
+
+We do not make automated decisions in the meaning of Art. 22 GDPR affecting you as a
+regular visitor of our Website.
+
+Additionally, insofar not prohibited by law, we will inform you of an automated
+decision in the meaning of Art. 22 GDPR and provide you with further information.
+
+This processing is done to adhere to our legal obligations.
+
+================================================================================
+9. Your Privacy Rights and Contact
+================================================================================
+
+You have the following privacy rights:
+- the right to access your personal data (Art. 15 GDPR);
+- the right to rectification (Art. 16 GDPR);
+- the right to deletion (Art. 17 GDPR);
+- the right to restriction of processing (Art. 18 GDPR);
+- a right to object to processing (Art. 21 GDPR); and
+- the right to data portability (Art. 20 GDPR) within the framework of the legal
+  requirements.
+
+With regard to the right to access your data and the right to erasure, the restrictions
+pursuant to Art. 17 (3) GDPR and pursuant to local laws must be taken into account. You
+have the right to revoke your consent at any time with effect for the future (Art. 7
+(3) sentence 1 GDPR). However, the lawfulness of the processing carried out until the
+revocation is not affected by this.
+
+In addition, there is the right to complain to the data protection supervisory authority
+pursuant to Art. 77 GDPR in conjunction with Section 19 German Federal Data Protection
+Act since we are located in Germany.
+
+In case of general questions or if you want to exercise your privacy rights, you can
+reach out to our data protection team under dataprotection@traderepublic.com at any
+time.
+
+For a direct contact to our data protection officer, please send a letter to Trade
+Republic Bank GmbH, Data Protection Officer, Brunnenstr. 19-21, 10119 Berlin, Germany
+or reach out via email asking for a direct contact.
+
+================================================================================
+10. Changes to this Privacy Notice
+================================================================================
+
+This Privacy Notice may be occasionally updated due to further development of our
+Services, new features or the implementation of new technologies to secure our Services.
+We recommend that you re-read this Privacy Notice from time to time.
