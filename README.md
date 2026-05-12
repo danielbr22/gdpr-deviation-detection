@@ -6,44 +6,51 @@
 This project extends Sai et al. (2023) by replacing their classical NLP pipeline with LLM-based methods for detecting deviations between external regulatory documents and internal company privacy policies.
 
 **External regulation:** GDPR (Articles 5–43)
-**Internal policy:** Hetzner Online GmbH — publicly available privacy policy (retrieved April 2026, policy version April 16, 2025)
+**Internal policies:** Hetzner Online GmbH, Zalando SE, Trade Republic Bank GmbH
 
-A gold standard is constructed by using an LLM to introduce deliberate deviations of known types into a modified version of this policy. The detection pipeline runs against the modified policy; the introduced deviations serve as ground truth for evaluation.
+A gold standard is constructed by introducing deliberate deviations of known types into a modified version of each policy. The detection pipeline runs against the modified policy; the introduced deviations serve as ground truth for evaluation.
 
 ## Repository Structure
 
 ```
 ├── data/
 │   ├── gdpr/              # GDPR source HTML and extracted plain text (Art. 5–43)
-│   ├── policy/            # Hetzner privacy policy (plain text)
-│   ├── constraints/       # Extracted constraint sentences (GDPR + policy)
-│   └── retrieval/         # Embedding-based matching results
+│   ├── policy/            # Privacy policies: original + modified (gold standard)
+│   ├── constraints/       # Extracted constraint sentences (GDPR + per-use-case hybrid)
+│   ├── retrieval/         # Retrieval results per use case (*_hybrid/ subdirs)
+│   └── classification/    # LLM deviation classification results per use case
+├── gold_standard/         # Deviation manifests (ground truth) for all 3 use cases
 ├── src/
-│   ├── preprocessing/     # GDPR extraction + constraint extraction scripts
-│   ├── retrieval/         # Embedding-based constraint matching
-│   ├── classification/    # LLM-based deviation classification (upcoming)
-│   └── evaluation/        # Analysis against annotated subset (upcoming)
+│   ├── preprocessing/     # GDPR extraction (extract_gdpr.py) + hybrid policy extraction
+│   ├── retrieval/         # Legal-BERT embedding + LLM-as-judge matching
+│   ├── classification/    # LLM-based deviation classification
+│   └── evaluation/        # Precision/recall/F1 metrics against gold standard
 ├── notebooks/             # Exploratory analyses
+├── run_pipeline.sh        # End-to-end pipeline for all 3 use cases
 └── report/                # Report PDF and figures
 ```
 
 ## Pipeline
 
-1. **Preprocessing:** Extract constraint sentences from GDPR (signal words: *shall*, *should*, *must*) and from the internal policy.
-2. **Retrieval:** Embed constraints with `all-MiniLM-L6-v2` → cosine similarity matching (γ = 0.5). Unmatched GDPR constraints → `missing_coverage` candidates.
-3. **Classification** *(upcoming):* For each matched pair, an LLM classifies the deviation type: `responsibility`, `execution_style`, `data`, `negation`, or `none`.
-4. **Evaluation** *(upcoming):* Qualitative analysis + quantitative metrics on a manually annotated subset (Art. 15–22 vs. Hetzner Section 5).
+1. **Preprocessing — GDPR:** Extract constraint sentences using signal words (*shall*, *should*, *must*) from the official EUR-Lex XHTML → `data/constraints/gdpr_constraints.json` (279 constraints).
 
-## Current Results (Steps 1–2)
+2. **Preprocessing — Policy (hybrid):** For each policy sentence, a local LLM (Qwen3.5 9B via Ollama) with ±5-sentence context decides whether the sentence describes a data-protection obligation → `data/constraints/<use_case>_hybrid_constraints.json`.
 
-| Metric | Value |
-|--------|-------|
-| GDPR constraints (Art. 5–43) | 279 |
-| Policy constraints (Hetzner) | 28 |
-| Matched pairs (γ = 0.5) | 184 (65.9%) |
-| Unmapped GDPR constraints | 95 (34.1%) |
+3. **Retrieval:** Legal-BERT encodes GDPR and policy constraints. Top-5 policy candidates are retrieved per GDPR constraint, then an LLM judge confirms which (if any) substantively addresses the obligation. Unmatched GDPR constraints → `missing_coverage`.
 
-The Art. 15–22 (data subject rights) vs. Hetzner Section 5 analysis is the primary focus for manual review, as it is a well-bounded, interpretable subset.
+4. **Classification:** For each matched pair, an LLM classifies the deviation type: `responsibility`, `execution_style`, `data`, `negation`, or `none`. Unmatched → `missing_coverage` automatically.
+
+5. **Evaluation:** Precision, recall, F1 per deviation type and overall, compared against the gold standard manifests.
+
+Run the full pipeline: `bash run_pipeline.sh`
+
+## Use Cases
+
+| Use Case | Policy | Deviations introduced |
+|----------|--------|----------------------|
+| Hetzner Online GmbH | `hetzner_policy_modified.txt` | 5 |
+| Zalando SE | `zalando_policy_modified.txt` | 5 |
+| Trade Republic Bank GmbH | `traderepublic_policy_modified.txt` | 5 |
 
 ## Reference Paper
 

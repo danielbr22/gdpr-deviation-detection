@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 """
 Embed GDPR and policy constraints with sentence-transformers, then match each
-GDPR constraint to its best policy counterpart via cosine similarity.
+GDPR constraint to its top-k policy passages via cosine similarity.
 
 Input:
   data/constraints/gdpr_constraints.json
-  data/constraints/policy_constraints.json
+  data/constraints/<use_case>_hybrid_constraints.json  (pass via --policy-constraints)
 
-Output:
-  data/retrieval/matched_pairs.json      — pairs above threshold γ
-  data/retrieval/unmapped_gdpr.json      — GDPR constraints below threshold
-                                            (= missing_coverage candidates for Step 3)
+Output (top-k mode, used by run_pipeline.sh):
+  <output-dir>/topk_candidates.json  — top-k candidates per GDPR constraint
+  <output-dir>/run_metadata.json
+
+Output (gamma threshold mode, standalone use):
+  <output-dir>/matched_pairs.json    — pairs above threshold γ
+  <output-dir>/unmapped_gdpr.json    — GDPR constraints below threshold
 
 Usage:
-  python3 src/retrieval/embed_and_match.py [--gamma 0.7] [--model all-MiniLM-L6-v2]
+  python3 src/retrieval/embed_and_match.py \\
+    --policy-constraints data/constraints/hetzner_hybrid_constraints.json \\
+    --output-dir data/retrieval/hetzner_hybrid \\
+    --top-k 5
 """
 
 import argparse
@@ -116,8 +122,8 @@ def main() -> None:
     parser.add_argument("--top-k", type=int, default=0,
                         help="If >0, output top-k candidates per GDPR constraint (skips gamma threshold)")
     parser.add_argument("--policy-constraints", type=Path,
-                        default=CONSTRAINTS_DIR / "policy_constraints.json",
-                        help="Path to policy constraints JSON")
+                        required=True,
+                        help="Path to policy constraints JSON (e.g. data/constraints/hetzner_hybrid_constraints.json)")
     parser.add_argument("--output-dir", type=Path, default=OUT_DIR,
                         help="Directory for matched_pairs.json, unmapped_gdpr.json, run_metadata.json")
     args = parser.parse_args()

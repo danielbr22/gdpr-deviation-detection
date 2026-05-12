@@ -1,56 +1,53 @@
-# Retrieval Design — Notes and Future Directions
+# Retrieval Design — Notes
 
-## Current Implementation
+## Current Implementation: Hybrid Pipeline
 
-Embedding-based cosine similarity matching using `all-MiniLM-L6-v2`
-(sentence-transformers). Each GDPR constraint is mapped to its single
-best-matching policy constraint. Pairs below threshold γ are classified
-as `missing_coverage` candidates without further LLM involvement.
+The retrieval step is a two-stage hybrid:
 
-Threshold: γ = 0.7 (same as reported in Sai et al. Case Study 1).
+1. **Stage 1 — Embedding top-k** (`embed_and_match.py`): Legal-BERT encodes all
+   GDPR constraints and policy passages. For each GDPR constraint, the top-k most
+   similar policy passages (k=5) are retrieved by cosine similarity. This keeps
+   the LLM call count to ~1,400 (279 × 5) rather than a full pairwise comparison.
 
-Run: `python3 src/retrieval/embed_and_match.py [--gamma 0.7] [--model ...]`
+2. **Stage 2 — LLM-as-judge** (`llm_judge.py`): For each GDPR constraint, its
+   top-k candidates are sent to Qwen3.5 9B (via Ollama) with a structured prompt
+   (`judge_prompt.py`). The LLM decides which candidate(s) substantively address
+   the GDPR obligation — or none if no match exists. This produces:
+   - `matched_pairs.json` — confirmed (GDPR, policy) pairs
+   - `unmapped_gdpr.json` — GDPR constraints with no matching policy passage
+                            (→ `missing_coverage` candidates for classification)
 
-## Why Embedding-Only for Now
+Model: `nlpaueb/legal-bert-base-uncased` (Legal-BERT), following Sai et al.'s
+best-performing retrieval configuration.
 
-- Fast and cheap: 279 × 47 similarity matrix computed in seconds locally
-- Directly comparable to the paper's baseline (same model, same γ)
-- Reproducible and threshold-tunable — easy to sweep γ as an experiment
+Run via: `bash run_pipeline.sh` (all 3 use cases) or individual script calls.
 
-## Known Limitation: Paraphrase Gap
+---
 
-Embedding similarity captures lexical and surface-level semantic overlap
-well, but can miss constraints that are legally equivalent but phrased very
-differently. Example:
+## Why Hybrid over Embedding-Only
+
+Embedding similarity captures surface-level semantic overlap well but misses
+legally equivalent but differently phrased constraints. Example:
 
   GDPR:   "the controller shall document all processing activities"
   Policy: "NovaTech maintains a register of data processing operations"
 
-These may score below γ even though they address the same obligation.
-The paper's best model (Legal-S-BERT) reached only 70.6% recall, meaning
-roughly 30% of real matches were missed — likely due to exactly this issue.
+These score below a fixed threshold even though they address the same obligation.
+The paper's best model (Legal-S-BERT) reached only 70.6% recall with embedding-only —
+roughly 30% of real matches were missed.
 
-## Planned Improvement: Hybrid LLM Re-ranking (Future Work)
+The LLM judge handles paraphrase and legal equivalence that embeddings cannot.
 
-A two-stage hybrid approach is planned but not yet implemented:
+---
 
-1. **Stage 1 (embedding):** Use cosine similarity to retrieve top-K candidates
-   (K = 3–5) per GDPR constraint. Fast, eliminates obvious non-matches.
+## Comparison: v1 (embedding-only) vs. current (hybrid)
 
-2. **Stage 2 (LLM):** For each GDPR constraint, send its top-K candidates to
-   an LLM with a prompt like:
-   > "Which of these policy clauses, if any, addresses the following GDPR
-   >  obligation? If none apply, say so."
+| Aspect | v1 | Current |
+|--------|----|---------|
+| Policy extraction | Signal words (28 sentences) | Hybrid LLM (100–200+ passages) |
+| Retrieval model | all-MiniLM-L6-v2 | Legal-BERT |
+| Matching | γ threshold (cosine ≥ 0.5) | top-k + LLM judge |
+| Coverage (Hetzner) | 65.9% | Higher recall, lower noise |
 
-   The LLM makes the final mapping decision based on legal semantics, not
-   surface similarity.
-
-**Why this is better:** The LLM handles paraphrase and legal equivalence;
-the embedding step keeps the LLM call count to ~900 (279 × 3) rather than
-13,113 (279 × 47 full pairwise).
-
-**Experiment design:** Compare embedding-only (γ = 0.7) vs. hybrid on the
-gold standard — precision, recall, F1 per deviation type. This is a direct,
-quantifiable contribution over the paper's baseline.
-
-This should be implemented after the full pipeline is validated end-to-end.
+The v1 run data has been removed; all current results are in
+`data/retrieval/{hetzner,zalando,traderepublic}_hybrid/`.
