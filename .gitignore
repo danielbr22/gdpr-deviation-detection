@@ -27,3 +27,10 @@ PDFs/
 
 # Local presentation working files (outline, notes — not for repo)
 presentation/
+
+# Pipeline runtime logs
+logs/
+excalidraw.log
+
+# Claude Code internal planning files
+docs/
