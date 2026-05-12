@@ -44,16 +44,38 @@ def match(
     gdpr_emb: np.ndarray,
     policy_emb: np.ndarray,
     gamma: float,
+    top_k: int = 0,
 ) -> tuple[list[dict], list[dict]]:
     """
-    For each GDPR constraint find the highest-similarity policy constraint.
-    Returns (matched_pairs, unmapped_gdpr).
+    For each GDPR constraint find the best-matching policy constraint(s).
 
-    One GDPR constraint maps to at most one policy constraint (best match).
-    Multiple GDPR constraints can map to the same policy constraint.
+    top_k == 0 (default): returns (matched_pairs, unmapped_gdpr) using gamma threshold.
+    top_k > 0: returns (topk_entries, []) where each entry has a `candidates` list
+               with the top-k matches regardless of score; second return is always empty.
     """
-    # Full cosine similarity matrix: shape (n_gdpr, n_policy)
     scores = util.cos_sim(gdpr_emb, policy_emb).numpy()  # type: ignore[arg-type]
+
+    if top_k > 0:
+        topk_results = []
+        for i, g in enumerate(gdpr):
+            row = scores[i]
+            top_indices = np.argsort(row)[::-1][:top_k]
+            candidates = [
+                {
+                    "policy_id": policy[j]["id"],
+                    "similarity": round(float(row[j]), 4),
+                    "policy_text": policy[j]["text"],
+                    "policy_section": policy[j].get("section", ""),
+                }
+                for j in top_indices
+            ]
+            topk_results.append({
+                "gdpr_id": g["id"],
+                "gdpr_article": g.get("article"),
+                "gdpr_text": g["text"],
+                "candidates": candidates,
+            })
+        return topk_results, []
 
     matched: list[dict] = []
     unmapped: list[dict] = []
@@ -89,8 +111,10 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--gamma", type=float, default=0.7,
                         help="Cosine similarity threshold (default: 0.7)")
-    parser.add_argument("--model", default="all-MiniLM-L6-v2",
+    parser.add_argument("--model", default="nlpaueb/legal-bert-base-uncased",
                         help="Sentence-transformer model name")
+    parser.add_argument("--top-k", type=int, default=0,
+                        help="If >0, output top-k candidates per GDPR constraint (skips gamma threshold)")
     parser.add_argument("--policy-constraints", type=Path,
                         default=CONSTRAINTS_DIR / "policy_constraints.json",
                         help="Path to policy constraints JSON")
@@ -113,7 +137,25 @@ def main() -> None:
     policy_emb = embed(model, policy)
 
     print("Matching …")
-    matched, unmapped = match(gdpr, policy, gdpr_emb, policy_emb, args.gamma)
+    matched, unmapped = match(gdpr, policy, gdpr_emb, policy_emb, args.gamma, args.top_k)
+
+    out_matched = out_dir / "matched_pairs.json"
+    out_unmapped = out_dir / "unmapped_gdpr.json"
+    out_meta = out_dir / "run_metadata.json"
+
+    if args.top_k > 0:
+        out_topk = out_dir / "topk_candidates.json"
+        out_topk.write_text(json.dumps(matched, indent=2, ensure_ascii=False))
+        meta = {
+            "model": args.model,
+            "top_k": args.top_k,
+            "n_gdpr": len(gdpr),
+            "n_policy": len(policy),
+            "n_topk_entries": len(matched),
+        }
+        out_meta.write_text(json.dumps(meta, indent=2))
+        print(f"\nTop-k mode (k={args.top_k}): {len(matched)} entries → {out_topk}")
+        return
 
     # Save results
     meta = {
@@ -125,10 +167,6 @@ def main() -> None:
         "n_unmapped": len(unmapped),
         "coverage_rate": round(len(matched) / len(gdpr), 3),
     }
-
-    out_matched = out_dir / "matched_pairs.json"
-    out_unmapped = out_dir / "unmapped_gdpr.json"
-    out_meta = out_dir / "run_metadata.json"
 
     out_matched.write_text(json.dumps(matched, indent=2, ensure_ascii=False))
     out_unmapped.write_text(json.dumps(unmapped, indent=2, ensure_ascii=False))
