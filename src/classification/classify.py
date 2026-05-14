@@ -7,20 +7,51 @@ from typing import Optional
 
 import requests
 
-from src.classification.prompt import SYSTEM_PROMPT, build_user_prompt
+from src.classification.prompt import (
+    STAGE1_SYSTEM_PROMPT,
+    STAGE2_SYSTEM_PROMPT,
+    build_stage1_prompt,
+    build_stage2_prompt,
+)
 
 _OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
 OLLAMA_URL = _OLLAMA_BASE + "/api/chat"
 MODEL = "qwen3.5:9b"
-VALID_TYPES = {"none", "responsibility", "execution_style", "data", "negation"}
+VALID_TYPES = {"none", "responsibility", "execution_style", "data", "negation", "severity"}
 
 
-def parse_response(content: str) -> Optional[dict]:
+def _call_ollama(system: str, user: str) -> str:
+    payload = {
+        "model": MODEL,
+        "stream": False,
+        "format": "json",
+        "think": False,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": "/no_think\n" + user},
+        ],
+    }
+    r = requests.post(OLLAMA_URL, json=payload, timeout=300)
+    r.raise_for_status()
+    return r.json()["message"]["content"]
+
+
+def _parse_stage1(content: str) -> Optional[dict]:
     try:
         data = json.loads(content)
     except json.JSONDecodeError:
         return None
-    if data.get("deviation_type") not in VALID_TYPES:
+    if not isinstance(data.get("has_deviation"), bool):
+        return None
+    return data
+
+
+def _parse_stage2(content: str) -> Optional[dict]:
+    try:
+        data = json.loads(content)
+    except json.JSONDecodeError:
+        return None
+    if data.get("deviation_type") not in VALID_TYPES - {"none"}:
         return None
     if not data.get("reasoning"):
         return None
@@ -38,37 +69,55 @@ def check_ollama() -> None:
         sys.exit(f"ERROR: Ollama unreachable at {_OLLAMA_BASE} — {e}")
 
 
-def call_ollama(gdpr_text: str, gdpr_article: int, policy_text: str) -> str:
-    user_msg = "/no_think\n" + build_user_prompt(gdpr_text, gdpr_article, policy_text)
-    payload = {
-        "model": MODEL,
-        "stream": False,
-        "format": "json",
-        "think": False,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": user_msg},
-        ],
-    }
-    r = requests.post(OLLAMA_URL, json=payload, timeout=300)
-    r.raise_for_status()
-    return r.json()["message"]["content"]
-
-
 def classify_pair(pair: dict) -> dict:
+    gdpr_text = pair["gdpr_text"]
+    gdpr_article = pair.get("gdpr_article", 0)
+    policy_text = pair["policy_text"]
+
+    # Stage 1: binary deviation gate
     last_err = "unknown error"
+    stage1 = None
     for _ in range(2):
         try:
-            content = call_ollama(
-                pair["gdpr_text"], pair.get("gdpr_article", 0), pair["policy_text"]
+            raw = _call_ollama(
+                STAGE1_SYSTEM_PROMPT,
+                build_stage1_prompt(gdpr_text, gdpr_article, policy_text),
             )
-            result = parse_response(content)
-            if result:
-                return result
-            last_err = f"invalid response: {content[:200]}"
+            stage1 = _parse_stage1(raw)
+            if stage1:
+                break
+            last_err = f"invalid stage1 response: {raw[:200]}"
         except Exception as e:
             last_err = str(e)
-    return {"deviation_type": "parse_error", "reasoning": f"Failed after 2 attempts: {last_err}"}
+
+    if stage1 is None:
+        return {"deviation_type": "parse_error", "reasoning": f"Stage1 failed: {last_err}"}
+
+    if not stage1["has_deviation"]:
+        return {
+            "deviation_type": "none",
+            "reasoning": stage1.get("reasoning", "No deviation detected by stage 1 gate."),
+        }
+
+    # Stage 2: classify the confirmed deviation
+    stage2 = None
+    for _ in range(2):
+        try:
+            raw = _call_ollama(
+                STAGE2_SYSTEM_PROMPT,
+                build_stage2_prompt(gdpr_text, gdpr_article, policy_text),
+            )
+            stage2 = _parse_stage2(raw)
+            if stage2:
+                break
+            last_err = f"invalid stage2 response: {raw[:200]}"
+        except Exception as e:
+            last_err = str(e)
+
+    if stage2 is None:
+        return {"deviation_type": "parse_error", "reasoning": f"Stage2 failed: {last_err}"}
+
+    return stage2
 
 
 def load_existing(path: Path) -> dict:
