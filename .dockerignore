@@ -1,0 +1,13 @@
+.git
+__pycache__
+*.pyc
+*.pyo
+.venv
+venv
+logs/
+data/retrieval/
+data/classification/
+data/evaluation/
+report/*.pdf
+.DS_Store
+*.egg-info
