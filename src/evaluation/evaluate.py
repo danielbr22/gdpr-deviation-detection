@@ -6,8 +6,8 @@ Matching is article-level:
   - constraint_coverage : TP if any unmapped GDPR constraint belongs to an affected article
   - other types         : TP if any matched pair has an affected article AND the correct type
 
-Precision is approximate: the gold standard contains only 5 *introduced* deviations per
-use case.  FPs include genuine policy deviations not in the gold standard.
+Precision is approximate: the gold standard contains 18 *introduced* deviations per
+use case (3 per type × 6 types).  FPs include genuine policy deviations not in the gold standard.
 """
 
 from __future__ import annotations
@@ -25,6 +25,7 @@ EVAL_DIR = DATA_DIR / "evaluation"
 
 DEVIATION_TYPES = [
     "constraint_coverage",
+    "severity",
     "execution_style",
     "negation",
     "responsibility",
@@ -213,8 +214,8 @@ def print_report(results: list[dict], agg: dict) -> None:
     print("DEVIATION DETECTION EVALUATION")
     print("=" * W)
     print(
-        "\nNOTE: Precision is approximate — the gold standard covers only 5 introduced\n"
-        "deviations per use case. Pipeline FPs may include genuine policy issues.\n"
+        "\nNOTE: Precision is approximate — the gold standard covers 18 introduced\n"
+        "deviations per use case (3 per type × 6 types). Pipeline FPs may include genuine policy issues.\n"
     )
 
     for r in results:

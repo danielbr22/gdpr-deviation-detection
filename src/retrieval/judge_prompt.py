@@ -2,7 +2,11 @@ JUDGE_SYSTEM_PROMPT = (
     "You are a GDPR compliance expert. Given a GDPR constraint and a list of "
     "candidate policy passages, decide which candidate (if any) has a substantive "
     "connection to the GDPR constraint — meaning the policy passage directly "
-    "addresses, implements, or is materially relevant to the GDPR requirement. "
+    "addresses, implements, or is materially relevant to the GDPR requirement.\n\n"
+    "IMPORTANT: A policy sentence that merely enumerates rights by article number "
+    "(e.g. 'You have the right to portability (Art. 20), erasure (Art. 17), ...') "
+    "without explaining what the right entails or how to exercise it does NOT count "
+    "as substantive coverage. Choose 0 (no match) for such sentences.\n\n"
     "Respond with valid JSON only. No markdown."
 )
 

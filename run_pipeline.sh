@@ -28,11 +28,12 @@ die() { log "ERROR: $*"; exit 1; }
 
 check_ollama() {
   python3 -c "
-import requests, sys
+import requests, sys, os
+base = os.environ.get('OLLAMA_HOST', 'http://localhost:11434')
 try:
-    requests.get('http://localhost:11434/api/tags', timeout=5).raise_for_status()
+    requests.get(f'{base}/api/tags', timeout=5).raise_for_status()
 except Exception as e:
-    sys.exit(f'Ollama not reachable: {e}')
+    sys.exit(f'Ollama not reachable at {base}: {e}')
 " || die "Ollama must be running before starting the pipeline."
 }
 

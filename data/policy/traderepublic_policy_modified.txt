@@ -274,7 +274,7 @@ When you contact us as a non-customer, we will retain your data in line with sta
 retention periods in order to fulfill our legal obligations.
 
 In case no legal obligation applies, we will retain your data for a limited period of
-time (usually three years beginning at the end of a calendar year and depending on the
+time (usually one year beginning at the end of a calendar year and depending on the
 applicable law and statute of limitation). We retain your data for this period of time
 in line with our legitimate interest (Art. 6 (1) lit. f GDPR) to defend ourselves in
 case of lawsuits and to enforce possible legal claims.
@@ -286,14 +286,15 @@ case of lawsuits and to enforce possible legal claims.
 We process personal data for our marketing activities and in connection with our use of
 social media.
 
-You can object to this processing at any time by contacting us.
+You can object to this processing by submitting a notarized written objection to our
+legal department by registered post.
 
 The processing of your data for advertising purposes, unless consent is required, is
 based on our legitimate interest in direct advertising and marketing.
 
-We only use tracking data based on your consent for marketing purposes and you are free
-to withdraw your consent in your profile settings at any time or to reject Cookies on
-our Website.
+We only use tracking data based on your consent for marketing purposes. To withdraw
+your consent, you must contact our data protection team in writing, after which
+withdrawal will take effect within 30 days.
 
 --------------------------------------------------------------------------------
 4.1 Company Profile on Social Media Pages
@@ -315,9 +316,9 @@ identify specific visitors of our Company Profiles or users who have seen our
 advertisements. Any statistics we receive from Social Networks cannot be linked to
 individual users by us.
 
-With regard to personal data being processed by the respective Social Network in order
-to provide Company Profile statistics, we are joint controllers together with the
-respective Social Network in line with Art. 26 GDPR.
+With regard to personal data being processed by the respective Social Network for
+Company Profile statistics, the respective Social Network is the sole data controller.
+Trade Republic assumes no responsibility for this processing.
 
 --------------------------------------------------------------------------------
 4.2 Marketing Activities
@@ -422,8 +423,8 @@ your data for our legitimate interest.
 We only transfer your data to third parties (data processors as well as other data
 controllers) if this is in line with applicable law. Data controllers process your data
 within their own responsibility and you can exercise your data subject rights directly
-against them. Data processors process your data based on our instruction and under our
-responsibility.
+against them. Data processors process your data under their own standard contractual terms and
+assume independent responsibility for their data processing practices.
 
 Depending on how you use our Website or Services, we may transfer your personal data to
 the following categories of recipients:
@@ -447,8 +448,8 @@ the following categories of recipients:
   platforms, technical service providers for marketing campaigns or raffles and
   advertising networks.
 
-You can reach out to us, if you want to receive further information on the respective
-recipients of personal data.
+We are not required to disclose the identities of individual recipients of your personal
+data where disclosure could compromise our security operations or business relationships.
 
 ================================================================================
 7. Transfer of personal data to third countries
@@ -475,8 +476,9 @@ We make automated decisions in the meaning of Art. 22 GDPR, when profiling custo
 in order to fulfill our legal obligation as a bank. These are, for example, requirements
 to combat money laundering, terrorist financing and crimes that endanger assets. For
 this purpose, we process your personal data and especially information relating to your
-transactions, the transaction value, recent changes in your personal data, etc. You can
-request a manual review by a person of an automated decision at any time.
+transactions, the transaction value, recent changes in your personal data, etc. You may
+not request a manual review of automated decisions used for legally mandated fraud
+prevention and anti-money-laundering screening processes.
 
 We do not make automated decisions in the meaning of Art. 22 GDPR affecting you as a
 regular visitor of our Website.
@@ -491,10 +493,9 @@ This processing is done to adhere to our legal obligations.
 ================================================================================
 
 You have the following privacy rights:
-- the right to access your personal data (Art. 15 GDPR);
+- the right to access your account and transaction data (Art. 15 GDPR);
 - the right to rectification (Art. 16 GDPR);
-- the right to deletion (Art. 17 GDPR);
-- the right to restriction of processing (Art. 18 GDPR);
+- the right to deletion of your account data (Art. 17 GDPR);
 - a right to object to processing (Art. 21 GDPR).
 
 With regard to the right to access your data and the right to erasure, the restrictions
@@ -503,9 +504,10 @@ have the right to revoke your consent at any time with effect for the future (Ar
 (3) sentence 1 GDPR). However, the lawfulness of the processing carried out until the
 revocation is not affected by this.
 
-In addition, there is the right to complain to the data protection supervisory authority
-pursuant to Art. 77 GDPR in conjunction with Section 19 German Federal Data Protection
-Act since we are located in Germany.
+We process all data subject rights requests within 5 business days of receipt.
+
+In the event of a personal data breach, we will notify affected users directly within
+24 hours of becoming aware of the breach, regardless of the assessed risk level.
 
 In case of general questions or if you want to exercise your privacy rights, you must
 submit a written request by registered post to our data protection team at Trade

@@ -30,6 +30,65 @@ A gold standard is constructed by introducing deliberate deviations of known typ
 └── report/                # Report PDF and figures
 ```
 
+## Quick Start (Docker)
+
+The full pipeline — including the local LLM (Qwen3.5 9B via Ollama) and all Python dependencies — runs inside Docker containers. No manual installation required.
+
+### Prerequisites
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (macOS / Windows) **or** Docker Engine + Docker Compose plugin (Linux)
+- ~15 GB free disk space (model ~5.5 GB + image ~3 GB + runtime outputs)
+- 16 GB RAM recommended (8 GB minimum; CPU-only inference is slow — expect several hours for a full run)
+
+> Works on **macOS, Linux, and Windows** (WSL2). No GPU required, but see GPU section below for faster inference.
+
+### Run
+
+```bash
+git clone <repo-url>
+cd project
+docker compose up
+```
+
+On first run Docker will automatically:
+1. Build the Python image and install all dependencies
+2. Start Ollama and pull Qwen3.5:9b (~5.5 GB — cached in a Docker volume for subsequent runs)
+3. Download Legal-BERT embeddings (~400 MB — also cached)
+4. Execute the full pipeline across all 3 use cases
+
+Results are written to `data/` and `logs/` on your host machine so they can be inspected directly.
+
+### GPU acceleration (Linux / Windows with NVIDIA)
+
+Install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html), then:
+
+```bash
+docker compose -f docker-compose.yml -f docker-compose.gpu.yml up
+```
+
+This passes all available GPUs into the Ollama container, reducing inference time significantly.
+
+### Smoke test (~5 minutes)
+
+Verifies the full pipeline is wired up correctly on a tiny policy slice:
+
+```bash
+docker compose run --rm pipeline bash run_pipeline.sh --test
+```
+
+### Running locally (without Docker)
+
+Requires Python 3.11+, [Ollama](https://ollama.com) with `qwen3.5:9b` pulled, and:
+
+```bash
+pip install torch --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+bash run_pipeline.sh
+```
+
+---
+
 ## Pipeline
 
 1. **Preprocessing — GDPR:** Extract constraint sentences using signal words (*shall*, *should*, *must*) from the official EUR-Lex XHTML → `data/constraints/gdpr_constraints.json` (279 constraints).

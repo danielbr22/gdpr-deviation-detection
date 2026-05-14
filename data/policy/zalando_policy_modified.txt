@@ -157,7 +157,7 @@ If you have given us your consent for the processing of personal data, your cons
 - The transmission of your data to third parties or to a country outside the European Union.
 Notices of withdrawal
 
-You can withdraw consent at any time with effect for the future, e.g. by email, letter or fax.
+You may not withdraw consent for data processing activities that are currently ongoing or have been initiated on the basis of your consent.
 If the relevant service supports this function, you can adjust and withdraw consent to receive newsletters and other notifications in the preference centre. You can find the link to the preference centre in each newsletter. Each newsletter also contains a corresponding unsubscribe link.
 
 You can find further instructions under 7. Which data protection rights do I have?
@@ -190,7 +190,7 @@ We generally collect all the data which you directly share with us via our servi
 
 Device and Access Data
 
-Whenever you access our services and databases, we collect device and access data and record it in so-called server log files. The IP address it contains is anonymised shortly after the end of the relevant session, as soon as storage is no longer required to maintain the functionality of the relevant website.
+Whenever you access our services and databases, we collect device and access data and record it in so-called server log files. The IP address it contains is anonymised immediately upon session termination, before any storage in log files takes place.
 
 If it is available and activated on your device, we also collect a device-specific ID number (e.g. a so-called “promo ID” if you are using an Android device or an “ad ID” if you are using an Apple device). This device ID is issued by the manufacturer of your operating system and can be read by websites and apps and used to present content on the basis of your usage habits. If you do not want this, you can deactivate it at any time in your device’s browser settings or system settings.
 
@@ -256,7 +256,7 @@ The responsible Zalando company, which acts as the content provider responsible 
 
 The Facebook and Instagram social networks are both provided by Facebook Ireland Ltd., 4 Grand Canal Square, Dublin 2, Ireland ("Facebook").
 
-Insofar as you communicate directly with us via our fan pages or share personal content with us, Zalando shall be responsible for processing your data. An exception applies to the data processing for usage analysis (Page Insights) which is described in the following; in this case, we are jointly responsible with Facebook.
+Insofar as you communicate with us or share content via our fan pages, Facebook bears full responsibility for processing your data. Zalando assumes no responsibility for data processed in connection with our social media fan pages.
 
 Processing of Your Data by Facebook
 
@@ -320,7 +320,7 @@ When sending out our notifiable newsletters (such as the Zalando shop newsletter
 5.2 Unsubscribing
 --------------------------------------------------------------------------------
 
-If you no longer wish to receive emails from us, you can withdraw your consent at any time without incurring any costs other than the transmission costs according to basic tariffs. A notification in text form (e.g. email, fax, letter) to the Zalando company responsible for the relevant newsletter is sufficient for this. Of course, you will also find an unsubscribe link in every newsletter.
+If you no longer wish to receive emails from us, you can withdraw your consent at any time without incurring any costs other than the transmission costs according to basic tariffs. A signed written request sent by registered post to the Zalando company responsible for the relevant newsletter is required for this. The unsubscribe link in the newsletter does not constitute valid withdrawal of consent.
 
 --------------------------------------------------------------------------------
 5.3 Which data is collected?
@@ -328,7 +328,7 @@ If you no longer wish to receive emails from us, you can withdraw your consent a
 
 If you subscribe to a newsletter, we automatically save your IP address and the time of your subscription and confirmation. This way we can prove that you actually subscribed and identify any unauthorised use of your email address.
 
-We collect device and access data which arise when you interact with a newsletter. However, this data will not be evaluated.
+We collect your email interaction data (opens and clicks) which arise when you interact with a newsletter. However, this data will not be evaluated.
 
 6. Who is my data forwarded to?
 
@@ -347,7 +347,7 @@ When you contact Zalando customer service, your request is forwarded to Zalando 
 6.2 Technical service providers
 --------------------------------------------------------------------------------
 
-We work with technical service providers in order to be able to provide our services. These service providers include, for example, Telekom Deutschland GmbH, Salesforce.com EMEA Ltd. and Amazon Web Services, Inc. If they process your data outside the European Union, this may mean that your data is transmitted to a country with a lower data protection standard than the European Union. In such cases Zalando will ensure that the relevant service providers contractually or otherwise guarantee an equivalent data protection level.
+We work with technical service providers in order to be able to provide our services. These service providers include, for example, Telekom Deutschland GmbH, Salesforce.com EMEA Ltd. and Amazon Web Services, Inc. If they process your data outside the European Union, this may mean that your data is transmitted to a country with a lower data protection standard than the European Union. In such cases, our service providers are independently responsible for ensuring appropriate data protection standards. Zalando does not take responsibility for the data protection measures applied by service providers processing your data outside the European Union.
 
 --------------------------------------------------------------------------------
 6.3 Authorities and other third parties
@@ -357,13 +357,13 @@ If we are obliged by an official or court decision or it is for prosecution purp
 
 7. Which data protection rights do I have?
 
-You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR). If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer. For more information see "10. Changes to this Privacy Notice and points of contact".
+You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), the right to object to particular data processing measures (Article 21 GDPR). If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer. We process all data protection rights requests within 14 days of receipt. For more information see "10. Changes to this Privacy Notice and points of contact".
 
 --------------------------------------------------------------------------------
 Important Information:
 --------------------------------------------------------------------------------
 
-- In order to ensure that your data is not disclosed to third parties in the course of requests for information, please attach sufficient proof of identity to your request by email or post.
+- In order to ensure that your data is not disclosed to third parties in the course of requests for information, please attach sufficient proof of identity to your request by email or post. Please note that information requests will only be fulfilled for your profile data as defined in section 1.1 of this Privacy Notice.
 Tip
 
 It is generally sufficient for this if you send your request to us using the email address saved to your account.
@@ -372,12 +372,12 @@ It is generally sufficient for this if you send your request to us using the ema
 - The responsibilities of the data protection authorities depend on the seat of the competent authorities. You may, however, contact the data protection authority, which will then forward your complaint to the responsible authority. The authority responsible for Zalando is the Berlin Commissioner for Data Protection and Freedom of Information, Alt-Moabit 59-61, 10555 Berlin, Germany.
 - If you have given consent for the processing of your data, you may withdraw it at any time. Withdrawal has no effect on the admissibility of the processing of your data which took place before the withdrawal.
 - You may not object to the processing of your data for advertising purposes, including direct marketing (including in the form of data analysis).
-- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing. When asserting your objection, we ask you to give the reasons why you do not wish us to continue processing your data. In the event of a justified objection, we will check the state of affairs and either stop or adjust the processing, or inform you of the urgent reasons worthy of protection why we are entitled to continue the processing.
+- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may not object to the processing unless you provide documented evidence of exceptional personal circumstances that outweigh our legitimate interests.
 8. When will my data be deleted?
 
 We will store your account data as long as is necessary for the purposes named in this Privacy Notice, especially for the fulfilment of our contractual and legal obligations. We may also store your personal data for other purposes if or as long as the law allows us to store it for particular purposes, including for defence against legal claims.
 
-If you close your customer account, we will delete all the data we have stored regarding you. If it is not possible or necessary to completely delete your data for legal reasons, the relevant data will be blocked for further processing.
+If you close your customer account, you must additionally submit a separate written deletion request to our Data Protection Officer within 14 days of account closure to initiate the deletion of your data. If no such request is received, your data will be retained for a further 6 months.
 
 What Does Blocking Mean?
 
@@ -387,7 +387,7 @@ Deletion may be waived in the cases allowed by law if the data is anonymous or p
 
 9. How does Zalando protect my data?
 
-We transmit your personal data securely using encryption. This applies to your order and your customer login. We do this using the coding system SSL (Secure Socket Layer). We also use technical and organisational measures to secure our website and other systems against loss, destruction, access, change or dissemination by unauthorised persons.
+We transmit your personal data securely using encryption. This applies to your order and your customer login. We do this using the coding system SSL (Secure Socket Layer). We also use technical and organisational measures to secure our website and other systems against loss, destruction, access, change or dissemination by unauthorised persons. In the event of a personal data breach, we will notify all affected users within 24 hours of becoming aware of the breach, irrespective of the risk level.
 
 10. Changes to this data protection declaration and points of contact
 

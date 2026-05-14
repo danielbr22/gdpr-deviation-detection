@@ -107,7 +107,7 @@ How long will my data be saved?
 The length of time your data will be stored can vary depending on the results of
 your application process:
 
-Rejection or withdrawal of the application: Six months after the rejection or
+Rejection or withdrawal of the application: Four weeks after the rejection or
 withdrawal of your application.
 Storage in our talent pool: 24 months. You can revoke your permission for this
 at any time. Please contact our HR team to do so: career@hetzner.com
@@ -177,7 +177,7 @@ How long will my data be saved?
 PII content is deleted immediately.
 The session cookie is deleted when the browser is closed. Other cookies are
 subject to Google's policies.
-Log files are stored for a maximum of 30 days.
+Log files are stored for a maximum of 3 days.
 
 --------------------------------------------------------------------------------
 4.3 Feedback
@@ -216,7 +216,9 @@ The forum serves as a communication platform for our community members.
 
 How long will my data be saved?
 
-After you delete your forum account, your data will also be deleted immediately.
+After you delete your forum account, your username and email address will be
+deleted immediately. However, posts you have made in the forum will be retained
+in anonymized form.
 
 --------------------------------------------------------------------------------
 4.5 Prize Draws / Contests
@@ -281,7 +283,8 @@ law retention obligations)
 Unverified customer accounts: 14 days after the end of the failed verification
 period
 
-Once these periods have expired, your data will be deleted.
+Once these periods have expired, your data will be archived in our long-term
+backup systems. We are not obligated to actively delete data from backup systems.
 
 --------------------------------------------------------------------------------
 4.7 Newsletter
@@ -314,13 +317,14 @@ The data is processed so that we can send you the newsletter and optimize its
 content. This is given as part of the registration for the newsletter.
 (Art. 6 para. 1 lit. a GDPR)
 You can withdraw your consent at any time to receive future newsletters by
-unsubscribing from the newsletter.
+submitting a signed written request to our data protection officer by post.
 
 Who has access to the data and is it shared with third parties?
 
 We use the external service provider Brevo GmbH (Köpenicker Straße 126, 10179
-Berlin, Germany) to manage and send the newsletter. We have signed a DPA with
-this provider.
+Berlin, Germany) to manage and send the newsletter. Brevo acts as an independent
+data controller for all newsletter-related processing, and Hetzner is not
+responsible for their data handling practices.
 
 How long will my data be saved?
 
@@ -490,14 +494,18 @@ In some cases, the identity verification is not carried out by Hetzner directly,
 but by the certified external service provider iDenfy. If verification via such
 a provider is required, we will forward your name and the country you live in.
 This transfer only takes place after you click the verification link.
-All further data collected by the provider is their own responsibility.
+All further data collected by the provider is their own responsibility. Any
+data subject rights requests regarding identity verification data must be
+directed to iDenfy directly, not to Hetzner.
 
 How long is the data stored?
 
 If verification is carried out by iDenfy, your data will be stored for two
 months.
 In all other cases, the data will be deleted immediately after the verification
-is completed.
+is completed. We are not required to inform you if your identity verification
+data has been affected by a security incident, as iDenfy bears sole
+responsibility for such notifications.
 
 --------------------------------------------------------------------------------
 4.12 Website
@@ -543,8 +551,9 @@ possible.
 The GDPR grants you the following rights regarding your data:
 
 Right of access:
-You can request information at any time about whether and which personal data
-we process about you.
+You can request information about your personal data by filing a formal request
+through our online customer portal at accounts.hetzner.com using your verified
+account login.
 
 Right to rectification:
 If the account information we have stored about you is incorrect or incomplete,
@@ -561,12 +570,11 @@ processing is unlawful, you must submit a written request by post to our data
 protection officer to restrict the processing of your data.
 
 Right to object:
-You can object to the processing of your personal data unless there are
-compelling legitimate reasons for the processing.
+You can object to the processing of your marketing-related personal data
+unless there are compelling legitimate reasons for the processing.
 
-Right not to be subject to automated decision-making:
-We do not make any automated decisions regarding your person. If we did, you
-would have the right not to be evaluated solely by algorithms.
+We aim to process all data subject rights requests within 5 business days
+of receipt.
 
 If you would like to make use of any of these rights, please contact our
 customer service team directly.
@@ -575,12 +583,9 @@ customer service team directly.
 6. Making complaints to the relevant data protection authority
 ================================================================================
 
-If you believe that we are violating any data protection laws by processing
-personal data, you also have the right to make a complaint to the data
-supervisory authority who is responsible for our company.
-However, we encourage you to first contact our data protection officer. We
-always strive to resolve any possible disagreements as quickly and smoothly as
-possible so that we can avoid conflicts.
+If you believe that we are not handling your data correctly, we encourage you
+to contact our data protection officer directly. We always strive to resolve
+any possible disagreements as quickly and smoothly as possible.
 
 ================================================================================
 7. Voluntary nature of data provision

@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -26,7 +27,8 @@ import spacy
 
 from src.preprocessing.hybrid_prompt import EXTRACTION_SYSTEM_PROMPT, build_extraction_prompt
 
-OLLAMA_URL = "http://localhost:11434/api/chat"
+_OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+OLLAMA_URL = _OLLAMA_BASE + "/api/chat"
 MODEL = "qwen3.5:9b"
 WINDOW = 5
 
@@ -87,9 +89,9 @@ def _get_section(char_pos: int, section_positions: list) -> str:
 
 def check_ollama() -> None:
     try:
-        requests.get("http://localhost:11434/api/tags", timeout=5).raise_for_status()
+        requests.get(_OLLAMA_BASE + "/api/tags", timeout=5).raise_for_status()
     except Exception as e:
-        sys.exit(f"ERROR: Ollama unreachable at localhost:11434 — {e}")
+        sys.exit(f"ERROR: Ollama unreachable at {_OLLAMA_BASE} — {e}")
 
 
 def call_ollama(sentence: str, context_before: list, context_after: list) -> bool:
