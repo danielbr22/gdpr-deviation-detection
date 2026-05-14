@@ -48,31 +48,31 @@
       "type_metrics": {
         "constraint_coverage": {
           "tp": 1,
-          "fp": 33,
+          "fp": 34,
           "fn": 0,
           "precision": 0.029,
           "recall": 1.0,
-          "f1": 0.057
+          "f1": 0.056
         },
         "execution_style": {
           "tp": 1,
-          "fp": 18,
+          "fp": 16,
           "fn": 0,
-          "precision": 0.053,
+          "precision": 0.059,
           "recall": 1.0,
-          "f1": 0.1
+          "f1": 0.111
         },
         "negation": {
           "tp": 1,
-          "fp": 12,
+          "fp": 14,
           "fn": 0,
-          "precision": 0.077,
+          "precision": 0.067,
           "recall": 1.0,
-          "f1": 0.143
+          "f1": 0.125
         },
         "responsibility": {
           "tp": 0,
-          "fp": 1,
+          "fp": 0,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
@@ -80,7 +80,7 @@
         },
         "data": {
           "tp": 0,
-          "fp": 5,
+          "fp": 4,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
@@ -89,11 +89,11 @@
       },
       "overall": {
         "tp": 3,
-        "fp": 69,
+        "fp": 68,
         "fn": 2,
         "precision": 0.042,
         "recall": 0.6,
-        "f1": 0.078
+        "f1": 0.079
       }
     },
     {
@@ -139,21 +139,21 @@
             5,
             17
           ],
-          "detected": false
+          "detected": true
         }
       ],
       "type_metrics": {
         "constraint_coverage": {
           "tp": 1,
-          "fp": 33,
+          "fp": 34,
           "fn": 0,
           "precision": 0.029,
           "recall": 1.0,
-          "f1": 0.057
+          "f1": 0.056
         },
         "execution_style": {
           "tp": 0,
-          "fp": 15,
+          "fp": 14,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
@@ -161,7 +161,7 @@
         },
         "negation": {
           "tp": 0,
-          "fp": 13,
+          "fp": 9,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
@@ -169,28 +169,28 @@
         },
         "responsibility": {
           "tp": 0,
-          "fp": 4,
+          "fp": 1,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "data": {
-          "tp": 0,
+          "tp": 1,
           "fp": 5,
-          "fn": 1,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "fn": 0,
+          "precision": 0.167,
+          "recall": 1.0,
+          "f1": 0.286
         }
       },
       "overall": {
-        "tp": 1,
-        "fp": 70,
-        "fn": 4,
-        "precision": 0.014,
-        "recall": 0.2,
-        "f1": 0.026
+        "tp": 2,
+        "fp": 63,
+        "fn": 3,
+        "precision": 0.031,
+        "recall": 0.4,
+        "f1": 0.057
       }
     },
     {
@@ -228,7 +228,7 @@
             38,
             39
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "tr_dev_005",
@@ -250,7 +250,7 @@
         },
         "execution_style": {
           "tp": 0,
-          "fp": 10,
+          "fp": 9,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
@@ -258,19 +258,19 @@
         },
         "negation": {
           "tp": 0,
-          "fp": 18,
+          "fp": 17,
           "fn": 1,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "responsibility": {
-          "tp": 1,
+          "tp": 0,
           "fp": 0,
-          "fn": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0
+          "fn": 1,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         },
         "data": {
           "tp": 1,
@@ -282,12 +282,12 @@
         }
       },
       "overall": {
-        "tp": 3,
-        "fp": 69,
-        "fn": 2,
-        "precision": 0.042,
-        "recall": 0.6,
-        "f1": 0.078
+        "tp": 2,
+        "fp": 67,
+        "fn": 3,
+        "precision": 0.029,
+        "recall": 0.4,
+        "f1": 0.054
       }
     }
   ],
@@ -295,52 +295,52 @@
     "type_metrics": {
       "constraint_coverage": {
         "tp": 3,
-        "fp": 100,
+        "fp": 102,
         "fn": 0,
         "precision": 0.029,
         "recall": 1.0,
-        "f1": 0.057
+        "f1": 0.056
       },
       "execution_style": {
         "tp": 1,
-        "fp": 43,
+        "fp": 39,
         "fn": 2,
-        "precision": 0.023,
+        "precision": 0.025,
         "recall": 0.333,
-        "f1": 0.043
+        "f1": 0.047
       },
       "negation": {
         "tp": 1,
-        "fp": 43,
+        "fp": 40,
         "fn": 2,
-        "precision": 0.023,
+        "precision": 0.024,
         "recall": 0.333,
-        "f1": 0.043
+        "f1": 0.045
       },
       "responsibility": {
-        "tp": 1,
-        "fp": 5,
-        "fn": 2,
-        "precision": 0.167,
-        "recall": 0.333,
-        "f1": 0.222
+        "tp": 0,
+        "fp": 1,
+        "fn": 3,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
       },
       "data": {
-        "tp": 1,
-        "fp": 17,
-        "fn": 2,
-        "precision": 0.056,
-        "recall": 0.333,
-        "f1": 0.095
+        "tp": 2,
+        "fp": 16,
+        "fn": 1,
+        "precision": 0.111,
+        "recall": 0.667,
+        "f1": 0.19
       }
     },
     "overall": {
       "tp": 7,
-      "fp": 208,
+      "fp": 198,
       "fn": 8,
-      "precision": 0.033,
+      "precision": 0.034,
       "recall": 0.467,
-      "f1": 0.061
+      "f1": 0.064
     }
   }
 }

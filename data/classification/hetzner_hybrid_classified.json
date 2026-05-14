@@ -3,14 +3,24 @@
   "model": "qwen3.5:9b",
   "pairs": [
     {
+      "gdpr_id": "gdpr_001",
+      "policy_id": "pol_057",
+      "gdpr_article": 5,
+      "gdpr_text": "Personal data shall be: processed lawfully, fairly and in a transparent manner in relation to the data subject (\u2018lawfulness, fairness and transparency\u2019);",
+      "policy_text": "f GDPR)\n- to securely and reliably provide and maintain our Mastodon instance\n  (Art. 6 para.",
+      "similarity": 0.8611,
+      "deviation_type": "none",
+      "reasoning": "The policy sentence does not address the specific GDPR constraint regarding lawfulness, fairness, and transparency, resulting in no valid classification based on the provided RCASR deviation taxonomy for this particular constraint."
+    },
+    {
       "gdpr_id": "gdpr_002",
-      "policy_id": "pol_075",
+      "policy_id": "pol_042",
       "gdpr_article": 5,
       "gdpr_text": "Personal data shall be: collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes (\u2018purpose limitation\u2019);",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.9044,
+      "policy_text": "How long will my data be saved?\n\nAfter a customer account is deactivated, the following retention periods apply:\n\nWithout product usage: 3 years\nWith product usage (invoicing): 14 years (in accordance with tax and commercial\nlaw retention obligations)\nUnverified customer accounts: 14 days after the end of the failed verification\nperiod\n\nOnce these periods have expired, your data will be deleted.",
+      "similarity": 0.883,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly aligns with the GDPR purpose limitation principle by prohibiting erasure solely because the original purpose is no longer needed, ensuring data is not further processed or discarded in an incompatible manner."
+      "reasoning": "The company policy defines specific retention periods after which data is deleted, ensuring that personal data is not kept longer than necessary and aligns with the purpose limitation principle by preventing incompatible further processing."
     },
     {
       "gdpr_id": "gdpr_004",
@@ -20,7 +30,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8809,
       "deviation_type": "execution_style",
-      "reasoning": "The policy sentence correctly identifies the need to address inaccurate data but incorrectly prescribes restricting processing as the procedure instead of requiring the immediate erasure or rectification mandated by the accuracy principle."
+      "reasoning": "The policy restricts the procedure for handling inaccurate data disputes to requesting a restriction of processing, whereas the GDPR requires the immediate erasure or rectification of inaccurate data."
     },
     {
       "gdpr_id": "gdpr_005",
@@ -30,17 +40,37 @@
       "policy_text": "How long will my data be saved?\n\nAfter a customer account is deactivated, the following retention periods apply:\n\nWithout product usage: 3 years\nWith product usage (invoicing): 14 years (in accordance with tax and commercial\nlaw retention obligations)\nUnverified customer accounts: 14 days after the end of the failed verification\nperiod\n\nOnce these periods have expired, your data will be deleted.",
       "similarity": 0.8779,
       "deviation_type": "none",
-      "reasoning": "The company policy explicitly defines specific retention periods for deleted accounts (3 years, 14 years, 14 days) and mandates deletion after these periods, thereby adhering to the GDPR's storage limitation principle."
+      "reasoning": "The policy sentence complies with the GDPR storage limitation principle by defining specific retention periods for different account states and committing to data deletion once those periods expire."
     },
     {
       "gdpr_id": "gdpr_006",
-      "policy_id": "pol_021",
+      "policy_id": "pol_012",
       "gdpr_article": 5,
       "gdpr_text": "Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (\u2018integrity and confidentiality\u2019).",
-      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.883,
+      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
+      "similarity": 0.891,
       "deviation_type": "none",
-      "reasoning": "The policy statement aligns with the GDPR constraint by implementing an appropriate technical measure to ensure data security and integrity."
+      "reasoning": "The company policy sentence describes signing a Data Processing Agreement (DPA), which is a recognized legal and organizational measure to ensure the security and integrity of personal data when transferred to a processor, thereby complying with the GDPR constraint on appropriate technical or organisational measures."
+    },
+    {
+      "gdpr_id": "gdpr_008",
+      "policy_id": "pol_012",
+      "gdpr_article": 6,
+      "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: the data subject has given consent to the processing of his or her personal data for one or more specific purposes;",
+      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
+      "similarity": 0.8682,
+      "deviation_type": "none",
+      "reasoning": "The policy sentence describes a lawful basis via contract (DPA) which satisfies the GDPR constraint by referencing 'compliance with applicable data protection regulations' and ensuring processing follows the controller's instructions, thus adequately addressing the constraint through a valid legal ground other than consent."
+    },
+    {
+      "gdpr_id": "gdpr_009",
+      "policy_id": "pol_016",
+      "gdpr_article": 6,
+      "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;",
+      "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
+      "similarity": 0.8777,
+      "deviation_type": "negation",
+      "reasoning": "The company policy defines a specific six-month retention period regardless of contract necessity, which directly contradicts the GDPR constraint stating processing must be necessary for performance of a contract or pre-contractual steps."
     },
     {
       "gdpr_id": "gdpr_010",
@@ -50,7 +80,7 @@
       "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
       "similarity": 0.8569,
       "deviation_type": "none",
-      "reasoning": "The policy sentence explicitly aligns with the GDPR constraint by acknowledging that certain processing is necessary to comply with legal obligations, thus justifying the retention of data rather than deletion."
+      "reasoning": "The policy correctly acknowledges the GDPR constraint by confirming that legal retention obligations are a valid exception preventing immediate deletion."
     },
     {
       "gdpr_id": "gdpr_012",
@@ -60,7 +90,17 @@
       "policy_text": "b GDPR)\nInclusion in our talent pool: Storage of your documents for future positions in\nthe company on the basis of your voluntary consent (Art. 6 para.",
       "similarity": 0.8547,
       "deviation_type": "none",
-      "reasoning": "The company policy relies on voluntary consent under Article 6(1)(a), which is a valid lawful basis for processing that does not contradict the necessity condition in the provided Art. 6(1)(e) clause."
+      "reasoning": "The company policy relies on voluntary consent under Art. 6 para. 1(a) as a distinct and valid legal basis for processing, which does not contradict the Art. 6 constraint that requires at least one lawful basis (such as consent or official authority) to apply."
+    },
+    {
+      "gdpr_id": "gdpr_014",
+      "policy_id": "pol_056",
+      "gdpr_article": 6,
+      "gdpr_text": "Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+      "policy_text": "We process your data:\n- as part of our public communications (Art. 6 para.",
+      "similarity": 0.8795,
+      "deviation_type": "none",
+      "reasoning": "The policy sentence references Article 6 para. (f) which corresponds to the legitimate interest basis mentioned in the GDPR constraint, and the context of public communications by a public authority is consistent with the exception stated in the constraint."
     },
     {
       "gdpr_id": "gdpr_015",
@@ -70,17 +110,7 @@
       "policy_text": "f GDPR)\n- to securely and reliably provide and maintain our Mastodon instance\n  (Art. 6 para.",
       "similarity": 0.861,
       "deviation_type": "none",
-      "reasoning": "The company policy references Art. 6 to justify processing data for maintaining the Mastodon instance, thereby acknowledging the need for a lawful basis as required by the GDPR constraint."
-    },
-    {
-      "gdpr_id": "gdpr_017",
-      "policy_id": "pol_075",
-      "gdpr_article": 6,
-      "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.8853,
-      "deviation_type": "negation",
-      "reasoning": "The policy sentence directly negates the GDPR constraint by stating that the right to erasure cannot be granted solely when data is no longer needed, whereas the cited GDPR text explicitly requires that the purpose of processing (including retention) must be determined and aligned with the lawful basis."
+      "reasoning": "The company policy fragment references Article 6, which aligns with the GDPR constraint requiring a legal basis for processing, indicating the policy is intended to address this requirement without contradiction or procedural error."
     },
     {
       "gdpr_id": "gdpr_018",
@@ -90,7 +120,7 @@
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8902,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly aligns with GDPR Article 6 by stipulating that data should not be deleted solely because it is no longer needed for the original purpose if the further processing remains compatible based on the link between purposes, thus avoiding the requirement to seek consent or legal basis for the new purpose immediately."
+      "reasoning": "The policy sentence correctly aligns with the GDPR constraint by requiring that data not be deleted solely because it is no longer needed for the original purpose, thereby ensuring compatibility assessments consider the link between initial and further purposes as required."
     },
     {
       "gdpr_id": "gdpr_019",
@@ -99,18 +129,8 @@
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the context in which the personal data have been collected, in particular regarding the relationship between data subjects and the controller;",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8863,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence correctly establishes that data should not be deleted solely because it is no longer needed for the original purpose, which aligns with the GDPR constraint requiring compatibility assessments before changing processing purposes or erasing data."
-    },
-    {
-      "gdpr_id": "gdpr_020",
-      "policy_id": "pol_075",
-      "gdpr_article": 6,
-      "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the nature of the personal data, in particular whether special categories of personal data are processed, pursuant to Article 9, or whether personal data related to criminal convictions and offences are processed, pursuant to Article 10;",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.8931,
-      "deviation_type": "none",
-      "reasoning": "The company policy correctly reflects the GDPR requirement that data cannot be deleted simply because the original purpose has ended, provided the processing remains compatible or is based on other lawful bases like consent or legitimate interest."
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence directly contradicts the GDPR constraint by prohibiting the retention of data simply because it is no longer needed for the original purpose, whereas the GDPR constraint outlines a multi-factor compatibility test that could lead to legitimate processing for new purposes without requiring deletion."
     },
     {
       "gdpr_id": "gdpr_021",
@@ -119,18 +139,8 @@
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the possible consequences of the intended further processing for data subjects;",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8949,
-      "deviation_type": "none",
-      "reasoning": "The company policy reinforces the GDPR requirement by explicitly preventing data deletion requests based solely on the original purpose being obsolete, thereby ensuring that further processing compatibility (such as lawful reasons for retention) is properly considered rather than immediately erasing the data."
-    },
-    {
-      "gdpr_id": "gdpr_024",
-      "policy_id": "pol_005",
-      "gdpr_article": 7,
-      "gdpr_text": "If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.",
-      "policy_text": "b GDPR)\nInclusion in our talent pool: Storage of your documents for future positions in\nthe company on the basis of your voluntary consent (Art. 6 para.",
-      "similarity": 0.8985,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence references voluntary consent for a specific purpose without contradicting the GDPR requirement for clear and distinguishable consent presentation."
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence explicitly forbids data deletion when data is no longer required for its original purpose, which directly contradicts the GDPR requirement to allow new legitimate purposes for processing or to respect the purpose limitation principle by ensuring compatibility before retaining data for new purposes."
     },
     {
       "gdpr_id": "gdpr_025",
@@ -139,8 +149,18 @@
       "gdpr_text": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.",
       "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
       "similarity": 0.9035,
+      "deviation_type": "execution_style",
+      "reasoning": "While the company policy correctly respects the right to withdraw, it fails to ensure the withdrawal process is 'as easy to give consent' as required by the constraint, and instead focuses on a specific data retention period following withdrawal."
+    },
+    {
+      "gdpr_id": "gdpr_026",
+      "policy_id": "pol_076",
+      "gdpr_article": 7,
+      "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
+      "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
+      "similarity": 0.8765,
       "deviation_type": "negation",
-      "reasoning": "The company policy fails to address the data subject's right to withdraw consent and instead implies a fixed retention period that may conflict with the obligation to easily withdraw consent without affecting prior processing lawfulness."
+      "reasoning": "The company policy contradicts the GDPR constraint by stating that data may be retained despite the requirement that consent cannot be conditioned on unnecessary processing or performance of a contract."
     },
     {
       "gdpr_id": "gdpr_027",
@@ -150,7 +170,7 @@
       "policy_text": "b GDPR)\nInclusion in our talent pool: Storage of your documents for future positions in\nthe company on the basis of your voluntary consent (Art. 6 para.",
       "similarity": 0.8819,
       "deviation_type": "negation",
-      "reasoning": "The policy sentence fails to recognize the specific age threshold of 16 and the requirement for parental consent for children under that age, effectively applying general consent rules that may not be lawful for minors under GDPR Article 8."
+      "reasoning": "The company policy permits the storage of personal data based solely on voluntary consent without adhering to the GDPR requirement that processing for information society services offered directly to a child is lawful only if the child is at least 16 or if parental consent is obtained."
     },
     {
       "gdpr_id": "gdpr_028",
@@ -160,7 +180,7 @@
       "policy_text": "If verification is carried out by iDenfy, your data will be stored for two\nmonths.",
       "similarity": 0.8865,
       "deviation_type": "execution_style",
-      "reasoning": "The policy specifies a particular technical implementation and data retention period for verification but fails to address the GDPR requirement that the controller must make reasonable efforts to verify consent, thus focusing on a specific method rather than the broader obligation to verify."
+      "reasoning": "The policy specifies the storage duration (two months) for iDenfy data but fails to describe the necessary verification procedure or effort regarding parental consent as required by the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_030",
@@ -169,8 +189,8 @@
       "gdpr_text": "Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited.",
       "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
       "similarity": 0.8538,
-      "deviation_type": "data",
-      "reasoning": "The policy sentence incorrectly permits the processing of special categories of data under the guise of protecting legal rights, whereas the GDPR constraint explicitly prohibits such processing for any purpose."
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence contradicts the GDPR constraint by stating that the processing of special category data is allowed under the guise of protecting legal rights, whereas the regulation explicitly prohibits such processing without specific conditions."
     },
     {
       "gdpr_id": "gdpr_032",
@@ -180,17 +200,17 @@
       "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
       "similarity": 0.8774,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly aligns with the GDPR exception for processing special category data when necessary to protect the legal rights of the data subject or controller within an employment context, provided appropriate safeguards are implied."
+      "reasoning": "The company policy sentence correctly identifies a legitimate interest for processing special category data (protecting legal rights) that aligns with the GDPR constraint regarding employment and social law obligations, without deviating on responsibility, procedure, or data scope."
     },
     {
       "gdpr_id": "gdpr_035",
-      "policy_id": "pol_084",
+      "policy_id": "pol_075",
       "gdpr_article": 9,
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing relates to personal data which are manifestly made public by the data subject;",
-      "policy_text": "7. Voluntary nature of data provision\n\nThere is no statutory obligation for you to provide your data to Hetzner Online\nGmbH.",
-      "similarity": 0.8952,
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.9082,
       "deviation_type": "none",
-      "reasoning": "The policy statement regarding the voluntary nature of data provision does not contradict the GDPR clause about manifestly public data, as both concern the scope of processing obligations without creating a deviation."
+      "reasoning": "The company policy correctly identifies a specific limitation to the right to erasure that aligns with the GDPR condition regarding data no longer required for its original purpose, without directly negating or contradicting the regulation."
     },
     {
       "gdpr_id": "gdpr_036",
@@ -199,8 +219,8 @@
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the establishment, exercise or defence of legal claims or whenever courts are acting in their judicial capacity;",
       "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
       "similarity": 0.8853,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by acknowledging legal retention obligations that allow for processing beyond standard deletion periods."
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence negates the GDPR constraint by allowing data retention in cases where courts are acting in their judicial capacity, which the regulation explicitly exempts from the general prohibition on processing special categories of data."
     },
     {
       "gdpr_id": "gdpr_037",
@@ -209,28 +229,8 @@
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of substantial public interest, on the basis of Union or Member State law which shall be proportionate to the aim pursued, respect the essence of the right to data protection and provide for suitable and specific measures to safeguard the fundamental rights and the interests of the data subject;",
       "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
       "similarity": 0.8756,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence affirms the processing of special category data to protect legal rights, which aligns with the GDPR exception for substantial public interest or legal obligations, thereby adequately addressing the constraint without deviation."
-    },
-    {
-      "gdpr_id": "gdpr_039",
-      "policy_id": "pol_004",
-      "gdpr_article": 9,
-      "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of public interest in the area of public health, such as protecting against serious cross-border threats to health or ensuring high standards of quality and safety of health care and of medicinal products or medical devices, on the basis of Union or Member State law which provides for suitable and specific measures to safeguard the rights and freedoms of the data subject, in particular professional secrecy;",
-      "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
-      "similarity": 0.8836,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by authorizing the processing of special category data for the public interest purpose of protecting legal rights, which falls within the permitted exceptions for public health or safety."
-    },
-    {
-      "gdpr_id": "gdpr_041",
-      "policy_id": "pol_004",
-      "gdpr_article": 10,
-      "gdpr_text": "Processing of personal data relating to criminal convictions and offences or related security measures based on Article 6(1) shall be carried out only under the control of official authority or when the processing is authorised by Union or Member State law providing for appropriate safeguards for the rights and freedoms of data subjects. Any comprehensive register of criminal convictions shall be kept only under the control of official authority.",
-      "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
-      "similarity": 0.9053,
       "deviation_type": "negation",
-      "reasoning": "The company policy broadly permits the processing of special categories of personal data to protect legal rights, which directly contradicts the GDPR constraint that strictly limits such processing related to criminal convictions to official authority control or specific law authorization."
+      "reasoning": "The policy sentence broadly claims that processing special category data is done to protect legal rights, which contradicts the GDPR constraint that such processing is only permitted under strict conditions of substantial public interest established by Union or Member State law."
     },
     {
       "gdpr_id": "gdpr_047",
@@ -240,7 +240,7 @@
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.9055,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly supports the GDPR requirement by informing the data subject of their right to lodge a complaint with a supervisory authority."
+      "reasoning": "The policy sentence correctly acknowledges the data subject's right to lodge a complaint with a supervisory authority, which is explicitly required by the GDPR constraint when a controller does not take action on a request."
     },
     {
       "gdpr_id": "gdpr_054",
@@ -249,8 +249,8 @@
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the contact details of the data protection officer, where applicable;",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8815,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy sentence prescribes sending a written request by post rather than providing the required contact details at the time of data collection, differing from the intended procedure for information provision."
+      "deviation_type": "none",
+      "reasoning": "The policy sentence correctly identifies the Data Protection Officer as the responsible party for handling data subject requests, aligning with the GDPR constraint that requires providing the DPO's contact details for such matters."
     },
     {
       "gdpr_id": "gdpr_058",
@@ -259,8 +259,8 @@
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: where applicable, the fact that the controller intends to transfer personal data to a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available.",
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.8976,
-      "deviation_type": "negation",
-      "reasoning": "The company policy focuses on contractual safeguards via a DPA but fails to address the specific GDPR Art. 13 obligation to provide the data subject with information regarding international transfers and adequacy decisions at the time of data collection."
+      "deviation_type": "data",
+      "reasoning": "The policy sentence discusses contractual safeguards with a provider but fails to address the Art. 13 requirement to inform data subjects about international transfers and the existence of adequacy decisions at the time data is obtained."
     },
     {
       "gdpr_id": "gdpr_059",
@@ -270,27 +270,17 @@
       "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
       "similarity": 0.891,
       "deviation_type": "data",
-      "reasoning": "The policy correctly identifies the responsible party and the task but fails to specify that the storage period criteria must also apply to other processing contexts beyond just rejected or withdrawn applications, thereby restricting the data scope of the constraint."
+      "reasoning": "The policy defines the storage period based on application outcome criteria, which aligns with the GDPR's allowance for determining retention periods when a fixed duration is not possible, thus not constituting a data scope deviation but rather a specific implementation of the allowed criteria."
     },
     {
       "gdpr_id": "gdpr_060",
-      "policy_id": "pol_078",
+      "policy_id": "pol_073",
       "gdpr_article": 13,
       "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability;",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8983,
+      "policy_text": "The GDPR grants you the following rights regarding your data:\n\nRight of access:\nYou can request information at any time about whether and which personal data\nwe process about you.",
+      "similarity": 0.887,
       "deviation_type": "none",
-      "reasoning": "The policy sentence appropriately fulfills the GDPR requirement by instructing data subjects on how to exercise their rights, including the right to request restriction of processing."
-    },
-    {
-      "gdpr_id": "gdpr_061",
-      "policy_id": "pol_075",
-      "gdpr_article": 13,
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.9126,
-      "deviation_type": "negation",
-      "reasoning": "The policy explicitly restricts the right to erasure by stating that data cannot be deleted solely because it is no longer needed, which directly contradicts the GDPR requirement to inform data subjects of their right to withdraw consent at any time, a right that implies the ability to demand cessation of processing and subsequent erasure based on consent withdrawal."
+      "reasoning": "The company policy correctly addresses the GDPR requirement by informing data subjects of their right to access personal data at the time of collection."
     },
     {
       "gdpr_id": "gdpr_062",
@@ -300,7 +290,7 @@
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.894,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly fulfills the GDPR requirement to inform data subjects about their right to lodge a complaint with a supervisory authority."
+      "reasoning": "The company policy sentence aligns with the GDPR constraint by explicitly informing data subjects of their right to lodge a complaint with the relevant supervisory authority."
     },
     {
       "gdpr_id": "gdpr_063",
@@ -310,7 +300,17 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9054,
       "deviation_type": "none",
-      "reasoning": "The policy sentence focuses on contractual safeguards with a provider and does not address the GDPR requirement for informing data subjects about statutory/contractual obligations at the time of data collection, which constitutes a deviation in execution_style as it fails to provide the required transparency information to the data subject."
+      "reasoning": "The company policy sentence does not directly address the specific GDPR requirement to inform data subjects about the legal basis for providing personal data (statutory, contractual, or necessity), but it is not a contradiction or deviation regarding the data itself, responsibility, or execution style of a covered task, thus falling under 'none' as it is a distinct policy statement rather than a misalignment on the specific constraint."
+    },
+    {
+      "gdpr_id": "gdpr_065",
+      "policy_id": "pol_016",
+      "gdpr_article": 13,
+      "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
+      "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
+      "similarity": 0.8827,
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence specifies data retention periods after rejection or withdrawal but fails to provide the mandatory prior information about other purposes required for further processing under GDPR Article 13, effectively contradicting the constraint's procedural requirement."
     },
     {
       "gdpr_id": "gdpr_068",
@@ -320,7 +320,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8845,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly designates the data protection officer as the contact point for handling specific requests regarding data accuracy and lawfulness, which aligns with the GDPR requirement to provide the DPO's contact details when data is not obtained directly from the data subject."
+      "reasoning": "The company policy correctly identifies the data protection officer as the contact point for data subject rights, aligning with the GDPR requirement to provide such contact details when data is not obtained from the subject."
     },
     {
       "gdpr_id": "gdpr_071",
@@ -329,8 +329,18 @@
       "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the recipients or categories of recipients of the personal data, if any;",
       "policy_text": "In this context,\npersonal data may be shared with third parties.",
       "similarity": 0.8865,
+      "deviation_type": "none",
+      "reasoning": "The policy sentence does not contradict the GDPR requirement to inform data subjects about third-party recipients and can be considered compliant as sharing does not inherently violate the obligation to disclose such information."
+    },
+    {
+      "gdpr_id": "gdpr_072",
+      "policy_id": "pol_012",
+      "gdpr_article": 14,
+      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
+      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
+      "similarity": 0.8969,
       "deviation_type": "negation",
-      "reasoning": "The company policy sentence suggests an open possibility for sharing data without addressing the specific GDPR requirement to inform data subjects about recipients or categories when data was not obtained from them, effectively failing to comply rather than directly contradicting, but in the context of strict adherence, the lack of mandated disclosure procedure regarding recipients constitutes a failure that can be categorized as a negation of the obligation to inform."
+      "reasoning": "The company policy focuses on executing data transfers via a DPA under GDPR Chapter VI (Adequacy or safeguards) but completely omits the GDPR Art. 14 obligation to inform the data subject about the intention to transfer data to a third country, effectively negating the constraint's requirement to provide that specific information."
     },
     {
       "gdpr_id": "gdpr_073",
@@ -340,17 +350,7 @@
       "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
       "similarity": 0.8883,
       "deviation_type": "none",
-      "reasoning": "The policy sentence specifies a concrete storage duration based on application outcomes, thereby satisfying the GDPR requirement to inform the data subject about the period for which personal data will be stored."
-    },
-    {
-      "gdpr_id": "gdpr_074",
-      "policy_id": "pol_079",
-      "gdpr_article": 14,
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
-      "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
-      "similarity": 0.8957,
-      "deviation_type": "negation",
-      "reasoning": "The policy sentence grants a general right to object without mentioning the specific requirement under GDPR Article 14 to inform the data subject about the legitimate interests pursued when processing is based on point (f) of Article 6(1)."
+      "reasoning": "The policy sentence adequately addresses the GDPR constraint by specifying the storage period criteria based on application outcomes."
     },
     {
       "gdpr_id": "gdpr_075",
@@ -360,17 +360,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.892,
       "deviation_type": "execution_style",
-      "reasoning": "The policy restricts the procedure for requesting data restrictions to written post submissions, which contradicts the GDPR requirement to provide the right to request erasure or restriction and does not specify that such requests must be handled only via postal mail, potentially creating an unnecessary barrier to exercising these rights."
-    },
-    {
-      "gdpr_id": "gdpr_076",
-      "policy_id": "pol_016",
-      "gdpr_article": 14,
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
-      "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
-      "similarity": 0.8992,
-      "deviation_type": "negation",
-      "reasoning": "The policy sentence establishes a fixed six-month retention period for rejected or withdrawn applications, which directly negates the GDPR requirement to explicitly inform data subjects that they have the right to withdraw consent at any time without affecting the prior lawfulness of processing."
+      "reasoning": "The policy correctly identifies the same responsibility and data scope regarding the right to restriction but deviates in execution by mandating that requests be submitted specifically 'by post' rather than allowing the broader range of communication channels implied by the GDPR's requirement for fair and transparent processing."
     },
     {
       "gdpr_id": "gdpr_077",
@@ -380,17 +370,17 @@
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.898,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly informs data subjects of their right to lodge a complaint with a supervisory authority, thereby fully addressing the GDPR constraint without any deviation."
+      "reasoning": "The company policy correctly acknowledges and facilitates the data subject's right to lodge a complaint with the supervisory authority as required by GDPR Article 14."
     },
     {
-      "gdpr_id": "gdpr_090",
-      "policy_id": "pol_012",
-      "gdpr_article": 15,
-      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
-      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
-      "similarity": 0.8909,
-      "deviation_type": "none",
-      "reasoning": "The company policy acknowledges the need for legal compliance regarding third-party processing, which supports the GDPR requirement to inform the data subject about recipients, without directly contradicting the specific disclosure obligation."
+      "gdpr_id": "gdpr_084",
+      "policy_id": "pol_075",
+      "gdpr_article": 14,
+      "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: the data subject already has the information;",
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.8827,
+      "deviation_type": "execution_style",
+      "reasoning": "The policy correctly implements the GDPR constraint by defining the procedure for handling erasure requests, ensuring that data is not deleted solely because the original purpose is fulfilled, which aligns with the exception in Article 14 when the data subject already has the information or is informed of the purpose."
     },
     {
       "gdpr_id": "gdpr_091",
@@ -400,17 +390,7 @@
       "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
       "similarity": 0.8748,
       "deviation_type": "data",
-      "reasoning": "The policy restricts access to retention period information to cases of rejected or withdrawn applications, whereas the GDPR constraint requires providing this information as a general right for any data subject."
-    },
-    {
-      "gdpr_id": "gdpr_092",
-      "policy_id": "pol_078",
-      "gdpr_article": 15,
-      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing;",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8958,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy correctly identifies the same responsibility and data scope as the GDPR constraint but prescribes an incorrect execution style by restricting processing to written requests by post, whereas the GDPR allows for electronic means and broader contexts for exercising rights."
+      "reasoning": "The policy defines the storage period based on application outcome, whereas the GDPR constraint requires providing the envisaged period or criteria for storage upon request, potentially failing to address the 'where possible' requirement to specify the storage duration directly."
     },
     {
       "gdpr_id": "gdpr_093",
@@ -420,27 +400,7 @@
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.9151,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly affirms the data subject's right to lodge a complaint with a supervisory authority as mandated by the GDPR constraint without introducing any deviations in responsibility, execution style, or data scope."
-    },
-    {
-      "gdpr_id": "gdpr_098",
-      "policy_id": "pol_059",
-      "gdpr_article": 15,
-      "gdpr_text": "The right to obtain a copy referred to in paragraph 3 shall not adversely affect the rights and freedoms of others.",
-      "policy_text": "In this context,\npersonal data may be shared with third parties.",
-      "similarity": 0.8905,
-      "deviation_type": "responsibility",
-      "reasoning": "The policy implies sharing data with third parties without addressing the critical GDPR requirement that this must not adversely affect the rights and freedoms of other individuals, effectively shifting the responsibility to balance conflicting rights incorrectly."
-    },
-    {
-      "gdpr_id": "gdpr_099",
-      "policy_id": "pol_078",
-      "gdpr_article": 16,
-      "gdpr_text": "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her. Taking into account the purposes of the processing, the data subject shall have the right to have incomplete personal data completed, including by means of providing a supplementary statement.",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.9052,
-      "deviation_type": "execution_style",
-      "reasoning": "While the policy correctly identifies the data subject's right to contest data accuracy, it restricts the execution of this right to submitting a request by post for restriction rather than directing the request towards the mandatory rectification of inaccurate data."
+      "reasoning": "The company policy correctly affirms the data subject's right to lodge a complaint with a supervisory authority as required by Article 15 of the GDPR."
     },
     {
       "gdpr_id": "gdpr_100",
@@ -449,18 +409,8 @@
       "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed;",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.9084,
-      "deviation_type": "data",
-      "reasoning": "The company policy restricts the scope of the right to erasure by excluding cases where data is no longer necessary, thereby contradicting the GDPR constraint that allows erasure under this specific ground."
-    },
-    {
-      "gdpr_id": "gdpr_101",
-      "policy_id": "pol_075",
-      "gdpr_article": 17,
-      "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing;",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.916,
-      "deviation_type": "negation",
-      "reasoning": "The company policy explicitly prohibits the right to erasure under circumstances (no longer required for original purpose) that GDPR Article 17 defines as valid grounds for erasure, thereby directly contradicting the regulatory constraint."
+      "deviation_type": "execution_style",
+      "reasoning": "The policy correctly identifies the data and responsible party but imposes an incorrect procedural restriction by prohibiting erasure requests based solely on the original purpose no longer being required, which directly contradicts the GDPR grounds for erasure."
     },
     {
       "gdpr_id": "gdpr_102",
@@ -469,8 +419,18 @@
       "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2);",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.9043,
+      "deviation_type": "negation",
+      "reasoning": "The company policy explicitly forbids deleting data on the grounds that it is no longer required for its original purpose, which directly contradicts the GDPR constraint that allows for erasure under this specific ground among others."
+    },
+    {
+      "gdpr_id": "gdpr_103",
+      "policy_id": "pol_075",
+      "gdpr_article": 17,
+      "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been unlawfully processed;",
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.9014,
       "deviation_type": "data",
-      "reasoning": "The policy sentence incorrectly narrows the scope of the right to erasure by excluding requests based on the original purpose no longer being required, thereby contradicting the GDPR condition that allows erasure when the data is no longer necessary for the purposes for which it was collected."
+      "reasoning": "The policy incorrectly narrows the scope of permissible grounds for data erasure by excluding the lawful processing basis required under GDPR Article 17(1)(c), despite the regulation explicitly allowing erasure when data is no longer necessary for the original purpose."
     },
     {
       "gdpr_id": "gdpr_104",
@@ -480,7 +440,7 @@
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.9048,
       "deviation_type": "negation",
-      "reasoning": "The company policy explicitly restricts the right to erasure for data no longer needed for its original purpose, which contradicts the GDPR constraint that requires erasure when such data is no longer necessary for the purposes for which it was collected or processed."
+      "reasoning": "The policy sentence explicitly forbids the deletion of data when it is no longer required for its original purpose, which directly contradicts the GDPR constraint allowing erasure upon compliance with a legal obligation to retain it no longer needed."
     },
     {
       "gdpr_id": "gdpr_105",
@@ -489,8 +449,8 @@
       "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been collected in relation to the offer of information society services referred to in Article 8(1).",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.9118,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence clarifies a specific exception to the right to erasure (when data is no longer needed) without negating the general obligation or assigning incorrect responsibility."
+      "deviation_type": "negation",
+      "reasoning": "The company policy contradicts the GDPR by stating that data cannot be deleted solely because it is no longer required, whereas the regulation explicitly grants the right to erasure under the condition that data is collected for information society services."
     },
     {
       "gdpr_id": "gdpr_106",
@@ -500,7 +460,7 @@
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.9009,
       "deviation_type": "negation",
-      "reasoning": "The company policy directly contradicts the GDPR right to erasure by stating that deletion cannot be requested when data is no longer needed, which violates the regulation's requirement to erase public data upon a valid request."
+      "reasoning": "The company policy explicitly forbids requesting deletion when data is no longer needed for its original purpose, which directly contradicts the GDPR right to erasure and creates a negation deviation."
     },
     {
       "gdpr_id": "gdpr_107",
@@ -510,7 +470,7 @@
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8923,
       "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by explicitly stating that data should not be deleted merely because it is no longer needed, thereby acknowledging the exceptions related to legitimate interests such as freedom of expression and information."
+      "reasoning": "The policy sentence correctly identifies that the right to erasure does not apply when data is no longer needed for its original purpose, which aligns with the GDPR constraint by implicitly acknowledging that other legitimate grounds (such as freedom of expression or legal obligations) would also override the right to erasure, thus not creating a deviation."
     },
     {
       "gdpr_id": "gdpr_108",
@@ -520,27 +480,27 @@
       "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
       "similarity": 0.8596,
       "deviation_type": "none",
-      "reasoning": "The policy sentence explicitly acknowledges exceptions to deletion based on legal retention obligations, which aligns with the specific exemptions outlined in GDPR Article 17."
+      "reasoning": "The policy sentence correctly acknowledges GDPR Article 17 by stating that deletion is not always possible due to legal retention obligations, which aligns with the regulation's exemption for processing necessary for legal compliance."
     },
     {
-      "gdpr_id": "gdpr_110",
-      "policy_id": "pol_076",
+      "gdpr_id": "gdpr_109",
+      "policy_id": "pol_075",
       "gdpr_article": 17,
-      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or",
-      "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
-      "similarity": 0.8685,
+      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for reasons of public interest in the area of public health in accordance with points (h) and (i) of Article 9(2) as well as Article 9(3);",
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.8812,
       "deviation_type": "negation",
-      "reasoning": "The policy explicitly states that immediate deletion may not be possible due to legal obligations, which directly contradicts the GDPR constraint regarding the right to erasure when no overriding conditions are met."
+      "reasoning": "The policy sentence contradicts the GDPR constraint by explicitly denying the deletion of data, thereby negating the obligation to comply with exceptions related to public health processing defined in Article 17."
     },
     {
       "gdpr_id": "gdpr_111",
-      "policy_id": "pol_076",
+      "policy_id": "pol_075",
       "gdpr_article": 17,
       "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for the establishment, exercise or defence of legal claims.",
-      "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
-      "similarity": 0.8835,
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.8774,
       "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR exception by acknowledging that deletion rights are limited when processing is necessary for legal claims or contractual obligations."
+      "reasoning": "The policy sentence correctly aligns with the GDPR exception by stating that data deletion cannot be enforced solely when data is no longer needed, implicitly acknowledging that other legitimate grounds (such as legal claims) may validly prevent erasure."
     },
     {
       "gdpr_id": "gdpr_112",
@@ -549,8 +509,8 @@
       "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data;",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8938,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy correctly identifies the responsibility and data scope for restricting processing due to contested accuracy but specifies an incorrect execution style by requiring a written request by post instead of allowing any reasonable manner as implied by the right."
+      "deviation_type": "none",
+      "reasoning": "The company policy aligns with the GDPR constraint by correctly establishing the data subject's responsibility to submit a written request to restrict processing when disputing data accuracy."
     },
     {
       "gdpr_id": "gdpr_113",
@@ -560,7 +520,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8965,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly implements the GDPR requirement by directing data subjects to submit a request to restrict processing when they dispute accuracy or believe the processing is unlawful."
+      "reasoning": "The policy sentence correctly addresses the GDPR constraint by instructing data subjects on how to request processing restriction when they believe processing is unlawful, aligning with the requirement for the data subject to obtain such restriction."
     },
     {
       "gdpr_id": "gdpr_114",
@@ -569,8 +529,8 @@
       "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8957,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by correctly assigning the responsibility to the data protection officer for handling requests to restrict processing initiated by the data subject under valid grounds."
+      "deviation_type": "execution_style",
+      "reasoning": "The policy restricts the submission of data access requests to written requests by post only, which contradicts the GDPR requirement to handle such requests without undue delay through appropriate communication channels."
     },
     {
       "gdpr_id": "gdpr_115",
@@ -580,7 +540,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.9019,
       "deviation_type": "execution_style",
-      "reasoning": "The policy sentence prescribes a specific written request by post procedure for all data accuracy disputes, whereas the GDPR constraint allows for restriction specifically when a data subject has lodged an objection to processing pending the verification of overriding grounds."
+      "reasoning": "The company policy correctly identifies the data and responsibility for restriction but prescribes a specific 'written request by post' procedure that may not be the only or correct manner to exercise this right, as GDPR Art. 18 allows for any appropriate means of communication."
     },
     {
       "gdpr_id": "gdpr_116",
@@ -590,7 +550,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8599,
       "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by describing the data subject's right to request processing restriction, which is the initial step governed by Article 18, without contradicting the specific conditions for processing restricted data."
+      "reasoning": "The policy sentence correctly aligns with the GDPR constraint by establishing the procedure for a data subject to request a restriction on processing, which is consistent with the regulation's requirements under Article 18."
     },
     {
       "gdpr_id": "gdpr_117",
@@ -599,8 +559,8 @@
       "gdpr_text": "A data subject who has obtained restriction of processing pursuant to paragraph 1 shall be informed by the controller before the restriction of processing is lifted.",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8962,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence correctly identifies the mechanism for initiating a restriction of processing under Art. 18 without contradicting the GDPR requirement to inform the data subject when such restriction is lifted, as the policy only addresses the initiation phase."
+      "deviation_type": "execution_style",
+      "reasoning": "The policy correctly identifies the controller's responsibility to inform the data subject upon lifting restrictions but fails to specify the mandatory procedure or timeline for doing so, thereby defining an incorrect or incomplete execution style."
     },
     {
       "gdpr_id": "gdpr_118",
@@ -610,17 +570,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.9159,
       "deviation_type": "execution_style",
-      "reasoning": "The policy defines an incorrect execution procedure for restricting processing by requiring a written postal request, whereas GDPR Article 18 does not mandate a specific submission method."
-    },
-    {
-      "gdpr_id": "gdpr_122",
-      "policy_id": "pol_075",
-      "gdpr_article": 20,
-      "gdpr_text": "The exercise of the right referred to in paragraph 1 of this Article shall be without prejudice to Article 17. That right shall not apply to processing necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.8822,
-      "deviation_type": "none",
-      "reasoning": "The company policy correctly limits the right to erasure by excluding cases where data processing is necessary for performing a task in the public interest or an official authority, thereby aligning with the GDPR constraint that Article 20 applies without prejudice to Article 17 in such specific scenarios."
+      "reasoning": "The policy correctly identifies the controller's responsibility to restrict processing but fails to address the GDPR-mandated obligation to communicate such restrictions to relevant recipients or inform the data subject about those recipients."
     },
     {
       "gdpr_id": "gdpr_124",
@@ -630,7 +580,7 @@
       "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
       "similarity": 0.9176,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence accurately reflects the GDPR constraint by acknowledging the data subject's right to object while reserving processing for compelling legitimate grounds."
+      "reasoning": "The company policy accurately reflects the GDPR constraint by acknowledging the data subject's right to object and the condition under which processing may continue based on compelling legitimate grounds."
     },
     {
       "gdpr_id": "gdpr_125",
@@ -640,7 +590,17 @@
       "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
       "similarity": 0.916,
       "deviation_type": "negation",
-      "reasoning": "The company policy grants a universal right to object with a standard exception for compelling legitimate reasons, whereas the GDPR constraint for direct marketing grants an unconditional right to object without any such exception."
+      "reasoning": "The company policy introduces a condition (compelling legitimate reasons) that overrides the GDPR's explicit right for data subjects to object to direct marketing at any time without needing to prove such reasons."
+    },
+    {
+      "gdpr_id": "gdpr_126",
+      "policy_id": "pol_079",
+      "gdpr_article": 21,
+      "gdpr_text": "Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.",
+      "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
+      "similarity": 0.9084,
+      "deviation_type": "negation",
+      "reasoning": "The company policy incorrectly suggests that processing can continue due to compelling legitimate reasons, which directly contradicts the GDPR Art. 21 requirement to cease all processing for direct marketing upon objection."
     },
     {
       "gdpr_id": "gdpr_127",
@@ -649,8 +609,8 @@
       "gdpr_text": "At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.",
       "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
       "similarity": 0.8897,
-      "deviation_type": "execution_style",
-      "reasoning": "The company policy addresses the Right to Object under Article 21(1) but fails to explicitly state that this right must be communicated clearly and separately to the data subject at the time of the first contact, deviating in how the right is presented."
+      "deviation_type": "none",
+      "reasoning": "The company policy correctly acknowledges the right to object as mentioned in the GDPR constraint and describes its application conditions, thereby addressing the regulatory requirement to bring the right to the data subject's attention."
     },
     {
       "gdpr_id": "gdpr_128",
@@ -659,8 +619,8 @@
       "gdpr_text": "Where personal data are processed for scientific or historical research purposes or statistical purposes pursuant to Article 89(1), the data subject, on grounds relating to his or her particular situation, shall have the right to object to processing of personal data concerning him or her, unless the processing is necessary for the performance of a task carried out for reasons of public interest.",
       "policy_text": "Right to object:\nYou can object to the processing of your personal data unless there are\ncompelling legitimate reasons for the processing.",
       "similarity": 0.901,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy incorrectly limits the data subject's right to object solely to 'compelling legitimate reasons' rather than adhering to the GDPR's requirement that exceptions are based on 'particular situation' grounds or public interest tasks."
+      "deviation_type": "none",
+      "reasoning": "The company policy correctly acknowledges the data subject's right to object under Article 21 while maintaining the necessary legal exception for compelling legitimate reasons, aligning with the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_129",
@@ -670,7 +630,7 @@
       "policy_text": "Right not to be subject to automated decision-making:\nWe do not make any automated decisions regarding your person.",
       "similarity": 0.8637,
       "deviation_type": "none",
-      "reasoning": "The company policy directly aligns with the GDPR constraint by explicitly prohibiting any automated decision-making that could affect the data subject."
+      "reasoning": "The company policy explicitly affirms the data subject's right by stating that no automated decisions are made regarding the individual, thereby fully complying with the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_132",
@@ -680,7 +640,17 @@
       "policy_text": "b GDPR)\nInclusion in our talent pool: Storage of your documents for future positions in\nthe company on the basis of your voluntary consent (Art. 6 para.",
       "similarity": 0.8914,
       "deviation_type": "none",
-      "reasoning": "The policy sentence explicitly states that storage is based on the data subject's voluntary consent, which aligns with the GDPR constraint allowing Article 22 exceptions when consent is given."
+      "reasoning": "The company policy explicitly states that storage is based on voluntary consent, which aligns with the GDPR condition that allows automated decision-making to apply when explicit consent is given."
+    },
+    {
+      "gdpr_id": "gdpr_133",
+      "policy_id": "pol_078",
+      "gdpr_article": 22,
+      "gdpr_text": "In the cases referred to in points (a) and (c) of paragraph 2, the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision.",
+      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
+      "similarity": 0.896,
+      "deviation_type": "execution_style",
+      "reasoning": "The policy restricts the specific action to submitting a written request by post for disputed data or unlawful processing, which limits the implementation of the broader GDPR right to human intervention and contestation to a single procedural channel rather than ensuring suitable measures are generally implemented."
     },
     {
       "gdpr_id": "gdpr_135",
@@ -689,18 +659,8 @@
       "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the purposes of the processing or categories of processing;",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8622,
-      "deviation_type": "none",
-      "reasoning": "The company policy aligns with the GDPR constraint by specifying that data processing continues unless specific conditions (like original purpose fulfillment) are met, thereby defining the purpose and scope of processing as required by Art. 23."
-    },
-    {
-      "gdpr_id": "gdpr_136",
-      "policy_id": "pol_075",
-      "gdpr_article": 23,
-      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the categories of personal data;",
-      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
-      "similarity": 0.8626,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence defines the scope of data subject to erasure restrictions (data no longer required), which aligns with the GDPR requirement to specify relevant categories of personal data within legislative measures, and thus does not represent a deviation."
+      "deviation_type": "negation",
+      "reasoning": "The company policy directly contradicts the GDPR by stating that data cannot be deleted just because it is no longer needed for its original purpose, whereas the regulation requires processing to be limited to specified purposes, implying that data should not be kept beyond that scope."
     },
     {
       "gdpr_id": "gdpr_137",
@@ -709,8 +669,8 @@
       "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
       "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
       "similarity": 0.8459,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy restricts the specific procedure for executing the right to erasure by defining a narrow condition, which corresponds to the GDPR's requirement for specific provisions on the scope of restrictions but may be interpreted as an incorrect procedural limitation on how the restriction is applied."
+      "deviation_type": "negation",
+      "reasoning": "The company policy explicitly forbids data deletion when it is no longer required, directly contradicting the GDPR principle that restrictions on data must be clearly defined and that data should not be kept longer than necessary, thereby negating the appropriate scope of data retention."
     },
     {
       "gdpr_id": "gdpr_138",
@@ -720,17 +680,27 @@
       "policy_text": "The transfer is based on legal safeguards for international data\ntransfers.",
       "similarity": 0.8745,
       "deviation_type": "execution_style",
-      "reasoning": "The company policy correctly assigns the responsibility to implement safeguards for international data transfers but fails to specify the concrete measures or detailed procedures required to prevent abuse or unlawful access as mandated by the GDPR constraint."
+      "reasoning": "The policy mentions the existence of legal safeguards for transfers but fails to specify the concrete measures required by the constraint to prevent abuse or unlawful access, representing a procedural gap rather than a contradiction or wrong data scope."
     },
     {
-      "gdpr_id": "gdpr_139",
-      "policy_id": "pol_076",
+      "gdpr_id": "gdpr_140",
+      "policy_id": "pol_016",
       "gdpr_article": 23,
-      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the specification of the controller or categories of controllers;",
-      "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
-      "similarity": 0.8683,
+      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the storage periods and the applicable safeguards taking into account the nature, scope and purposes of the processing or categories of processing;",
+      "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
+      "similarity": 0.8625,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence does not directly contradict the GDPR requirement to specify controllers but rather addresses a separate issue regarding data retention obligations, which falls under the GDPR constraint's purpose of defining controller responsibilities."
+      "reasoning": "The company policy sentence correctly addresses the GDPR constraint by specifying a storage period that is tied to the nature and purpose of the processing (application handling)."
+    },
+    {
+      "gdpr_id": "gdpr_141",
+      "policy_id": "pol_075",
+      "gdpr_article": 23,
+      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the risks to the rights and freedoms of data subjects; and",
+      "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose.",
+      "similarity": 0.8656,
+      "deviation_type": "data",
+      "reasoning": "The policy restricts the data scope by allowing deletion only when the original purpose is exceeded, whereas the GDPR constraint requires specific provisions addressing risks and potentially broader conditions for deletion, creating a mismatch in the definition of when data processing is permissible."
     },
     {
       "gdpr_id": "gdpr_142",
@@ -740,17 +710,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8907,
       "deviation_type": "none",
-      "reasoning": "The policy sentence correctly mandates submitting a written request to the DPO to restrict processing, thereby fulfilling the GDPR requirement for data subjects to be informed about their right to restriction without any identified deviations in responsibility, execution, or data scope."
-    },
-    {
-      "gdpr_id": "gdpr_143",
-      "policy_id": "pol_021",
-      "gdpr_article": 24,
-      "gdpr_text": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation. Those measures shall be reviewed and updated where necessary.",
-      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.8823,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy describes using a tool for detection, which is only a subset of the required 'appropriate technical and organisational measures' that must cover security, governance, and risk management, thus representing an insufficient procedure rather than a direct negation or responsibility shift."
+      "reasoning": "The policy sentence does not contradict the GDPR requirement but fails to explicitly address the data subject's right to be informed about the restriction, omitting that specific provision."
     },
     {
       "gdpr_id": "gdpr_145",
@@ -760,17 +720,7 @@
       "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
       "similarity": 0.8901,
       "deviation_type": "execution_style",
-      "reasoning": "While the policy addresses the requirement for appropriate measures to protect data, it specifies an execution style (automatic detection tool) that does not explicitly confirm the implementation of pseudonymisation or the integration of safeguards like data minimisation as required by the constraint."
-    },
-    {
-      "gdpr_id": "gdpr_152",
-      "policy_id": "pol_083",
-      "gdpr_article": 27,
-      "gdpr_text": "The representative shall be established in one of the Member States where the data subjects, whose personal data are processed in relation to the offering of goods or services to them, or whose behaviour is monitored, are.",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8833,
-      "deviation_type": "negation",
-      "reasoning": "The company policy contradicts the GDPR constraint by incorrectly asserting that a complaint is made to the supervisory authority responsible for the company, whereas the constraint requires the data representative to be established in a Member State where the data subjects are located."
+      "reasoning": "The policy describes a specific tool for automatic detection as the implementation method, whereas the GDPR constraint requires a broader selection of appropriate technical and organisational measures (such as pseudonymisation) that must be effectively integrated at the time of determination and processing."
     },
     {
       "gdpr_id": "gdpr_153",
@@ -779,18 +729,8 @@
       "gdpr_text": "The representative shall be mandated by the controller or processor to be addressed in addition to or instead of the controller or the processor by, in particular, supervisory authorities and data subjects, on all issues related to processing, for the purposes of ensuring compliance with this Regulation.",
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.8919,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by acknowledging the data subject's right to complain to the supervisory authority, which is consistent with the role of the representative mandated to be addressed by such authorities."
-    },
-    {
-      "gdpr_id": "gdpr_154",
-      "policy_id": "pol_083",
-      "gdpr_article": 27,
-      "gdpr_text": "The designation of a representative by the controller or processor shall be without prejudice to legal actions which could be initiated against the controller or the processor themselves.",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8937,
-      "deviation_type": "none",
-      "reasoning": "The company policy correctly acknowledges the right to complain to a supervisory authority, which is consistent with the GDPR constraint that appointing a representative should not undermine this right."
+      "deviation_type": "negation",
+      "reasoning": "The policy incorrectly implies that data subjects should contact the supervisory authority directly as an alternative to the controller, whereas GDPR Article 27 mandates that a designated representative must be the specific point of contact for authorities and data subjects in the EU when the controller is not established there."
     },
     {
       "gdpr_id": "gdpr_155",
@@ -800,7 +740,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.922,
       "deviation_type": "none",
-      "reasoning": "The company policy adequately addresses the GDPR constraint by confirming that a Data Processing Agreement is in place to ensure the processor follows instructions and complies with regulations."
+      "reasoning": "The company policy sentence adequately addresses the GDPR constraint by confirming that a data processing agreement exists which mandates compliance with the regulation and adherence to the controller's instructions."
     },
     {
       "gdpr_id": "gdpr_157",
@@ -810,7 +750,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9032,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence adequately addresses the GDPR constraint by confirming the existence of a Data Processing Agreement that restricts processing to documented instructions and compliance with regulations."
+      "reasoning": "The company policy sentence confirms the existence of a Data Processing Agreement that aligns with the GDPR requirement for a binding contract establishing the processor's obligations and adherence to controller instructions."
     },
     {
       "gdpr_id": "gdpr_158",
@@ -820,7 +760,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9077,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence adequately addresses the GDPR constraint by confirming the existence of a Data Processing Agreement that binds the processor to confidentiality and compliance with instructions."
+      "reasoning": "The company policy sentence confirms the existence of a binding Data Processing Agreement that addresses the GDPR constraint regarding the controller-processor relationship and adherence to instructions, indicating no deviation."
     },
     {
       "gdpr_id": "gdpr_159",
@@ -830,7 +770,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.8996,
       "deviation_type": "none",
-      "reasoning": "The company policy affirms the existence of a binding Data Processing Agreement that ensures the processor adheres to applicable regulations and instructions, thereby adequately addressing the GDPR Art. 28 constraint."
+      "reasoning": "The company policy sentence adequately addresses the GDPR constraint by confirming the existence of a binding Data Processing Agreement (DPA) that aligns with the required contractual obligations."
     },
     {
       "gdpr_id": "gdpr_160",
@@ -840,7 +780,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9015,
       "deviation_type": "none",
-      "reasoning": "The company policy confirms the existence of a binding data processing agreement that ensures compliance with GDPR Art. 28 requirements regarding the subject-matter, duration, nature, purpose, data types, and controller obligations."
+      "reasoning": "The policy sentence confirms the existence of a binding Data Processing Agreement (DPA) that governs the relationship with the processor, thereby adequately addressing the contractual obligation specified in GDPR Article 28."
     },
     {
       "gdpr_id": "gdpr_161",
@@ -850,7 +790,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.8972,
       "deviation_type": "none",
-      "reasoning": "The policy sentence confirms the existence of a data processing agreement that binds the processor to the controller's instructions and regulations, which aligns with the GDPR requirement for a contract governing processor activities."
+      "reasoning": "The company policy sentence affirms the existence of a Data Processing Agreement and compliance with instructions, which aligns with the GDPR requirement for a binding contract governing the processor's activities."
     },
     {
       "gdpr_id": "gdpr_162",
@@ -860,7 +800,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9032,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence confirms the existence of a binding Data Processing Agreement that aligns with the GDPR's Art. 28 requirements regarding the subject-matter, instructions, and compliance obligations."
+      "reasoning": "The policy sentence correctly addresses the GDPR constraint by confirming the existence of a binding Data Processing Agreement that governs the relationship, defines the processing scope, and ensures compliance with obligations such as assisting the controller."
     },
     {
       "gdpr_id": "gdpr_163",
@@ -870,7 +810,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9007,
       "deviation_type": "execution_style",
-      "reasoning": "The policy confirms the existence of a contract (DPA) but omits specific execution requirements such as the obligation to return or delete data after service provision."
+      "reasoning": "While the policy correctly identifies a contract (DPA) and the responsibility to process data per instructions, it fails to specify the critical procedural requirement of deleting or returning data after the service ends, thereby contradicting the specific execution steps mandated by Article 28."
     },
     {
       "gdpr_id": "gdpr_164",
@@ -880,7 +820,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9074,
       "deviation_type": "execution_style",
-      "reasoning": "The policy confirms a DPA exists (addressing the contract requirement) and mentions following instructions, but it fails to explicitly stipulate the specific obligations regarding data categories, audit facilitation, or demonstrating compliance that Article 28 requires within the contract itself."
+      "reasoning": "The policy acknowledges a DPA exists (responsibility is correct) but fails to specify the mandatory contractual elements regarding the scope of processing, types of data, and specific obligations for audit support required by the GDPR, representing a deficiency in the execution of the required procedures."
     },
     {
       "gdpr_id": "gdpr_165",
@@ -890,7 +830,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.8878,
       "deviation_type": "none",
-      "reasoning": "The policy sentence affirms adherence to data protection regulations and following instructions, which aligns with the GDPR requirement for processors to inform controllers of infringing instructions, even if the specific instruction-notification procedure is not explicitly detailed in this summary clause."
+      "reasoning": "The company policy confirms adherence to applicable regulations via a DPA, thereby satisfying the GDPR requirement for the processor to inform the controller if an instruction infringes the regulation without contradiction."
     },
     {
       "gdpr_id": "gdpr_166",
@@ -900,17 +840,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9058,
       "deviation_type": "none",
-      "reasoning": "The policy sentence adequately addresses the GDPR Art. 28 constraint by confirming the existence of a Data Processing Agreement that imposes data protection obligations and ensures compliance with regulations."
-    },
-    {
-      "gdpr_id": "gdpr_167",
-      "policy_id": "pol_076",
-      "gdpr_article": 28,
-      "gdpr_text": "The contract or the other legal act referred to in paragraphs 3 and 4 shall be in writing, including in electronic form.",
-      "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations.",
-      "similarity": 0.8463,
-      "deviation_type": "none",
-      "reasoning": "The company policy sentence addresses data retention obligations which is consistent with the GDPR requirement for written contracts under Article 28, as the policy does not contradict the constraint but rather acknowledges the context in which the contract applies."
+      "reasoning": "The policy sentence confirms the establishment of a Data Processing Agreement with a provider, thereby ensuring that data protection obligations and controller instructions are met in compliance with GDPR requirements."
     },
     {
       "gdpr_id": "gdpr_169",
@@ -920,17 +850,17 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.861,
       "deviation_type": "none",
-      "reasoning": "The policy sentence affirms that the provider processes data only according to the company's instructions, which aligns with the GDPR requirement for processors to act solely on the controller's instructions."
+      "reasoning": "The policy sentence explicitly states that data is processed only according to the controller's instructions, which aligns perfectly with the GDPR constraint regarding processor obligations."
     },
     {
-      "gdpr_id": "gdpr_170",
-      "policy_id": "pol_078",
+      "gdpr_id": "gdpr_174",
+      "policy_id": "pol_012",
       "gdpr_article": 30,
-      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the name and contact details of the controller and, where applicable, the joint controller, the controller's representative and the data protection officer;",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8722,
+      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
+      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
+      "similarity": 0.8988,
       "deviation_type": "negation",
-      "reasoning": "The company policy describes a specific data subject right regarding restricting processing, which does not address or acknowledge the GDPR constraint requiring the controller to maintain a record of processing activities containing specific contact details."
+      "reasoning": "The policy sentence addresses a third-party transfer (implied by having a provider and a DPA) but fails to include the mandatory record of processing activities required by Article 30, effectively ignoring the constraint to maintain such a record."
     },
     {
       "gdpr_id": "gdpr_175",
@@ -939,18 +869,8 @@
       "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, the envisaged time limits for erasure of the different categories of data;",
       "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Six months after the rejection or\nwithdrawal of your application.",
       "similarity": 0.8896,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy correctly identifies the need to define retention periods (matching the GDPR requirement) but implements an incomplete procedure by only specifying limits for rejected or withdrawn applications while omitting retention periods for other candidate statuses."
-    },
-    {
-      "gdpr_id": "gdpr_180",
-      "policy_id": "pol_021",
-      "gdpr_article": 30,
-      "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where possible, a general description of the technical and organisational security measures referred to in Article 32(1).",
-      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.874,
-      "deviation_type": "data",
-      "reasoning": "The company policy addresses the scope of what data is processed (detected personal data) rather than fulfilling the GDPR requirement to maintain a record of processing activities and security measures."
+      "deviation_type": "none",
+      "reasoning": "The company policy sentence satisfies the GDPR requirement by specifying the retention period for applicant data, which constitutes the 'envisaged time limits for erasure' requested in the record of processing activities."
     },
     {
       "gdpr_id": "gdpr_183",
@@ -960,17 +880,37 @@
       "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
       "similarity": 0.883,
       "deviation_type": "none",
-      "reasoning": "The company policy sentence correctly acknowledges the requirement to process special categories of personal data in accordance with GDPR Article 30, which aligns with the regulatory constraint."
+      "reasoning": "The company policy acknowledges the specific exception in the GDPR regulation for processing special categories of personal data, thereby aligning with the constraint without deviation."
     },
     {
-      "gdpr_id": "gdpr_189",
+      "gdpr_id": "gdpr_186",
       "policy_id": "pol_021",
       "gdpr_article": 32,
-      "gdpr_text": "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.",
+      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;",
       "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.8767,
+      "similarity": 0.8927,
       "deviation_type": "execution_style",
-      "reasoning": "While the policy addresses security and data, it focuses on detection as a specific procedural step rather than defining the broader security measures required to mitigate the specific risks (destruction, loss, alteration, etc.) outlined in the GDPR constraint."
+      "reasoning": "The policy describes a data detection tool which addresses integrity and confidentiality but fails to define the specific technical and organizational measures required to ensure the ongoing resilience of processing systems as mandated by the constraint."
+    },
+    {
+      "gdpr_id": "gdpr_187",
+      "policy_id": "pol_021",
+      "gdpr_article": 32,
+      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;",
+      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
+      "similarity": 0.8892,
+      "deviation_type": "execution_style",
+      "reasoning": "The policy describes a tool for automatic detection, which is a specific method (HOW) for ensuring security, whereas the GDPR constraint broadly requires implementing appropriate technical measures (including restoration capabilities) without mandating any specific tool, thus addressing the requirement but potentially with an incomplete scope regarding the 'restoration' aspect mentioned in the regulation, yet the primary deviation is focusing on a specific execution method rather than the full range of required measures."
+    },
+    {
+      "gdpr_id": "gdpr_188",
+      "policy_id": "pol_021",
+      "gdpr_article": 32,
+      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
+      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
+      "similarity": 0.8903,
+      "deviation_type": "execution_style",
+      "reasoning": "The policy describes a specific automated detection tool for finding personal data, whereas the GDPR constraint requires a broader, ongoing process for testing and evaluating the effectiveness of security measures, indicating a deviation in the execution method rather than responsibility or data scope."
     },
     {
       "gdpr_id": "gdpr_190",
@@ -980,17 +920,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.8805,
       "deviation_type": "none",
-      "reasoning": "The company policy ensures data is processed only according to instructions, which directly addresses the GDPR constraint regarding limiting access and processing to authorized instructions."
-    },
-    {
-      "gdpr_id": "gdpr_191",
-      "policy_id": "pol_083",
-      "gdpr_article": 33,
-      "gdpr_text": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8955,
-      "deviation_type": "negation",
-      "reasoning": "The policy sentence grants individuals the right to complain to the supervisory authority rather than instructing the controller to proactively notify the authority of a data breach within the 72-hour deadline required by GDPR Article 33."
+      "reasoning": "The policy sentence confirms that the provider processes data only according to the controller's instructions and in compliance with regulations, which directly satisfies the GDPR requirement regarding authorized personnel or processors acting under instruction."
     },
     {
       "gdpr_id": "gdpr_194",
@@ -999,48 +929,18 @@
       "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
       "policy_text": "You can revoke your permission at any time by reaching out to our personnel team\nat: career@hetzner.com\nLegal documentation: Storing the data to protect against potential legal claims\nor to assert them if necessary.",
       "similarity": 0.8809,
-      "deviation_type": "negation",
-      "reasoning": "The company policy provides a contact for permission revocation rather than the required contact details for the Data Protection Officer, directly failing to satisfy the GDPR constraint's requirement."
-    },
-    {
-      "gdpr_id": "gdpr_203",
-      "policy_id": "pol_021",
-      "gdpr_article": 35,
-      "gdpr_text": "Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks.",
-      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.8868,
       "deviation_type": "none",
-      "reasoning": "The company policy describes a proactive security measure regarding data detection but does not directly address or contradict the specific GDPR requirement to perform a Data Protection Impact Assessment (DPIA) prior to high-risk processing, nor does it fail to follow a specific procedural mandate for such an assessment within this isolated sentence."
+      "reasoning": "The policy sentence does not adequately address the GDPR constraint because it provides a revocation contact for legal claims rather than the specific name and contact details of a Data Protection Officer required for a breach notification under Article 33."
     },
     {
-      "gdpr_id": "gdpr_204",
-      "policy_id": "pol_078",
+      "gdpr_id": "gdpr_214",
+      "policy_id": "pol_012",
       "gdpr_article": 35,
-      "gdpr_text": "The controller shall seek the advice of the data protection officer, where designated, when carrying out a data protection impact assessment.",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8812,
+      "gdpr_text": "The assessment shall contain at least: the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned.",
+      "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
+      "similarity": 0.9013,
       "deviation_type": "execution_style",
-      "reasoning": "The policy describes a specific procedural channel (written request by post) for a different type of DPO task (handling subject requests regarding data disputes or unlawful processing), whereas the GDPR constraint mandates consulting the DPO specifically when conducting a Data Protection Impact Assessment."
-    },
-    {
-      "gdpr_id": "gdpr_205",
-      "policy_id": "pol_021",
-      "gdpr_article": 35,
-      "gdpr_text": "A data protection impact assessment referred to in paragraph 1 shall in particular be required in the case of: a systematic and extensive evaluation of personal aspects relating to natural persons which is based on automated processing, including profiling, and on which decisions are based that produce legal effects concerning the natural person or similarly significantly affect the natural person;",
-      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
-      "similarity": 0.8959,
-      "deviation_type": "none",
-      "reasoning": "The company policy does not contradict or deviate from the GDPR constraint as it describes a security measure rather than a decision-making process based on automated profiling that has legal effects."
-    },
-    {
-      "gdpr_id": "gdpr_213",
-      "policy_id": "pol_004",
-      "gdpr_article": 35,
-      "gdpr_text": "The assessment shall contain at least: an assessment of the risks to the rights and freedoms of data subjects referred to in paragraph 1; and",
-      "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
-      "similarity": 0.8616,
-      "deviation_type": "none",
-      "reasoning": "The company policy sentence aligns with the GDPR constraint by addressing the necessity of assessing risks to data subjects' rights when processing special categories of personal data, thus adequately satisfying the requirement for a Data Protection Impact Assessment."
+      "reasoning": "The company policy describes a procedural step (signing a DPA with a provider) rather than addressing the specific substantive requirement to include measures, safeguards, and risk assessment evidence in the impact assessment itself."
     },
     {
       "gdpr_id": "gdpr_218",
@@ -1049,48 +949,18 @@
       "gdpr_text": "Where necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment at least when there is a change of the risk represented by processing operations.",
       "policy_text": "This data is compared with our previous\nexperience and evaluated with the help of an external service provider for risk\nanalysis.",
       "similarity": 0.9041,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence describes performing a risk analysis using external help to compare data with previous experience, which aligns with the GDPR requirement to carry out a review to assess processing conformity when risk changes."
-    },
-    {
-      "gdpr_id": "gdpr_219",
-      "policy_id": "pol_083",
-      "gdpr_article": 36,
-      "gdpr_text": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8996,
       "deviation_type": "negation",
-      "reasoning": "The company policy sentence addresses the data subject's right to complain about violations, which contradicts the GDPR constraint requiring the controller to consult the supervisory authority proactively before processing high-risk data when an impact assessment indicates such risk."
+      "reasoning": "The company policy relies solely on past experience and external providers for risk analysis, which contradicts the GDPR requirement to conduct a formal data protection impact assessment review when processing risks change."
     },
     {
-      "gdpr_id": "gdpr_221",
-      "policy_id": "pol_083",
+      "gdpr_id": "gdpr_222",
+      "policy_id": "pol_021",
       "gdpr_article": 36,
-      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8745,
-      "deviation_type": "none",
-      "reasoning": "The company policy sentence aligns with the GDPR requirement to inform the supervisory authority of the controller's responsibilities, although the specific wording regarding group undertakings is not explicitly addressed in the provided snippet, the core obligation to inform about responsibilities is acknowledged."
-    },
-    {
-      "gdpr_id": "gdpr_223",
-      "policy_id": "pol_083",
-      "gdpr_article": 36,
-      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the measures and safeguards provided to protect the rights and freedoms of data subjects pursuant to this Regulation;",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8911,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence correctly identifies the supervisory authority for user complaints, which is consistent with the GDPR requirement to designate the competent authority to whom data subjects should direct their inquiries and complaints regarding the controller's operations."
-    },
-    {
-      "gdpr_id": "gdpr_224",
-      "policy_id": "pol_078",
-      "gdpr_article": 36,
-      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the contact details of the data protection officer;",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8738,
-      "deviation_type": "none",
-      "reasoning": "The company policy correctly identifies the data protection officer as the relevant contact for the controller when handling specific data subject rights requests, aligning with the GDPR constraint's requirement to provide the DPO's details."
+      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
+      "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data.",
+      "similarity": 0.8636,
+      "deviation_type": "negation",
+      "reasoning": "The company policy describes a technical measure for data detection that does not address the GDPR requirement to consult the supervisory authority and provide processing details, effectively ignoring the constraint."
     },
     {
       "gdpr_id": "gdpr_226",
@@ -1099,8 +969,8 @@
       "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: any other information requested by the supervisory authority.",
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.8559,
-      "deviation_type": "none",
-      "reasoning": "The company policy correctly empowers individuals to complain to the supervisory authority, which aligns with the GDPR requirement for controllers to engage with such authorities and provide necessary information upon request."
+      "deviation_type": "negation",
+      "reasoning": "The company policy describes an individual's right to complain, which is distinct from the regulatory constraint requiring the controller to provide specific information requested by the supervisory authority during a consultation or investigation, effectively failing to address the controller's obligation to comply with those specific requests."
     },
     {
       "gdpr_id": "gdpr_229",
@@ -1109,18 +979,8 @@
       "gdpr_text": "The controller and the processor shall designate a data protection officer in any case where: the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale; or",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8944,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence assumes the existence and role of a Data Protection Officer as required by the GDPR constraint and outlines a valid procedure for interacting with them."
-    },
-    {
-      "gdpr_id": "gdpr_230",
-      "policy_id": "pol_004",
-      "gdpr_article": 37,
-      "gdpr_text": "The controller and the processor shall designate a data protection officer in any case where: the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10.",
-      "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights.",
-      "similarity": 0.9012,
       "deviation_type": "negation",
-      "reasoning": "The company policy fails to address the mandatory requirement to designate a Data Protection Officer, effectively ignoring or contradicting the specific constraints of Art. 37 regarding the appointment of a DPO when processing special categories of data on a large scale."
+      "reasoning": "The policy sentence incorrectly implies that a Data Protection Officer must be contacted even if the controller has not met the Art. 37 criteria for mandatory designation, thereby contradicting the constraint that a DPO is only required under specific conditions."
     },
     {
       "gdpr_id": "gdpr_231",
@@ -1130,17 +990,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8777,
       "deviation_type": "none",
-      "reasoning": "The policy sentence does not deviate from the GDPR constraint as it appropriately involves the designated Data Protection Officer in handling subject access requests without contradicting the requirement for their designation."
-    },
-    {
-      "gdpr_id": "gdpr_233",
-      "policy_id": "pol_083",
-      "gdpr_article": 37,
-      "gdpr_text": "The controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority.",
-      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
-      "similarity": 0.8893,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence affirms the data subject's right to complain to the supervisory authority, which aligns with GDPR requirements, though it does not explicitly mandate the controller's duty to publish DPO contact details; however, the provided constraint regarding DPO publication is not contradicted by this specific policy text regarding user complaints."
+      "reasoning": "The company policy correctly designates a data protection officer for handling data subject requests, which aligns with the GDPR requirement to appoint a DPO where applicable."
     },
     {
       "gdpr_id": "gdpr_234",
@@ -1149,8 +999,8 @@
       "gdpr_text": "The controller and the processor shall ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data.",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8921,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence correctly directs the data subject to involve the Data Protection Officer for a specific data protection issue, which aligns with the GDPR requirement for the DPO's timely involvement in such matters."
+      "deviation_type": "execution_style",
+      "reasoning": "The policy sentence specifies a particular procedure (written request by post) for involving the DPO in specific disputes, which may be too restrictive compared to the GDPR's broader requirement to ensure DPO involvement in 'all issues' relating to personal data protection without mandating a specific communication channel for every instance."
     },
     {
       "gdpr_id": "gdpr_235",
@@ -1159,28 +1009,18 @@
       "gdpr_text": "The controller and processor shall support the data protection officer in performing the tasks referred to in Article 39 by providing resources necessary to carry out those tasks and access to personal data and processing operations, and to maintain his or her expert knowledge.",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8897,
-      "deviation_type": "execution_style",
-      "reasoning": "The policy restricts access to the DPO to only dispute scenarios and requires post delivery, whereas GDPR mandates that the controller provide the DPO with necessary resources and general access to carry out their Article 39 tasks."
+      "deviation_type": "negation",
+      "reasoning": "The policy describes a procedure for individuals to request data restriction, which does not address the GDPR requirement for controllers/processors to provide the DPO with necessary resources and access to data to perform their tasks, and in doing so may imply a procedural contradiction to the DPO's independent support functions."
     },
     {
-      "gdpr_id": "gdpr_237",
+      "gdpr_id": "gdpr_236",
       "policy_id": "pol_078",
       "gdpr_article": 38,
-      "gdpr_text": "The data protection officer shall be bound by secrecy or confidentiality concerning the performance of his or her tasks, in accordance with Union or Member State law.",
+      "gdpr_text": "The controller and processor shall ensure that the data protection officer does not receive any instructions regarding the exercise of those tasks. He or she shall not be dismissed or penalised by the controller or the processor for performing his tasks. The data protection officer shall directly report to the highest management level of the controller or the processor.",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.8653,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence does not contradict the GDPR constraint but rather describes a valid procedure for interacting with the data protection officer, maintaining the required confidentiality without deviating from the obligation of secrecy."
-    },
-    {
-      "gdpr_id": "gdpr_239",
-      "policy_id": "pol_078",
-      "gdpr_article": 39,
-      "gdpr_text": "The data protection officer shall have at least the following tasks: to inform and advise the controller or the processor and the employees who carry out processing of their obligations pursuant to this Regulation and to other Union or Member State data protection provisions;",
-      "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
-      "similarity": 0.887,
-      "deviation_type": "execution_style",
-      "reasoning": "While the policy correctly directs data subjects to contact the Data Protection Officer for disputes, it contradicts the GDPR constraint by specifying 'post' as the required method, whereas the regulation mandates informing and advising employees and controllers rather than restricting the DP's advisory role to handling written postal requests from data subjects."
+      "similarity": 0.8926,
+      "deviation_type": "negation",
+      "reasoning": "The policy sentence contradicts the GDPR constraint by instructing the Data Protection Officer to receive a request from a data subject, which violates the rule that the DPO shall not receive any instructions regarding the exercise of their tasks."
     },
     {
       "gdpr_id": "gdpr_240",
@@ -1190,7 +1030,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8766,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly assigns the Data Protection Officer the responsibility of handling data subject requests related to disputes and unlawful processing, which falls under the monitoring and compliance tasks specified in the GDPR constraint."
+      "reasoning": "The policy sentence correctly identifies the data protection officer as the responsible party for handling specific compliance tasks (addressing data subject rights) without contradicting the scope or procedure defined in the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_243",
@@ -1200,7 +1040,7 @@
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8767,
       "deviation_type": "none",
-      "reasoning": "The company policy correctly assigns the task of receiving and acting upon data subject requests regarding unlawful processing or accuracy disputes to the Data Protection Officer, which aligns with the GDPR constraint specifying their role as the contact point and advisor."
+      "reasoning": "The company policy sentence fulfills the GDPR requirement for the data protection officer to act as the contact point for supervisory authorities and relevant matters by providing a clear channel for data subjects to raise disputes or requests directly with the officer."
     },
     {
       "gdpr_id": "gdpr_244",
@@ -1209,8 +1049,8 @@
       "gdpr_text": "The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
       "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data.",
       "similarity": 0.8761,
-      "deviation_type": "none",
-      "reasoning": "The company policy aligns with the GDPR constraint by requiring the Data Protection Officer to take appropriate action (restricting processing) based on a risk assessment involving the nature and context of the processing when a data subject raises concerns."
+      "deviation_type": "execution_style",
+      "reasoning": "The policy defines a specific submission method (written request by post) for handling disputes, which does not explicitly address the GDPR requirement for the DPO to assess processing risks based on their nature and scope during task performance."
     },
     {
       "gdpr_id": "gdpr_246",
@@ -1220,27 +1060,17 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9086,
       "deviation_type": "none",
-      "reasoning": "The company policy confirms adherence to applicable regulations via a Data Processing Agreement, which satisfies the GDPR requirement for appropriate safeguards even though the provider may not be directly subject to the Regulation under Article 3."
+      "reasoning": "The company policy sentence indicates adherence to GDPR-compliant instruments via a data processing agreement (DPA), which provides appropriate safeguards and binding commitments as required by Article 40 for controllers or processors not subject to the Regulation."
     },
     {
-      "gdpr_id": "gdpr_253",
-      "policy_id": "pol_056",
-      "gdpr_article": 40,
-      "gdpr_text": "The Commission shall ensure appropriate publicity for the approved codes which have been decided as having general validity in accordance with paragraph 9.",
-      "policy_text": "We process your data:\n- as part of our public communications (Art. 6 para.",
-      "similarity": 0.8795,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence aligns with the GDPR constraint by confirming that data processing is conducted as part of public communications, which supports the requirement for appropriate publicity of approved codes."
-    },
-    {
-      "gdpr_id": "gdpr_258",
-      "policy_id": "pol_056",
+      "gdpr_id": "gdpr_256",
+      "policy_id": "pol_083",
       "gdpr_article": 41,
-      "gdpr_text": "This Article shall not apply to processing carried out by public authorities and bodies.",
-      "policy_text": "We process your data:\n- as part of our public communications (Art. 6 para.",
-      "similarity": 0.8734,
-      "deviation_type": "none",
-      "reasoning": "The policy sentence begins defining the scope of data processing but does not explicitly state that it is exempt under Article 41 nor does it contradict the constraint that applies only to public authorities and bodies, so no deviation is present in the provided fragment."
+      "gdpr_text": "Without prejudice to the tasks and powers of the competent supervisory authority and the provisions of Chapter VIII, a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor, including suspension or exclusion of the controller or processor concerned from the code. It shall inform the competent supervisory authority of such actions and the reasons for taking them.",
+      "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
+      "similarity": 0.8919,
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy correctly identifies the supervisory authority as the responsible party to contact, but it only describes the action of making a complaint rather than adhering to the GDPR constraint which mandates the company itself to take appropriate action (such as suspension) and inform the authority."
     },
     {
       "gdpr_id": "gdpr_260",
@@ -1250,7 +1080,7 @@
       "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations.",
       "similarity": 0.9123,
       "deviation_type": "none",
-      "reasoning": "The company policy confirms the establishment of appropriate safeguards through a DPA that ensures compliance with regulations, which aligns with the GDPR requirement to make binding commitments for data transfers to third countries."
+      "reasoning": "The company policy addresses the GDPR requirement for appropriate safeguards and binding commitments in data transfers by concluding a data processing agreement that ensures compliance with the controller's instructions and regulations."
     },
     {
       "gdpr_id": "gdpr_271",
@@ -1260,16 +1090,10 @@
       "policy_text": "Making complaints to the relevant data protection authority\n\nIf you believe that we are violating any data protection laws by processing\npersonal data, you also have the right to make a complaint to the data\nsupervisory authority who is responsible for our company.",
       "similarity": 0.8915,
       "deviation_type": "execution_style",
-      "reasoning": "The policy correctly assigns responsibility to the correct party and covers the right data, but the procedure described (instructing to contact the supervisory authority) does not align with the GDPR constraint requiring the certification body to establish and make transparent internal procedures and structures for handling complaints."
+      "reasoning": "The policy sentence correctly assigns responsibility to the company but fails to address the GDPR requirement for the certification body to establish transparent procedures and structures for handling complaints internally, instead only mentioning the external right to complain to a supervisory authority."
     }
   ],
   "unmapped": [
-    {
-      "gdpr_id": "gdpr_001",
-      "gdpr_text": "Personal data shall be: processed lawfully, fairly and in a transparent manner in relation to the data subject (\u2018lawfulness, fairness and transparency\u2019);",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
     {
       "gdpr_id": "gdpr_003",
       "gdpr_text": "Personal data shall be: adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed (\u2018data minimisation\u2019);",
@@ -1279,18 +1103,6 @@
     {
       "gdpr_id": "gdpr_007",
       "gdpr_text": "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (\u2018accountability\u2019).",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_008",
-      "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: the data subject has given consent to the processing of his or her personal data for one or more specific purposes;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_009",
-      "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1307,14 +1119,20 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_014",
-      "gdpr_text": "Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+      "gdpr_id": "gdpr_016",
+      "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Member State law to which the controller is subject.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_016",
-      "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Member State law to which the controller is subject.",
+      "gdpr_id": "gdpr_017",
+      "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_020",
+      "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the nature of the personal data, in particular whether special categories of personal data are processed, pursuant to Article 9, or whether personal data related to criminal convictions and offences are processed, pursuant to Article 10;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1331,8 +1149,8 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_026",
-      "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
+      "gdpr_id": "gdpr_024",
+      "gdpr_text": "If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1367,8 +1185,20 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_039",
+      "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of public interest in the area of public health, such as protecting against serious cross-border threats to health or ensuring high standards of quality and safety of health care and of medicinal products or medical devices, on the basis of Union or Member State law which provides for suitable and specific measures to safeguard the rights and freedoms of the data subject, in particular professional secrecy;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_040",
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) based on Union or Member State law which shall be proportionate to the aim pursued, respect the essence of the right to data protection and provide for suitable and specific measures to safeguard the fundamental rights and the interests of the data subject.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_041",
+      "gdpr_text": "Processing of personal data relating to criminal convictions and offences or related security measures based on Article 6(1) shall be carried out only under the control of official authority or when the processing is authorised by Union or Member State law providing for appropriate safeguards for the rights and freedoms of data subjects. Any comprehensive register of criminal convictions shall be kept only under the control of official authority.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1457,14 +1287,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_064",
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.",
+      "gdpr_id": "gdpr_061",
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_065",
-      "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
+      "gdpr_id": "gdpr_064",
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1493,8 +1323,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_072",
-      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
+      "gdpr_id": "gdpr_074",
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_076",
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1535,12 +1371,6 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_084",
-      "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: the data subject already has the information;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_085",
       "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: the provision of such information proves impossible or would involve a disproportionate effort, in particular for processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes, subject to the conditions and safeguards referred to in Article 89(1) or in so far as the obligation referred to in paragraph 1 of this Article is likely to render impossible or seriously impair the achievement of the objectives of that processing. In such cases the controller shall take appropriate measures to protect the data subject's rights and freedoms and legitimate interests, including making the information publicly available;",
       "deviation_type": "constraint_coverage",
@@ -1571,6 +1401,18 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_090",
+      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_092",
+      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_094",
       "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: where the personal data are not collected from the data subject, any available information as to their source;",
       "deviation_type": "constraint_coverage",
@@ -1589,14 +1431,26 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_103",
-      "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been unlawfully processed;",
+      "gdpr_id": "gdpr_098",
+      "gdpr_text": "The right to obtain a copy referred to in paragraph 3 shall not adversely affect the rights and freedoms of others.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_109",
-      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for reasons of public interest in the area of public health in accordance with points (h) and (i) of Article 9(2) as well as Article 9(3);",
+      "gdpr_id": "gdpr_099",
+      "gdpr_text": "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her. Taking into account the purposes of the processing, the data subject shall have the right to have incomplete personal data completed, including by means of providing a supplementary statement.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_101",
+      "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_110",
+      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1619,14 +1473,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_123",
-      "gdpr_text": "The right referred to in paragraph 1 shall not adversely affect the rights and freedoms of others.",
+      "gdpr_id": "gdpr_122",
+      "gdpr_text": "The exercise of the right referred to in paragraph 1 of this Article shall be without prejudice to Article 17. That right shall not apply to processing necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_126",
-      "gdpr_text": "Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.",
+      "gdpr_id": "gdpr_123",
+      "gdpr_text": "The right referred to in paragraph 1 shall not adversely affect the rights and freedoms of others.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1643,26 +1497,26 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_133",
-      "gdpr_text": "In the cases referred to in points (a) and (c) of paragraph 2, the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_134",
       "gdpr_text": "Decisions referred to in paragraph 2 shall not be based on special categories of personal data referred to in Article 9(1), unless point (a) or (g) of Article 9(2) applies and suitable measures to safeguard the data subject's rights and freedoms and legitimate interests are in place.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_140",
-      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the storage periods and the applicable safeguards taking into account the nature, scope and purposes of the processing or categories of processing;",
+      "gdpr_id": "gdpr_136",
+      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the categories of personal data;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_141",
-      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the risks to the rights and freedoms of data subjects; and",
+      "gdpr_id": "gdpr_139",
+      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the specification of the controller or categories of controllers;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_143",
+      "gdpr_text": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation. Those measures shall be reviewed and updated where necessary.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1709,14 +1563,38 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_152",
+      "gdpr_text": "The representative shall be established in one of the Member States where the data subjects, whose personal data are processed in relation to the offering of goods or services to them, or whose behaviour is monitored, are.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_154",
+      "gdpr_text": "The designation of a representative by the controller or processor shall be without prejudice to legal actions which could be initiated against the controller or the processor themselves.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_156",
       "gdpr_text": "The processor shall not engage another processor without prior specific or general written authorisation of the controller. In the case of general written authorisation, the processor shall inform the controller of any intended changes concerning the addition or replacement of other processors, thereby giving the controller the opportunity to object to such changes.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_167",
+      "gdpr_text": "The contract or the other legal act referred to in paragraphs 3 and 4 shall be in writing, including in electronic form.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_168",
       "gdpr_text": "Without prejudice to Articles 82, 83 and 84, if a processor infringes this Regulation by determining the purposes and means of processing, the processor shall be considered to be a controller in respect of that processing.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_170",
+      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the name and contact details of the controller and, where applicable, the joint controller, the controller's representative and the data protection officer;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1733,8 +1611,8 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_174",
-      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
+      "gdpr_id": "gdpr_173",
+      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1763,6 +1641,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_180",
+      "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where possible, a general description of the technical and organisational security measures referred to in Article 32(1).",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_181",
       "gdpr_text": "The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form.",
       "deviation_type": "constraint_coverage",
@@ -1787,20 +1671,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_186",
-      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;",
+      "gdpr_id": "gdpr_189",
+      "gdpr_text": "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_187",
-      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_188",
-      "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
+      "gdpr_id": "gdpr_191",
+      "gdpr_text": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1865,6 +1743,24 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_203",
+      "gdpr_text": "Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_204",
+      "gdpr_text": "The controller shall seek the advice of the data protection officer, where designated, when carrying out a data protection impact assessment.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_205",
+      "gdpr_text": "A data protection impact assessment referred to in paragraph 1 shall in particular be required in the case of: a systematic and extensive evaluation of personal aspects relating to natural persons which is based on automated processing, including profiling, and on which decisions are based that produce legal effects concerning the natural person or similarly significantly affect the natural person;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_206",
       "gdpr_text": "A data protection impact assessment referred to in paragraph 1 shall in particular be required in the case of: processing on a large scale of special categories of data referred to in Article 9(1), or of personal data relating to criminal convictions and offences referred to in Article 10; or",
       "deviation_type": "constraint_coverage",
@@ -1907,8 +1803,8 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_214",
-      "gdpr_text": "The assessment shall contain at least: the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned.",
+      "gdpr_id": "gdpr_213",
+      "gdpr_text": "The assessment shall contain at least: an assessment of the risks to the rights and freedoms of data subjects referred to in paragraph 1; and",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1931,14 +1827,32 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_219",
+      "gdpr_text": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_220",
       "gdpr_text": "Where the supervisory authority is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the supervisory authority shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the supervisory authority has obtained information it has requested for the purposes of the consultation.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_222",
-      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
+      "gdpr_id": "gdpr_221",
+      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_223",
+      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the measures and safeguards provided to protect the rights and freedoms of data subjects pursuant to this Regulation;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_224",
+      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the contact details of the data protection officer;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1961,20 +1875,38 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_230",
+      "gdpr_text": "The controller and the processor shall designate a data protection officer in any case where: the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_232",
       "gdpr_text": "The data protection officer shall be designated on the basis of professional qualities and, in particular, expert knowledge of data protection law and practices and the ability to fulfil the tasks referred to in Article 39.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_236",
-      "gdpr_text": "The controller and processor shall ensure that the data protection officer does not receive any instructions regarding the exercise of those tasks. He or she shall not be dismissed or penalised by the controller or the processor for performing his tasks. The data protection officer shall directly report to the highest management level of the controller or the processor.",
+      "gdpr_id": "gdpr_233",
+      "gdpr_text": "The controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_237",
+      "gdpr_text": "The data protection officer shall be bound by secrecy or confidentiality concerning the performance of his or her tasks, in accordance with Union or Member State law.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
       "gdpr_id": "gdpr_238",
       "gdpr_text": "The data protection officer may fulfil other tasks and duties. The controller or processor shall ensure that any such tasks and duties do not result in a conflict of interests.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_239",
+      "gdpr_text": "The data protection officer shall have at least the following tasks: to inform and advise the controller or the processor and the employees who carry out processing of their obligations pursuant to this Regulation and to other Union or Member State data protection provisions;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -2033,6 +1965,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_253",
+      "gdpr_text": "The Commission shall ensure appropriate publicity for the approved codes which have been decided as having general validity in accordance with paragraph 9.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_254",
       "gdpr_text": "The Board shall collate all approved codes of conduct, amendments and extensions in a register and shall make them publicly available by way of appropriate means.",
       "deviation_type": "constraint_coverage",
@@ -2045,14 +1983,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_256",
-      "gdpr_text": "Without prejudice to the tasks and powers of the competent supervisory authority and the provisions of Chapter VIII, a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor, including suspension or exclusion of the controller or processor concerned from the code. It shall inform the competent supervisory authority of such actions and the reasons for taking them.",
+      "gdpr_id": "gdpr_257",
+      "gdpr_text": "The competent supervisory authority shall revoke the accreditation of a body as referred to in paragraph 1 if the conditions for accreditation are not, or are no longer, met or where actions taken by the body infringe this Regulation.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_257",
-      "gdpr_text": "The competent supervisory authority shall revoke the accreditation of a body as referred to in paragraph 1 if the conditions for accreditation are not, or are no longer, met or where actions taken by the body infringe this Regulation.",
+      "gdpr_id": "gdpr_258",
+      "gdpr_text": "This Article shall not apply to processing carried out by public authorities and bodies.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },

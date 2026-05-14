@@ -1,5 +1,23 @@
 [
   {
+    "gdpr_id": "gdpr_001",
+    "policy_id": "pol_026",
+    "similarity": 0.8804,
+    "gdpr_article": 5,
+    "gdpr_text": "Personal data shall be: processed lawfully, fairly and in a transparent manner in relation to the data subject (‘lawfulness, fairness and transparency’);",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "The legal basis for the processing of this data is our legitimate interest pursuant to\nArticle 6 (1) lit."
+  },
+  {
+    "gdpr_id": "gdpr_002",
+    "policy_id": "pol_027",
+    "similarity": 0.9105,
+    "gdpr_article": 5,
+    "gdpr_text": "Personal data shall be: collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes (‘purpose limitation’);",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
     "gdpr_id": "gdpr_003",
     "policy_id": "pol_027",
     "similarity": 0.8776,
@@ -7,15 +25,6 @@
     "gdpr_text": "Personal data shall be: adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed (‘data minimisation’);",
     "policy_section": "2. Which Data does Trade Republic Process",
     "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
-  },
-  {
-    "gdpr_id": "gdpr_006",
-    "policy_id": "pol_082",
-    "similarity": 0.8734,
-    "gdpr_article": 5,
-    "gdpr_text": "Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).",
-    "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
     "gdpr_id": "gdpr_008",
@@ -45,6 +54,15 @@
     "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest."
   },
   {
+    "gdpr_id": "gdpr_011",
+    "policy_id": "pol_027",
+    "similarity": 0.8952,
+    "gdpr_article": 6,
+    "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary in order to protect the vital interests of the data subject or of another natural person;",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
     "gdpr_id": "gdpr_013",
     "policy_id": "pol_020",
     "similarity": 0.8897,
@@ -63,11 +81,38 @@
     "policy_text": "The legal basis for the processing of this data is our legitimate interest pursuant to\nArticle 6 (1) lit."
   },
   {
+    "gdpr_id": "gdpr_016",
+    "policy_id": "pol_026",
+    "similarity": 0.8971,
+    "gdpr_article": 6,
+    "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Member State law to which the controller is subject.",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "The legal basis for the processing of this data is our legitimate interest pursuant to\nArticle 6 (1) lit."
+  },
+  {
+    "gdpr_id": "gdpr_017",
+    "policy_id": "pol_027",
+    "similarity": 0.9163,
+    "gdpr_article": 6,
+    "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
     "gdpr_id": "gdpr_019",
     "policy_id": "pol_027",
     "similarity": 0.9035,
     "gdpr_article": 6,
     "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the context in which the personal data have been collected, in particular regarding the relationship between data subjects and the controller;",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
+    "gdpr_id": "gdpr_021",
+    "policy_id": "pol_027",
+    "similarity": 0.9089,
+    "gdpr_article": 6,
+    "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the possible consequences of the intended further processing for data subjects;",
     "policy_section": "2. Which Data does Trade Republic Process",
     "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
   },
@@ -99,6 +144,15 @@
     "policy_text": "You\nhave the right to revoke your consent at any time with effect for the future (Art. 7\n(3) sentence 1 GDPR)."
   },
   {
+    "gdpr_id": "gdpr_026",
+    "policy_id": "pol_005",
+    "similarity": 0.8904,
+    "gdpr_article": 7,
+    "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
+    "policy_section": "1. Purpose and Legal Basis of our Data Processing",
+    "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest."
+  },
+  {
     "gdpr_id": "gdpr_027",
     "policy_id": "pol_027",
     "similarity": 0.9128,
@@ -117,6 +171,15 @@
     "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
+    "gdpr_id": "gdpr_032",
+    "policy_id": "pol_094",
+    "similarity": 0.8917,
+    "gdpr_article": 9,
+    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the purposes of carrying out the obligations and exercising specific rights of the controller or of the data subject in the field of employment and social security and social protection law in so far as it is authorised by Union or Member State law or a collective agreement pursuant to Member State law providing for appropriate safeguards for the fundamental rights and the interests of the data subject;",
+    "policy_section": "9. Your Privacy Rights and Contact",
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
+  },
+  {
     "gdpr_id": "gdpr_036",
     "policy_id": "pol_071",
     "similarity": 0.9007,
@@ -126,13 +189,13 @@
     "policy_text": "We send such reminders only if our original request\nhas the purpose of fulfilling legal obligations we are required to follow as a financial\nservices provider."
   },
   {
-    "gdpr_id": "gdpr_045",
-    "policy_id": "pol_093",
-    "similarity": 0.91,
-    "gdpr_article": 12,
-    "gdpr_text": "The controller shall facilitate the exercise of data subject rights under Articles 15 to 22. In the cases referred to in Article 11(2), the controller shall not refuse to act on the request of the data subject for exercising his or her rights under Articles 15 to 22, unless the controller demonstrates that it is not in a position to identify the data subject.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
+    "gdpr_id": "gdpr_039",
+    "policy_id": "pol_079",
+    "similarity": 0.9003,
+    "gdpr_article": 9,
+    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of public interest in the area of public health, such as protecting against serious cross-border threats to health or ensuring high standards of quality and safety of health care and of medicinal products or medical devices, on the basis of Union or Member State law which provides for suitable and specific measures to safeguard the rights and freedoms of the data subject, in particular professional secrecy;",
+    "policy_section": "6. Recipients or categories of recipients",
+    "policy_text": "Depending on how you use our Website or Services, we may transfer your personal data to\nthe following categories of recipients:\n- public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking\n  Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud\n  and crime prevention, enforcement of claims or legal defense of claims;\n- External advisors or lawyers for purposes of fulfilling legal obligations, fraud and\n  crime prevention, enforcement of claims or legal defense of claims;\n- other credit and financial services institutions to which Trade Republic transfers\n  personal data in order to carry out the business relationship with you; e.g. escrow\n  banks, payment service providers, stock exchanges or credit agencies;\n- service providers that provide technical services, such as sending SMS messages or\n  performing video identifications, customer service support services or text analysis\n  service (including artificial intelligence services);\n- service providers for risk screenings, background checks, diligence reports or\n  solvency scores;\n- service providers regarding crypto assets custody;\n- service providers which host and provide the IT infrastructure for us or ensure our\n  IT security;\n- Marketing services like Social Networks, email service providers, customer data\n  platforms, technical service providers for marketing campaigns or raffles and\n  advertising networks."
   },
   {
     "gdpr_id": "gdpr_047",
@@ -225,31 +288,13 @@
     "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_063",
-    "policy_id": "pol_027",
-    "similarity": 0.9072,
+    "gdpr_id": "gdpr_066",
+    "policy_id": "pol_094",
+    "similarity": 0.9006,
     "gdpr_article": 13,
-    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data;",
-    "policy_section": "2. Which Data does Trade Republic Process",
-    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
-  },
-  {
-    "gdpr_id": "gdpr_065",
-    "policy_id": "pol_039",
-    "similarity": 0.8857,
-    "gdpr_article": 13,
-    "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
-    "policy_section": "2. Which Data does Trade Republic Process",
-    "policy_text": "This includes displaying their information in customer account\nstatements as well as processing their data for fraud prevention purposes, to prevent\nmisuse and similar purposes."
-  },
-  {
-    "gdpr_id": "gdpr_070",
-    "policy_id": "pol_087",
-    "similarity": 0.878,
-    "gdpr_article": 14,
-    "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the categories of personal data concerned;",
-    "policy_section": "8. Automated decision making",
-    "policy_text": "For\nthis purpose, we process your personal data and especially information relating to your\ntransactions, the transaction value, recent changes in your personal data, etc."
+    "gdpr_text": "Paragraphs 1, 2 and 3 shall not apply where and insofar as the data subject already has the information.",
+    "policy_section": "9. Your Privacy Rights and Contact",
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
     "gdpr_id": "gdpr_071",
@@ -262,12 +307,12 @@
   },
   {
     "gdpr_id": "gdpr_072",
-    "policy_id": "pol_082",
-    "similarity": 0.9369,
+    "policy_id": "pol_081",
+    "similarity": 0.9467,
     "gdpr_article": 14,
     "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
     "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
   },
   {
     "gdpr_id": "gdpr_073",
@@ -315,6 +360,24 @@
     "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
+    "gdpr_id": "gdpr_086",
+    "policy_id": "pol_079",
+    "similarity": 0.8842,
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: obtaining or disclosure is expressly laid down by Union or Member State law to which the controller is subject and which provides appropriate measures to protect the data subject's legitimate interests; or",
+    "policy_section": "6. Recipients or categories of recipients",
+    "policy_text": "Depending on how you use our Website or Services, we may transfer your personal data to\nthe following categories of recipients:\n- public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking\n  Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud\n  and crime prevention, enforcement of claims or legal defense of claims;\n- External advisors or lawyers for purposes of fulfilling legal obligations, fraud and\n  crime prevention, enforcement of claims or legal defense of claims;\n- other credit and financial services institutions to which Trade Republic transfers\n  personal data in order to carry out the business relationship with you; e.g. escrow\n  banks, payment service providers, stock exchanges or credit agencies;\n- service providers that provide technical services, such as sending SMS messages or\n  performing video identifications, customer service support services or text analysis\n  service (including artificial intelligence services);\n- service providers for risk screenings, background checks, diligence reports or\n  solvency scores;\n- service providers regarding crypto assets custody;\n- service providers which host and provide the IT infrastructure for us or ensure our\n  IT security;\n- Marketing services like Social Networks, email service providers, customer data\n  platforms, technical service providers for marketing campaigns or raffles and\n  advertising networks."
+  },
+  {
+    "gdpr_id": "gdpr_087",
+    "policy_id": "pol_094",
+    "similarity": 0.8938,
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: where the personal data must remain confidential subject to an obligation of professional secrecy regulated by Union or Member State law, including a statutory obligation of secrecy.",
+    "policy_section": "9. Your Privacy Rights and Contact",
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
+  },
+  {
     "gdpr_id": "gdpr_088",
     "policy_id": "pol_094",
     "similarity": 0.8806,
@@ -349,24 +412,6 @@
     "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period;",
     "policy_section": "3. Data Retention and Deletion",
     "policy_text": "As a bank, there are different statutory data retention rules that apply to us and that\ndetermine for how long we are legally obliged to store data."
-  },
-  {
-    "gdpr_id": "gdpr_092",
-    "policy_id": "pol_092",
-    "similarity": 0.8768,
-    "gdpr_article": 15,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing;",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "Your Privacy Rights and Contact\n\nYou have the following privacy rights:\n- the right to access your personal data (Art. 15 GDPR);\n- the right to rectification (Art."
-  },
-  {
-    "gdpr_id": "gdpr_093",
-    "policy_id": "pol_092",
-    "similarity": 0.9004,
-    "gdpr_article": 15,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the right to lodge a complaint with a supervisory authority;",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "Your Privacy Rights and Contact\n\nYou have the following privacy rights:\n- the right to access your personal data (Art. 15 GDPR);\n- the right to rectification (Art."
   },
   {
     "gdpr_id": "gdpr_095",
@@ -405,13 +450,13 @@
     "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_101",
-    "policy_id": "pol_093",
-    "similarity": 0.906,
+    "gdpr_id": "gdpr_102",
+    "policy_id": "pol_094",
+    "similarity": 0.8849,
     "gdpr_article": 17,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing;",
+    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2);",
     "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
     "gdpr_id": "gdpr_103",
@@ -423,22 +468,31 @@
     "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
+    "gdpr_id": "gdpr_104",
+    "policy_id": "pol_094",
+    "similarity": 0.8843,
+    "gdpr_article": 17,
+    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject;",
+    "policy_section": "9. Your Privacy Rights and Contact",
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
+  },
+  {
     "gdpr_id": "gdpr_105",
-    "policy_id": "pol_093",
-    "similarity": 0.8977,
+    "policy_id": "pol_094",
+    "similarity": 0.9009,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been collected in relation to the offer of information society services referred to in Article 8(1).",
     "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
     "gdpr_id": "gdpr_107",
-    "policy_id": "pol_094",
-    "similarity": 0.9107,
+    "policy_id": "pol_072",
+    "similarity": 0.8909,
     "gdpr_article": 17,
     "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for exercising the right of freedom of expression and information;",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
+    "policy_section": "5. Communication, SMS and Customer Service",
+    "policy_text": "This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest."
   },
   {
     "gdpr_id": "gdpr_108",
@@ -450,31 +504,31 @@
     "policy_text": "We send such reminders only if our original request\nhas the purpose of fulfilling legal obligations we are required to follow as a financial\nservices provider."
   },
   {
-    "gdpr_id": "gdpr_109",
-    "policy_id": "pol_093",
-    "similarity": 0.9139,
+    "gdpr_id": "gdpr_111",
+    "policy_id": "pol_071",
+    "similarity": 0.898,
     "gdpr_article": 17,
-    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for reasons of public interest in the area of public health in accordance with points (h) and (i) of Article 9(2) as well as Article 9(3);",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
+    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for the establishment, exercise or defence of legal claims.",
+    "policy_section": "5. Communication, SMS and Customer Service",
+    "policy_text": "We send such reminders only if our original request\nhas the purpose of fulfilling legal obligations we are required to follow as a financial\nservices provider."
   },
   {
-    "gdpr_id": "gdpr_110",
-    "policy_id": "pol_093",
-    "similarity": 0.8907,
-    "gdpr_article": 17,
-    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_113",
+    "gdpr_id": "gdpr_114",
     "policy_id": "pol_094",
-    "similarity": 0.9176,
+    "similarity": 0.8863,
     "gdpr_article": 18,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead;",
+    "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;",
     "policy_section": "9. Your Privacy Rights and Contact",
     "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
+  },
+  {
+    "gdpr_id": "gdpr_116",
+    "policy_id": "pol_082",
+    "similarity": 0.8715,
+    "gdpr_article": 18,
+    "gdpr_text": "Where processing has been restricted under paragraph 1, such personal data shall, with the exception of storage, only be processed with the data subject's consent or for the establishment, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or of a Member State.",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
     "gdpr_id": "gdpr_117",
@@ -486,31 +540,13 @@
     "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_118",
-    "policy_id": "pol_093",
-    "similarity": 0.9059,
-    "gdpr_article": 19,
-    "gdpr_text": "The controller shall communicate any rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller shall inform the data subject about those recipients if the data subject requests it.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_120",
-    "policy_id": "pol_092",
-    "similarity": 0.8887,
+    "gdpr_id": "gdpr_119",
+    "policy_id": "pol_027",
+    "similarity": 0.916,
     "gdpr_article": 20,
-    "gdpr_text": "The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where: the processing is carried out by automated means.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "Your Privacy Rights and Contact\n\nYou have the following privacy rights:\n- the right to access your personal data (Art. 15 GDPR);\n- the right to rectification (Art."
-  },
-  {
-    "gdpr_id": "gdpr_122",
-    "policy_id": "pol_093",
-    "similarity": 0.8785,
-    "gdpr_article": 20,
-    "gdpr_text": "The exercise of the right referred to in paragraph 1 of this Article shall be without prejudice to Article 17. That right shall not apply to processing necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "16 GDPR);\n- the right to deletion (Art. 17 GDPR);\n- the right to restriction of processing (Art. 18 GDPR);\n- a right to object to processing (Art. 21 GDPR)."
+    "gdpr_text": "The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where: the processing is based on consent pursuant to point (a) of Article 6(1) or point (a) of Article 9(2) or on a contract pursuant to point (b) of Article 6(1); and",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
   },
   {
     "gdpr_id": "gdpr_123",
@@ -522,13 +558,13 @@
     "policy_text": "This means that our interest in processing your data is not\noverridden by your interests or your fundamental rights and freedoms."
   },
   {
-    "gdpr_id": "gdpr_127",
-    "policy_id": "pol_092",
-    "similarity": 0.9032,
+    "gdpr_id": "gdpr_125",
+    "policy_id": "pol_064",
+    "similarity": 0.8953,
     "gdpr_article": 21,
-    "gdpr_text": "At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "Your Privacy Rights and Contact\n\nYou have the following privacy rights:\n- the right to access your personal data (Art. 15 GDPR);\n- the right to rectification (Art."
+    "gdpr_text": "Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.",
+    "policy_section": "4. Marketing Activities and Social Media",
+    "policy_text": "4.3 Market Research and Surveys\n\nIf you decide to participate in a survey, we will process the data and answers you\nprovide to the extent necessary to conduct the survey and analyze the results."
   },
   {
     "gdpr_id": "gdpr_130",
@@ -541,21 +577,30 @@
   },
   {
     "gdpr_id": "gdpr_132",
-    "policy_id": "pol_082",
-    "similarity": 0.8989,
+    "policy_id": "pol_027",
+    "similarity": 0.9152,
     "gdpr_article": 22,
     "gdpr_text": "Paragraph 1 shall not apply if the decision: is based on the data subject's explicit consent.",
-    "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
+    "gdpr_id": "gdpr_137",
+    "policy_id": "pol_094",
+    "similarity": 0.8613,
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
+    "policy_section": "9. Your Privacy Rights and Contact",
+    "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
     "gdpr_id": "gdpr_138",
-    "policy_id": "pol_082",
-    "similarity": 0.887,
+    "policy_id": "pol_081",
+    "similarity": 0.9065,
     "gdpr_article": 23,
     "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the safeguards to prevent abuse or unlawful access or transfer;",
     "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
   },
   {
     "gdpr_id": "gdpr_141",
@@ -576,6 +621,24 @@
     "policy_text": "With regard to the right to access your data and the right to erasure, the restrictions\npursuant to Art."
   },
   {
+    "gdpr_id": "gdpr_143",
+    "policy_id": "pol_072",
+    "similarity": 0.8879,
+    "gdpr_article": 24,
+    "gdpr_text": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation. Those measures shall be reviewed and updated where necessary.",
+    "policy_section": "5. Communication, SMS and Customer Service",
+    "policy_text": "This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest."
+  },
+  {
+    "gdpr_id": "gdpr_145",
+    "policy_id": "pol_027",
+    "similarity": 0.9027,
+    "gdpr_article": 25,
+    "gdpr_text": "Taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects.",
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
+  },
+  {
     "gdpr_id": "gdpr_147",
     "policy_id": "pol_060",
     "similarity": 0.8975,
@@ -594,38 +657,38 @@
     "policy_text": "With regard to personal data being processed by the respective Social Network in order\nto provide Company Profile statistics, we are joint controllers together with the\nrespective Social Network in line with Art."
   },
   {
-    "gdpr_id": "gdpr_155",
+    "gdpr_id": "gdpr_157",
     "policy_id": "pol_082",
-    "similarity": 0.9133,
+    "similarity": 0.9118,
     "gdpr_article": 28,
-    "gdpr_text": "Where processing is to be carried out on behalf of a controller, the controller shall use only processors providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that processing will meet the requirements of this Regulation and ensure the protection of the rights of the data subject.",
+    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: processes the personal data only on documented instructions from the controller, including with regard to transfers of personal data to a third country or an international organisation, unless required to do so by Union or Member State law to which the processor is subject; in such a case, the processor shall inform the controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;",
     "policy_section": "7. Transfer of personal data to third countries",
     "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
-    "gdpr_id": "gdpr_157",
-    "policy_id": "pol_081",
-    "similarity": 0.9268,
+    "gdpr_id": "gdpr_158",
+    "policy_id": "pol_079",
+    "similarity": 0.8874,
     "gdpr_article": 28,
-    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: processes the personal data only on documented instructions from the controller, including with regard to transfers of personal data to a third country or an international organisation, unless required to do so by Union or Member State law to which the processor is subject; in such a case, the processor shall inform the controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;",
+    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: ensures that persons authorised to process the personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;",
+    "policy_section": "6. Recipients or categories of recipients",
+    "policy_text": "Depending on how you use our Website or Services, we may transfer your personal data to\nthe following categories of recipients:\n- public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking\n  Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud\n  and crime prevention, enforcement of claims or legal defense of claims;\n- External advisors or lawyers for purposes of fulfilling legal obligations, fraud and\n  crime prevention, enforcement of claims or legal defense of claims;\n- other credit and financial services institutions to which Trade Republic transfers\n  personal data in order to carry out the business relationship with you; e.g. escrow\n  banks, payment service providers, stock exchanges or credit agencies;\n- service providers that provide technical services, such as sending SMS messages or\n  performing video identifications, customer service support services or text analysis\n  service (including artificial intelligence services);\n- service providers for risk screenings, background checks, diligence reports or\n  solvency scores;\n- service providers regarding crypto assets custody;\n- service providers which host and provide the IT infrastructure for us or ensure our\n  IT security;\n- Marketing services like Social Networks, email service providers, customer data\n  platforms, technical service providers for marketing campaigns or raffles and\n  advertising networks."
+  },
+  {
+    "gdpr_id": "gdpr_159",
+    "policy_id": "pol_082",
+    "similarity": 0.9108,
+    "gdpr_article": 28,
+    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: takes all measures required pursuant to Article 32;",
     "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
+    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
     "gdpr_id": "gdpr_161",
-    "policy_id": "pol_060",
-    "similarity": 0.883,
+    "policy_id": "pol_082",
+    "similarity": 0.9037,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: taking into account the nature of the processing, assists the controller by appropriate technical and organisational measures, insofar as this is possible, for the fulfilment of the controller's obligation to respond to requests for exercising the data subject's rights laid down in Chapter III;",
-    "policy_section": "4. Marketing Activities and Social Media",
-    "policy_text": "With regard to personal data being processed by the respective Social Network in order\nto provide Company Profile statistics, we are joint controllers together with the\nrespective Social Network in line with Art."
-  },
-  {
-    "gdpr_id": "gdpr_162",
-    "policy_id": "pol_082",
-    "similarity": 0.9132,
-    "gdpr_article": 28,
-    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: assists the controller in ensuring compliance with the obligations pursuant to Articles 32 to 36 taking into account the nature of processing and the information available to the processor;",
     "policy_section": "7. Transfer of personal data to third countries",
     "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
@@ -639,13 +702,13 @@
     "policy_text": "19-21, 10119 Berlin,\nGermany\n\nIn some cases, we may also act as joint controllers or third parties may process your\ndata on their own behalf as data controllers."
   },
   {
-    "gdpr_id": "gdpr_170",
-    "policy_id": "pol_060",
-    "similarity": 0.8852,
-    "gdpr_article": 30,
-    "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the name and contact details of the controller and, where applicable, the joint controller, the controller's representative and the data protection officer;",
-    "policy_section": "4. Marketing Activities and Social Media",
-    "policy_text": "With regard to personal data being processed by the respective Social Network in order\nto provide Company Profile statistics, we are joint controllers together with the\nrespective Social Network in line with Art."
+    "gdpr_id": "gdpr_169",
+    "policy_id": "pol_076",
+    "similarity": 0.852,
+    "gdpr_article": 29,
+    "gdpr_text": "The processor and any person acting under the authority of the controller or of the processor, who has access to personal data, shall not process those data except on instructions from the controller, unless required to do so by Union or Member State law.",
+    "policy_section": "6. Recipients or categories of recipients",
+    "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law."
   },
   {
     "gdpr_id": "gdpr_171",
@@ -693,58 +756,31 @@
     "policy_text": "Regarding your use of the Website, the following data retention timelines apply:\n\n\n3.1 Cookies and Cookie lifetime\n\nData collected via Cookies is only stored for a limited amount of time."
   },
   {
-    "gdpr_id": "gdpr_181",
-    "policy_id": "pol_050",
-    "similarity": 0.853,
+    "gdpr_id": "gdpr_179",
+    "policy_id": "pol_081",
+    "similarity": 0.9424,
     "gdpr_article": 30,
-    "gdpr_text": "The records referred to in paragraphs 1 and 2 shall be in writing, including in electronic form.",
-    "policy_section": "3. Data Retention and Deletion",
-    "policy_text": "We process and retain your data in line with statutory retention periods in order to\nfulfill our legal obligations."
+    "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_182",
-    "policy_id": "pol_097",
-    "similarity": 0.8701,
-    "gdpr_article": 30,
-    "gdpr_text": "The controller or the processor and, where applicable, the controller's or the processor's representative, shall make the record available to the supervisory authority on request.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
-  },
-  {
-    "gdpr_id": "gdpr_184",
-    "policy_id": "pol_097",
-    "similarity": 0.8796,
-    "gdpr_article": 31,
-    "gdpr_text": "The controller and the processor and, where applicable, their representatives, shall cooperate, on request, with the supervisory authority in the performance of its tasks.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
-  },
-  {
-    "gdpr_id": "gdpr_194",
-    "policy_id": "pol_080",
-    "similarity": 0.8852,
-    "gdpr_article": 33,
-    "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
+    "gdpr_id": "gdpr_189",
+    "policy_id": "pol_079",
+    "similarity": 0.8771,
+    "gdpr_article": 32,
+    "gdpr_text": "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.",
     "policy_section": "6. Recipients or categories of recipients",
-    "policy_text": "You can reach out to us, if you want to receive further information on the respective\nrecipients of personal data."
-  },
-  {
-    "gdpr_id": "gdpr_211",
-    "policy_id": "pol_039",
-    "similarity": 0.875,
-    "gdpr_article": 35,
-    "gdpr_text": "The assessment shall contain at least: a systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller;",
-    "policy_section": "2. Which Data does Trade Republic Process",
-    "policy_text": "This includes displaying their information in customer account\nstatements as well as processing their data for fraud prevention purposes, to prevent\nmisuse and similar purposes."
+    "policy_text": "Depending on how you use our Website or Services, we may transfer your personal data to\nthe following categories of recipients:\n- public bodies and institutions (e.g. Deutsche Bundesbank, BaFin, European Banking\n  Authority, European Central Bank) for purposes of fulfilling legal obligations, fraud\n  and crime prevention, enforcement of claims or legal defense of claims;\n- External advisors or lawyers for purposes of fulfilling legal obligations, fraud and\n  crime prevention, enforcement of claims or legal defense of claims;\n- other credit and financial services institutions to which Trade Republic transfers\n  personal data in order to carry out the business relationship with you; e.g. escrow\n  banks, payment service providers, stock exchanges or credit agencies;\n- service providers that provide technical services, such as sending SMS messages or\n  performing video identifications, customer service support services or text analysis\n  service (including artificial intelligence services);\n- service providers for risk screenings, background checks, diligence reports or\n  solvency scores;\n- service providers regarding crypto assets custody;\n- service providers which host and provide the IT infrastructure for us or ensure our\n  IT security;\n- Marketing services like Social Networks, email service providers, customer data\n  platforms, technical service providers for marketing campaigns or raffles and\n  advertising networks."
   },
   {
     "gdpr_id": "gdpr_212",
-    "policy_id": "pol_023",
-    "similarity": 0.8791,
+    "policy_id": "pol_027",
+    "similarity": 0.8984,
     "gdpr_article": 35,
     "gdpr_text": "The assessment shall contain at least: an assessment of the necessity and proportionality of the processing operations in relation to the purposes;",
-    "policy_section": "1. Purpose and Legal Basis of our Data Processing",
-    "policy_text": "We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights."
+    "policy_section": "2. Which Data does Trade Republic Process",
+    "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit."
   },
   {
     "gdpr_id": "gdpr_221",
@@ -774,49 +810,67 @@
     "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_224",
+    "gdpr_id": "gdpr_226",
     "policy_id": "pol_097",
-    "similarity": 0.8984,
+    "similarity": 0.883,
     "gdpr_article": 36,
-    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the contact details of the data protection officer;",
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: any other information requested by the supervisory authority.",
     "policy_section": "9. Your Privacy Rights and Contact",
     "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_227",
+    "gdpr_id": "gdpr_242",
     "policy_id": "pol_097",
-    "similarity": 0.8553,
-    "gdpr_article": 36,
-    "gdpr_text": "Member States shall consult the supervisory authority during the preparation of a proposal for a legislative measure to be adopted by a national parliament, or of a regulatory measure based on such a legislative measure, which relates to processing.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
-  },
-  {
-    "gdpr_id": "gdpr_233",
-    "policy_id": "pol_097",
-    "similarity": 0.8922,
-    "gdpr_article": 37,
-    "gdpr_text": "The controller or the processor shall publish the contact details of the data protection officer and communicate them to the supervisory authority.",
-    "policy_section": "9. Your Privacy Rights and Contact",
-    "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
-  },
-  {
-    "gdpr_id": "gdpr_243",
-    "policy_id": "pol_097",
-    "similarity": 0.9039,
+    "similarity": 0.9038,
     "gdpr_article": 39,
-    "gdpr_text": "The data protection officer shall have at least the following tasks: to act as the contact point for the supervisory authority on issues relating to processing, including the prior consultation referred to in Article 36, and to consult, where appropriate, with regard to any other matter.",
+    "gdpr_text": "The data protection officer shall have at least the following tasks: to cooperate with the supervisory authority;",
     "policy_section": "9. Your Privacy Rights and Contact",
     "policy_text": "In addition, there is the right to complain to the data protection supervisory authority\npursuant to Art."
   },
   {
-    "gdpr_id": "gdpr_244",
-    "policy_id": "pol_003",
-    "similarity": 0.8815,
-    "gdpr_article": 39,
-    "gdpr_text": "The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
-    "policy_section": "1. Purpose and Legal Basis of our Data Processing",
-    "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data."
+    "gdpr_id": "gdpr_246",
+    "policy_id": "pol_082",
+    "similarity": 0.9351,
+    "gdpr_article": 40,
+    "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, codes of conduct approved pursuant to paragraph 5 of this Article and having general validity pursuant to paragraph 9 of this Article may also be adhered to by controllers or processors that are not subject to this Regulation pursuant to Article 3 in order to provide appropriate safeguards within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (e) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards including with regard to the rights of data subjects.",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
+  },
+  {
+    "gdpr_id": "gdpr_250",
+    "policy_id": "pol_081",
+    "similarity": 0.9142,
+    "gdpr_article": 40,
+    "gdpr_text": "Where a draft code of conduct relates to processing activities in several Member States, the supervisory authority which is competent pursuant to Article 55 shall, before approving the draft code, amendment or extension, submit it in the procedure referred to in Article 63 to the Board which shall provide an opinion on whether the draft code, amendment or extension complies with this Regulation or, in the situation referred to in paragraph 3 of this Article, provides appropriate safeguards.",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
+  },
+  {
+    "gdpr_id": "gdpr_251",
+    "policy_id": "pol_081",
+    "similarity": 0.9008,
+    "gdpr_article": 40,
+    "gdpr_text": "Where the opinion referred to in paragraph 7 confirms that the draft code, amendment or extension complies with this Regulation, or, in the situation referred to in paragraph 3, provides appropriate safeguards, the Board shall submit its opinion to the Commission.",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
+  },
+  {
+    "gdpr_id": "gdpr_252",
+    "policy_id": "pol_081",
+    "similarity": 0.859,
+    "gdpr_article": 40,
+    "gdpr_text": "The Commission may, by way of implementing acts, decide that the approved code of conduct, amendment or extension submitted to it pursuant to paragraph 8 of this Article have general validity within the Union. Those implementing acts shall be adopted in accordance with the examination procedure set out in Article 93(2).",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
+  },
+  {
+    "gdpr_id": "gdpr_260",
+    "policy_id": "pol_082",
+    "similarity": 0.9358,
+    "gdpr_article": 42,
+    "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, data protection certification mechanisms, seals or marks approved pursuant to paragraph 5 of this Article may be established for the purpose of demonstrating the existence of appropriate safeguards provided by controllers or processors that are not subject to this Regulation pursuant to Article 3 within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (f) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards, including with regard to the rights of data subjects.",
+    "policy_section": "7. Transfer of personal data to third countries",
+    "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer."
   },
   {
     "gdpr_id": "gdpr_261",
@@ -828,21 +882,12 @@
     "policy_text": "Your\nparticipation in a raffle is voluntary and we process your data based on our contractual\nobligations with regard to running the raffle and, if collected, based on your consent."
   },
   {
-    "gdpr_id": "gdpr_271",
-    "policy_id": "pol_015",
-    "similarity": 0.8953,
-    "gdpr_article": 43,
-    "gdpr_text": "Certification bodies referred to in paragraph 1 shall be accredited in accordance with that paragraph only where they have: established procedures and structures to handle complaints about infringements of the certification or the manner in which the certification has been, or is being, implemented by the controller or processor, and to make those procedures and structures transparent to data subjects and the public; and",
-    "policy_section": "1. Purpose and Legal Basis of our Data Processing",
-    "policy_text": "These include, in particular,\nthe obligation to conduct identity and age checks, to prevent fraud and money\nlaundering, specific customer complaints procedures or the fulfillment of control and\nreporting obligations under tax law."
-  },
-  {
-    "gdpr_id": "gdpr_278",
-    "policy_id": "pol_081",
-    "similarity": 0.8773,
-    "gdpr_article": 43,
-    "gdpr_text": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92 for the purpose of specifying the requirements to be taken into account for the data protection certification mechanisms referred to in Article 42(1).",
-    "policy_section": "7. Transfer of personal data to third countries",
-    "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art."
+    "gdpr_id": "gdpr_264",
+    "policy_id": "pol_053",
+    "similarity": 0.9019,
+    "gdpr_article": 42,
+    "gdpr_text": "Certification shall be issued to a controller or processor for a maximum period of three years and may be renewed, under the same conditions, provided that the relevant requirements continue to be met. Certification shall be withdrawn, as applicable, by the certification bodies referred to in Article 43 or by the competent supervisory authority where the requirements for the certification are not or are no longer met.",
+    "policy_section": "3. Data Retention and Deletion",
+    "policy_text": "In case no legal obligation applies, we will retain your data for a limited period of\ntime (usually three years beginning at the end of a calendar year and depending on the\napplicable law and statute of limitation)."
   }
 ]

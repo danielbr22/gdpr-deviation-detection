@@ -36,6 +36,15 @@
     "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
+    "gdpr_id": "gdpr_006",
+    "policy_id": "pol_025",
+    "similarity": 0.9078,
+    "gdpr_article": 5,
+    "gdpr_text": "Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "We also use technical and organisational measures to secure our systems against loss, destruction, unauthorised access or distribution of customer data by unauthorised persons."
+  },
+  {
     "gdpr_id": "gdpr_008",
     "policy_id": "pol_047",
     "similarity": 0.8761,
@@ -46,12 +55,12 @@
   },
   {
     "gdpr_id": "gdpr_009",
-    "policy_id": "pol_019",
-    "similarity": 0.9038,
+    "policy_id": "pol_045",
+    "similarity": 0.9276,
     "gdpr_article": 6,
     "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
+    "policy_section": "3. Info on websites",
+    "policy_text": "In certain cases, these tools may also be required for the fulfilment of a contract or for the execution of pre-contractual measures, in which case processing is carried out in accordance with Art."
   },
   {
     "gdpr_id": "gdpr_010",
@@ -72,76 +81,58 @@
     "policy_text": "Otherwise, the legal basis is Article 6 (1) f GDPR, whereby we may use your personal data for the above purposes if we deem it necessary to do so for our legitimate interests."
   },
   {
-    "gdpr_id": "gdpr_019",
-    "policy_id": "pol_020",
-    "similarity": 0.906,
+    "gdpr_id": "gdpr_014",
+    "policy_id": "pol_083",
+    "similarity": 0.8974,
     "gdpr_article": 6,
-    "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the context in which the personal data have been collected, in particular regarding the relationship between data subjects and the controller;",
+    "gdpr_text": "Point (f) of the first subparagraph shall not apply to processing carried out by public authorities in the performance of their tasks.",
+    "policy_section": "7. Which data protection rights do I have?",
+    "policy_text": "- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing."
+  },
+  {
+    "gdpr_id": "gdpr_016",
+    "policy_id": "pol_034",
+    "similarity": 0.9112,
+    "gdpr_article": 6,
+    "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Member State law to which the controller is subject.",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "Where we process your data on the basis of legal specifications, e.g. retention obligations and money laundering tests under tax law, the legal basis is Article 6 (1) c GDPR."
+  },
+  {
+    "gdpr_id": "gdpr_018",
+    "policy_id": "pol_020",
+    "similarity": 0.9058,
+    "gdpr_article": 6,
+    "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: any link between the purposes for which the personal data have been collected and the purposes of the intended further processing;",
     "policy_section": "2. What does Zalando use my data for?",
     "policy_text": "Otherwise, the legal basis is Article 6 (1) f GDPR, whereby we may use your personal data for the above purposes if we deem it necessary to do so for our legitimate interests."
   },
   {
-    "gdpr_id": "gdpr_022",
-    "policy_id": "pol_092",
-    "similarity": 0.9074,
-    "gdpr_article": 6,
-    "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the existence of appropriate safeguards, which may include encryption or pseudonymisation.",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
+    "gdpr_id": "gdpr_025",
+    "policy_id": "pol_082",
+    "similarity": 0.915,
+    "gdpr_article": 7,
+    "gdpr_text": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.",
+    "policy_section": "7. Which data protection rights do I have?",
+    "policy_text": "Withdrawal has no effect on the admissibility of the processing of your data which took place before the withdrawal."
   },
   {
     "gdpr_id": "gdpr_026",
-    "policy_id": "pol_019",
-    "similarity": 0.9048,
+    "policy_id": "pol_045",
+    "similarity": 0.9164,
     "gdpr_article": 7,
     "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
-  },
-  {
-    "gdpr_id": "gdpr_029",
-    "policy_id": "pol_019",
-    "similarity": 0.8877,
-    "gdpr_article": 8,
-    "gdpr_text": "Paragraph 1 shall not affect the general contract law of Member States such as the rules on the validity, formation or effect of a contract in relation to a child.",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
-  },
-  {
-    "gdpr_id": "gdpr_031",
-    "policy_id": "pol_047",
-    "similarity": 0.9025,
-    "gdpr_article": 9,
-    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: the data subject has given explicit consent to the processing of those personal data for one or more specified purposes, except where Union or Member State law provide that the prohibition referred to in paragraph 1 may not be lifted by the data subject;",
     "policy_section": "3. Info on websites",
-    "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+    "policy_text": "In certain cases, these tools may also be required for the fulfilment of a contract or for the execution of pre-contractual measures, in which case processing is carried out in accordance with Art."
   },
   {
-    "gdpr_id": "gdpr_035",
-    "policy_id": "pol_034",
-    "similarity": 0.9064,
+    "gdpr_id": "gdpr_030",
+    "policy_id": "pol_028",
+    "similarity": 0.8618,
     "gdpr_article": 9,
-    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing relates to personal data which are manifestly made public by the data subject;",
+    "gdpr_text": "Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited.",
     "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Where we process your data on the basis of legal specifications, e.g. retention obligations and money laundering tests under tax law, the legal basis is Article 6 (1) c GDPR."
-  },
-  {
-    "gdpr_id": "gdpr_036",
-    "policy_id": "pol_034",
-    "similarity": 0.9081,
-    "gdpr_article": 9,
-    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the establishment, exercise or defence of legal claims or whenever courts are acting in their judicial capacity;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Where we process your data on the basis of legal specifications, e.g. retention obligations and money laundering tests under tax law, the legal basis is Article 6 (1) c GDPR."
-  },
-  {
-    "gdpr_id": "gdpr_037",
-    "policy_id": "pol_092",
-    "similarity": 0.9102,
-    "gdpr_article": 9,
-    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of substantial public interest, on the basis of Union or Member State law which shall be proportionate to the aim pursued, respect the essence of the right to data protection and provide for suitable and specific measures to safeguard the fundamental rights and the interests of the data subject;",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
+    "policy_text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
   },
   {
     "gdpr_id": "gdpr_040",
@@ -162,29 +153,11 @@
     "policy_text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
   },
   {
-    "gdpr_id": "gdpr_043",
-    "policy_id": "pol_077",
-    "similarity": 0.8958,
-    "gdpr_article": 11,
-    "gdpr_text": "Where, in cases referred to in paragraph 1 of this Article, the controller is able to demonstrate that it is not in a position to identify the data subject, the controller shall inform the data subject accordingly, if possible. In such cases, Articles 15 to 20 shall not apply except where the data subject, for the purpose of exercising his or her rights under those articles, provides additional information enabling his or her identification.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
     "gdpr_id": "gdpr_045",
     "policy_id": "pol_077",
     "similarity": 0.9239,
     "gdpr_article": 12,
     "gdpr_text": "The controller shall facilitate the exercise of data subject rights under Articles 15 to 22. In the cases referred to in Article 11(2), the controller shall not refuse to act on the request of the data subject for exercising his or her rights under Articles 15 to 22, unless the controller demonstrates that it is not in a position to identify the data subject.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_046",
-    "policy_id": "pol_077",
-    "similarity": 0.9016,
-    "gdpr_article": 12,
-    "gdpr_text": "The controller shall provide information on action taken on a request under Articles 15 to 22 to the data subject without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests. The controller shall inform the data subject of any such extension within one month of receipt of the request, together with the reasons for the delay. Where the data subject makes the request by electronic form means, the information shall be provided by electronic means where possible, unless otherwise requested by the data subject.",
     "policy_section": "7. Which data protection rights do I have?",
     "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
   },
@@ -198,13 +171,13 @@
     "policy_text": "You may, however, contact the data protection authority, which will then forward your complaint to the responsible authority."
   },
   {
-    "gdpr_id": "gdpr_053",
-    "policy_id": "pol_016",
-    "similarity": 0.8785,
-    "gdpr_article": 13,
-    "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the identity and the contact details of the controller and, where applicable, of the controller's representative;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Depending on the legal basis for our processing of your data, you may have additional data protection rights alongside your permanent rights such as the right to information."
+    "gdpr_id": "gdpr_050",
+    "policy_id": "pol_085",
+    "similarity": 0.8822,
+    "gdpr_article": 12,
+    "gdpr_text": "The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.",
+    "policy_section": "7. Which data protection rights do I have?",
+    "policy_text": "In the event of a justified objection, we will check the state of affairs and either stop or adjust the processing, or inform you of the urgent reasons worthy of protection why we are entitled to continue the processing."
   },
   {
     "gdpr_id": "gdpr_055",
@@ -217,12 +190,12 @@
   },
   {
     "gdpr_id": "gdpr_057",
-    "policy_id": "pol_030",
-    "similarity": 0.8838,
+    "policy_id": "pol_071",
+    "similarity": 0.8919,
     "gdpr_article": 13,
     "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the recipients or categories of recipients of the personal data, if any;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Therefore, various companies within the Zalando Group have access to your data in so far as this is necessary for the fulfilment of the purposes named in this Privacy Notice."
+    "policy_section": "6. Who is my data forwarded to?",
+    "policy_text": "Where we use them to process orders, the service providers only receive access to your data in the scope and for the time period required for provision of the relevant service."
   },
   {
     "gdpr_id": "gdpr_058",
@@ -243,6 +216,15 @@
     "policy_text": "Where we use them to process orders, the service providers only receive access to your data in the scope and for the time period required for provision of the relevant service."
   },
   {
+    "gdpr_id": "gdpr_060",
+    "policy_id": "pol_077",
+    "similarity": 0.9157,
+    "gdpr_article": 13,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability;",
+    "policy_section": "7. Which data protection rights do I have?",
+    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+  },
+  {
     "gdpr_id": "gdpr_061",
     "policy_id": "pol_077",
     "similarity": 0.9295,
@@ -259,6 +241,15 @@
     "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the right to lodge a complaint with a supervisory authority;",
     "policy_section": "7. Which data protection rights do I have?",
     "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+  },
+  {
+    "gdpr_id": "gdpr_069",
+    "policy_id": "pol_016",
+    "similarity": 0.8914,
+    "gdpr_article": 14,
+    "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the purposes of the processing for which the personal data are intended as well as the legal basis for the processing;",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "Depending on the legal basis for our processing of your data, you may have additional data protection rights alongside your permanent rights such as the right to information."
   },
   {
     "gdpr_id": "gdpr_070",
@@ -286,6 +277,15 @@
     "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
     "policy_section": "3. Info on websites",
     "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+  },
+  {
+    "gdpr_id": "gdpr_074",
+    "policy_id": "pol_028",
+    "similarity": 0.9266,
+    "gdpr_article": 14,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
   },
   {
     "gdpr_id": "gdpr_075",
@@ -351,31 +351,40 @@
     "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
-    "gdpr_id": "gdpr_088",
+    "gdpr_id": "gdpr_086",
+    "policy_id": "pol_034",
+    "similarity": 0.9051,
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: obtaining or disclosure is expressly laid down by Union or Member State law to which the controller is subject and which provides appropriate measures to protect the data subject's legitimate interests; or",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "Where we process your data on the basis of legal specifications, e.g. retention obligations and money laundering tests under tax law, the legal basis is Article 6 (1) c GDPR."
+  },
+  {
+    "gdpr_id": "gdpr_087",
+    "policy_id": "pol_092",
+    "similarity": 0.9078,
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: where the personal data must remain confidential subject to an obligation of professional secrecy regulated by Union or Member State law, including a statutory obligation of secrecy.",
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
+  },
+  {
+    "gdpr_id": "gdpr_089",
     "policy_id": "pol_016",
-    "similarity": 0.8896,
+    "similarity": 0.8966,
     "gdpr_article": 15,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the purposes of the processing;",
+    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the categories of personal data concerned;",
     "policy_section": "2. What does Zalando use my data for?",
     "policy_text": "Depending on the legal basis for our processing of your data, you may have additional data protection rights alongside your permanent rights such as the right to information."
   },
   {
     "gdpr_id": "gdpr_090",
-    "policy_id": "pol_030",
-    "similarity": 0.895,
+    "policy_id": "pol_048",
+    "similarity": 0.9181,
     "gdpr_article": 15,
     "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Therefore, various companies within the Zalando Group have access to your data in so far as this is necessary for the fulfilment of the purposes named in this Privacy Notice."
-  },
-  {
-    "gdpr_id": "gdpr_091",
-    "policy_id": "pol_086",
-    "similarity": 0.8841,
-    "gdpr_article": 15,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period;",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "When will my data be deleted?\n\nWe will store your account data as long as is necessary for the purposes named in this Privacy Notice, especially for the fulfilment of our contractual and legal obligations."
+    "policy_section": "3. Info on websites",
+    "policy_text": "If personal data is transferred to these third countries, there is a risk that personal data may be collected and analysed by authorities and that data subjects' rights guaranteed under EU law may not be enforced."
   },
   {
     "gdpr_id": "gdpr_092",
@@ -414,6 +423,15 @@
     "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
   },
   {
+    "gdpr_id": "gdpr_096",
+    "policy_id": "pol_047",
+    "similarity": 0.9309,
+    "gdpr_article": 15,
+    "gdpr_text": "Where personal data are transferred to a third country or to an international organisation, the data subject shall have the right to be informed of the appropriate safeguards pursuant to Article 46 relating to the transfer.",
+    "policy_section": "3. Info on websites",
+    "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+  },
+  {
     "gdpr_id": "gdpr_099",
     "policy_id": "pol_077",
     "similarity": 0.9042,
@@ -424,64 +442,46 @@
   },
   {
     "gdpr_id": "gdpr_100",
-    "policy_id": "pol_077",
-    "similarity": 0.8955,
+    "policy_id": "pol_092",
+    "similarity": 0.8954,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data are no longer necessary in relation to the purposes for which they were collected or otherwise processed;",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_101",
-    "policy_id": "pol_077",
-    "similarity": 0.9307,
+    "policy_id": "pol_092",
+    "similarity": 0.9087,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject withdraws consent on which the processing is based according to point (a) of Article 6(1), or point (a) of Article 9(2), and where there is no other legal ground for the processing;",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_102",
-    "policy_id": "pol_077",
-    "similarity": 0.9175,
+    "policy_id": "pol_092",
+    "similarity": 0.8958,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2);",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_103",
-    "policy_id": "pol_077",
-    "similarity": 0.902,
-    "gdpr_article": 17,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been unlawfully processed;",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_104",
-    "policy_id": "pol_077",
-    "similarity": 0.9106,
+    "policy_id": "pol_092",
+    "similarity": 0.8957,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject;",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_105",
-    "policy_id": "pol_077",
-    "similarity": 0.9213,
+    "policy_id": "pol_092",
+    "similarity": 0.9075,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been collected in relation to the offer of information society services referred to in Article 8(1).",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_107",
-    "policy_id": "pol_092",
-    "similarity": 0.9119,
-    "gdpr_article": 17,
-    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for exercising the right of freedom of expression and information;",
     "policy_section": "8. When will my data be deleted?",
     "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
@@ -496,12 +496,12 @@
   },
   {
     "gdpr_id": "gdpr_109",
-    "policy_id": "pol_077",
-    "similarity": 0.9102,
+    "policy_id": "pol_092",
+    "similarity": 0.9068,
     "gdpr_article": 17,
     "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for reasons of public interest in the area of public health in accordance with points (h) and (i) of Article 9(2) as well as Article 9(3);",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_110",
@@ -531,22 +531,13 @@
     "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
   },
   {
-    "gdpr_id": "gdpr_114",
-    "policy_id": "pol_092",
-    "similarity": 0.9146,
-    "gdpr_article": 18,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
-  },
-  {
     "gdpr_id": "gdpr_115",
-    "policy_id": "pol_077",
-    "similarity": 0.9226,
+    "policy_id": "pol_083",
+    "similarity": 0.9239,
     "gdpr_article": 18,
     "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the data subject has objected to processing pursuant to Article 21(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.",
     "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_text": "- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing."
   },
   {
     "gdpr_id": "gdpr_117",
@@ -554,42 +545,6 @@
     "similarity": 0.902,
     "gdpr_article": 18,
     "gdpr_text": "A data subject who has obtained restriction of processing pursuant to paragraph 1 shall be informed by the controller before the restriction of processing is lifted.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_118",
-    "policy_id": "pol_077",
-    "similarity": 0.9232,
-    "gdpr_article": 19,
-    "gdpr_text": "The controller shall communicate any rectification or erasure of personal data or restriction of processing carried out in accordance with Article 16, Article 17(1) and Article 18 to each recipient to whom the personal data have been disclosed, unless this proves impossible or involves disproportionate effort. The controller shall inform the data subject about those recipients if the data subject requests it.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_119",
-    "policy_id": "pol_077",
-    "similarity": 0.9359,
-    "gdpr_article": 20,
-    "gdpr_text": "The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where: the processing is based on consent pursuant to point (a) of Article 6(1) or point (a) of Article 9(2) or on a contract pursuant to point (b) of Article 6(1); and",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_120",
-    "policy_id": "pol_016",
-    "similarity": 0.9005,
-    "gdpr_article": 20,
-    "gdpr_text": "The data subject shall have the right to receive the personal data concerning him or her, which he or she has provided to a controller, in a structured, commonly used and machine-readable format and have the right to transmit those data to another controller without hindrance from the controller to which the personal data have been provided, where: the processing is carried out by automated means.",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Depending on the legal basis for our processing of your data, you may have additional data protection rights alongside your permanent rights such as the right to information."
-  },
-  {
-    "gdpr_id": "gdpr_121",
-    "policy_id": "pol_077",
-    "similarity": 0.9151,
-    "gdpr_article": 20,
-    "gdpr_text": "In exercising his or her right to data portability pursuant to paragraph 1, the data subject shall have the right to have the personal data transmitted directly from one controller to another, where technically feasible.",
     "policy_section": "7. Which data protection rights do I have?",
     "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
   },
@@ -640,39 +595,30 @@
   },
   {
     "gdpr_id": "gdpr_130",
-    "policy_id": "pol_019",
-    "similarity": 0.9134,
+    "policy_id": "pol_045",
+    "similarity": 0.9085,
     "gdpr_article": 22,
     "gdpr_text": "Paragraph 1 shall not apply if the decision: is necessary for entering into, or performance of, a contract between the data subject and a data controller;",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
+    "policy_section": "3. Info on websites",
+    "policy_text": "In certain cases, these tools may also be required for the fulfilment of a contract or for the execution of pre-contractual measures, in which case processing is carried out in accordance with Art."
   },
   {
     "gdpr_id": "gdpr_133",
-    "policy_id": "pol_077",
-    "similarity": 0.9219,
+    "policy_id": "pol_058",
+    "similarity": 0.9023,
     "gdpr_article": 22,
     "gdpr_text": "In the cases referred to in points (a) and (c) of paragraph 2, the data controller shall implement suitable measures to safeguard the data subject's rights and freedoms and legitimate interests, at least the right to obtain human intervention on the part of the controller, to express his or her point of view and to contest the decision.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+    "policy_section": "4. Information about social media fan pages",
+    "policy_text": "For the purposes of processing your Page Insights data with Facebook, we have agreed with Facebook that Facebook is primarily responsible for providing you with information about the processing of your Page Insights data and for enabling you to exercise your privacy rights under the GDPR (e.g. right to object)."
   },
   {
-    "gdpr_id": "gdpr_134",
-    "policy_id": "pol_083",
-    "similarity": 0.9297,
-    "gdpr_article": 22,
-    "gdpr_text": "Decisions referred to in paragraph 2 shall not be based on special categories of personal data referred to in Article 9(1), unless point (a) or (g) of Article 9(2) applies and suitable measures to safeguard the data subject's rights and freedoms and legitimate interests are in place.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing."
-  },
-  {
-    "gdpr_id": "gdpr_138",
-    "policy_id": "pol_021",
-    "similarity": 0.8948,
+    "gdpr_id": "gdpr_135",
+    "policy_id": "pol_019",
+    "similarity": 0.9009,
     "gdpr_article": 23,
-    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the safeguards to prevent abuse or unlawful access or transfer;",
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the purposes of the processing or categories of processing;",
     "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
+    "policy_text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
   },
   {
     "gdpr_id": "gdpr_140",
@@ -680,15 +626,6 @@
     "similarity": 0.9028,
     "gdpr_article": 23,
     "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the storage periods and the applicable safeguards taking into account the nature, scope and purposes of the processing or categories of processing;",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
-  },
-  {
-    "gdpr_id": "gdpr_142",
-    "policy_id": "pol_092",
-    "similarity": 0.9154,
-    "gdpr_article": 23,
-    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the right of data subjects to be informed about the restriction, unless that may be prejudicial to the purpose of the restriction.",
     "policy_section": "8. When will my data be deleted?",
     "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
@@ -729,15 +666,6 @@
     "policy_text": "For this purpose, we and Facebook have defined an agreement about which company fulfils the data protection obligations under the GDPR with regard to Page Insights data processing."
   },
   {
-    "gdpr_id": "gdpr_153",
-    "policy_id": "pol_058",
-    "similarity": 0.8979,
-    "gdpr_article": 27,
-    "gdpr_text": "The representative shall be mandated by the controller or processor to be addressed in addition to or instead of the controller or the processor by, in particular, supervisory authorities and data subjects, on all issues related to processing, for the purposes of ensuring compliance with this Regulation.",
-    "policy_section": "4. Information about social media fan pages",
-    "policy_text": "For the purposes of processing your Page Insights data with Facebook, we have agreed with Facebook that Facebook is primarily responsible for providing you with information about the processing of your Page Insights data and for enabling you to exercise your privacy rights under the GDPR (e.g. right to object)."
-  },
-  {
     "gdpr_id": "gdpr_155",
     "policy_id": "pol_090",
     "similarity": 0.9124,
@@ -756,15 +684,6 @@
     "policy_text": "If personal data is transferred to these third countries, there is a risk that personal data may be collected and analysed by authorities and that data subjects' rights guaranteed under EU law may not be enforced."
   },
   {
-    "gdpr_id": "gdpr_161",
-    "policy_id": "pol_077",
-    "similarity": 0.901,
-    "gdpr_article": 28,
-    "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: taking into account the nature of the processing, assists the controller by appropriate technical and organisational measures, insofar as this is possible, for the fulfilment of the controller's obligation to respond to requests for exercising the data subject's rights laid down in Chapter III;",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
     "gdpr_id": "gdpr_166",
     "policy_id": "pol_075",
     "similarity": 0.9053,
@@ -774,22 +693,31 @@
     "policy_text": "In such cases Zalando will ensure that the relevant service providers contractually or otherwise guarantee an equivalent data protection level."
   },
   {
-    "gdpr_id": "gdpr_169",
-    "policy_id": "pol_087",
-    "similarity": 0.8633,
-    "gdpr_article": 29,
-    "gdpr_text": "The processor and any person acting under the authority of the controller or of the processor, who has access to personal data, shall not process those data except on instructions from the controller, unless required to do so by Union or Member State law.",
-    "policy_section": "8. When will my data be deleted?",
-    "policy_text": "We may also store your personal data for other purposes if or as long as the law allows us to store it for particular purposes, including for defence against legal claims."
-  },
-  {
     "gdpr_id": "gdpr_173",
-    "policy_id": "pol_047",
-    "similarity": 0.9037,
+    "policy_id": "pol_048",
+    "similarity": 0.9137,
     "gdpr_article": 30,
     "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations;",
     "policy_section": "3. Info on websites",
+    "policy_text": "If personal data is transferred to these third countries, there is a risk that personal data may be collected and analysed by authorities and that data subjects' rights guaranteed under EU law may not be enforced."
+  },
+  {
+    "gdpr_id": "gdpr_174",
+    "policy_id": "pol_047",
+    "similarity": 0.9117,
+    "gdpr_article": 30,
+    "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
+    "policy_section": "3. Info on websites",
     "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+  },
+  {
+    "gdpr_id": "gdpr_175",
+    "policy_id": "pol_092",
+    "similarity": 0.8981,
+    "gdpr_article": 30,
+    "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, the envisaged time limits for erasure of the different categories of data;",
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
   },
   {
     "gdpr_id": "gdpr_176",
@@ -828,6 +756,15 @@
     "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
   },
   {
+    "gdpr_id": "gdpr_186",
+    "policy_id": "pol_021",
+    "similarity": 0.9083,
+    "gdpr_article": 32,
+    "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
+  },
+  {
     "gdpr_id": "gdpr_187",
     "policy_id": "pol_090",
     "similarity": 0.9117,
@@ -838,12 +775,12 @@
   },
   {
     "gdpr_id": "gdpr_188",
-    "policy_id": "pol_021",
-    "similarity": 0.9046,
+    "policy_id": "pol_090",
+    "similarity": 0.9091,
     "gdpr_article": 32,
     "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
+    "policy_section": "8. When will my data be deleted?",
+    "policy_text": "If data is blocked, restriction of access rights and other technical and organisational measures are used to ensure that only a few employees can access the relevant data."
   },
   {
     "gdpr_id": "gdpr_189",
@@ -864,15 +801,6 @@
     "policy_text": "If data is blocked, restriction of access rights and other technical and organisational measures are used to ensure that only a few employees can access the relevant data."
   },
   {
-    "gdpr_id": "gdpr_191",
-    "policy_id": "pol_077",
-    "similarity": 0.8995,
-    "gdpr_article": 33,
-    "gdpr_text": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
     "gdpr_id": "gdpr_192",
     "policy_id": "pol_021",
     "similarity": 0.8971,
@@ -882,13 +810,22 @@
     "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
   },
   {
-    "gdpr_id": "gdpr_193",
+    "gdpr_id": "gdpr_200",
     "policy_id": "pol_021",
-    "similarity": 0.8934,
-    "gdpr_article": 33,
-    "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;",
+    "similarity": 0.9089,
+    "gdpr_article": 34,
+    "gdpr_text": "The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met: the controller has implemented appropriate technical and organisational protection measures, and those measures were applied to the personal data affected by the personal data breach, in particular those that render the personal data unintelligible to any person who is not authorised to access it, such as encryption;",
     "policy_section": "2. What does Zalando use my data for?",
     "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
+  },
+  {
+    "gdpr_id": "gdpr_211",
+    "policy_id": "pol_028",
+    "similarity": 0.891,
+    "gdpr_article": 35,
+    "gdpr_text": "The assessment shall contain at least: a systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller;",
+    "policy_section": "2. What does Zalando use my data for?",
+    "policy_text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
   },
   {
     "gdpr_id": "gdpr_213",
@@ -918,57 +855,12 @@
     "policy_text": "Therefore, companies within the Zalando Group which require access to your data to fulfil our contractual and legal obligations, or to fulfil their respective functions within the Zalando Group, receive this access."
   },
   {
-    "gdpr_id": "gdpr_223",
-    "policy_id": "pol_021",
-    "similarity": 0.9081,
+    "gdpr_id": "gdpr_222",
+    "policy_id": "pol_033",
+    "similarity": 0.8835,
     "gdpr_article": 36,
-    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the measures and safeguards provided to protect the rights and freedoms of data subjects pursuant to this Regulation;",
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
     "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
-  },
-  {
-    "gdpr_id": "gdpr_225",
-    "policy_id": "pol_077",
-    "similarity": 0.8956,
-    "gdpr_article": 36,
-    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the data protection impact assessment provided for in Article 35; and",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_230",
-    "policy_id": "pol_028",
-    "similarity": 0.9292,
-    "gdpr_article": 37,
-    "gdpr_text": "The controller and the processor shall designate a data protection officer in any case where: the core activities of the controller or the processor consist of processing on a large scale of special categories of data pursuant to Article 9 and personal data relating to criminal convictions and offences referred to in Article 10.",
-    "policy_section": "2. What does Zalando use my data for?",
-    "policy_text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
-  },
-  {
-    "gdpr_id": "gdpr_246",
-    "policy_id": "pol_047",
-    "similarity": 0.9171,
-    "gdpr_article": 40,
-    "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, codes of conduct approved pursuant to paragraph 5 of this Article and having general validity pursuant to paragraph 9 of this Article may also be adhered to by controllers or processors that are not subject to this Regulation pursuant to Article 3 in order to provide appropriate safeguards within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (e) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards including with regard to the rights of data subjects.",
-    "policy_section": "3. Info on websites",
-    "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_256",
-    "policy_id": "pol_077",
-    "similarity": 0.9061,
-    "gdpr_article": 41,
-    "gdpr_text": "Without prejudice to the tasks and powers of the competent supervisory authority and the provisions of Chapter VIII, a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor, including suspension or exclusion of the controller or processor concerned from the code. It shall inform the competent supervisory authority of such actions and the reasons for taking them.",
-    "policy_section": "7. Which data protection rights do I have?",
-    "policy_text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
-  },
-  {
-    "gdpr_id": "gdpr_260",
-    "policy_id": "pol_047",
-    "similarity": 0.9156,
-    "gdpr_article": 42,
-    "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, data protection certification mechanisms, seals or marks approved pursuant to paragraph 5 of this Article may be established for the purpose of demonstrating the existence of appropriate safeguards provided by controllers or processors that are not subject to this Regulation pursuant to Article 3 within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (f) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards, including with regard to the rights of data subjects.",
-    "policy_section": "3. Info on websites",
-    "policy_text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+    "policy_text": "Legal basis:\n\nThe legal basis for the processing of your data for business management and optimisation is Article 6 (1) f GDPR, whereby our legitimate interests are in the above purposes."
   }
 ]
