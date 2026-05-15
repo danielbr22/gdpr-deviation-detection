@@ -4,612 +4,726 @@
   "pairs": [
     {
       "gdpr_id": "gdpr_001",
-      "policy_id": "pol_062",
+      "policy_id": "pol_013",
       "gdpr_article": 5,
       "gdpr_text": "Personal data shall be: processed lawfully, fairly and in a transparent manner in relation to the data subject (\u2018lawfulness, fairness and transparency\u2019);",
-      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law.",
-      "similarity": 0.8811,
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.8817,
       "deviation_type": "none",
-      "reasoning": "The policy does not explicitly contradict the GDPR constraint and states compliance with applicable law, maintaining alignment with lawfulness and fairness."
+      "reasoning": "There is no specific conflict as the policy indicates adherence to lawful processing based on consent."
     },
     {
       "gdpr_id": "gdpr_002",
-      "policy_id": "pol_003",
+      "policy_id": "pol_013",
       "gdpr_article": 5,
       "gdpr_text": "Personal data shall be: collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes (\u2018purpose limitation\u2019);",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
-      "similarity": 0.9109,
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.916,
       "deviation_type": "none",
-      "reasoning": "The policy does not contradict or deviate from the GDPR obligation, as it addresses providing information about purposes without violating purpose limitation."
+      "reasoning": "The company policy outlines multiple purposes for data usage, but does not explicitly contradict the purpose limitation requirement in the GDPR."
+    },
+    {
+      "gdpr_id": "gdpr_003",
+      "policy_id": "pol_013",
+      "gdpr_article": 5,
+      "gdpr_text": "Personal data shall be: adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed (\u2018data minimisation\u2019);",
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.8847,
+      "deviation_type": "data",
+      "reasoning": "The company policy outlines purposes for data processing that exceed the scope of data minimisation as required by the GDPR, suggesting that additional data is collected that may not be necessary."
     },
     {
       "gdpr_id": "gdpr_006",
-      "policy_id": "pol_016",
+      "policy_id": "pol_067",
       "gdpr_article": 5,
       "gdpr_text": "Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (\u2018integrity and confidentiality\u2019).",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.8912,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.8814,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies that the processing of personal data does not need to adhere to the security measures mandated by GDPR in the event of revocation."
     },
     {
       "gdpr_id": "gdpr_008",
-      "policy_id": "pol_066",
+      "policy_id": "pol_059",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: the data subject has given consent to the processing of his or her personal data for one or more specific purposes;",
-      "policy_text": "45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer.",
-      "similarity": 0.8942,
+      "policy_text": "7. Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer.",
+      "similarity": 0.8961,
       "deviation_type": "none",
-      "reasoning": "The policy statement does not contradict or deviate from the GDPR requirement, but rather supports it by stating that consent has been given."
+      "reasoning": "The policy allows for consent as a legal basis for transferring personal data, which aligns with the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_009",
-      "policy_id": "pol_004",
+      "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
-      "similarity": 0.9033,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy aligns with the GDPR constraint by mentioning performance of contractual obligations."
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
+      "similarity": 0.899,
+      "deviation_type": "negation",
+      "reasoning": "The company policy does not acknowledge the necessity of processing personal data as required by GDPR for the performance of a contract, suggesting that it could be based solely on consent or legitimate interest."
     },
     {
       "gdpr_id": "gdpr_010",
       "policy_id": "pol_004",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for compliance with a legal obligation to which the controller is subject;",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
+      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest. 1.1 Consent - Art. 6 (1) lit.",
       "similarity": 0.8831,
       "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy mentions fulfilling legal obligations, which aligns with the GDPR obligation."
+      "reasoning": "The policy does not contradict the GDPR obligation and simply outlines possible legal bases for processing."
     },
     {
       "gdpr_id": "gdpr_011",
       "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary in order to protect the vital interests of the data subject or of another natural person;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8733,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict between the GDPR constraint and the company policy sentence."
+      "deviation_type": "negation",
+      "reasoning": "The company policy fails to acknowledge the legitimacy of processing for vital interests as required by GDPR and instead focuses on different legal bases."
     },
     {
       "gdpr_id": "gdpr_012",
-      "policy_id": "pol_004",
+      "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
-      "similarity": 0.8832,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
+      "similarity": 0.8709,
+      "deviation_type": "data",
+      "reasoning": "The company policy specifies legal bases for processing that deviate from the GDPR's requirements by omitting that processing may also be necessary for the performance of a task carried out in the public interest or in the exercise of official authority."
     },
     {
       "gdpr_id": "gdpr_013",
       "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8918,
       "deviation_type": "none",
-      "reasoning": "There is no specific conflict between the GDPR obligation and the company policy."
+      "reasoning": "The policy aligns with the GDPR in outlining the bases for processing without contradicting any specific requirements."
     },
     {
       "gdpr_id": "gdpr_015",
-      "policy_id": "pol_021",
+      "policy_id": "pol_013",
       "gdpr_article": 6,
       "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Union law; or",
-      "policy_text": "In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit.",
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
       "similarity": 0.8922,
       "deviation_type": "negation",
-      "reasoning": "The policy contradicts the GDPR constraint by imposing consent as a mandatory basis for processing, where GDPR allows for other bases such as Union law."
+      "reasoning": "The company policy uses consent as the legal basis for data collection where GDPR requires reliance on Union law."
+    },
+    {
+      "gdpr_id": "gdpr_017",
+      "policy_id": "pol_013",
+      "gdpr_article": 6,
+      "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.925,
+      "deviation_type": "negation",
+      "reasoning": "The company policy states that data collection for certain purposes is based on consent, which contradicts the requirement for processing to be necessary for a task carried out in the public interest or in the exercise of official authority as stipulated by GDPR."
     },
     {
       "gdpr_id": "gdpr_018",
       "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: any link between the purposes for which the personal data have been collected and the purposes of the intended further processing;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8952,
       "deviation_type": "none",
-      "reasoning": "The policy does not contradict or deviate from the GDPR constraint as it does not address the compatibility aspect required by the GDPR."
+      "reasoning": "The company policy does not directly address the requirement for the controller to ascertain compatibility of processing purposes, thus no specific conflict exists."
     },
     {
       "gdpr_id": "gdpr_019",
       "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the context in which the personal data have been collected, in particular regarding the relationship between data subjects and the controller;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8962,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy does not deviate from the GDPR constraint."
+      "deviation_type": "negation",
+      "reasoning": "The company policy does not address the need for ascertaining compatibility of data processing for purposes other than those initially collected as required by GDPR."
     },
     {
       "gdpr_id": "gdpr_021",
       "policy_id": "pol_003",
       "gdpr_article": 6,
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the possible consequences of the intended further processing for data subjects;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8972,
-      "deviation_type": "none",
-      "reasoning": "The company policy does not directly conflict with the GDPR obligation as it does not negate any part of the requirement, nor does it impose a different standard."
+      "deviation_type": "negation",
+      "reasoning": "The company policy fails to acknowledge the requirement to ascertain compatibility of processing for another purpose with the initial purpose, effectively negating the obligation set by the GDPR."
+    },
+    {
+      "gdpr_id": "gdpr_023",
+      "policy_id": "pol_003",
+      "gdpr_article": 7,
+      "gdpr_text": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
+      "similarity": 0.8848,
+      "deviation_type": "negation",
+      "reasoning": "The company policy does not explicitly state the requirement to demonstrate that consent was obtained, implying a denial of the necessity for accountability in consent-based processing."
     },
     {
       "gdpr_id": "gdpr_025",
-      "policy_id": "pol_075",
+      "policy_id": "pol_066",
       "gdpr_article": 7,
       "gdpr_text": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.",
-      "policy_text": "You\nhave the right to revoke your consent at any time with effect for the future (Art. 7\n(3) sentence 1 GDPR).",
+      "policy_text": "17 (3) GDPR and pursuant to local laws must be taken into account. You\nhave the right to revoke your consent at any time with effect for the future (Art. 7\n(3) sentence 1 GDPR). However, the lawfulness of the processing carried out until the\nrevocation is not affected by this.",
       "similarity": 0.912,
       "deviation_type": "none",
-      "reasoning": "The policy statement mirrors the GDPR constraint without introducing any specific conflict."
-    },
-    {
-      "gdpr_id": "gdpr_026",
-      "policy_id": "pol_004",
-      "gdpr_article": 7,
-      "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
-      "similarity": 0.8905,
-      "deviation_type": "negation",
-      "reasoning": "The company policy implies that consent can be conditional for the performance of a contract, which contradicts the GDPR requirement that such consent must not be a condition for services not necessary for contractual performance."
+      "reasoning": "The policy accurately reflects the right to withdraw consent and the effect on lawfulness of processing without any specific conflict."
     },
     {
       "gdpr_id": "gdpr_031",
-      "policy_id": "pol_006",
+      "policy_id": "pol_059",
       "gdpr_article": 9,
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: the data subject has given explicit consent to the processing of those personal data for one or more specified purposes, except where Union or Member State law provide that the prohibition referred to in paragraph 1 may not be lifted by the data subject;",
-      "policy_text": "a GDPR, if you have consented\nto the specific processing activity.",
-      "similarity": 0.8991,
-      "deviation_type": "negation",
-      "reasoning": "The company policy phrase 'if you have consented' implies a conditionality that directly contradicts the GDPR's stipulation about explicit consent not being sufficient in certain legal contexts."
+      "policy_text": "7. Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer.",
+      "similarity": 0.9212,
+      "deviation_type": "none",
+      "reasoning": "There is no specific conflict as the policy allows for consent in a manner consistent with the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_036",
-      "policy_id": "pol_057",
+      "policy_id": "pol_050",
       "gdpr_article": 9,
       "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the establishment, exercise or defence of legal claims or whenever courts are acting in their judicial capacity;",
-      "policy_text": "This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest.",
+      "policy_text": "We send such reminders only if our original request\nhas the purpose of fulfilling legal obligations we are required to follow as a financial\nservices provider. This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest. 5.2.2 Receiving SMS that were not requested by you",
       "similarity": 0.9064,
       "deviation_type": "negation",
-      "reasoning": "The company policy reframes the conditions for processing in a way that contradicts the GDPR constraint by implying obligations and legitimate interests rather than permitted exceptions."
+      "reasoning": "The company policy contradicts the GDPR constraint by limiting processing to fulfilling legal obligations and preserving legitimate interests rather than acknowledging the necessity for legal claims establishment as stated in GDPR."
     },
     {
       "gdpr_id": "gdpr_045",
-      "policy_id": "pol_076",
+      "policy_id": "pol_067",
       "gdpr_article": 12,
       "gdpr_text": "The controller shall facilitate the exercise of data subject rights under Articles 15 to 22. In the cases referred to in Article 11(2), the controller shall not refuse to act on the request of the data subject for exercising his or her rights under Articles 15 to 22, unless the controller demonstrates that it is not in a position to identify the data subject.",
-      "policy_text": "We process all data subject rights requests within 5 business days of receipt.",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
       "similarity": 0.9189,
-      "deviation_type": "severity",
-      "reasoning": "The company policy imposes a stricter standard than the GDPR requires by limiting the processing of data subject rights requests to a 5 business days timeframe, while GDPR does not specify a maximum timeline."
+      "deviation_type": "negation",
+      "reasoning": "The company policy suggests that data subject rights may not be fully acknowledged or processed in cases where identification is an issue, potentially denying the rights as stated in the GDPR constraint."
+    },
+    {
+      "gdpr_id": "gdpr_048",
+      "policy_id": "pol_067",
+      "gdpr_article": 12,
+      "gdpr_text": "Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either: charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9269,
+      "deviation_type": "none",
+      "reasoning": "The company policy does not address the requirement for providing information free of charge or the conditions under which a fee may be charged, indicating no specific conflict exists."
+    },
+    {
+      "gdpr_id": "gdpr_049",
+      "policy_id": "pol_067",
+      "gdpr_article": 12,
+      "gdpr_text": "Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either: refuse to act on the request.",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9328,
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy specifies a different timeline for processing data subject rights requests, which deviates from the GDPR's requirement of providing information free of charge without specifying a time limit."
+    },
+    {
+      "gdpr_id": "gdpr_054",
+      "policy_id": "pol_068",
+      "gdpr_article": 13,
+      "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the contact details of the data protection officer, where applicable;",
+      "policy_text": "We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level. In case of general questions or if you want to exercise your privacy rights, you must\nsubmit a written request by registered post to our data protection team at Trade\nRepublic Bank GmbH, Brunnenstr.",
+      "similarity": 0.8772,
+      "deviation_type": "negation",
+      "reasoning": "The company policy does not provide the required information about the data protection officer as mandated by the GDPR."
     },
     {
       "gdpr_id": "gdpr_055",
       "policy_id": "pol_003",
       "gdpr_article": 13,
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the purposes of the processing for which the personal data are intended as well as the legal basis for the processing;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8829,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy provides a vague description of when information will be provided rather than issuing it explicitly at the time of data collection as required by the GDPR."
     },
     {
       "gdpr_id": "gdpr_057",
-      "policy_id": "pol_062",
+      "policy_id": "pol_055",
       "gdpr_article": 13,
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the recipients or categories of recipients of the personal data, if any;",
-      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law.",
+      "policy_text": "6. Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law. Data controllers process your data\nwithin their own responsibility and you can exercise your data subject rights directly\nagainst them.",
       "similarity": 0.8899,
       "deviation_type": "negation",
-      "reasoning": "The company policy implies restrictions on data transfer that contradicts the GDPR provision by stating it will only transfer data if aligned with applicable law without clearly providing the information required by GDPR."
+      "reasoning": "The company policy implies that data controllers do not have to provide information to data subjects directly, contradicting the GDPR requirement."
     },
     {
       "gdpr_id": "gdpr_058",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 13,
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: where applicable, the fact that the controller intends to transfer personal data to a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means by which to obtain a copy of them or where they have been made available.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9441,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9453,
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy outlines a general approach to transferring personal data to third countries but does not specify the exact timing or context of providing information to data subjects as required by GDPR Art. 13."
+    },
+    {
+      "gdpr_id": "gdpr_061",
+      "policy_id": "pol_067",
+      "gdpr_article": 13,
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9289,
+      "deviation_type": "none",
+      "reasoning": "The policy sentence accurately reflects the GDPR constraint without any conflicting language."
     },
     {
       "gdpr_id": "gdpr_065",
       "policy_id": "pol_003",
       "gdpr_article": 13,
       "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.895,
-      "deviation_type": "execution_style",
-      "reasoning": "The company policy specifies a different procedure for providing information about further processing, focusing on explaining it within the document instead of prior to processing."
+      "deviation_type": "data",
+      "reasoning": "The company policy does not clearly provide information on further processing for a purpose other than that for which the personal data were collected, as required by GDPR."
+    },
+    {
+      "gdpr_id": "gdpr_068",
+      "policy_id": "pol_068",
+      "gdpr_article": 14,
+      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the contact details of the data protection officer, where applicable;",
+      "policy_text": "We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level. In case of general questions or if you want to exercise your privacy rights, you must\nsubmit a written request by registered post to our data protection team at Trade\nRepublic Bank GmbH, Brunnenstr.",
+      "similarity": 0.8831,
+      "deviation_type": "responsibility",
+      "reasoning": "The company policy does not identify the data protection officer as responsible for providing the required information to the data subject."
+    },
+    {
+      "gdpr_id": "gdpr_069",
+      "policy_id": "pol_013",
+      "gdpr_article": 14,
+      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the purposes of the processing for which the personal data are intended as well as the legal basis for the processing;",
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.8866,
+      "deviation_type": "none",
+      "reasoning": "The policy provides information about the purposes of processing and the legal basis, but does not contradict or deviate from the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_071",
-      "policy_id": "pol_062",
+      "policy_id": "pol_055",
       "gdpr_article": 14,
       "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the recipients or categories of recipients of the personal data, if any;",
-      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law.",
+      "policy_text": "6. Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law. Data controllers process your data\nwithin their own responsibility and you can exercise your data subject rights directly\nagainst them.",
       "similarity": 0.8971,
       "deviation_type": "negation",
-      "reasoning": "The company policy implies that it is limiting the obligation to inform data subjects about recipients of their personal data, potentially denying their right to know as required by GDPR."
+      "reasoning": "The company policy implies that data subjects cannot exercise their rights against data controllers directly, contradicting the GDPR requirement to provide information."
     },
     {
       "gdpr_id": "gdpr_072",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 14,
       "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9489,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9498,
+      "deviation_type": "data",
+      "reasoning": "The policy specifies conditions for transferring personal data but does not explicitly mention the requirement to inform data subjects about the existence or absence of an adequacy decision, thus narrowing the scope of data covered."
+    },
+    {
+      "gdpr_id": "gdpr_074",
+      "policy_id": "pol_008",
+      "gdpr_article": 14,
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
+      "policy_text": "These include, in particular,\nthe obligation to conduct identity and age checks, to prevent fraud and money\nlaundering, specific customer complaints procedures or the fulfillment of control and\nreporting obligations under tax law. With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process. 1.4 Legitimate interest - Art. 6 (1) lit.",
+      "similarity": 0.9211,
+      "deviation_type": "none",
+      "reasoning": "There is no specific conflict noted between the GDPR constraint and the company policy as they both reference legitimate interests without contradiction."
+    },
+    {
+      "gdpr_id": "gdpr_076",
+      "policy_id": "pol_067",
+      "gdpr_article": 14,
+      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9305,
+      "deviation_type": "none",
+      "reasoning": "The policy does not contradict the GDPR obligation but rather reaffirms it."
     },
     {
       "gdpr_id": "gdpr_082",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 14,
       "gdpr_text": "The controller shall provide the information referred to in paragraphs 1 and 2: if a disclosure to another recipient is envisaged, at the latest when the personal data are first disclosed.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9134,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9187,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies restrictions on transferring personal data to third parties that contradict the GDPR requirement to provide information when a disclosure is envisaged."
     },
     {
       "gdpr_id": "gdpr_083",
-      "policy_id": "pol_017",
+      "policy_id": "pol_009",
       "gdpr_article": 14,
       "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were obtained, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
-      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
       "similarity": 0.8936,
       "deviation_type": "negation",
-      "reasoning": "The company policy implies a subjective assessment of purposes and circumstances, which negates the GDPR requirement to provide clear information on the purpose of further processing beforehand."
-    },
-    {
-      "gdpr_id": "gdpr_090",
-      "policy_id": "pol_062",
-      "gdpr_article": 15,
-      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
-      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law.",
-      "similarity": 0.8952,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "reasoning": "The company policy indicates an assessment that may deny the data subject's right to be informed prior to further processing, contradicting the explicit requirements of GDPR."
     },
     {
       "gdpr_id": "gdpr_096",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 15,
       "gdpr_text": "Where personal data are transferred to a third country or to an international organisation, the data subject shall have the right to be informed of the appropriate safeguards pursuant to Article 46 relating to the transfer.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.933,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9333,
+      "deviation_type": "negation",
+      "reasoning": "The company policy does not explicitly state that the data subject has the right to be informed of the appropriate safeguards as required by GDPR, implying a denial of this right."
     },
     {
       "gdpr_id": "gdpr_108",
-      "policy_id": "pol_004",
+      "policy_id": "pol_050",
       "gdpr_article": 17,
       "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for compliance with a legal obligation which requires processing by Union or Member State law to which the controller is subject or for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
-      "similarity": 0.8948,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "gdpr_id": "gdpr_111",
-      "policy_id": "pol_057",
-      "gdpr_article": 17,
-      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for the establishment, exercise or defence of legal claims.",
-      "policy_text": "This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest.",
-      "similarity": 0.9051,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "gdpr_id": "gdpr_124",
-      "policy_id": "pol_073",
-      "gdpr_article": 21,
-      "gdpr_text": "The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.",
-      "policy_text": "16 GDPR);\n- the right to deletion of your account data (Art. 17 GDPR);\n- a right to object to processing (Art. 21 GDPR).",
-      "similarity": 0.9285,
-      "deviation_type": "data",
-      "reasoning": "The company policy incorrectly refers to 'account data' instead of 'personal data' as specified in the GDPR constraint."
-    },
-    {
-      "gdpr_id": "gdpr_130",
-      "policy_id": "pol_010",
-      "gdpr_article": 22,
-      "gdpr_text": "Paragraph 1 shall not apply if the decision: is necessary for entering into, or performance of, a contract between the data subject and a data controller;",
-      "policy_text": "For example the\nprocessing is carried out to allow you to log into your account on the Website.",
-      "similarity": 0.8931,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict between the GDPR constraint and the company policy as both imply a legitimate reason for processing personal data."
+      "policy_text": "We send such reminders only if our original request\nhas the purpose of fulfilling legal obligations we are required to follow as a financial\nservices provider. This processing is done to adhere to our legal obligations or, with regard to\ndecreasing risks and prevent harm from you, us or third parties, in order to preserve\nour legitimate interest. 5.2.2 Receiving SMS that were not requested by you",
+      "similarity": 0.8924,
+      "deviation_type": "negation",
+      "reasoning": "The company policy explicitly states conditions that contradict the circumstances under which GDPR allows processing, such as prioritizing legitimate interest over legal obligation."
     },
     {
       "gdpr_id": "gdpr_132",
       "policy_id": "pol_004",
       "gdpr_article": 22,
       "gdpr_text": "Paragraph 1 shall not apply if the decision: is based on the data subject's explicit consent.",
-      "policy_text": "We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
+      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest. 1.1 Consent - Art. 6 (1) lit.",
       "similarity": 0.9005,
       "deviation_type": "none",
-      "reasoning": "The policy does not conflict with the GDPR constraint as it simply mentions the consent without negating the provision."
+      "reasoning": "There is no specific conflict as both the GDPR constraint and the policy refer to consent without directly contradicting each other."
     },
     {
       "gdpr_id": "gdpr_135",
-      "policy_id": "pol_010",
+      "policy_id": "pol_013",
       "gdpr_article": 23,
       "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the purposes of the processing or categories of processing;",
-      "policy_text": "For example the\nprocessing is carried out to allow you to log into your account on the Website.",
-      "similarity": 0.8777,
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.8736,
       "deviation_type": "none",
-      "reasoning": "The policy provides an example of a purpose of processing without contradicting or deviating from the GDPR constraint."
+      "reasoning": "The company policy lists specific purposes of data processing that align with the GDPR constraint."
+    },
+    {
+      "gdpr_id": "gdpr_137",
+      "policy_id": "pol_060",
+      "gdpr_article": 23,
+      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.8678,
+      "deviation_type": "none",
+      "reasoning": "There is no specific conflict between the GDPR constraint and the company policy as the policy does not address the scope of restrictions introduced."
     },
     {
       "gdpr_id": "gdpr_138",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 23,
       "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the safeguards to prevent abuse or unlawful access or transfer;",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.8911,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.8936,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies that personal data transfers may occur under specific conditions, which contradicts the broader safeguards noted in GDPR Art. 23."
     },
     {
       "gdpr_id": "gdpr_143",
-      "policy_id": "pol_016",
+      "policy_id": "pol_009",
       "gdpr_article": 24,
       "gdpr_text": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation. Those measures shall be reviewed and updated where necessary.",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9124,
-      "deviation_type": "data",
-      "reasoning": "The company policy mentions only 'a secure service and login process' instead of covering the broader scope of 'appropriate technical and organisational measures' as required by the GDPR."
-    },
-    {
-      "gdpr_id": "gdpr_146",
-      "policy_id": "pol_016",
-      "gdpr_article": 25,
-      "gdpr_text": "The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons.",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9044,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
+      "similarity": 0.9166,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies a determinative approach that may minimize or contradict the proactive measures required by the GDPR constraint to ensure and demonstrate compliance."
     },
     {
       "gdpr_id": "gdpr_147",
-      "policy_id": "pol_063",
+      "policy_id": "pol_056",
       "gdpr_article": 26,
       "gdpr_text": "Where two or more controllers jointly determine the purposes and means of processing, they shall be joint controllers. They shall in a transparent manner determine their respective responsibilities for compliance with the obligations under this Regulation, in particular as regards the exercising of the rights of the data subject and their respective duties to provide the information referred to in Articles 13 and 14, by means of an arrangement between them unless, and in so far as, the respective responsibilities of the controllers are determined by Union or Member State law to which the controllers are subject. The arrangement may designate a contact point for data subjects.",
-      "policy_text": "Data controllers process your data\nwithin their own responsibility and you can exercise your data subject rights directly\nagainst them.",
+      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law. Data controllers process your data\nwithin their own responsibility and you can exercise your data subject rights directly\nagainst them. Data processors process your data under their own standard contractual terms and\nassume independent responsibility for their data processing practices.",
       "similarity": 0.9042,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "deviation_type": "responsibility",
+      "reasoning": "The company policy assigns independent responsibility to data controllers and processors, which deviates from the GDPR requirement for joint controllers to determine their respective responsibilities collaboratively."
     },
     {
       "gdpr_id": "gdpr_169",
-      "policy_id": "pol_062",
+      "policy_id": "pol_056",
       "gdpr_article": 29,
       "gdpr_text": "The processor and any person acting under the authority of the controller or of the processor, who has access to personal data, shall not process those data except on instructions from the controller, unless required to do so by Union or Member State law.",
-      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law.",
-      "similarity": 0.8617,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Recipients or categories of recipients\n\nWe only transfer your data to third parties (data processors as well as other data\ncontrollers) if this is in line with applicable law. Data controllers process your data\nwithin their own responsibility and you can exercise your data subject rights directly\nagainst them. Data processors process your data under their own standard contractual terms and\nassume independent responsibility for their data processing practices.",
+      "similarity": 0.8609,
+      "deviation_type": "responsibility",
+      "reasoning": "The policy incorrectly indicates that data processors assume independent responsibility for their data processing practices, while GDPR specifies that processors act on instructions from the controller."
     },
     {
       "gdpr_id": "gdpr_171",
       "policy_id": "pol_003",
       "gdpr_article": 30,
       "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the purposes of the processing;",
-      "policy_text": "Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document.",
+      "policy_text": "Purpose and Legal Basis of our Data Processing\n\nWe rely on the following purposes and legal bases when processing your personal data. Additionally, we provide further information on the purpose and legal basis of the\nrespective processing activity when we explain it below in this document. We will\nexplicitly mention whether a processing activity is based on your consent, is performed\nto fulfill our contractual obligation, is performed to fulfill our legal obligations or\nbased on our legitimate interest.",
       "similarity": 0.8915,
       "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy complements the GDPR requirement without negating or deviating from it."
-    },
-    {
-      "gdpr_id": "gdpr_173",
-      "policy_id": "pol_065",
-      "gdpr_article": 30,
-      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations;",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9278,
-      "deviation_type": "data",
-      "reasoning": "The company policy focuses only on the transfer of personal data to third parties outside the EEA, but it does not cover the complete requirement of maintaining a record of processing activities that includes categories of recipients and their data protection status."
+      "reasoning": "The policy does not contradict the GDPR obligation but rather explains how purposes and legal bases are communicated, without any specific conflict."
     },
     {
       "gdpr_id": "gdpr_174",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 30,
       "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9351,
-      "deviation_type": "none",
-      "reasoning": "The company policy does not mention the requirement to maintain a record of processing activities, indicating a lack of coverage for this GDPR constraint."
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9355,
+      "deviation_type": "data",
+      "reasoning": "The company policy specifies 'third parties' instead of 'international organisation' and focuses on the transfer mechanisms instead of maintaining a record of processing activities."
     },
     {
       "gdpr_id": "gdpr_179",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 30,
       "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9356,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage2 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9361,
+      "deviation_type": "data",
+      "reasoning": "The company policy specifies 'third parties' instead of explicitly naming 'processors' as required by the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_185",
-      "policy_id": "pol_016",
+      "policy_id": "pol_010",
       "gdpr_article": 32,
       "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the pseudonymisation and encryption of personal data;",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
+      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights. This includes the following purposes:\n- assertion of legal claims and defense in legal disputes;\n- ensuring our IT security and the overall IT operation;\n- prevention and investigation of criminal acts;\n- non-marketing related email correspondence;\n- testing and optimisation of demand analysis procedures including customer\n  segmentation;\n- direct marketing or market research regarding functionality and performance of our\n  Services and our Website;\n- measures for the further development of the performance of our Services (for example\n  our App) and our Website.",
       "similarity": 0.9199,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "deviation_type": "none",
+      "reasoning": "There is no mention of implementing appropriate technical and organisational measures for security in the company policy."
     },
     {
       "gdpr_id": "gdpr_186",
-      "policy_id": "pol_016",
+      "policy_id": "pol_010",
       "gdpr_article": 32,
       "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9272,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights. This includes the following purposes:\n- assertion of legal claims and defense in legal disputes;\n- ensuring our IT security and the overall IT operation;\n- prevention and investigation of criminal acts;\n- non-marketing related email correspondence;\n- testing and optimisation of demand analysis procedures including customer\n  segmentation;\n- direct marketing or market research regarding functionality and performance of our\n  Services and our Website;\n- measures for the further development of the performance of our Services (for example\n  our App) and our Website.",
+      "similarity": 0.927,
+      "deviation_type": "data",
+      "reasoning": "The policy focuses on specific purposes and activities rather than addressing the broad scope of security measures required to protect personal data as outlined in the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_187",
-      "policy_id": "pol_016",
+      "policy_id": "pol_010",
       "gdpr_article": 32,
       "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to restore the availability and access to personal data in a timely manner in the event of a physical or technical incident;",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9229,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights. This includes the following purposes:\n- assertion of legal claims and defense in legal disputes;\n- ensuring our IT security and the overall IT operation;\n- prevention and investigation of criminal acts;\n- non-marketing related email correspondence;\n- testing and optimisation of demand analysis procedures including customer\n  segmentation;\n- direct marketing or market research regarding functionality and performance of our\n  Services and our Website;\n- measures for the further development of the performance of our Services (for example\n  our App) and our Website.",
+      "similarity": 0.923,
+      "deviation_type": "none",
+      "reasoning": "The policy does not specifically address the technical and organisational measures required by the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_188",
-      "policy_id": "pol_016",
+      "policy_id": "pol_010",
       "gdpr_article": 32,
       "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9277,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights. This includes the following purposes:\n- assertion of legal claims and defense in legal disputes;\n- ensuring our IT security and the overall IT operation;\n- prevention and investigation of criminal acts;\n- non-marketing related email correspondence;\n- testing and optimisation of demand analysis procedures including customer\n  segmentation;\n- direct marketing or market research regarding functionality and performance of our\n  Services and our Website;\n- measures for the further development of the performance of our Services (for example\n  our App) and our Website.",
+      "similarity": 0.9278,
+      "deviation_type": "data",
+      "reasoning": "The company policy narrows the scope of purposes and does not explicitly mention the need to implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk as required by the GDPR."
     },
     {
       "gdpr_id": "gdpr_189",
-      "policy_id": "pol_016",
+      "policy_id": "pol_067",
       "gdpr_article": 32,
       "gdpr_text": "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.8969,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.8975,
+      "deviation_type": "negation",
+      "reasoning": "The company policy contradicts the GDPR requirement by implying that the lawfulness of processing is unaffected by the assessment of risks and does not align with the requirement to consider risk levels in response to personal data breaches."
     },
     {
       "gdpr_id": "gdpr_191",
-      "policy_id": "pol_077",
+      "policy_id": "pol_067",
       "gdpr_article": 33,
       "gdpr_text": "In the case of a personal data breach, the controller shall without undue delay and, where feasible, not later than 72 hours after having become aware of it, notify the personal data breach to the supervisory authority competent in accordance with Article 55, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons. Where the notification to the supervisory authority is not made within 72 hours, it shall be accompanied by reasons for the delay.",
-      "policy_text": "In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
-      "similarity": 0.919,
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9349,
       "deviation_type": "severity",
-      "reasoning": "The company policy imposes a stricter standard by requiring notification to affected users within 24 hours, which is shorter than the 72 hours required by GDPR."
+      "reasoning": "The company policy imposes a stricter standard by notifying affected users within 24 hours instead of adhering to the 72-hour requirement for notifying the supervisory authority."
     },
     {
       "gdpr_id": "gdpr_192",
-      "policy_id": "pol_077",
+      "policy_id": "pol_067",
       "gdpr_article": 33,
       "gdpr_text": "The processor shall notify the controller without undue delay after becoming aware of a personal data breach.",
-      "policy_text": "In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
-      "similarity": 0.9161,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9251,
+      "deviation_type": "severity",
+      "reasoning": "The company policy imposes a stricter notification timeline of 24 hours compared to the GDPR's requirement of 'without undue delay', which is more ambiguous and potentially allows for longer periods."
+    },
+    {
+      "gdpr_id": "gdpr_193",
+      "policy_id": "pol_067",
+      "gdpr_article": 33,
+      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9057,
+      "deviation_type": "severity",
+      "reasoning": "The company policy imposes a stricter deadline for notification of a data breach than the GDPR requires."
+    },
+    {
+      "gdpr_id": "gdpr_194",
+      "policy_id": "pol_060",
+      "gdpr_article": 33,
+      "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.8986,
+      "deviation_type": "responsibility",
+      "reasoning": "The company policy fails to identify the data protection officer or contact point for obtaining further information as required by the GDPR constraint."
+    },
+    {
+      "gdpr_id": "gdpr_195",
+      "policy_id": "pol_067",
+      "gdpr_article": 33,
+      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the likely consequences of the personal data breach;",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9084,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies a timeline for notification regardless of risk level, contradicting the GDPR's requirement for a description of likely consequences."
+    },
+    {
+      "gdpr_id": "gdpr_196",
+      "policy_id": "pol_067",
+      "gdpr_article": 33,
+      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects.",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9045,
+      "deviation_type": "severity",
+      "reasoning": "The company policy imposes a stricter standard by requiring notification within 24 hours, which is more stringent than the GDPR requirement."
+    },
+    {
+      "gdpr_id": "gdpr_197",
+      "policy_id": "pol_067",
+      "gdpr_article": 33,
+      "gdpr_text": "The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the supervisory authority to verify compliance with this Article.",
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.926,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies a lack of documentation regarding personal data breaches, thus contradicting the requirement to document breaches as stated in GDPR Art. 33."
     },
     {
       "gdpr_id": "gdpr_198",
-      "policy_id": "pol_077",
+      "policy_id": "pol_067",
       "gdpr_article": 34,
       "gdpr_text": "When the personal data breach is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall communicate the personal data breach to the data subject without undue delay.",
-      "policy_text": "In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
-      "similarity": 0.9101,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "However, the lawfulness of the processing carried out until the\nrevocation is not affected by this. We process all data subject rights requests within 5 business days of receipt. In the event of a personal data breach, we will notify affected users directly within\n24 hours of becoming aware of the breach, regardless of the assessed risk level.",
+      "similarity": 0.9225,
+      "deviation_type": "severity",
+      "reasoning": "The company policy imposes a stricter notification timeline of 24 hours regardless of assessed risk level, compared to the GDPR's requirement for 'without undue delay' based on risk assessment."
     },
     {
-      "gdpr_id": "gdpr_200",
-      "policy_id": "pol_016",
-      "gdpr_article": 34,
-      "gdpr_text": "The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met: the controller has implemented appropriate technical and organisational protection measures, and those measures were applied to the personal data affected by the personal data breach, in particular those that render the personal data unintelligible to any person who is not authorised to access it, such as encryption;",
-      "policy_text": "With regard to the Trade Republic Website, these\nobligations especially include the provision of a secure service and login process.",
-      "similarity": 0.9156,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy's focus on a secure service and login process does not explicitly contradict or deviate from the GDPR requirement on technical and organisational measures."
+      "gdpr_id": "gdpr_203",
+      "policy_id": "pol_009",
+      "gdpr_article": 35,
+      "gdpr_text": "Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
+      "similarity": 0.9276,
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy specifies a generic assessment approach instead of the required assessment focused on high-risk processing operations."
     },
     {
       "gdpr_id": "gdpr_211",
-      "policy_id": "pol_017",
+      "policy_id": "pol_009",
       "gdpr_article": 35,
       "gdpr_text": "The assessment shall contain at least: a systematic description of the envisaged processing operations and the purposes of the processing, including, where applicable, the legitimate interest pursued by the controller;",
-      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
       "similarity": 0.8935,
-      "deviation_type": "data",
-      "reasoning": "The company policy does not specifically include a systematic description of the envisaged processing operations and the purposes of processing as required by the GDPR."
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies a flexible assessment approach that contradicts the GDPR requirement for a systematic description of the processing operations and purposes."
     },
     {
       "gdpr_id": "gdpr_212",
-      "policy_id": "pol_017",
+      "policy_id": "pol_009",
       "gdpr_article": 35,
       "gdpr_text": "The assessment shall contain at least: an assessment of the necessity and proportionality of the processing operations in relation to the purposes;",
-      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
       "similarity": 0.8942,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy mentions a generic assessment rather than a specific assessment of necessity and proportionality as required by the GDPR."
     },
     {
       "gdpr_id": "gdpr_214",
-      "policy_id": "pol_017",
+      "policy_id": "pol_009",
       "gdpr_article": 35,
       "gdpr_text": "The assessment shall contain at least: the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned.",
-      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
       "similarity": 0.9158,
       "deviation_type": "negation",
-      "reasoning": "The company policy implies a subjective assessment based on individual circumstances and reasonable expectations, which contradicts the GDPR's requirement for a structured assessment of risks and safeguards."
+      "reasoning": "The company policy implies a lack of commitment to a thorough assessment as required by GDPR, suggesting a determination based on generic criteria rather than specific measures to ensure compliance and protection of personal data."
+    },
+    {
+      "gdpr_id": "gdpr_218",
+      "policy_id": "pol_009",
+      "gdpr_article": 35,
+      "gdpr_text": "Where necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment at least when there is a change of the risk represented by processing operations.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
+      "similarity": 0.927,
+      "deviation_type": "execution_style",
+      "reasoning": "The company policy alters the procedure for conducting the assessment by applying a generic basis rather than assessing prior to each relevant processing activity as mandated by GDPR."
+    },
+    {
+      "gdpr_id": "gdpr_219",
+      "policy_id": "pol_009",
+      "gdpr_article": 36,
+      "gdpr_text": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
+      "similarity": 0.9139,
+      "deviation_type": "negation",
+      "reasoning": "The company policy negates the requirement to consult the supervisory authority by substituting it with a generic assessment that does not involve external consultation."
+    },
+    {
+      "gdpr_id": "gdpr_220",
+      "policy_id": "pol_009",
+      "gdpr_article": 36,
+      "gdpr_text": "Where the supervisory authority is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the supervisory authority shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the supervisory authority has obtained information it has requested for the purposes of the consultation.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
+      "similarity": 0.9096,
+      "deviation_type": "negation",
+      "reasoning": "The company policy implies a unilateral determination of compliance without the necessary consultation with the supervisory authority, contradicting GDPR requirements."
+    },
+    {
+      "gdpr_id": "gdpr_222",
+      "policy_id": "pol_013",
+      "gdpr_article": 36,
+      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
+      "policy_text": "We use this information:\n- to enable the retrieval and visit of the website;\n- to continuously improve our website and offerings and to further adapt them to the\n  needs of our users;\n- to carry out internal quality controls;\n- to detect, eliminate and prevent errors, malfunctions and possible misuse;\n- to generate statistics on access channels and site usage. In so far the collection of the data is not technically necessary, the legal basis for\nthe collection of the data is based on consent pursuant to Article 6 (1) lit. a GDPR.",
+      "similarity": 0.8925,
+      "deviation_type": "data",
+      "reasoning": "The company policy provides a specific list of purposes for data processing that does not fully align with the broader requirement of stating the purposes and means of intended processing set out in the GDPR constraint."
     },
     {
       "gdpr_id": "gdpr_244",
-      "policy_id": "pol_017",
+      "policy_id": "pol_009",
       "gdpr_article": 39,
       "gdpr_text": "The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
-      "policy_text": "We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us.",
+      "policy_text": "Whether this is\nthe case will be determined by us on a generic basis and prior to the initiation of a\nprocessing activity. We will consider the purposes below and assess the particular\ncircumstances in the individual situation while taking into consideration the reasonable\nexpectations you may have based on your relation to us. We carry out this analysis in\norder to verify that these processing activities do not harm your data protection\nrights.",
       "similarity": 0.904,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "deviation_type": "negation",
+      "reasoning": "The company policy contradicts the GDPR constraint by implying that they may determine risk assessment generically rather than individually, which negates the requirement for the data protection officer to consider individual circumstances."
     },
     {
       "gdpr_id": "gdpr_246",
-      "policy_id": "pol_065",
+      "policy_id": "pol_060",
       "gdpr_article": 40,
       "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, codes of conduct approved pursuant to paragraph 5 of this Article and having general validity pursuant to paragraph 9 of this Article may also be adhered to by controllers or processors that are not subject to this Regulation pursuant to Article 3 in order to provide appropriate safeguards within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (e) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards including with regard to the rights of data subjects.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.9506,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
-    },
-    {
-      "gdpr_id": "gdpr_251",
-      "policy_id": "pol_065",
-      "gdpr_article": 40,
-      "gdpr_text": "Where the opinion referred to in paragraph 7 confirms that the draft code, amendment or extension complies with this Regulation, or, in the situation referred to in paragraph 3, provides appropriate safeguards, the Board shall submit its opinion to the Commission.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.8972,
-      "deviation_type": "parse_error",
-      "reasoning": "Stage1 failed: Client error '429 Too Many Requests' for url 'https://api.openai.com/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429"
+      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer. You can reach out to us, if you want to receive further information on the respective\ntransfer mechanism and the service providers we use.\n\n\n8.",
+      "similarity": 0.9507,
+      "deviation_type": "negation",
+      "reasoning": "The company policy explicitly limits transfers to scenarios where they have already established certain conditions, which contradicts the flexibility allowed by the GDPR for other controllers or processors to adhere to codes of conduct."
     },
     {
       "gdpr_id": "gdpr_260",
-      "policy_id": "pol_065",
+      "policy_id": "pol_059",
       "gdpr_article": 42,
       "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, data protection certification mechanisms, seals or marks approved pursuant to paragraph 5 of this Article may be established for the purpose of demonstrating the existence of appropriate safeguards provided by controllers or processors that are not subject to this Regulation pursuant to Article 3 within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (f) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards, including with regard to the rights of data subjects.",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
+      "policy_text": "7. Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art. 45 (1) GDPR;\n- Binding Corporate Rules have been established by the recipient;\n- The EU Standard Data Protection Clauses as adopted by the European Commission have\n  been agreed upon between us and the third party; or\n- You have consented to the transfer.",
       "similarity": 0.9521,
-      "deviation_type": "data",
-      "reasoning": "The company policy mentions transferring personal data only to third countries with adequate protection, but it does not address the existence of certification mechanisms as specified in the GDPR constraint."
-    },
-    {
-      "gdpr_id": "gdpr_278",
-      "policy_id": "pol_065",
-      "gdpr_article": 43,
-      "gdpr_text": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92 for the purpose of specifying the requirements to be taken into account for the data protection certification mechanisms referred to in Article 42(1).",
-      "policy_text": "Transfer of personal data to third countries\n\nWe only transfer personal data to third parties outside of the European Economic Area,\nwhen at least one of the following transfer mechanisms is given to ensure an appropriate\nlevel of data protection:\n- If the third country has been confirmed by the EU Commission to have an adequate level\n  of data protection pursuant to Art.",
-      "similarity": 0.8685,
-      "deviation_type": "none",
-      "reasoning": "There is no specific conflict as the policy does not directly contradict the specified responsibilities or tasks outlined in the GDPR constraint."
+      "deviation_type": "negation",
+      "reasoning": "The company policy contradicts the GDPR constraint by not acknowledging the existence of data protection certification mechanisms for controllers or processors not subject to the Regulation, which are explicitly mentioned in the GDPR."
     }
   ],
   "unmapped": [
-    {
-      "gdpr_id": "gdpr_003",
-      "gdpr_text": "Personal data shall be: adequate, relevant and limited to what is necessary in relation to the purposes for which they are processed (\u2018data minimisation\u2019);",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
     {
       "gdpr_id": "gdpr_004",
       "gdpr_text": "Personal data shall be: accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay (\u2018accuracy\u2019);",
@@ -641,12 +755,6 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_017",
-      "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_020",
       "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: the nature of the personal data, in particular whether special categories of personal data are processed, pursuant to Article 9, or whether personal data related to criminal convictions and offences are processed, pursuant to Article 10;",
       "deviation_type": "constraint_coverage",
@@ -659,14 +767,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_023",
-      "gdpr_text": "Where processing is based on consent, the controller shall be able to demonstrate that the data subject has consented to processing of his or her personal data.",
+      "gdpr_id": "gdpr_024",
+      "gdpr_text": "If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_024",
-      "gdpr_text": "If the data subject's consent is given in the context of a written declaration which also concerns other matters, the request for consent shall be presented in a manner which is clearly distinguishable from the other matters, in an intelligible and easily accessible form, using clear and plain language. Any part of such a declaration which constitutes an infringement of this Regulation shall not be binding.",
+      "gdpr_id": "gdpr_026",
+      "gdpr_text": "When assessing whether consent is freely given, utmost account shall be taken of whether, inter alia, the performance of a contract, including the provision of a service, is conditional on consent to the processing of personal data that is not necessary for the performance of that contract.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -779,18 +887,6 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_048",
-      "gdpr_text": "Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either: charge a reasonable fee taking into account the administrative costs of providing the information or communication or taking the action requested; or",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_049",
-      "gdpr_text": "Information provided under Articles 13 and 14 and any communication and any actions taken under Articles 15 to 22 and 34 shall be provided free of charge. Where requests from a data subject are manifestly unfounded or excessive, in particular because of their repetitive character, the controller may either: refuse to act on the request.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_050",
       "gdpr_text": "The controller shall bear the burden of demonstrating the manifestly unfounded or excessive character of the request.",
       "deviation_type": "constraint_coverage",
@@ -815,12 +911,6 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_054",
-      "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: the contact details of the data protection officer, where applicable;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_056",
       "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
       "deviation_type": "constraint_coverage",
@@ -835,12 +925,6 @@
     {
       "gdpr_id": "gdpr_060",
       "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_061",
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: where the processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -875,18 +959,6 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_068",
-      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the contact details of the data protection officer, where applicable;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_069",
-      "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the purposes of the processing for which the personal data are intended as well as the legal basis for the processing;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_070",
       "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the categories of personal data concerned;",
       "deviation_type": "constraint_coverage",
@@ -899,20 +971,8 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_074",
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_075",
       "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject and to object to processing as well as the right to data portability;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_076",
-      "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -979,6 +1039,12 @@
     {
       "gdpr_id": "gdpr_089",
       "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the categories of personal data concerned;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_090",
+      "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1091,6 +1157,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_111",
+      "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for the establishment, exercise or defence of legal claims.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_112",
       "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data;",
       "deviation_type": "constraint_coverage",
@@ -1163,6 +1235,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_124",
+      "gdpr_text": "The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_125",
       "gdpr_text": "Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.",
       "deviation_type": "constraint_coverage",
@@ -1193,6 +1271,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_130",
+      "gdpr_text": "Paragraph 1 shall not apply if the decision: is necessary for entering into, or performance of, a contract between the data subject and a data controller;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_131",
       "gdpr_text": "Paragraph 1 shall not apply if the decision: is authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject's rights and freedoms and legitimate interests; or",
       "deviation_type": "constraint_coverage",
@@ -1213,12 +1297,6 @@
     {
       "gdpr_id": "gdpr_136",
       "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the categories of personal data;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_137",
-      "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1255,6 +1333,12 @@
     {
       "gdpr_id": "gdpr_145",
       "gdpr_text": "Taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_146",
+      "gdpr_text": "The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1397,6 +1481,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_173",
+      "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations;",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_175",
       "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, the envisaged time limits for erasure of the different categories of data;",
       "deviation_type": "constraint_coverage",
@@ -1405,12 +1495,6 @@
     {
       "gdpr_id": "gdpr_176",
       "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, a general description of the technical and organisational security measures referred to in Article 32(1).",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_177",
-      "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: the name and contact details of the processor or processors and of each controller on behalf of which the processor is acting, and, where applicable, of the controller's or the processor's representative, and the data protection officer;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1457,38 +1541,14 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_193",
-      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the nature of the personal data breach including where possible, the categories and approximate number of data subjects concerned and the categories and approximate number of personal data records concerned;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_194",
-      "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_195",
-      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the likely consequences of the personal data breach;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_196",
-      "gdpr_text": "The notification referred to in paragraph 1 shall at least: describe the measures taken or proposed to be taken by the controller to address the personal data breach, including, where appropriate, measures to mitigate its possible adverse effects.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_197",
-      "gdpr_text": "The controller shall document any personal data breaches, comprising the facts relating to the personal data breach, its effects and the remedial action taken. That documentation shall enable the supervisory authority to verify compliance with this Article.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_199",
       "gdpr_text": "The communication to the data subject referred to in paragraph 1 of this Article shall describe in clear and plain language the nature of the personal data breach and contain at least the information and measures referred to in points (b), (c) and (d) of Article 33(3).",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_200",
+      "gdpr_text": "The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met: the controller has implemented appropriate technical and organisational protection measures, and those measures were applied to the personal data affected by the personal data breach, in particular those that render the personal data unintelligible to any person who is not authorised to access it, such as encryption;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1501,12 +1561,6 @@
     {
       "gdpr_id": "gdpr_202",
       "gdpr_text": "The communication to the data subject referred to in paragraph 1 shall not be required if any of the following conditions are met: it would involve disproportionate effort. In such a case, there shall instead be a public communication or similar measure whereby the data subjects are informed in an equally effective manner.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_203",
-      "gdpr_text": "Where a type of processing in particular using new technologies, and taking into account the nature, scope, context and purposes of the processing, is likely to result in a high risk to the rights and freedoms of natural persons, the controller shall, prior to the processing, carry out an assessment of the impact of the envisaged processing operations on the protection of personal data. A single assessment may address a set of similar processing operations that present similar high risks.",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1577,32 +1631,8 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
-      "gdpr_id": "gdpr_218",
-      "gdpr_text": "Where necessary, the controller shall carry out a review to assess if processing is performed in accordance with the data protection impact assessment at least when there is a change of the risk represented by processing operations.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_219",
-      "gdpr_text": "The controller shall consult the supervisory authority prior to processing where a data protection impact assessment under Article 35 indicates that the processing would result in a high risk in the absence of measures taken by the controller to mitigate the risk.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_220",
-      "gdpr_text": "Where the supervisory authority is of the opinion that the intended processing referred to in paragraph 1 would infringe this Regulation, in particular where the controller has insufficiently identified or mitigated the risk, the supervisory authority shall, within period of up to eight weeks of receipt of the request for consultation, provide written advice to the controller and, where applicable to the processor, and may use any of its powers referred to in Article 58. That period may be extended by six weeks, taking into account the complexity of the intended processing. The supervisory authority shall inform the controller and, where applicable, the processor, of any such extension within one month of receipt of the request for consultation together with the reasons for the delay. Those periods may be suspended until the supervisory authority has obtained information it has requested for the purposes of the consultation.",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
       "gdpr_id": "gdpr_221",
       "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;",
-      "deviation_type": "constraint_coverage",
-      "reasoning": "No policy constraint matched above similarity threshold."
-    },
-    {
-      "gdpr_id": "gdpr_222",
-      "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: the purposes and means of the intended processing;",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
@@ -1763,6 +1793,12 @@
       "reasoning": "No policy constraint matched above similarity threshold."
     },
     {
+      "gdpr_id": "gdpr_251",
+      "gdpr_text": "Where the opinion referred to in paragraph 7 confirms that the draft code, amendment or extension complies with this Regulation, or, in the situation referred to in paragraph 3, provides appropriate safeguards, the Board shall submit its opinion to the Commission.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
       "gdpr_id": "gdpr_252",
       "gdpr_text": "The Commission may, by way of implementing acts, decide that the approved code of conduct, amendment or extension submitted to it pursuant to paragraph 8 of this Article have general validity within the Union. Those implementing acts shall be adopted in accordance with the examination procedure set out in Article 93(2).",
       "deviation_type": "constraint_coverage",
@@ -1909,6 +1945,12 @@
     {
       "gdpr_id": "gdpr_277",
       "gdpr_text": "Without prejudice to Chapter VIII, the competent supervisory authority or the national accreditation body shall revoke an accreditation of a certification body pursuant to paragraph 1 of this Article where the conditions for the accreditation are not, or are no longer, met or where actions taken by a certification body infringe this Regulation.",
+      "deviation_type": "constraint_coverage",
+      "reasoning": "No policy constraint matched above similarity threshold."
+    },
+    {
+      "gdpr_id": "gdpr_278",
+      "gdpr_text": "The Commission shall be empowered to adopt delegated acts in accordance with Article 92 for the purpose of specifying the requirements to be taken into account for the data protection certification mechanisms referred to in Article 42(1).",
       "deviation_type": "constraint_coverage",
       "reasoning": "No policy constraint matched above similarity threshold."
     },
