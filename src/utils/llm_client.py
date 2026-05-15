@@ -13,7 +13,7 @@ _OLLAMA_MODEL: str = os.environ.get("OLLAMA_MODEL", "qwen3.5:9b")
 _OPENAI_MODEL: str = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 _OPENAI_URL: str = "https://api.openai.com/v1/chat/completions"
 
-_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 5}
+_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 20}
 
 
 def concurrency() -> int:
