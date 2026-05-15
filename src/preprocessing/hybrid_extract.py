@@ -3,10 +3,14 @@
 Hybrid policy extraction — Step 1: contextual LLM extraction.
 
 For each sentence in the policy, provides ±WINDOW surrounding sentences as
-context and asks Qwen3.5:9b (via Ollama) whether the sentence states a
-data-protection obligation or right.
+context and asks the LLM whether the sentence states a data-protection
+obligation or right.
 
-Output JSON format (same schema as policy_constraints.json):
+Provider is selected via LLM_PROVIDER env var (ollama default, openai for
+external). With concurrency > 1 (OpenAI) all sentences are classified in
+parallel.
+
+Output JSON format:
   [{"id": "pol_001", "source": "policy", "section": "...", "text": "..."}]
 
 Usage:
@@ -16,20 +20,16 @@ Usage:
 """
 
 import argparse
+import asyncio
 import json
-import os
 import re
-import sys
 from pathlib import Path
 
-import requests
 import spacy
 
 from src.preprocessing.hybrid_prompt import EXTRACTION_SYSTEM_PROMPT, build_extraction_prompt
+from src.utils import llm_client
 
-_OLLAMA_BASE = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-OLLAMA_URL = _OLLAMA_BASE + "/api/chat"
-MODEL = "qwen3.5:9b"
 WINDOW = 5
 
 DEVIATION_BLOCK_RE = re.compile(r"\[DEVIATION.*?\]", re.DOTALL)
@@ -51,7 +51,6 @@ def _strip_annotations(text: str) -> str:
 
 
 def filter_sentence(sentence: str) -> bool:
-    """Return False for sentences that are never data-protection obligations."""
     s = sentence.strip()
     if s.endswith("?"):
         return False
@@ -62,9 +61,7 @@ def filter_sentence(sentence: str) -> bool:
     return True
 
 
-def get_context_window(
-    sentences: list, idx: int, window: int = WINDOW
-) -> tuple:
+def get_context_window(sentences: list, idx: int, window: int = WINDOW) -> tuple:
     before = sentences[max(0, idx - window): idx]
     after = sentences[idx + 1: idx + 1 + window]
     return before, after
@@ -87,32 +84,7 @@ def _get_section(char_pos: int, section_positions: list) -> str:
     return section
 
 
-def check_ollama() -> None:
-    try:
-        requests.get(_OLLAMA_BASE + "/api/tags", timeout=5).raise_for_status()
-    except Exception as e:
-        sys.exit(f"ERROR: Ollama unreachable at {_OLLAMA_BASE} — {e}")
-
-
-def call_ollama(sentence: str, context_before: list, context_after: list) -> bool:
-    user_msg = "/no_think\n" + build_extraction_prompt(sentence, context_before, context_after)
-    payload = {
-        "model": MODEL,
-        "stream": False,
-        "think": False,
-        "messages": [
-            {"role": "system", "content": EXTRACTION_SYSTEM_PROMPT},
-            {"role": "user", "content": user_msg},
-        ],
-        "options": {"temperature": 0},
-    }
-    r = requests.post(OLLAMA_URL, json=payload, timeout=60)
-    r.raise_for_status()
-    content = r.json()["message"]["content"].strip().lower()
-    return content.startswith("yes")
-
-
-def extract_policy_obligations(policy_text: str, verbose: bool = False) -> list:
+async def extract_policy_obligations_async(policy_text: str, verbose: bool = False) -> list:
     clean = _strip_annotations(policy_text)
     clean = re.sub(r"^[=\-]{3,}\s*$", "", clean, flags=re.MULTILINE)
 
@@ -121,29 +93,47 @@ def extract_policy_obligations(policy_text: str, verbose: bool = False) -> list:
     nlp = _get_nlp()
     doc = nlp(clean)
 
-    sentences = []  # list of (text, start_char)
+    sentences = []
     for sent in doc.sents:
         s = sent.text.strip()
         if s:
             sentences.append((s, sent.start_char))
 
-    constraints = []
-    seen = set()
     texts_only = [s for s, _ in sentences]
 
+    # Deduplicate + filter before sending any requests
+    seen_text: set = set()
+    to_classify = []
     for i, (sentence, start_char) in enumerate(sentences):
-        if sentence in seen or not filter_sentence(sentence):
+        if sentence in seen_text or not filter_sentence(sentence):
             continue
-
+        seen_text.add(sentence)
         before, after = get_context_window(texts_only, i)
-        is_obligation = call_ollama(sentence, before, after)
+        to_classify.append((i, sentence, start_char, before, after))
 
+    sem = asyncio.Semaphore(llm_client.concurrency())
+
+    async def classify_one(original_idx: int, sentence: str, start_char: int, before: list, after: list):
+        async with sem:
+            content = await llm_client.call_async(
+                EXTRACTION_SYSTEM_PROMPT,
+                build_extraction_prompt(sentence, before, after),
+                timeout=60,
+            )
+        is_obligation = content.strip().lower().startswith("yes")
         if verbose:
             mark = "✓" if is_obligation else "✗"
-            print(f"  [{i + 1}/{len(sentences)}] {mark} {sentence[:80]}")
+            print(f"  [{original_idx + 1}/{len(sentences)}] {mark} {sentence[:80]}")
+        return original_idx, sentence, start_char, is_obligation
 
+    results = await asyncio.gather(*[classify_one(*item) for item in to_classify])
+
+    # Sort by original sentence order before assigning IDs
+    results = sorted(results, key=lambda x: x[0])
+
+    constraints = []
+    for _, sentence, start_char, is_obligation in results:
         if is_obligation:
-            seen.add(sentence)
             section = _get_section(start_char, section_positions)
             constraints.append({
                 "id": f"pol_{len(constraints) + 1:03d}",
@@ -159,21 +149,18 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Hybrid policy extraction: contextual LLM-based obligation detection"
     )
-    parser.add_argument("--policy", type=Path, required=True,
-                        help="Path to policy text file")
-    parser.add_argument("--output", type=Path, required=True,
-                        help="Output JSON file for extracted constraints")
-    parser.add_argument("--verbose", action="store_true",
-                        help="Print per-sentence classification results")
+    parser.add_argument("--policy", type=Path, required=True)
+    parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--verbose", action="store_true")
     args = parser.parse_args()
 
-    check_ollama()
+    llm_client.check_provider()
 
     policy_text = args.policy.read_text(encoding="utf-8")
     print(f"Extracting from {args.policy.name} …")
-    print(f"Model: {MODEL}  |  Context window: ±{WINDOW} sentences")
+    print(f"  Context window: ±{WINDOW} sentences")
 
-    constraints = extract_policy_obligations(policy_text, verbose=args.verbose)
+    constraints = asyncio.run(extract_policy_obligations_async(policy_text, verbose=args.verbose))
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(constraints, indent=2, ensure_ascii=False), encoding="utf-8")
