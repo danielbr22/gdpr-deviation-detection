@@ -39,8 +39,11 @@ def load_constraints(path: Path) -> list[dict]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def embed(model: SentenceTransformer, constraints: list[dict]) -> np.ndarray:
-    texts = [c.get("embed_text", c["text"]) for c in constraints]
+def embed(model: SentenceTransformer, constraints: list[dict], use_context: bool = True) -> np.ndarray:
+    if use_context:
+        texts = [c.get("embed_text", c["text"]) for c in constraints]
+    else:
+        texts = [c["text"] for c in constraints]
     return model.encode(texts, convert_to_tensor=False, show_progress_bar=True)
 
 
@@ -70,7 +73,7 @@ def match(
                 {
                     "policy_id": policy[j]["id"],
                     "similarity": round(float(row[j]), 4),
-                    "policy_text": policy[j].get("embed_text", policy[j]["text"]),
+                    "policy_text": policy[j]["text"],
                     "policy_section": policy[j].get("section", ""),
                 }
                 for j in top_indices
@@ -139,8 +142,8 @@ def main() -> None:
 
     print("Encoding …")
     model = SentenceTransformer(args.model)
-    gdpr_emb = embed(model, gdpr)
-    policy_emb = embed(model, policy)
+    gdpr_emb = embed(model, gdpr, use_context=True)
+    policy_emb = embed(model, policy, use_context=False)
 
     print("Matching …")
     matched, unmapped = match(gdpr, policy, gdpr_emb, policy_emb, args.gamma, args.top_k)

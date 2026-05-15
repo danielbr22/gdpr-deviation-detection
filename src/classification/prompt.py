@@ -7,14 +7,31 @@ the following ways:
   as responsible for the task (WHO deviates).
 - execution_style (RCASR5): Responsibility and data match, but the procedure for
   carrying out the task deviates — e.g. different channel, extra steps, different
-  timeline (HOW deviates).
+  timeline (HOW deviates). Key signal: the GDPR grants a right or obligation without
+  specifying HOW it must be exercised, but the policy adds a specific procedural
+  requirement (e.g. "written request by post", "signed form", "authenticated portal
+  only", "request must be notarised"). The added procedure restricts or changes how
+  the right can be exercised, even if the underlying right itself is not denied.
 - data (RCASR8): Responsibility and task match, but the scope of data covered deviates —
-  e.g. "account data" instead of "personal data" (WHAT data deviates).
+  e.g. "account data" instead of "personal data", or the policy narrows or broadens
+  the category of data subject to a right or obligation (WHAT data deviates).
 - negation (RCASR6): The policy directly contradicts or negates the GDPR constraint —
-  e.g. "may not" where GDPR says "may", or a right is explicitly denied.
-- severity (RCASR4): All three components match, but the policy imposes a stricter
-  standard than the GDPR requires — e.g. shorter deadlines, narrower retention periods,
-  or additional procedural burdens beyond what the regulation mandates (over-compliance).
+  e.g. "may not" where GDPR says "may", a right is explicitly denied, or the policy
+  states it is not obliged to do something the GDPR requires.
+  IMPORTANT: If the key difference is that the policy applies a right or obligation to a
+  NARROWER CATEGORY OF DATA (e.g., "marketing-related personal data" instead of "personal
+  data", or "account information" instead of "personal data"), that is a DATA deviation,
+  not negation — even if the policy also includes other limiting language. Only classify as
+  negation if the right or obligation is outright denied or reversed, not merely scoped to
+  different data.
+- severity (RCASR4): All three components match, but the policy deviates in the
+  strictness of the standard — either stricter than GDPR requires (over-compliance,
+  e.g. shorter deadlines than GDPR mandates, narrower retention than necessary) OR
+  more lenient (under-compliance, e.g. longer response time than GDPR allows).
+  Key signal: compare specific numbers, periods, or thresholds. If the GDPR says
+  "within one month" and the policy says "within 5 business days", that is severity.
+  If the GDPR says "no longer than necessary" and the policy specifies a concrete
+  short retention period, that may also be severity.
 
 constraint_coverage (RCASR3) — a GDPR constraint with no policy counterpart at all —
 is handled separately upstream and does NOT appear as a classifier label.\
@@ -56,6 +73,9 @@ def build_stage1_prompt(gdpr_text: str, gdpr_article: int, policy_text: str) -> 
         "Step 1 — Quote the specific GDPR obligation from the constraint above.\n"
         "Step 2 — Quote the specific policy text that conflicts with it (or null if none).\n"
         "Step 3 — Identify which deviation category applies (or null if none).\n"
+        "  Special check for DATA deviation: Does the GDPR say 'personal data' but the policy\n"
+        "  applies the right/obligation only to a narrower category such as 'account information',\n"
+        "  'marketing data', 'profile data', etc.? If so, that IS a data deviation.\n"
         "Step 4 — Set has_deviation to true only if a specific conflict exists.\n\n"
         '{"gdpr_quote": "<exact quote>", "policy_quote": "<exact quote or null>", '
         '"deviation_category": "<category or null>", '

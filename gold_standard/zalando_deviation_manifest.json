@@ -73,21 +73,6 @@
     "rationale": "RCASR8 (data deviation) occurs when the responsibility and task parts of a constraint pair match, but the data part — WHAT is being acted upon — deviates. Here: responsibility (Zalando) and task (storage limited to what is necessary) are unchanged. The deviation is in data scope: GDPR Art. 5(1)(e) requires that personal data is 'kept in a form which permits identification of data subjects for no longer than is necessary' — this applies to all personal data. The modified policy limits the storage limitation principle to 'account data', implying that other personal data held by Zalando (e.g. purchase history, behavioural profiles, device data) may be retained indefinitely without this constraint."
   },
   {
-    "id": "zal_dev_006",
-    "rcasr": "RCASR3",
-    "deviation_type": "constraint_coverage",
-    "policy_constraint_id": "pol_077",
-    "gdpr_articles_affected": [
-      "Art. 77"
-    ],
-    "section": "7. Which data protection rights do I have?",
-    "original_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to data portability (Article 20 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR).",
-    "modified_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), the right to object to particular data processing measures (Article 21 GDPR). If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer. We process all data protection rights requests within 14 days of receipt.",
-    "change_description": "Both the right to lodge a complaint with a supervisory authority (Art. 77 GDPR) and the right to withdraw consent (Art. 7(3) GDPR) have been removed from the enumeration of data subject rights in Section 7 in a single edit.",
-    "rationale": "RCASR3 tests constraint coverage: every regulatory constraint must have a counterpart in the realization. Art. 77 GDPR grants every data subject the right to lodge a complaint with a supervisory authority. The original Zalando policy lists this right explicitly. In the modified policy, it is absent from the enumeration, leaving the Art. 77 constraint without a policy counterpart. Detectable at retrieval stage: GDPR constraint(s) for Art. 77 will appear in unmapped_gdpr.json.",
-    "notes": "Combined edit: zal_dev_006 (Art. 77 removal) and zal_dev_007 (Art. 7(3) removal) were applied in one operation as both rights appeared in the same sentence."
-  },
-  {
     "id": "zal_dev_007",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",

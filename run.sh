@@ -303,17 +303,17 @@ scope_detection \
   "$ROOT/data/constraints/hetzner_original_constraints.json" \
   "$ROOT/data/retrieval/hetzner_original"
 
-# scope_detection \
-#   "zalando" \
-#   "$ROOT/data/policy/zalando_privacy_policy.txt" \
-#   "$ROOT/data/constraints/zalando_original_constraints.json" \
-#   "$ROOT/data/retrieval/zalando_original"
+scope_detection \
+  "zalando" \
+  "$ROOT/data/policy/zalando_privacy_policy.txt" \
+  "$ROOT/data/constraints/zalando_original_constraints.json" \
+  "$ROOT/data/retrieval/zalando_original"
 
-# scope_detection \
-#   "traderepublic" \
-#   "$ROOT/data/policy/traderepublic_privacy_policy.txt" \
-#   "$ROOT/data/constraints/traderepublic_original_constraints.json" \
-#   "$ROOT/data/retrieval/traderepublic_original"
+scope_detection \
+  "traderepublic" \
+  "$ROOT/data/policy/traderepublic_privacy_policy.txt" \
+  "$ROOT/data/constraints/traderepublic_original_constraints.json" \
+  "$ROOT/data/retrieval/traderepublic_original"
 
 log "  Phase 0 done in $(elapsed $T)"
 
@@ -326,15 +326,15 @@ extraction \
   "$ROOT/data/policy/hetzner_policy_modified.txt" \
   "$ROOT/data/constraints/hetzner_hybrid_constraints.json"
 
-# extraction \
-#   "zalando" \
-#   "$ROOT/data/policy/zalando_policy_modified.txt" \
-#   "$ROOT/data/constraints/zalando_hybrid_constraints.json"
+extraction \
+  "zalando" \
+  "$ROOT/data/policy/zalando_policy_modified.txt" \
+  "$ROOT/data/constraints/zalando_hybrid_constraints.json"
 
-# extraction \
-#   "traderepublic" \
-#   "$ROOT/data/policy/traderepublic_policy_modified.txt" \
-#   "$ROOT/data/constraints/traderepublic_hybrid_constraints.json"
+extraction \
+  "traderepublic" \
+  "$ROOT/data/policy/traderepublic_policy_modified.txt" \
+  "$ROOT/data/constraints/traderepublic_hybrid_constraints.json"
 
 log "  Phase 1 done in $(elapsed $T)"
 
@@ -347,15 +347,15 @@ retrieval \
   "$ROOT/data/constraints/hetzner_hybrid_constraints.json" \
   "$ROOT/data/retrieval/hetzner_hybrid"
 
-# retrieval \
-#   "zalando" \
-#   "$ROOT/data/constraints/zalando_hybrid_constraints.json" \
-#   "$ROOT/data/retrieval/zalando_hybrid"
+retrieval \
+  "zalando" \
+  "$ROOT/data/constraints/zalando_hybrid_constraints.json" \
+  "$ROOT/data/retrieval/zalando_hybrid"
 
-# retrieval \
-#   "traderepublic" \
-#   "$ROOT/data/constraints/traderepublic_hybrid_constraints.json" \
-#   "$ROOT/data/retrieval/traderepublic_hybrid"
+retrieval \
+  "traderepublic" \
+  "$ROOT/data/constraints/traderepublic_hybrid_constraints.json" \
+  "$ROOT/data/retrieval/traderepublic_hybrid"
 
 log "  Phase 2 done in $(elapsed $T)"
 

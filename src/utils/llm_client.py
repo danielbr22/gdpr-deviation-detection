@@ -13,7 +13,7 @@ _OLLAMA_MODEL: str = os.environ.get("OLLAMA_MODEL", "qwen3.5:9b")
 _OPENAI_MODEL: str = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 _OPENAI_URL: str = "https://api.openai.com/v1/chat/completions"
 
-_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 20}
+_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 5}
 
 
 def concurrency() -> int:
@@ -59,7 +59,7 @@ async def _openai(system: str, user: str, *, json_mode: bool, timeout: int) -> s
     }
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
-    for attempt in range(6):
+    for attempt in range(10):
         try:
             async with httpx.AsyncClient(timeout=timeout) as client:
                 r = await client.post(_OPENAI_URL, json=payload, headers=headers)

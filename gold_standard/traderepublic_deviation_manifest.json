@@ -87,20 +87,6 @@
     "rationale": "RCASR3 tests constraint coverage: every regulatory constraint must have a counterpart in the realization. Art. 18 GDPR grants data subjects the right to restrict processing in certain circumstances (e.g. when accuracy is contested, processing is unlawful but data subject opposes erasure, or the data subject objects). The original Trade Republic policy enumerates this right. In the modified policy, the bullet is deleted entirely, leaving the Art. 18 constraint without a policy counterpart. Detectable at retrieval stage: GDPR constraint(s) for Art. 18 will appear in unmapped_gdpr.json."
   },
   {
-    "id": "tr_dev_007",
-    "rcasr": "RCASR3",
-    "deviation_type": "constraint_coverage",
-    "policy_constraint_id": "pol_099",
-    "gdpr_articles_affected": [
-      "Art. 77"
-    ],
-    "section": "9. Your Privacy Rights and Contact",
-    "original_text": "In addition, there is the right to complain to the data protection supervisory authority pursuant to Art. 77 GDPR. The competent supervisory authority for Trade Republic Bank GmbH is the Berlin Commissioner for Data Protection and Freedom of Information.",
-    "modified_text": "",
-    "change_description": "The right to lodge a complaint with a supervisory authority (Art. 77 GDPR) and the identification of the competent authority have been removed from Section 9.",
-    "rationale": "RCASR3 tests constraint coverage: every regulatory constraint must have a counterpart in the realization. Art. 77 GDPR grants every data subject the right to lodge a complaint with a supervisory authority. The original Trade Republic policy names this right and identifies the competent authority. In the modified policy, the entire paragraph is deleted, leaving the Art. 77 constraint without a policy counterpart. Detectable at retrieval stage: GDPR constraint(s) for Art. 77 will appear in unmapped_gdpr.json."
-  },
-  {
     "id": "tr_dev_008",
     "rcasr": "RCASR4",
     "deviation_type": "severity",

@@ -235,8 +235,8 @@ def print_report(results: list[dict], agg: dict) -> None:
     print("DEVIATION DETECTION EVALUATION")
     print("=" * W)
     print(
-        "\nNOTE: Precision is approximate — the gold standard covers 18 introduced deviations\n"
-        "per use case (3 per type × 6 types). constraint_coverage unmapped set is filtered\n"
+        "\nNOTE: Precision is approximate — the gold standard covers 17 introduced deviations\n"
+        "per use case (Art. 77 excluded — outside GDPR Art. 5–43 scope). constraint_coverage unmapped set is filtered\n"
         "to GDPR articles substantively covered by the original policy (Phase 0 scope detection).\n"
         "FPs may still include genuine policy issues not in the gold standard.\n"
     )

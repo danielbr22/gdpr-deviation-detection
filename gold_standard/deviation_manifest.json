@@ -85,20 +85,6 @@
     "rationale": "RCASR3 tests constraint coverage: every regulatory constraint must have a counterpart in the realization. GDPR Art. 22 grants data subjects the right not to be subject to solely automated decisions producing legal or similarly significant effects, and to obtain human intervention, express their views, and contest decisions. The original Hetzner policy acknowledges this right explicitly. In the modified policy, the paragraph is deleted entirely, meaning the Art. 22 GDPR constraint has no counterpart in the realization. This deviation is detectable at the retrieval stage: GDPR Art. 22 constraints will appear in unmapped_gdpr.json."
   },
   {
-    "id": "dev_007",
-    "rcasr": "RCASR3",
-    "deviation_type": "constraint_coverage",
-    "policy_constraint_id": "pol_085",
-    "gdpr_articles_affected": [
-      "Art. 77"
-    ],
-    "section": "6. Making complaints to the relevant data protection authority",
-    "original_text": "If you believe that we are violating any data protection laws by processing personal data, you also have the right to make a complaint to the data supervisory authority who is responsible for our company.",
-    "modified_text": "If you believe that we are not handling your data correctly, we encourage you to contact our data protection officer directly. We always strive to resolve any possible disagreements as quickly and smoothly as possible.",
-    "change_description": "Section 6 has been rewritten to describe only an internal complaint process, removing any mention of the right to complain to the supervisory authority.",
-    "rationale": "RCASR3: GDPR Art. 77 grants every data subject the right to lodge a complaint with a supervisory authority. The original Hetzner policy covers this right in Section 6. In the modified version, Section 6 has been changed to describe only an internal escalation process to the data protection officer, with no mention of any right to contact the supervisory authority. This means the Art. 77 regulatory constraint has no counterpart in the realization."
-  },
-  {
     "id": "dev_008",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
