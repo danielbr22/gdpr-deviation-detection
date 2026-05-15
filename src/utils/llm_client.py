@@ -60,8 +60,14 @@ async def _openai(system: str, user: str, *, json_mode: bool, timeout: int) -> s
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
     for attempt in range(6):
-        async with httpx.AsyncClient(timeout=timeout) as client:
-            r = await client.post(_OPENAI_URL, json=payload, headers=headers)
+        try:
+            async with httpx.AsyncClient(timeout=timeout) as client:
+                r = await client.post(_OPENAI_URL, json=payload, headers=headers)
+        except (httpx.ReadError, httpx.ConnectError, httpx.RemoteProtocolError) as e:
+            if attempt == 5:
+                raise
+            await asyncio.sleep(2 ** attempt + random.random())
+            continue
         if r.status_code == 429:
             wait = float(r.headers.get("Retry-After", 2 ** attempt + random.random()))
             await asyncio.sleep(wait)
