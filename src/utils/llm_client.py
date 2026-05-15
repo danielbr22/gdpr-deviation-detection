@@ -1,7 +1,7 @@
 import os
 import sys
 import asyncio
-from typing import Optional
+import random
 
 import httpx
 
@@ -13,7 +13,7 @@ _OLLAMA_MODEL: str = os.environ.get("OLLAMA_MODEL", "qwen3.5:9b")
 _OPENAI_MODEL: str = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 _OPENAI_URL: str = "https://api.openai.com/v1/chat/completions"
 
-_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 20}
+_DEFAULT_CONCURRENCY = {"ollama": 1, "openai": 5}
 
 
 def concurrency() -> int:
@@ -59,10 +59,17 @@ async def _openai(system: str, user: str, *, json_mode: bool, timeout: int) -> s
     }
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
-    async with httpx.AsyncClient(timeout=timeout) as client:
-        r = await client.post(_OPENAI_URL, json=payload, headers=headers)
+    for attempt in range(6):
+        async with httpx.AsyncClient(timeout=timeout) as client:
+            r = await client.post(_OPENAI_URL, json=payload, headers=headers)
+        if r.status_code == 429:
+            wait = float(r.headers.get("Retry-After", 2 ** attempt + random.random()))
+            await asyncio.sleep(wait)
+            continue
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
+    r.raise_for_status()
+    return ""  # unreachable
 
 
 def check_provider() -> None:
