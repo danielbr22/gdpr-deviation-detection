@@ -144,7 +144,9 @@ async def extract_policy_obligations_async(policy_text: str, verbose: bool = Fal
         if is_obligation:
             section = _get_section(start_char, section_positions)
             before, after = context_lookup.get(original_idx, ([], []))
-            embed_parts = ([before[-1]] if before else []) + [sentence] + ([after[0]] if after else [])
+            prev = next((s for s in reversed(before) if filter_sentence(s)), None)
+            nxt = next((s for s in after if filter_sentence(s)), None)
+            embed_parts = ([prev] if prev else []) + [sentence] + ([nxt] if nxt else [])
             constraints.append({
                 "id": f"pol_{len(constraints) + 1:03d}",
                 "source": "policy",
