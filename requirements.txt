@@ -2,5 +2,6 @@ beautifulsoup4>=4.12
 lxml>=5.0
 numpy>=1.24
 requests>=2.31
+httpx[asyncio]>=0.27
 sentence-transformers>=3.0
 spacy>=3.7
