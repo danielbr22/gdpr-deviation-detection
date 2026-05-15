@@ -17,7 +17,7 @@
           "articles": [
             18
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_003",
@@ -42,58 +42,172 @@
           "articles": [
             16
           ],
+          "detected": true
+        },
+        {
+          "id": "dev_006",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            22
+          ],
+          "detected": true
+        },
+        {
+          "id": "dev_007",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            77
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_008",
+          "deviation_type": "severity",
+          "articles": [
+            12
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_009",
+          "deviation_type": "severity",
+          "articles": [
+            5
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_010",
+          "deviation_type": "severity",
+          "articles": [
+            5
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_011",
+          "deviation_type": "execution_style",
+          "articles": [
+            7
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_012",
+          "deviation_type": "execution_style",
+          "articles": [
+            15
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_013",
+          "deviation_type": "negation",
+          "articles": [
+            5,
+            17
+          ],
+          "detected": true
+        },
+        {
+          "id": "dev_014",
+          "deviation_type": "negation",
+          "articles": [
+            34
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_015",
+          "deviation_type": "responsibility",
+          "articles": [
+            28
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_016",
+          "deviation_type": "responsibility",
+          "articles": [
+            37,
+            38
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_017",
+          "deviation_type": "data",
+          "articles": [
+            21
+          ],
+          "detected": false
+        },
+        {
+          "id": "dev_018",
+          "deviation_type": "data",
+          "articles": [
+            17
+          ],
           "detected": false
         }
       ],
       "type_metrics": {
         "constraint_coverage": {
-          "tp": 1,
-          "fp": 34,
-          "fn": 0,
-          "precision": 0.029,
-          "recall": 1.0,
-          "f1": 0.056
+          "tp": 2,
+          "fp": 26,
+          "fn": 1,
+          "precision": 0.071,
+          "recall": 0.667,
+          "f1": 0.129
+        },
+        "severity": {
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         },
         "execution_style": {
-          "tp": 1,
-          "fp": 16,
-          "fn": 0,
-          "precision": 0.059,
-          "recall": 1.0,
-          "f1": 0.111
+          "tp": 0,
+          "fp": 0,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         },
         "negation": {
-          "tp": 1,
+          "tp": 2,
           "fp": 14,
-          "fn": 0,
-          "precision": 0.067,
-          "recall": 1.0,
-          "f1": 0.125
+          "fn": 1,
+          "precision": 0.125,
+          "recall": 0.667,
+          "f1": 0.211
         },
         "responsibility": {
           "tp": 0,
-          "fp": 0,
-          "fn": 1,
+          "fp": 4,
+          "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "data": {
-          "tp": 0,
-          "fp": 4,
-          "fn": 1,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "tp": 1,
+          "fp": 5,
+          "fn": 2,
+          "precision": 0.167,
+          "recall": 0.333,
+          "f1": 0.222
         }
       },
       "overall": {
-        "tp": 3,
-        "fp": 68,
-        "fn": 2,
-        "precision": 0.042,
-        "recall": 0.6,
-        "f1": 0.079
+        "tp": 5,
+        "fp": 49,
+        "fn": 13,
+        "precision": 0.093,
+        "recall": 0.278,
+        "f1": 0.139
       }
     },
     {
@@ -113,7 +227,7 @@
           "articles": [
             12
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "zal_dev_003",
@@ -140,57 +254,170 @@
             17
           ],
           "detected": true
+        },
+        {
+          "id": "zal_dev_006",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            77
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_007",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            7
+          ],
+          "detected": true
+        },
+        {
+          "id": "zal_dev_008",
+          "deviation_type": "severity",
+          "articles": [
+            12
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_009",
+          "deviation_type": "severity",
+          "articles": [
+            5
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_010",
+          "deviation_type": "severity",
+          "articles": [
+            33,
+            34
+          ],
+          "detected": true
+        },
+        {
+          "id": "zal_dev_011",
+          "deviation_type": "execution_style",
+          "articles": [
+            7
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_012",
+          "deviation_type": "execution_style",
+          "articles": [
+            17
+          ],
+          "detected": true
+        },
+        {
+          "id": "zal_dev_013",
+          "deviation_type": "negation",
+          "articles": [
+            7
+          ],
+          "detected": true
+        },
+        {
+          "id": "zal_dev_014",
+          "deviation_type": "negation",
+          "articles": [
+            21
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_015",
+          "deviation_type": "responsibility",
+          "articles": [
+            26
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_016",
+          "deviation_type": "responsibility",
+          "articles": [
+            46
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_017",
+          "deviation_type": "data",
+          "articles": [
+            15
+          ],
+          "detected": false
+        },
+        {
+          "id": "zal_dev_018",
+          "deviation_type": "data",
+          "articles": [
+            5
+          ],
+          "detected": false
         }
       ],
       "type_metrics": {
         "constraint_coverage": {
+          "tp": 2,
+          "fp": 25,
+          "fn": 1,
+          "precision": 0.074,
+          "recall": 0.667,
+          "f1": 0.133
+        },
+        "severity": {
           "tp": 1,
-          "fp": 34,
-          "fn": 0,
-          "precision": 0.029,
-          "recall": 1.0,
-          "f1": 0.056
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.333,
+          "f1": 0.5
         },
         "execution_style": {
-          "tp": 0,
-          "fp": 14,
+          "tp": 2,
+          "fp": 0,
           "fn": 1,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "precision": 1.0,
+          "recall": 0.667,
+          "f1": 0.8
         },
         "negation": {
-          "tp": 0,
-          "fp": 9,
-          "fn": 1,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "tp": 1,
+          "fp": 14,
+          "fn": 2,
+          "precision": 0.067,
+          "recall": 0.333,
+          "f1": 0.111
         },
         "responsibility": {
           "tp": 0,
-          "fp": 1,
-          "fn": 1,
+          "fp": 2,
+          "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "data": {
           "tp": 1,
-          "fp": 5,
-          "fn": 0,
-          "precision": 0.167,
-          "recall": 1.0,
-          "f1": 0.286
+          "fp": 9,
+          "fn": 2,
+          "precision": 0.1,
+          "recall": 0.333,
+          "f1": 0.154
         }
       },
       "overall": {
-        "tp": 2,
-        "fp": 63,
-        "fn": 3,
-        "precision": 0.031,
-        "recall": 0.4,
-        "f1": 0.057
+        "tp": 7,
+        "fp": 50,
+        "fn": 11,
+        "precision": 0.123,
+        "recall": 0.389,
+        "f1": 0.187
       }
     },
     {
@@ -218,7 +445,7 @@
           "articles": [
             7
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "tr_dev_004",
@@ -236,111 +463,233 @@
           "articles": [
             5
           ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_006",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            18
+          ],
           "detected": true
+        },
+        {
+          "id": "tr_dev_007",
+          "deviation_type": "constraint_coverage",
+          "articles": [
+            77
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_008",
+          "deviation_type": "severity",
+          "articles": [
+            12
+          ],
+          "detected": true
+        },
+        {
+          "id": "tr_dev_009",
+          "deviation_type": "severity",
+          "articles": [
+            5
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_010",
+          "deviation_type": "severity",
+          "articles": [
+            33,
+            34
+          ],
+          "detected": true
+        },
+        {
+          "id": "tr_dev_011",
+          "deviation_type": "execution_style",
+          "articles": [
+            21
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_012",
+          "deviation_type": "execution_style",
+          "articles": [
+            7
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_013",
+          "deviation_type": "negation",
+          "articles": [
+            22
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_014",
+          "deviation_type": "negation",
+          "articles": [
+            13,
+            14
+          ],
+          "detected": true
+        },
+        {
+          "id": "tr_dev_015",
+          "deviation_type": "responsibility",
+          "articles": [
+            26
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_016",
+          "deviation_type": "responsibility",
+          "articles": [
+            28
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_017",
+          "deviation_type": "data",
+          "articles": [
+            15
+          ],
+          "detected": false
+        },
+        {
+          "id": "tr_dev_018",
+          "deviation_type": "data",
+          "articles": [
+            17
+          ],
+          "detected": false
         }
       ],
       "type_metrics": {
         "constraint_coverage": {
-          "tp": 1,
-          "fp": 34,
-          "fn": 0,
-          "precision": 0.029,
-          "recall": 1.0,
-          "f1": 0.056
+          "tp": 2,
+          "fp": 26,
+          "fn": 1,
+          "precision": 0.071,
+          "recall": 0.667,
+          "f1": 0.129
+        },
+        "severity": {
+          "tp": 2,
+          "fp": 0,
+          "fn": 1,
+          "precision": 1.0,
+          "recall": 0.667,
+          "f1": 0.8
         },
         "execution_style": {
           "tp": 0,
-          "fp": 9,
-          "fn": 1,
+          "fp": 1,
+          "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "negation": {
-          "tp": 0,
-          "fp": 17,
+          "tp": 2,
+          "fp": 3,
           "fn": 1,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "precision": 0.4,
+          "recall": 0.667,
+          "f1": 0.5
         },
         "responsibility": {
           "tp": 0,
           "fp": 0,
-          "fn": 1,
+          "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
           "f1": 0.0
         },
         "data": {
-          "tp": 1,
-          "fp": 7,
-          "fn": 0,
-          "precision": 0.125,
-          "recall": 1.0,
-          "f1": 0.222
+          "tp": 0,
+          "fp": 5,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         }
       },
       "overall": {
-        "tp": 2,
-        "fp": 67,
-        "fn": 3,
-        "precision": 0.029,
-        "recall": 0.4,
-        "f1": 0.054
+        "tp": 6,
+        "fp": 35,
+        "fn": 12,
+        "precision": 0.146,
+        "recall": 0.333,
+        "f1": 0.203
       }
     }
   ],
   "aggregate": {
     "type_metrics": {
       "constraint_coverage": {
+        "tp": 6,
+        "fp": 77,
+        "fn": 3,
+        "precision": 0.072,
+        "recall": 0.667,
+        "f1": 0.13
+      },
+      "severity": {
         "tp": 3,
-        "fp": 102,
-        "fn": 0,
-        "precision": 0.029,
-        "recall": 1.0,
-        "f1": 0.056
+        "fp": 0,
+        "fn": 6,
+        "precision": 1.0,
+        "recall": 0.333,
+        "f1": 0.5
       },
       "execution_style": {
-        "tp": 1,
-        "fp": 39,
-        "fn": 2,
-        "precision": 0.025,
-        "recall": 0.333,
-        "f1": 0.047
+        "tp": 2,
+        "fp": 1,
+        "fn": 7,
+        "precision": 0.667,
+        "recall": 0.222,
+        "f1": 0.333
       },
       "negation": {
-        "tp": 1,
-        "fp": 40,
-        "fn": 2,
-        "precision": 0.024,
-        "recall": 0.333,
-        "f1": 0.045
+        "tp": 5,
+        "fp": 31,
+        "fn": 4,
+        "precision": 0.139,
+        "recall": 0.556,
+        "f1": 0.222
       },
       "responsibility": {
         "tp": 0,
-        "fp": 1,
-        "fn": 3,
+        "fp": 6,
+        "fn": 9,
         "precision": 0.0,
         "recall": 0.0,
         "f1": 0.0
       },
       "data": {
         "tp": 2,
-        "fp": 16,
-        "fn": 1,
-        "precision": 0.111,
-        "recall": 0.667,
-        "f1": 0.19
+        "fp": 19,
+        "fn": 7,
+        "precision": 0.095,
+        "recall": 0.222,
+        "f1": 0.133
       }
     },
     "overall": {
-      "tp": 7,
-      "fp": 198,
-      "fn": 8,
-      "precision": 0.034,
-      "recall": 0.467,
-      "f1": 0.064
+      "tp": 18,
+      "fp": 134,
+      "fn": 36,
+      "precision": 0.118,
+      "recall": 0.333,
+      "f1": 0.175
     }
   }
 }
