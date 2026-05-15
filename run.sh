@@ -166,8 +166,6 @@ scope_detection() {
 extraction() {
   local name="$1" policy="$2" constraints_out="$3"
 
-  already_done "$constraints_out" "extraction/$name" && return
-
   log "  [extraction/$name] Extracting policy obligations…"
   python3 "$ROOT/src/preprocessing/hybrid_extract.py" \
     --policy "$policy" \
@@ -179,8 +177,6 @@ extraction() {
 retrieval() {
   local name="$1" constraints_out="$2" retrieval_dir="$3"
   local judge_limit="${4:-}"
-
-  already_done "$retrieval_dir/matched_pairs.json" "retrieval/$name" && return
 
   log "  [retrieval/$name] Embedding + top-$TOP_K retrieval…"
   mkdir -p "$retrieval_dir"
@@ -307,17 +303,17 @@ scope_detection \
   "$ROOT/data/constraints/hetzner_original_constraints.json" \
   "$ROOT/data/retrieval/hetzner_original"
 
-scope_detection \
-  "zalando" \
-  "$ROOT/data/policy/zalando_privacy_policy.txt" \
-  "$ROOT/data/constraints/zalando_original_constraints.json" \
-  "$ROOT/data/retrieval/zalando_original"
+# scope_detection \
+#   "zalando" \
+#   "$ROOT/data/policy/zalando_privacy_policy.txt" \
+#   "$ROOT/data/constraints/zalando_original_constraints.json" \
+#   "$ROOT/data/retrieval/zalando_original"
 
-scope_detection \
-  "traderepublic" \
-  "$ROOT/data/policy/traderepublic_privacy_policy.txt" \
-  "$ROOT/data/constraints/traderepublic_original_constraints.json" \
-  "$ROOT/data/retrieval/traderepublic_original"
+# scope_detection \
+#   "traderepublic" \
+#   "$ROOT/data/policy/traderepublic_privacy_policy.txt" \
+#   "$ROOT/data/constraints/traderepublic_original_constraints.json" \
+#   "$ROOT/data/retrieval/traderepublic_original"
 
 log "  Phase 0 done in $(elapsed $T)"
 
@@ -330,15 +326,15 @@ extraction \
   "$ROOT/data/policy/hetzner_policy_modified.txt" \
   "$ROOT/data/constraints/hetzner_hybrid_constraints.json"
 
-extraction \
-  "zalando" \
-  "$ROOT/data/policy/zalando_policy_modified.txt" \
-  "$ROOT/data/constraints/zalando_hybrid_constraints.json"
+# extraction \
+#   "zalando" \
+#   "$ROOT/data/policy/zalando_policy_modified.txt" \
+#   "$ROOT/data/constraints/zalando_hybrid_constraints.json"
 
-extraction \
-  "traderepublic" \
-  "$ROOT/data/policy/traderepublic_policy_modified.txt" \
-  "$ROOT/data/constraints/traderepublic_hybrid_constraints.json"
+# extraction \
+#   "traderepublic" \
+#   "$ROOT/data/policy/traderepublic_policy_modified.txt" \
+#   "$ROOT/data/constraints/traderepublic_hybrid_constraints.json"
 
 log "  Phase 1 done in $(elapsed $T)"
 
@@ -351,15 +347,15 @@ retrieval \
   "$ROOT/data/constraints/hetzner_hybrid_constraints.json" \
   "$ROOT/data/retrieval/hetzner_hybrid"
 
-retrieval \
-  "zalando" \
-  "$ROOT/data/constraints/zalando_hybrid_constraints.json" \
-  "$ROOT/data/retrieval/zalando_hybrid"
+# retrieval \
+#   "zalando" \
+#   "$ROOT/data/constraints/zalando_hybrid_constraints.json" \
+#   "$ROOT/data/retrieval/zalando_hybrid"
 
-retrieval \
-  "traderepublic" \
-  "$ROOT/data/constraints/traderepublic_hybrid_constraints.json" \
-  "$ROOT/data/retrieval/traderepublic_hybrid"
+# retrieval \
+#   "traderepublic" \
+#   "$ROOT/data/constraints/traderepublic_hybrid_constraints.json" \
+#   "$ROOT/data/retrieval/traderepublic_hybrid"
 
 log "  Phase 2 done in $(elapsed $T)"
 
@@ -374,12 +370,12 @@ log "  Phase 3 done in $(elapsed $T)"
 T=$(date +%s)
 log "━━━ PHASE 4: Classification ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 
-for uc in hetzner zalando traderepublic; do
+for uc in hetzner; do
   out="$ROOT/data/classification/${uc}_hybrid_classified.json"
   [ -f "$out" ] && rm "$out" && log "  Cleared stale: $(basename "$out")"
 done
 
-for uc in hetzner zalando traderepublic; do
+for uc in hetzner; do
   log "  [classify/$uc] Running LLM classifier…"
   python3 "$ROOT/src/classification/classify.py" \
     --matched-pairs "$ROOT/data/retrieval/${uc}_hybrid/matched_pairs.json" \
@@ -395,7 +391,7 @@ log "  Phase 4 done in $(elapsed $T)"
 T=$(date +%s)
 log "━━━ PHASE 5: Evaluation ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 python3 "$ROOT/src/evaluation/evaluate.py" \
-  --use-case all \
+  --use-case hetzner \
   --output "$ROOT/data/evaluation/results.json"
 log "  Phase 5 done in $(elapsed $T)"
 
