@@ -5,10 +5,11 @@ from typing import Optional
 
 import httpx
 
-LLM_PROVIDER: str = os.environ.get("LLM_PROVIDER", "ollama")
-_OLLAMA_BASE: str = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
-_OLLAMA_MODEL: str = "qwen3.5:9b"
 _OPENAI_KEY: str = os.environ.get("OPENAI_API_KEY", "")
+# Auto-select openai when OPENAI_API_KEY is present, unless overridden explicitly.
+LLM_PROVIDER: str = os.environ.get("LLM_PROVIDER", "openai" if _OPENAI_KEY else "ollama")
+_OLLAMA_BASE: str = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+_OLLAMA_MODEL: str = os.environ.get("OLLAMA_MODEL", "qwen3.5:9b")
 _OPENAI_MODEL: str = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 _OPENAI_URL: str = "https://api.openai.com/v1/chat/completions"
 
@@ -82,8 +83,8 @@ def check_provider() -> None:
             models = [m["name"] for m in r.json().get("models", [])]
         except Exception as e:
             sys.exit(f"ERROR: Ollama unreachable at {_OLLAMA_BASE} — {e}")
-        if not any("qwen3.5" in m for m in models):
-            sys.exit("ERROR: qwen3.5:9b not found — run: ollama pull qwen3.5:9b")
+        if not any(_OLLAMA_MODEL in m for m in models):
+            sys.exit(f"ERROR: {_OLLAMA_MODEL} not found — run: ollama pull {_OLLAMA_MODEL}")
         print(f"  Provider : Ollama at {_OLLAMA_BASE}")
         print(f"  Model    : {_OLLAMA_MODEL}")
         print(f"  Models   : {', '.join(models)}")
