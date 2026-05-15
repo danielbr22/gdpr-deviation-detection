@@ -34,3 +34,9 @@ excalidraw.log
 
 # Claude Code internal planning files
 docs/
+
+# Accidental Finder duplicates
+*\ 2.json
+
+# Report (not ready to commit)
+report/
