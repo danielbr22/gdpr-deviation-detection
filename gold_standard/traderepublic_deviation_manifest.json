@@ -3,8 +3,10 @@
     "id": "tr_dev_001",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 20"],
+    "policy_constraint_id": "pol_095",
+    "gdpr_articles_affected": [
+      "Art. 20"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "- a right to object to processing (Art. 21 GDPR); and\n- the right to data portability (Art. 20 GDPR) within the framework of the legal requirements.",
     "modified_text": "- a right to object to processing (Art. 21 GDPR).",
@@ -16,8 +18,10 @@
     "id": "tr_dev_002",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 12"],
+    "policy_constraint_id": "pol_100",
+    "gdpr_articles_affected": [
+      "Art. 12"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "In case of general questions or if you want to exercise your privacy rights, you can reach out to our data protection team under dataprotection@traderepublic.com at any time.",
     "modified_text": "In case of general questions or if you want to exercise your privacy rights, you must submit a written request by registered post to our data protection team at Trade Republic Bank GmbH, Brunnenstr. 19-21, 10119 Berlin, Germany.",
@@ -28,8 +32,10 @@
     "id": "tr_dev_003",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 7"],
+    "policy_constraint_id": "pol_007",
+    "gdpr_articles_affected": [
+      "Art. 7"
+    ],
     "section": "1. Purpose and Legal Basis of our Data Processing",
     "original_text": "Your consent is voluntary and may be revoked by you at any time.",
     "modified_text": "Your consent is voluntary but may not be revoked once it has been given.",
@@ -40,8 +46,12 @@
     "id": "tr_dev_004",
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 37", "Art. 38", "Art. 39"],
+    "policy_constraint_id": "pol_101",
+    "gdpr_articles_affected": [
+      "Art. 37",
+      "Art. 38",
+      "Art. 39"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "For a direct contact to our data protection officer, please send a letter to Trade Republic Bank GmbH, Data Protection Officer, Brunnenstr. 19-21, 10119 Berlin, Germany or reach out via email asking for a direct contact.",
     "modified_text": "For a direct contact regarding data protection matters, please send a letter to Trade Republic Bank GmbH, Customer Service, Brunnenstr. 19-21, 10119 Berlin, Germany or reach out via email asking for a direct contact.",
@@ -52,8 +62,10 @@
     "id": "tr_dev_005",
     "rcasr": "RCASR8",
     "deviation_type": "data",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 5"],
+    "policy_constraint_id": "pol_047",
+    "gdpr_articles_affected": [
+      "Art. 5"
+    ],
     "section": "3. Data Retention and Deletion",
     "original_text": "We will generally keep your data only as long as we need it to provide you with our Services or to adhere to our legal obligations.",
     "modified_text": "We will generally keep your account data only as long as we need it to provide you with our Services or to adhere to our legal obligations.",
@@ -64,8 +76,10 @@
     "id": "tr_dev_006",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 18"],
+    "policy_constraint_id": "pol_098",
+    "gdpr_articles_affected": [
+      "Art. 18"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "- the right to restriction of processing (Art. 18 GDPR);",
     "modified_text": "",
@@ -76,8 +90,10 @@
     "id": "tr_dev_007",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 77"],
+    "policy_constraint_id": "pol_099",
+    "gdpr_articles_affected": [
+      "Art. 77"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "In addition, there is the right to complain to the data protection supervisory authority pursuant to Art. 77 GDPR. The competent supervisory authority for Trade Republic Bank GmbH is the Berlin Commissioner for Data Protection and Freedom of Information.",
     "modified_text": "",
@@ -88,8 +104,10 @@
     "id": "tr_dev_008",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 12"],
+    "policy_constraint_id": "pol_100",
+    "gdpr_articles_affected": [
+      "Art. 12"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "In case of general questions or if you want to exercise your privacy rights, you must submit a written request by registered post to our data protection team at Trade Republic Bank GmbH, Brunnenstr. 19-21, 10119 Berlin, Germany.",
     "modified_text": "We process all data subject rights requests within 5 business days of receipt.\n\nIn case of general questions or if you want to exercise your privacy rights, you must submit a written request by registered post to our data protection team at Trade Republic Bank GmbH, Brunnenstr. 19-21, 10119 Berlin, Germany.",
@@ -100,8 +118,10 @@
     "id": "tr_dev_009",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 5"],
+    "policy_constraint_id": "pol_055",
+    "gdpr_articles_affected": [
+      "Art. 5"
+    ],
     "section": "3.2 Communication",
     "original_text": "In case no legal obligation applies, we will retain your data for a limited period of time (usually three years beginning at the end of a calendar year and depending on the applicable law and statute of limitation).",
     "modified_text": "In case no legal obligation applies, we will retain your data for a limited period of time (usually one year beginning at the end of a calendar year and depending on the applicable law and statute of limitation).",
@@ -113,7 +133,10 @@
     "rcasr": "RCASR4",
     "deviation_type": "severity",
     "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 33", "Art. 34"],
+    "gdpr_articles_affected": [
+      "Art. 33",
+      "Art. 34"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "We process all data subject rights requests within 5 business days of receipt.",
     "modified_text": "We process all data subject rights requests within 5 business days of receipt.\n\nIn the event of a personal data breach, we will notify affected users directly within 24 hours of becoming aware of the breach, regardless of the assessed risk level.",
@@ -124,8 +147,10 @@
     "id": "tr_dev_011",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 21"],
+    "policy_constraint_id": "pol_058",
+    "gdpr_articles_affected": [
+      "Art. 21"
+    ],
     "section": "4. Marketing Activities and Social Media",
     "original_text": "You can object to this processing by contacting us.",
     "modified_text": "You can object to this processing by submitting a notarized written objection to our legal department by registered post.",
@@ -136,8 +161,10 @@
     "id": "tr_dev_012",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 7"],
+    "policy_constraint_id": "pol_060",
+    "gdpr_articles_affected": [
+      "Art. 7"
+    ],
     "section": "4. Marketing Activities and Social Media",
     "original_text": "We only use tracking data based on your consent for marketing purposes. To withdraw your consent, you can contact our data protection team under dataprotection@traderepublic.com at any time.",
     "modified_text": "We only use tracking data based on your consent for marketing purposes. To withdraw your consent, you must contact our data protection team in writing, after which withdrawal will take effect within 30 days.",
@@ -148,8 +175,10 @@
     "id": "tr_dev_013",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 22"],
+    "policy_constraint_id": "pol_090",
+    "gdpr_articles_affected": [
+      "Art. 22"
+    ],
     "section": "8. Automated Decisions",
     "original_text": "You can request a manual review of this automated decision at any time. In addition, you can express your view and contest this decision.",
     "modified_text": "You may not request a manual review of automated decisions used for legally mandated fraud prevention and anti-money-laundering screening processes.",
@@ -160,8 +189,11 @@
     "id": "tr_dev_014",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 13", "Art. 14"],
+    "policy_constraint_id": "pol_082",
+    "gdpr_articles_affected": [
+      "Art. 13",
+      "Art. 14"
+    ],
     "section": "6. Recipients or categories of recipients",
     "original_text": "You can reach out to us, if you want to receive further information on the respective recipients or categories of recipients.",
     "modified_text": "We are not required to disclose the identities of individual recipients of your personal data where disclosure could compromise our security operations or business relationships.",
@@ -172,8 +204,10 @@
     "id": "tr_dev_015",
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 26"],
+    "policy_constraint_id": "pol_062",
+    "gdpr_articles_affected": [
+      "Art. 26"
+    ],
     "section": "4.1 Company Profile on Social Media Pages",
     "original_text": "For this, we are joint controllers together with the respective Social Network in line with Art. 26 GDPR.",
     "modified_text": "With regard to personal data being processed by the respective Social Network for Company Profile statistics, the respective Social Network is the sole data controller. Trade Republic assumes no responsibility for this processing.",
@@ -184,8 +218,10 @@
     "id": "tr_dev_016",
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 28"],
+    "policy_constraint_id": "pol_080",
+    "gdpr_articles_affected": [
+      "Art. 28"
+    ],
     "section": "6. Recipients or categories of recipients",
     "original_text": "Data processors process your data based on our instruction and under our responsibility.",
     "modified_text": "Data processors process your data under their own standard contractual terms and assume independent responsibility for their data processing practices.",
@@ -196,8 +232,10 @@
     "id": "tr_dev_017",
     "rcasr": "RCASR8",
     "deviation_type": "data",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 15"],
+    "policy_constraint_id": "pol_006",
+    "gdpr_articles_affected": [
+      "Art. 15"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "- the right to access your personal data (Art. 15 GDPR);",
     "modified_text": "- the right to access your account and transaction data (Art. 15 GDPR);",
@@ -209,7 +247,9 @@
     "rcasr": "RCASR8",
     "deviation_type": "data",
     "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 17"],
+    "gdpr_articles_affected": [
+      "Art. 17"
+    ],
     "section": "9. Your Privacy Rights and Contact",
     "original_text": "- the right to deletion (Art. 17 GDPR);",
     "modified_text": "- the right to deletion of your account data (Art. 17 GDPR);",

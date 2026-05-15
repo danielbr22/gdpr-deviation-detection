@@ -6,8 +6,14 @@ Matching is article-level:
   - constraint_coverage : TP if any unmapped GDPR constraint belongs to an affected article
   - other types         : TP if any matched pair has an affected article AND the correct type
 
-Precision is approximate: the gold standard contains 18 *introduced* deviations per
-use case (3 per type × 6 types).  FPs include genuine policy deviations not in the gold standard.
+Precision is approximate: the gold standard covers 18 introduced deviations per use case
+(3 per type × 6 types). FPs may include genuine policy issues not in the gold standard.
+
+constraint_coverage FPs are further filtered by in-scope articles: GDPR articles that had
+no substantive match in the *original* (unmodified) policy are excluded from the unmapped
+set, since they were never relevant to the company and are not part of the gold standard.
+This requires data/retrieval/{use_case}_original/matched_pairs.json to exist (produced by
+Phase 0 of run_pipeline.sh). Falls back to unfiltered behaviour if the file is absent.
 """
 
 from __future__ import annotations
@@ -36,14 +42,17 @@ USE_CASES: dict[str, dict[str, Path]] = {
     "hetzner": {
         "classified": DATA_DIR / "classification" / "hetzner_hybrid_classified.json",
         "manifest": GOLD_DIR / "deviation_manifest.json",
+        "original_matched": DATA_DIR / "retrieval" / "hetzner_original" / "matched_pairs.json",
     },
     "zalando": {
         "classified": DATA_DIR / "classification" / "zalando_hybrid_classified.json",
         "manifest": GOLD_DIR / "zalando_deviation_manifest.json",
+        "original_matched": DATA_DIR / "retrieval" / "zalando_original" / "matched_pairs.json",
     },
     "traderepublic": {
         "classified": DATA_DIR / "classification" / "traderepublic_hybrid_classified.json",
         "manifest": GOLD_DIR / "traderepublic_deviation_manifest.json",
+        "original_matched": DATA_DIR / "retrieval" / "traderepublic_original" / "matched_pairs.json",
     },
 }
 
@@ -69,6 +78,18 @@ def evaluate_use_case(use_case: str, article_map: dict[str, int]) -> dict:
     pairs = classified["pairs"]
     unmapped = classified["unmapped"]
 
+    # Load in-scope articles from original policy run (Phase 0 of run_pipeline.sh).
+    # GDPR articles with no substantive match in the original policy are structurally
+    # irrelevant and excluded from unmapped_articles to avoid inflating FPs.
+    in_scope_articles: set[int] | None = None
+    orig_path: Path = cfg["original_matched"]
+    if orig_path.exists():
+        with open(orig_path) as f:
+            orig_matched = json.load(f)
+        in_scope_articles = {
+            p["gdpr_article"] for p in orig_matched if p.get("gdpr_article") is not None
+        }
+
     # article → set of deviation types predicted by pipeline (non-none, non-error)
     article_predictions: dict[int, set[str]] = defaultdict(set)
     for p in pairs:
@@ -76,11 +97,11 @@ def evaluate_use_case(use_case: str, article_map: dict[str, int]) -> dict:
         if dtype not in ("none", "parse_error"):
             article_predictions[p["gdpr_article"]].add(dtype)
 
-    # articles present in unmapped (constraint_coverage predictions)
+    # articles present in unmapped (constraint_coverage predictions), filtered to in-scope
     unmapped_articles: set[int] = set()
     for u in unmapped:
         art = article_map.get(u["gdpr_id"])
-        if art is not None:
+        if art is not None and (in_scope_articles is None or art in in_scope_articles):
             unmapped_articles.add(art)
 
     # --- evaluate each gold deviation ---
@@ -214,8 +235,10 @@ def print_report(results: list[dict], agg: dict) -> None:
     print("DEVIATION DETECTION EVALUATION")
     print("=" * W)
     print(
-        "\nNOTE: Precision is approximate — the gold standard covers 18 introduced\n"
-        "deviations per use case (3 per type × 6 types). Pipeline FPs may include genuine policy issues.\n"
+        "\nNOTE: Precision is approximate — the gold standard covers 18 introduced deviations\n"
+        "per use case (3 per type × 6 types). constraint_coverage unmapped set is filtered\n"
+        "to GDPR articles substantively covered by the original policy (Phase 0 scope detection).\n"
+        "FPs may still include genuine policy issues not in the gold standard.\n"
     )
 
     for r in results:

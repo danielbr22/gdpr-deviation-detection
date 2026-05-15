@@ -3,8 +3,10 @@
     "id": "zal_dev_001",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 20"],
+    "policy_constraint_id": "pol_077",
+    "gdpr_articles_affected": [
+      "Art. 20"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to data portability (Article 20 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR).",
     "modified_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR).",
@@ -16,8 +18,10 @@
     "id": "zal_dev_002",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 12"],
+    "policy_constraint_id": "pol_078",
+    "gdpr_articles_affected": [
+      "Art. 12"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "If you want to exercise your data protection rights you can reach out to our Privacy Team by sending an email to datenschutz@zalando.de .",
     "modified_text": "If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer.",
@@ -28,8 +32,10 @@
     "id": "zal_dev_003",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 21"],
+    "policy_constraint_id": "pol_083",
+    "gdpr_articles_affected": [
+      "Art. 21"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "You may object to the processing of your data for advertising purposes, including direct marketing (including in the form of data analysis) at any time without giving reasons.",
     "modified_text": "You may not object to the processing of your data for advertising purposes, including direct marketing (including in the form of data analysis).",
@@ -40,8 +46,11 @@
     "id": "zal_dev_004",
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 12", "Art. 37"],
+    "policy_constraint_id": "pol_097",
+    "gdpr_articles_affected": [
+      "Art. 12",
+      "Art. 37"
+    ],
     "section": "10. Changes to this Privacy Notice and points of contact",
     "original_text": "You can reach out to our Privacy Team for general questions on privacy and in order to exercise your data protection rights by sending an email to datenschutz@zalando.de .",
     "modified_text": "You can reach out to our customer service department for general questions on privacy and in order to exercise your data protection rights by sending an email to datenschutz@zalando.de .",
@@ -52,8 +61,11 @@
     "id": "zal_dev_005",
     "rcasr": "RCASR8",
     "deviation_type": "data",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 5", "Art. 17"],
+    "policy_constraint_id": "pol_087",
+    "gdpr_articles_affected": [
+      "Art. 5",
+      "Art. 17"
+    ],
     "section": "8. When will my data be deleted?",
     "original_text": "We will store your personal data as long as is necessary for the purposes named in this Privacy Notice, especially for the fulfilment of our contractual and legal obligations.",
     "modified_text": "We will store your account data as long as is necessary for the purposes named in this Privacy Notice, especially for the fulfilment of our contractual and legal obligations.",
@@ -64,8 +76,10 @@
     "id": "zal_dev_006",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 77"],
+    "policy_constraint_id": "pol_077",
+    "gdpr_articles_affected": [
+      "Art. 77"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to data portability (Article 20 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR).",
     "modified_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), the right to object to particular data processing measures (Article 21 GDPR). If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer. We process all data protection rights requests within 14 days of receipt.",
@@ -77,8 +91,10 @@
     "id": "zal_dev_007",
     "rcasr": "RCASR3",
     "deviation_type": "constraint_coverage",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 7"],
+    "policy_constraint_id": "pol_077",
+    "gdpr_articles_affected": [
+      "Art. 7"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to data portability (Article 20 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR).",
     "modified_text": "Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), the right to object to particular data processing measures (Article 21 GDPR). If you want to exercise your data protection rights you must submit a written request by registered post to our Data Protection Officer. We process all data protection rights requests within 14 days of receipt.",
@@ -90,8 +106,10 @@
     "id": "zal_dev_008",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 12"],
+    "policy_constraint_id": "pol_078",
+    "gdpr_articles_affected": [
+      "Art. 12"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "If you want to exercise your data protection rights you can reach out to our Privacy Team by sending an email to datenschutz@zalando.de .",
     "modified_text": "We process all data protection rights requests within 14 days of receipt.",
@@ -102,8 +120,10 @@
     "id": "zal_dev_009",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 5"],
+    "policy_constraint_id": "pol_038",
+    "gdpr_articles_affected": [
+      "Art. 5"
+    ],
     "section": "3.2 Server log files",
     "original_text": "Whenever you access our services and databases, we collect device and access data and record it in so-called server log files. The IP address it contains is anonymised shortly after the end of the relevant session so that the complete IP address is never stored.",
     "modified_text": "Whenever you access our services and databases, we collect device and access data and record it in so-called server log files. The IP address it contains is anonymised immediately upon session termination, before any storage in log files takes place.",
@@ -114,8 +134,11 @@
     "id": "zal_dev_010",
     "rcasr": "RCASR4",
     "deviation_type": "severity",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 33", "Art. 34"],
+    "policy_constraint_id": "pol_096",
+    "gdpr_articles_affected": [
+      "Art. 33",
+      "Art. 34"
+    ],
     "section": "9. Security",
     "original_text": "We transmit your personal data securely using encryption. This applies to your order and your customer login. We do this using the coding system SSL (Secure Socket Layer). We also use technical and organisational measures to secure our website and other systems against loss, destruction, access, change or dissemination by unauthorised persons.",
     "modified_text": "We transmit your personal data securely using encryption. This applies to your order and your customer login. We do this using the coding system SSL (Secure Socket Layer). We also use technical and organisational measures to secure our website and other systems against loss, destruction, access, change or dissemination by unauthorised persons. In the event of a personal data breach, we will notify all affected users within 24 hours of becoming aware of the breach, irrespective of the risk level.",
@@ -126,8 +149,10 @@
     "id": "zal_dev_011",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 7"],
+    "policy_constraint_id": "pol_063",
+    "gdpr_articles_affected": [
+      "Art. 7"
+    ],
     "section": "5.3 Newsletter",
     "original_text": "If you no longer wish to receive emails from us, you can withdraw your consent at any time without incurring any costs other than the transmission costs according to basic tariffs. A notification in text form (e.g. email, fax, letter) is sufficient, but we offer you a comfortable option to unsubscribe via the link in each newsletter.",
     "modified_text": "If you no longer wish to receive emails from us, you can withdraw your consent at any time without incurring any costs other than the transmission costs according to basic tariffs. A signed written request sent by registered post to the Zalando company responsible for the relevant newsletter is required for this. The unsubscribe link in the newsletter does not constitute valid withdrawal of consent.",
@@ -138,8 +163,10 @@
     "id": "zal_dev_012",
     "rcasr": "RCASR5",
     "deviation_type": "execution_style",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 17"],
+    "policy_constraint_id": "pol_089",
+    "gdpr_articles_affected": [
+      "Art. 17"
+    ],
     "section": "8. When will my data be deleted?",
     "original_text": "If you close your customer account, we will delete all the data which we have stored about you, provided this is not prevented by any retention obligations.",
     "modified_text": "If you close your customer account, you must additionally submit a separate written deletion request to our Data Protection Officer within 14 days of account closure to initiate the deletion of your data. If no such request is received, your data will be retained for a further 6 months.",
@@ -150,8 +177,10 @@
     "id": "zal_dev_013",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 7"],
+    "policy_constraint_id": "pol_036",
+    "gdpr_articles_affected": [
+      "Art. 7"
+    ],
     "section": "2.4 Consent",
     "original_text": "You can withdraw consent at any time with effect for the future, e.g. by email, letter or fax. In this case, we will delete the data we have processed up to the point of withdrawal, unless another legal basis justifies the storage of this data.",
     "modified_text": "You may not withdraw consent for data processing activities that are currently ongoing or have been initiated on the basis of your consent.",
@@ -162,8 +191,10 @@
     "id": "zal_dev_014",
     "rcasr": "RCASR6",
     "deviation_type": "negation",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 21"],
+    "policy_constraint_id": "pol_084",
+    "gdpr_articles_affected": [
+      "Art. 21"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing.",
     "modified_text": "If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may not object to the processing unless you provide documented evidence of exceptional personal circumstances that outweigh our legitimate interests.",
@@ -175,7 +206,9 @@
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
     "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 26"],
+    "gdpr_articles_affected": [
+      "Art. 26"
+    ],
     "section": "4.1 Fan pages",
     "original_text": "Zalando shall be responsible for complying with privacy protection obligations as far as possible, within the scope of the actual influence Zalando has on the processing on fan pages. However, in principle we are jointly responsible with Facebook for the processing of Insights data in connection with our fan page pursuant to Article 26 GDPR.",
     "modified_text": "Facebook bears full responsibility for processing your data. Zalando assumes no responsibility for data processed in connection with our social media fan pages.",
@@ -186,8 +219,10 @@
     "id": "zal_dev_016",
     "rcasr": "RCASR7",
     "deviation_type": "responsibility",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 46"],
+    "policy_constraint_id": "pol_075",
+    "gdpr_articles_affected": [
+      "Art. 46"
+    ],
     "section": "6.2 Data recipients outside of the EU",
     "original_text": "If they process your data outside the European Union, this may mean that your data is transmitted to a country with a lower data protection standard than the European Union. In this case, Zalando will ensure that, in accordance with Article 46 GDPR, the relevant service providers contractually or otherwise guarantee an equivalent data protection level.",
     "modified_text": "If they process your data outside the European Union, this may mean that your data is transmitted to a country with a lower data protection standard than the European Union. In such cases, our service providers are independently responsible for ensuring appropriate data protection standards. Zalando does not take responsibility for the data protection measures applied by service providers processing your data outside the European Union.",
@@ -198,8 +233,10 @@
     "id": "zal_dev_017",
     "rcasr": "RCASR8",
     "deviation_type": "data",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 15"],
+    "policy_constraint_id": "pol_079",
+    "gdpr_articles_affected": [
+      "Art. 15"
+    ],
     "section": "7. Which data protection rights do I have?",
     "original_text": "In order to ensure that your data is not disclosed to third parties in the course of requests for information, please attach sufficient proof of identity to your request by email or post.",
     "modified_text": "In order to ensure that your data is not disclosed to third parties in the course of requests for information, please attach sufficient proof of identity to your request by email or post. Please note that information requests will only be fulfilled for your profile data as defined in section 1.1 of this Privacy Notice.",
@@ -210,8 +247,10 @@
     "id": "zal_dev_018",
     "rcasr": "RCASR8",
     "deviation_type": "data",
-    "policy_constraint_id": null,
-    "gdpr_articles_affected": ["Art. 5"],
+    "policy_constraint_id": "pol_067",
+    "gdpr_articles_affected": [
+      "Art. 5"
+    ],
     "section": "5.3 Newsletter",
     "original_text": "We collect your device and access data which arise when you interact with a newsletter. However, this data will not be evaluated.",
     "modified_text": "We collect your email interaction data (opens and clicks) which arise when you interact with a newsletter. However, this data will not be evaluated.",

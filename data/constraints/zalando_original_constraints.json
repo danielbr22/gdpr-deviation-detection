@@ -1,0 +1,590 @@
+[
+  {
+    "id": "pol_001",
+    "source": "policy",
+    "section": "",
+    "text": "If you have a question regarding this Privacy Notice or the topic of data protection at Zalando in general, you can contact our Privacy Team by sending an email to datenschutz@zalando.de ."
+  },
+  {
+    "id": "pol_002",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If we combine your personal data with anonymous data, all the data in this record counts as personal data."
+  },
+  {
+    "id": "pol_003",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If we delete the personal data from a piece of information or a record on your person, the remaining data in this record no longer counts as personal data."
+  },
+  {
+    "id": "pol_004",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "The following generally applies: If we request that you share particular personal information with us, you may of course refuse to do this."
+  },
+  {
+    "id": "pol_005",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "You can decide which information you share with us."
+  },
+  {
+    "id": "pol_006",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If particular information is required in connection with a service (mandatory information), we will inform you by marking it accordingly."
+  },
+  {
+    "id": "pol_007",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If you are logged into Brand Hub, you can view your personal data there and can usually edit it directly there, e.g. in order to update your email address after a move."
+  },
+  {
+    "id": "pol_008",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "1.2 Contact details\n\nIf you contact us, we collect your data."
+  },
+  {
+    "id": "pol_009",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If your messages are forwarded to another company (e.g. if you provide us with feedback on the manufacturer of a product), you of course have the option to tell us that the data should only be used by Zalando."
+  },
+  {
+    "id": "pol_010",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If so, we will not forward your information to the responsible office, or will only do so without your personal information, provided that your concerns can be processed in this way."
+  },
+  {
+    "id": "pol_011",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "If you transmit messages to us for other users via functions provided for this purpose (e.g. product evaluations), we may publish these within the scope of our services."
+  },
+  {
+    "id": "pol_012",
+    "source": "policy",
+    "section": "1. Which data does Zalando process?",
+    "text": "This is standardised information on the required content (such as the name and file type of a retrieved file) as well as further information on server access (such as amount of data transferred and error codes), on your device (e.g. device type, operating system, software versions, device identifications, IP address, the site previously visited and the time of access)."
+  },
+  {
+    "id": "pol_013",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Zalando processes your data in accordance with all applicable data protection laws."
+  },
+  {
+    "id": "pol_014",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Of course, we observe the principles of data protection law for the processing of personal data."
+  },
+  {
+    "id": "pol_015",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "We therefore generally only process your data for the purposes explained to you in this Privacy Notice or shared when we collect the data."
+  },
+  {
+    "id": "pol_016",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Depending on the legal basis for our processing of your data, you may have additional data protection rights alongside your permanent rights such as the right to information."
+  },
+  {
+    "id": "pol_017",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "For example, in individual cases you have the right to object to the processing of your data."
+  },
+  {
+    "id": "pol_018",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "The guarantee of the general security, operability and stability of our service including defence from attacks.\n- Non-promotional communication with you on technical, security-related and contractually relevant subjects (e.g. fraud warnings or account blocking)."
+  },
+  {
+    "id": "pol_019",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Legal Basis:\n\nInsofar as the purpose relates to the execution of a contract agreed with you or the provision of a service requested by you, the legal basis is Article 6 (1) b GDPR."
+  },
+  {
+    "id": "pol_020",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Otherwise, the legal basis is Article 6 (1) f GDPR, whereby we may use your personal data for the above purposes if we deem it necessary to do so for our legitimate interests."
+  },
+  {
+    "id": "pol_021",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "2.2 Fraud prevention\n\nIn order to combat the risk of data security breaches, data pertaining to users of our services is encrypted in transmission."
+  },
+  {
+    "id": "pol_022",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "For this we use the coding system SSL (Secure Socket Layer)."
+  },
+  {
+    "id": "pol_023",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Encryption prevents third parties from viewing the data."
+  },
+  {
+    "id": "pol_024",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "To provide additional protection from external attacks, we rely on special security technologies which constantly check our systems and identify and report anomalies."
+  },
+  {
+    "id": "pol_025",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "We also use technical and organisational measures to secure our systems against loss, destruction, unauthorised access or distribution of customer data by unauthorised persons."
+  },
+  {
+    "id": "pol_026",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "In this manner we wish to keep the risk of unauthorised access as low as possible, because protecting your data is our top priority."
+  },
+  {
+    "id": "pol_027",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Legal basis:\n\nIf your data is processed to prevent fraud at your expense, the legal basis is Article 6 (1) b GDPR."
+  },
+  {
+    "id": "pol_028",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "This processing of your data otherwise occurs on the basis of Article 6 (1) f GDPR, based on our legitimate interest and that of other users in the identification and prevention of fraud and clarification of criminal offences."
+  },
+  {
+    "id": "pol_029",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "We transmit and process your data where necessary for administrative and logistical processes and to optimise business processes within Zalando Group in order to design these in a more efficient and legally secure way and to fulfil our contractual and legal obligations (e.g. retention obligations under commercial and tax law)."
+  },
+  {
+    "id": "pol_030",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Therefore, various companies within the Zalando Group have access to your data in so far as this is necessary for the fulfilment of the purposes named in this Privacy Notice."
+  },
+  {
+    "id": "pol_031",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "- The prevention and clarification of criminal offences."
+  },
+  {
+    "id": "pol_032",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "- Guaranteeing the security and operability of our IT systems."
+  },
+  {
+    "id": "pol_033",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Legal basis:\n\nThe legal basis for the processing of your data for business management and optimisation is Article 6 (1) f GDPR, whereby our legitimate interests are in the above purposes."
+  },
+  {
+    "id": "pol_034",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Where we process your data on the basis of legal specifications, e.g. retention obligations and money laundering tests under tax law, the legal basis is Article 6 (1) c GDPR."
+  },
+  {
+    "id": "pol_035",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "2.4 On the basis of your consent\n\nIf you have given us your consent for the processing of personal data, your consent is the primary basis of our data processing."
+  },
+  {
+    "id": "pol_036",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "Notices of withdrawal\n\nYou can withdraw consent at any time with effect for the future, e.g. by email, letter or fax."
+  },
+  {
+    "id": "pol_037",
+    "source": "policy",
+    "section": "2. What does Zalando use my data for?",
+    "text": "If the relevant service supports this function, you can adjust and withdraw consent to receive newsletters and other notifications in the preference centre."
+  },
+  {
+    "id": "pol_038",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "The IP address it contains is anonymised shortly after the end of the relevant session, as soon as storage is no longer required to maintain the functionality of the relevant website."
+  },
+  {
+    "id": "pol_039",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "If it is available and activated on your device, we also collect a device-specific ID number (e.g. a so-called “promo ID” if you are using an Android device or an “ad ID” if you are using an Apple device)."
+  },
+  {
+    "id": "pol_040",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "If you do not want this, you can deactivate it at any time in your device’s browser settings or system settings."
+  },
+  {
+    "id": "pol_041",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "The purpose and scope of the data collection, and the further processing and use of the data by the particular social networks and your rights and configuration options concerning this to protect your privacy, can be found in the privacy notices of the respective social networks and websites."
+  },
+  {
+    "id": "pol_042",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "You can find the link to privacy policy here: Instagram’s Privacy Policy ."
+  },
+  {
+    "id": "pol_043",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "However, you can usually adjust your browser settings so that cookies or similar technologies are rejected or only stored with your prior consent."
+  },
+  {
+    "id": "pol_044",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "Legal basis: The legal basis for the processing of your data is Article 6 (1) f GDPR, to enable comfortable and personalized use of our website."
+  },
+  {
+    "id": "pol_045",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "In certain cases, these tools may also be required for the fulfilment of a contract or for the execution of pre-contractual measures, in which case processing is carried out in accordance with Art."
+  },
+  {
+    "id": "pol_046",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "You can find more information about the Analytics Tools in the Data Preferences.\n- Legal basis: The legal basis for the Web Performance and Analytics cookies is - unless otherwise stated - your consent according to Art."
+  },
+  {
+    "id": "pol_047",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "In the event that personal data is transferred to the USA or other third countries, your consent expressly extends to the data transfer (Art. 49 (1) a GDPR)."
+  },
+  {
+    "id": "pol_048",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "If personal data is transferred to these third countries, there is a risk that personal data may be collected and analysed by authorities and that data subjects' rights guaranteed under EU law may not be enforced."
+  },
+  {
+    "id": "pol_049",
+    "source": "policy",
+    "section": "3. Info on websites",
+    "text": "If you consent to the use of cookies, your consent also extends to these data transfers to third countries and the processing there."
+  },
+  {
+    "id": "pol_050",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "Insofar as you communicate directly with us via our fan pages or share personal content with us, Zalando shall be responsible for processing your data."
+  },
+  {
+    "id": "pol_051",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "An exception applies to the data processing for usage analysis (Page Insights) which is described in the following; in this case, we are jointly responsible with Facebook."
+  },
+  {
+    "id": "pol_052",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "Selection and processing of Page Insights data is performed exclusively by Facebook."
+  },
+  {
+    "id": "pol_053",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "Zalando and Facebook share responsibility for processing your data for providing Page Insights."
+  },
+  {
+    "id": "pol_054",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "For this purpose, we and Facebook have defined an agreement about which company fulfils the data protection obligations under the GDPR with regard to Page Insights data processing."
+  },
+  {
+    "id": "pol_055",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "More about Page Insights\n\nYou can view the agreement with Facebook here:\nhttps://www.facebook.com/legal/terms/page_controller_addendum\n\nFacebook has summarised the important parts of this agreement (including a list of Page Insights data) for you here:\n\nhttps://www.facebook.com/legal/terms/information_about_page_insights_data\n\nLegal bases:\n\nIf you have given consent to the creation of Page Insights data to Facebook, the legal basis is Article 6 (1) a GDPR (Consent)."
+  },
+  {
+    "id": "pol_056",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "Otherwise, the legal basis is Article 6 (1) f GDPR, whereby our legitimate interests are in the above purposes."
+  },
+  {
+    "id": "pol_057",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "Of course, your privacy rights described in 7."
+  },
+  {
+    "id": "pol_058",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "For the purposes of processing your Page Insights data with Facebook, we have agreed with Facebook that Facebook is primarily responsible for providing you with information about the processing of your Page Insights data and for enabling you to exercise your privacy rights under the GDPR (e.g. right to object)."
+  },
+  {
+    "id": "pol_059",
+    "source": "policy",
+    "section": "4. Information about social media fan pages",
+    "text": "You can find more information about your data protection rights in connection with Page Insights and how you can exercise them directly with regard to Facebook:\n\nhttps://www.facebook.com/legal/terms/information_about_page_insights_data\n\nTip\n\nYou can also address your enquiry to Zalando; we will then forward your enquiry to Facebook."
+  },
+  {
+    "id": "pol_060",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "When sending out our notifiable newsletters (such as the Zalando shop newsletter), we use the so-called double opt-in procedure or single opt-in procedure (country-dependent), i.e. we will only send you the newsletter if you have given explicit prior consent to us activating the newsletter."
+  },
+  {
+    "id": "pol_061",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "If a double opt-in is required in your country, you must also have confirmed that the email address you have shared with us belongs to you."
+  },
+  {
+    "id": "pol_062",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "For this purpose we will send you a notification email and ask you to confirm by clicking on one of the links in this email that you are the owner of the email address you have shared with us."
+  },
+  {
+    "id": "pol_063",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "5.2 Unsubscribing\n\nIf you no longer wish to receive emails from us, you can withdraw your consent at any time without incurring any costs other than the transmission costs according to basic tariffs."
+  },
+  {
+    "id": "pol_064",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "A notification in text form (e.g. email, fax, letter) to the Zalando company responsible for the relevant newsletter is sufficient for this."
+  },
+  {
+    "id": "pol_065",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "Of course, you will also find an unsubscribe link in every newsletter."
+  },
+  {
+    "id": "pol_066",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "If you subscribe to a newsletter, we automatically save your IP address and the time of your subscription and confirmation."
+  },
+  {
+    "id": "pol_067",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "We collect device and access data which arise when you interact with a newsletter."
+  },
+  {
+    "id": "pol_068",
+    "source": "policy",
+    "section": "5. Newsletter",
+    "text": "However, this data will not be evaluated."
+  },
+  {
+    "id": "pol_069",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "Who is my data forwarded to?\n\nZalando only forwards your data if this is allowed by German or European law."
+  },
+  {
+    "id": "pol_070",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "These service providers may generally only process your data on our behalf under special conditions."
+  },
+  {
+    "id": "pol_071",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "Where we use them to process orders, the service providers only receive access to your data in the scope and for the time period required for provision of the relevant service."
+  },
+  {
+    "id": "pol_072",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "Therefore, companies within the Zalando Group which require access to your data to fulfil our contractual and legal obligations, or to fulfil their respective functions within the Zalando Group, receive this access."
+  },
+  {
+    "id": "pol_073",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "Where this is necessary to process your concerns, these two Zalando companies may access your data stored by other Zalando companies, for example your order data."
+  },
+  {
+    "id": "pol_074",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "6.2 Technical service providers\n\nWe work with technical service providers in order to be able to provide our services."
+  },
+  {
+    "id": "pol_075",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "In such cases Zalando will ensure that the relevant service providers contractually or otherwise guarantee an equivalent data protection level."
+  },
+  {
+    "id": "pol_076",
+    "source": "policy",
+    "section": "6. Who is my data forwarded to?",
+    "text": "6.3 Authorities and other third parties\n\nIf we are obliged by an official or court decision or it is for prosecution purposes, we will if necessary forward your data to prosecution authorities or other third parties."
+  },
+  {
+    "id": "pol_077",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "You have the following legal data protection rights under the relevant legal conditions: Right to information (Article 15 GDPR), right to deletion (Article 17 GDPR), right to correction (Article 16 GDPR), right to restriction of processing (Article 18 GDPR), right to data portability (Article 20 GDPR), right to lodge a complaint with a supervisory authority (Article 77 GDPR), right to withdraw consent (Article 7 (3) GDPR) as well as the right to object to particular data processing measures (Article 21 GDPR)."
+  },
+  {
+    "id": "pol_078",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "If you want to exercise your data protection rights you can reach out to our Privacy Team by sending an email to datenschutz@zalando.de ."
+  },
+  {
+    "id": "pol_079",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "In order to ensure that your data is not disclosed to third parties in the course of requests for information, please attach sufficient proof of identity to your request by email or post."
+  },
+  {
+    "id": "pol_080",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "- You can change most of your information yourself in your customer account."
+  },
+  {
+    "id": "pol_081",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "You may, however, contact the data protection authority, which will then forward your complaint to the responsible authority."
+  },
+  {
+    "id": "pol_082",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "- If you have given consent for the processing of your data, you may withdraw it at any time."
+  },
+  {
+    "id": "pol_083",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "- You may object to the processing of your data for advertising purposes, including direct marketing (including in the form of data analysis) at any time without giving reasons."
+  },
+  {
+    "id": "pol_084",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "- If we are processing your data on the basis of balancing of interests according to Article 6 (1) f GDPR (e.g. the reporting of creditworthiness to an external credit agency), you may object to the processing."
+  },
+  {
+    "id": "pol_085",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "When asserting your objection, we ask you to give the reasons why you do not wish us to continue processing your data."
+  },
+  {
+    "id": "pol_086",
+    "source": "policy",
+    "section": "7. Which data protection rights do I have?",
+    "text": "In the event of a justified objection, we will check the state of affairs and either stop or adjust the processing, or inform you of the urgent reasons worthy of protection why we are entitled to continue the processing."
+  },
+  {
+    "id": "pol_087",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "When will my data be deleted?\n\nWe will store your personal data as long as is necessary for the purposes named in this Privacy Notice, especially for the fulfilment of our contractual and legal obligations."
+  },
+  {
+    "id": "pol_088",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "We may also store your personal data for other purposes if or as long as the law allows us to store it for particular purposes, including for defence against legal claims."
+  },
+  {
+    "id": "pol_089",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "If you close your customer account, we will delete all the data we have stored regarding you."
+  },
+  {
+    "id": "pol_090",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "If it is not possible or necessary to completely delete your data for legal reasons, the relevant data will be blocked for further processing."
+  },
+  {
+    "id": "pol_091",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "If data is blocked, restriction of access rights and other technical and organisational measures are used to ensure that only a few employees can access the relevant data."
+  },
+  {
+    "id": "pol_092",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "These employees may also only use the blocked data for the above purposes (e.g. for submission to the tax office in the event of tax audit)."
+  },
+  {
+    "id": "pol_093",
+    "source": "policy",
+    "section": "8. When will my data be deleted?",
+    "text": "Deletion may be waived in the cases allowed by law if the data is anonymous or pseudonymous and deletion would rule out or seriously hinder processing for scientific research or statistical purposes."
+  },
+  {
+    "id": "pol_094",
+    "source": "policy",
+    "section": "9. How does Zalando protect my data?",
+    "text": "We transmit your personal data securely using encryption."
+  },
+  {
+    "id": "pol_095",
+    "source": "policy",
+    "section": "9. How does Zalando protect my data?",
+    "text": "We do this using the coding system SSL (Secure Socket Layer)."
+  },
+  {
+    "id": "pol_096",
+    "source": "policy",
+    "section": "9. How does Zalando protect my data?",
+    "text": "We also use technical and organisational measures to secure our website and other systems against loss, destruction, access, change or dissemination by unauthorised persons.\n\n10."
+  },
+  {
+    "id": "pol_097",
+    "source": "policy",
+    "section": "10. Changes to this Privacy Notice and points of contact",
+    "text": "You can reach out to our Privacy Team for general questions on privacy and in order to exercise your data protection rights by sending an email to datenschutz@zalando.de ."
+  },
+  {
+    "id": "pol_098",
+    "source": "policy",
+    "section": "10. Changes to this Privacy Notice and points of contact",
+    "text": "In order to directly contact our Data Protection Officer, please send your inquiry to the following postal address indication that it is “for the attention of Data Protection Officer”:\n\nDatenschutz\n\nZalando SE\nValeska-Gert-Straße 5\n10243 Berlin\nGermany\n\nTelefax: +49 (0)30 2759 46 93\n\nE-Mail: datenschutz@zalando.de\n\n11."
+  }
+]

@@ -57,4 +57,4 @@ print("\n[entrypoint] Model pull complete.")
 PYEOF
 
 # ── Run pipeline ───────────────────────────────────────────────────────────────
-exec bash run_pipeline.sh "$@"
+exec bash run.sh "$@"
