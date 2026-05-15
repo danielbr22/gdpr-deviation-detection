@@ -131,15 +131,20 @@ async def extract_policy_obligations_async(policy_text: str, verbose: bool = Fal
     # Sort by original sentence order before assigning IDs
     results = sorted(results, key=lambda x: x[0])
 
+    context_lookup = {i: (before, after) for i, sentence, start_char, before, after in to_classify}
+
     constraints = []
-    for _, sentence, start_char, is_obligation in results:
+    for original_idx, sentence, start_char, is_obligation in results:
         if is_obligation:
             section = _get_section(start_char, section_positions)
+            before, after = context_lookup.get(original_idx, ([], []))
+            embed_parts = ([before[-1]] if before else []) + [sentence] + ([after[0]] if after else [])
             constraints.append({
                 "id": f"pol_{len(constraints) + 1:03d}",
                 "source": "policy",
                 "section": section,
                 "text": sentence,
+                "embed_text": " ".join(embed_parts),
             })
 
     return constraints

@@ -40,7 +40,7 @@ def load_constraints(path: Path) -> list[dict]:
 
 
 def embed(model: SentenceTransformer, constraints: list[dict]) -> np.ndarray:
-    texts = [c["text"] for c in constraints]
+    texts = [c.get("embed_text", c["text"]) for c in constraints]
     return model.encode(texts, convert_to_tensor=False, show_progress_bar=True)
 
 

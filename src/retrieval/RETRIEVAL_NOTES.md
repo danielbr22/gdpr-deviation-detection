@@ -20,6 +20,15 @@ The retrieval step is a two-stage hybrid:
 Model: `nlpaueb/legal-bert-base-uncased` (Legal-BERT), following Sai et al.'s
 best-performing retrieval configuration.
 
+**Context-enriched embedding (±1 sentence window):** Policy constraints are embedded
+using an `embed_text` field that prepends/appends the immediately adjacent sentence to
+the target sentence. The bare `text` field is kept unchanged for the LLM judge and
+classifier downstream. Rationale: a single isolated policy sentence is often semantically
+ambiguous (e.g. "You cannot request deletion…" scores high for purpose-limitation GDPR
+constraints without context). Using the full ±5 extraction window would dilute the
+embedding and risk hitting Legal-BERT's 512-token limit; ±1 provides enough
+disambiguation without those costs.
+
 Run via: `bash run_pipeline.sh` (all 3 use cases) or individual script calls.
 
 ---
