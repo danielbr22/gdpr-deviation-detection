@@ -54,9 +54,15 @@ def filter_sentence(sentence: str) -> bool:
     s = sentence.strip()
     if s.endswith("?"):
         return False
+    if len(s) < 60:
+        return False
     if len(s.split()) < 5:
         return False
     if re.match(r"^[=\-]{5,}", s):
+        return False
+    if s[0].islower():
+        return False
+    if re.match(r"^\d+\s*(lit\.|para\.|abs\.|art\.)", s, re.IGNORECASE):
         return False
     return True
 

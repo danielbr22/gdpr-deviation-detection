@@ -70,7 +70,7 @@ def match(
                 {
                     "policy_id": policy[j]["id"],
                     "similarity": round(float(row[j]), 4),
-                    "policy_text": policy[j]["text"],
+                    "policy_text": policy[j].get("embed_text", policy[j]["text"]),
                     "policy_section": policy[j].get("section", ""),
                 }
                 for j in top_indices
