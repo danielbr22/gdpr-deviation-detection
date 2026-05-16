@@ -1,16 +1,16 @@
 [
   {
-    "gdpr_id": "gdpr_001",
-    "policy_id": "pol_004",
-    "similarity": 0.8845,
+    "gdpr_id": "gdpr_002",
+    "policy_id": "pol_082",
+    "similarity": 0.9044,
     "gdpr_article": 5,
-    "gdpr_text": "Personal data shall be: processed lawfully, fairly and in a transparent manner in relation to the data subject (‘lawfulness, fairness and transparency’);",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "gdpr_text": "Personal data shall be: collected for specified, explicit and legitimate purposes and not further processed in a manner that is incompatible with those purposes; further processing for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes shall, in accordance with Article 89(1), not be considered to be incompatible with the initial purposes (‘purpose limitation’);",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
   },
   {
     "gdpr_id": "gdpr_004",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8809,
     "gdpr_article": 5,
     "gdpr_text": "Personal data shall be: accurate and, where necessary, kept up to date; every reasonable step must be taken to ensure that personal data that are inaccurate, having regard to the purposes for which they are processed, are erased or rectified without delay (‘accuracy’);",
@@ -19,7 +19,7 @@
   },
   {
     "gdpr_id": "gdpr_005",
-    "policy_id": "pol_022",
+    "policy_id": "pol_036",
     "similarity": 0.8825,
     "gdpr_article": 5,
     "gdpr_text": "Personal data shall be: kept in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed; personal data may be stored for longer periods insofar as the personal data will be processed solely for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) subject to implementation of the appropriate technical and organisational measures required by this Regulation in order to safeguard the rights and freedoms of the data subject (‘storage limitation’);",
@@ -28,7 +28,7 @@
   },
   {
     "gdpr_id": "gdpr_006",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.891,
     "gdpr_article": 5,
     "gdpr_text": "Personal data shall be: processed in a manner that ensures appropriate security of the personal data, including protection against unauthorised or unlawful processing and against accidental loss, destruction or damage, using appropriate technical or organisational measures (‘integrity and confidentiality’).",
@@ -36,26 +36,17 @@
     "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
   },
   {
-    "gdpr_id": "gdpr_007",
-    "policy_id": "pol_004",
-    "similarity": 0.8705,
-    "gdpr_article": 5,
-    "gdpr_text": "The controller shall be responsible for, and be able to demonstrate compliance with, paragraph 1 (‘accountability’).",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_010",
-    "policy_id": "pol_047",
-    "similarity": 0.8569,
+    "gdpr_id": "gdpr_009",
+    "policy_id": "pol_070",
+    "similarity": 0.8847,
     "gdpr_article": 6,
-    "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for compliance with a legal obligation to which the controller is subject;",
-    "policy_section": "5. What rights do I have when it comes to my data?",
-    "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations."
+    "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "If the verification is required to provide or continue a service, the legal\nbasis is also (Art. 6 para."
   },
   {
     "gdpr_id": "gdpr_013",
-    "policy_id": "pol_049",
+    "policy_id": "pol_085",
     "similarity": 0.9002,
     "gdpr_article": 6,
     "gdpr_text": "Processing shall be lawful only if and to the extent that at least one of the following applies: processing is necessary for the purposes of the legitimate interests pursued by the controller or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a child.",
@@ -63,17 +54,26 @@
     "policy_text": "Right to object:\nYou can object to the processing of your marketing-related personal data\nunless there are compelling legitimate reasons for the processing."
   },
   {
-    "gdpr_id": "gdpr_017",
-    "policy_id": "pol_004",
-    "similarity": 0.8937,
+    "gdpr_id": "gdpr_015",
+    "policy_id": "pol_070",
+    "similarity": 0.8752,
     "gdpr_article": 6,
-    "gdpr_text": "The purpose of the processing shall be determined in that legal basis or, as regards the processing referred to in point (e) of paragraph 1, shall be necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller. That legal basis may contain specific provisions to adapt the application of rules of this Regulation, inter alia: the general conditions governing the lawfulness of processing by the controller; the types of data which are subject to the processing; the data subjects concerned; the entities to, and the purposes for which, the personal data may be disclosed; the purpose limitation; storage periods; and processing operations and processing procedures, including measures to ensure lawful and fair processing such as those for other specific processing situations as provided for in Chapter IX. The Union or the Member State law shall meet an objective of public interest and be proportionate to the legitimate aim pursued.",
+    "gdpr_text": "The basis for the processing referred to in point (c) and (e) of paragraph 1 shall be laid down by: Union law; or",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "policy_text": "If the verification is required to provide or continue a service, the legal\nbasis is also (Art. 6 para."
+  },
+  {
+    "gdpr_id": "gdpr_018",
+    "policy_id": "pol_082",
+    "similarity": 0.8902,
+    "gdpr_article": 6,
+    "gdpr_text": "Where the processing for a purpose other than that for which the personal data have been collected is not based on the data subject's consent or on a Union or Member State law which constitutes a necessary and proportionate measure in a democratic society to safeguard the objectives referred to in Article 23(1), the controller shall, in order to ascertain whether processing for another purpose is compatible with the purpose for which the personal data are initially collected, take into account, inter alia: any link between the purposes for which the personal data have been collected and the purposes of the intended further processing;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
   },
   {
     "gdpr_id": "gdpr_025",
-    "policy_id": "pol_003",
+    "policy_id": "pol_004",
     "similarity": 0.885,
     "gdpr_article": 7,
     "gdpr_text": "The data subject shall have the right to withdraw his or her consent at any time. The withdrawal of consent shall not affect the lawfulness of processing based on consent before its withdrawal. Prior to giving consent, the data subject shall be informed thereof. It shall be as easy to withdraw as to give consent.",
@@ -82,7 +82,7 @@
   },
   {
     "gdpr_id": "gdpr_030",
-    "policy_id": "pol_002",
+    "policy_id": "pol_003",
     "similarity": 0.8538,
     "gdpr_article": 9,
     "gdpr_text": "Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited.",
@@ -91,7 +91,7 @@
   },
   {
     "gdpr_id": "gdpr_032",
-    "policy_id": "pol_002",
+    "policy_id": "pol_003",
     "similarity": 0.8774,
     "gdpr_article": 9,
     "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the purposes of carrying out the obligations and exercising specific rights of the controller or of the data subject in the field of employment and social security and social protection law in so far as it is authorised by Union or Member State law or a collective agreement pursuant to Member State law providing for appropriate safeguards for the fundamental rights and the interests of the data subject;",
@@ -99,17 +99,8 @@
     "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights."
   },
   {
-    "gdpr_id": "gdpr_036",
-    "policy_id": "pol_047",
-    "similarity": 0.8853,
-    "gdpr_article": 9,
-    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the establishment, exercise or defence of legal claims or whenever courts are acting in their judicial capacity;",
-    "policy_section": "5. What rights do I have when it comes to my data?",
-    "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations."
-  },
-  {
     "gdpr_id": "gdpr_037",
-    "policy_id": "pol_002",
+    "policy_id": "pol_003",
     "similarity": 0.8756,
     "gdpr_article": 9,
     "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for reasons of substantial public interest, on the basis of Union or Member State law which shall be proportionate to the aim pursued, respect the essence of the right to data protection and provide for suitable and specific measures to safeguard the fundamental rights and the interests of the data subject;",
@@ -117,8 +108,62 @@
     "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights."
   },
   {
+    "gdpr_id": "gdpr_038",
+    "policy_id": "pol_004",
+    "similarity": 0.878,
+    "gdpr_article": 9,
+    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for the purposes of preventive or occupational medicine, for the assessment of the working capacity of the employee, medical diagnosis, the provision of health or social care or treatment or the management of health or social care systems and services on the basis of Union or Member State law or pursuant to contract with a health professional and subject to the conditions and safeguards referred to in paragraph 3;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "You can revoke your permission at any time by reaching out to our personnel team\nat: career@hetzner.com\nLegal documentation: Storing the data to protect against potential legal claims\nor to assert them if necessary."
+  },
+  {
+    "gdpr_id": "gdpr_040",
+    "policy_id": "pol_003",
+    "similarity": 0.8864,
+    "gdpr_article": 9,
+    "gdpr_text": "Paragraph 1 shall not apply if one of the following applies: processing is necessary for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) based on Union or Member State law which shall be proportionate to the aim pursued, respect the essence of the right to data protection and provide for suitable and specific measures to safeguard the fundamental rights and the interests of the data subject.",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "Ensuring your protection rights: Processing special categories of personal data\nto protect your legal rights."
+  },
+  {
+    "gdpr_id": "gdpr_042",
+    "policy_id": "pol_082",
+    "similarity": 0.9053,
+    "gdpr_article": 11,
+    "gdpr_text": "If the purposes for which a controller processes personal data do not or do no longer require the identification of a data subject by the controller, the controller shall not be obliged to maintain, acquire or process additional information in order to identify the data subject for the sole purpose of complying with this Regulation.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_045",
+    "policy_id": "pol_082",
+    "similarity": 0.907,
+    "gdpr_article": 12,
+    "gdpr_text": "The controller shall facilitate the exercise of data subject rights under Articles 15 to 22. In the cases referred to in Article 11(2), the controller shall not refuse to act on the request of the data subject for exercising his or her rights under Articles 15 to 22, unless the controller demonstrates that it is not in a position to identify the data subject.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_046",
+    "policy_id": "pol_084",
+    "similarity": 0.8968,
+    "gdpr_article": 12,
+    "gdpr_text": "The controller shall provide information on action taken on a request under Articles 15 to 22 to the data subject without undue delay and in any event within one month of receipt of the request. That period may be extended by two further months where necessary, taking into account the complexity and number of the requests. The controller shall inform the data subject of any such extension within one month of receipt of the request, together with the reasons for the delay. Where the data subject makes the request by electronic form means, the information shall be provided by electronic means where possible, unless otherwise requested by the data subject.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_056",
+    "policy_id": "pol_085",
+    "similarity": 0.9125,
+    "gdpr_article": 13,
+    "gdpr_text": "Where personal data relating to a data subject are collected from the data subject, the controller shall, at the time when personal data are obtained, provide the data subject with all of the following information: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to object:\nYou can object to the processing of your marketing-related personal data\nunless there are compelling legitimate reasons for the processing."
+  },
+  {
     "gdpr_id": "gdpr_059",
-    "policy_id": "pol_007",
+    "policy_id": "pol_011",
     "similarity": 0.8903,
     "gdpr_article": 13,
     "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the period for which the personal data will be stored, or if that is not possible, the criteria used to determine that period;",
@@ -126,8 +171,53 @@
     "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Four weeks after the rejection or\nwithdrawal of your application."
   },
   {
+    "gdpr_id": "gdpr_060",
+    "policy_id": "pol_085",
+    "similarity": 0.9115,
+    "gdpr_article": 13,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject or to object to processing as well as the right to data portability;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to object:\nYou can object to the processing of your marketing-related personal data\nunless there are compelling legitimate reasons for the processing."
+  },
+  {
+    "gdpr_id": "gdpr_063",
+    "policy_id": "pol_062",
+    "similarity": 0.888,
+    "gdpr_article": 13,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: whether the provision of personal data is a statutory or contractual requirement, or a requirement necessary to enter into a contract, as well as whether the data subject is obliged to provide the personal data and of the possible consequences of failure to provide such data;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "4.11 Verification\n\n4.11.1 Verification of customer details\n\nTo minimize our business risk and to prevent the misuse of our services, we\ncarry out a check based on general risk factors when new customer accounts are\nregistered."
+  },
+  {
+    "gdpr_id": "gdpr_064",
+    "policy_id": "pol_062",
+    "similarity": 0.8921,
+    "gdpr_article": 13,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall, at the time when personal data are obtained, provide the data subject with the following further information necessary to ensure fair and transparent processing: the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "4.11 Verification\n\n4.11.1 Verification of customer details\n\nTo minimize our business risk and to prevent the misuse of our services, we\ncarry out a check based on general risk factors when new customer accounts are\nregistered."
+  },
+  {
+    "gdpr_id": "gdpr_065",
+    "policy_id": "pol_082",
+    "similarity": 0.8838,
+    "gdpr_article": 13,
+    "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were collected, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_068",
+    "policy_id": "pol_084",
+    "similarity": 0.8845,
+    "gdpr_article": 14,
+    "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the contact details of the data protection officer, where applicable;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
     "gdpr_id": "gdpr_071",
-    "policy_id": "pol_033",
+    "policy_id": "pol_059",
     "similarity": 0.8865,
     "gdpr_article": 14,
     "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: the recipients or categories of recipients of the personal data, if any;",
@@ -136,7 +226,7 @@
   },
   {
     "gdpr_id": "gdpr_072",
-    "policy_id": "pol_030",
+    "policy_id": "pol_055",
     "similarity": 0.8916,
     "gdpr_article": 14,
     "gdpr_text": "Where personal data have not been obtained from the data subject, the controller shall provide the data subject with the following information: where applicable, that the controller intends to transfer personal data to a recipient in a third country or international organisation and the existence or absence of an adequacy decision by the Commission, or in the case of transfers referred to in Article 46 or 47, or the second subparagraph of Article 49(1), reference to the appropriate or suitable safeguards and the means to obtain a copy of them or where they have been made available.",
@@ -145,7 +235,7 @@
   },
   {
     "gdpr_id": "gdpr_073",
-    "policy_id": "pol_007",
+    "policy_id": "pol_011",
     "similarity": 0.8872,
     "gdpr_article": 14,
     "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: the period for which the personal data will be stored, or if that is not possible, the criteria used to determine that period;",
@@ -153,17 +243,62 @@
     "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Four weeks after the rejection or\nwithdrawal of your application."
   },
   {
-    "gdpr_id": "gdpr_090",
-    "policy_id": "pol_001",
-    "similarity": 0.8786,
-    "gdpr_article": 15,
-    "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the recipients or categories of recipient to whom the personal data have been or will be disclosed, in particular recipients in third countries or international organisations;",
+    "gdpr_id": "gdpr_074",
+    "policy_id": "pol_062",
+    "similarity": 0.891,
+    "gdpr_article": 14,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where the processing is based on point (f) of Article 6(1), the legitimate interests pursued by the controller or by a third party;",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "Note: Unless otherwise specified, your data will remain within the EU and will\nnot be passed on to third parties."
+    "policy_text": "4.11 Verification\n\n4.11.1 Verification of customer details\n\nTo minimize our business risk and to prevent the misuse of our services, we\ncarry out a check based on general risk factors when new customer accounts are\nregistered."
+  },
+  {
+    "gdpr_id": "gdpr_075",
+    "policy_id": "pol_084",
+    "similarity": 0.892,
+    "gdpr_article": 14,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: the existence of the right to request from the controller access to and rectification or erasure of personal data or restriction of processing concerning the data subject and to object to processing as well as the right to data portability;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_076",
+    "policy_id": "pol_082",
+    "similarity": 0.913,
+    "gdpr_article": 14,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: where processing is based on point (a) of Article 6(1) or point (a) of Article 9(2), the existence of the right to withdraw consent at any time, without affecting the lawfulness of processing based on consent before its withdrawal;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_079",
+    "policy_id": "pol_062",
+    "similarity": 0.8953,
+    "gdpr_article": 14,
+    "gdpr_text": "In addition to the information referred to in paragraph 1, the controller shall provide the data subject with the following information necessary to ensure fair and transparent processing in respect of the data subject: the existence of automated decision-making, including profiling, referred to in Article 22(1) and (4) and, at least in those cases, meaningful information about the logic involved, as well as the significance and the envisaged consequences of such processing for the data subject.",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "4.11 Verification\n\n4.11.1 Verification of customer details\n\nTo minimize our business risk and to prevent the misuse of our services, we\ncarry out a check based on general risk factors when new customer accounts are\nregistered."
+  },
+  {
+    "gdpr_id": "gdpr_083",
+    "policy_id": "pol_082",
+    "similarity": 0.8857,
+    "gdpr_article": 14,
+    "gdpr_text": "Where the controller intends to further process the personal data for a purpose other than that for which the personal data were obtained, the controller shall provide the data subject prior to that further processing with information on that other purpose and with any relevant further information as referred to in paragraph 2.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_084",
+    "policy_id": "pol_082",
+    "similarity": 0.8827,
+    "gdpr_article": 14,
+    "gdpr_text": "Paragraphs 1 to 4 shall not apply where and insofar as: the data subject already has the information;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
   },
   {
     "gdpr_id": "gdpr_091",
-    "policy_id": "pol_007",
+    "policy_id": "pol_011",
     "similarity": 0.8747,
     "gdpr_article": 15,
     "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: where possible, the envisaged period for which the personal data will be stored, or, if not possible, the criteria used to determine that period;",
@@ -172,7 +307,7 @@
   },
   {
     "gdpr_id": "gdpr_092",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8958,
     "gdpr_article": 15,
     "gdpr_text": "The data subject shall have the right to obtain from the controller confirmation as to whether or not personal data concerning him or her are being processed, and, where that is the case, access to the personal data and the following information: the existence of the right to request from the controller rectification or erasure of personal data or restriction of processing of personal data concerning the data subject or to object to such processing;",
@@ -180,8 +315,44 @@
     "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
   },
   {
+    "gdpr_id": "gdpr_096",
+    "policy_id": "pol_008",
+    "similarity": 0.9025,
+    "gdpr_article": 15,
+    "gdpr_text": "Where personal data are transferred to a third country or to an international organisation, the data subject shall have the right to be informed of the appropriate safeguards pursuant to Article 46 relating to the transfer.",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+  },
+  {
+    "gdpr_id": "gdpr_099",
+    "policy_id": "pol_084",
+    "similarity": 0.9052,
+    "gdpr_article": 16,
+    "gdpr_text": "The data subject shall have the right to obtain from the controller without undue delay the rectification of inaccurate personal data concerning him or her. Taking into account the purposes of the processing, the data subject shall have the right to have incomplete personal data completed, including by means of providing a supplementary statement.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_102",
+    "policy_id": "pol_082",
+    "similarity": 0.9043,
+    "gdpr_article": 17,
+    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the data subject objects to the processing pursuant to Article 21(1) and there are no overriding legitimate grounds for the processing, or the data subject objects to the processing pursuant to Article 21(2);",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_103",
+    "policy_id": "pol_084",
+    "similarity": 0.8845,
+    "gdpr_article": 17,
+    "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been unlawfully processed;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
     "gdpr_id": "gdpr_104",
-    "policy_id": "pol_046",
+    "policy_id": "pol_082",
     "similarity": 0.9048,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have to be erased for compliance with a legal obligation in Union or Member State law to which the controller is subject;",
@@ -190,7 +361,7 @@
   },
   {
     "gdpr_id": "gdpr_105",
-    "policy_id": "pol_046",
+    "policy_id": "pol_082",
     "similarity": 0.9118,
     "gdpr_article": 17,
     "gdpr_text": "The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay where one of the following grounds applies: the personal data have been collected in relation to the offer of information society services referred to in Article 8(1).",
@@ -198,8 +369,26 @@
     "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
   },
   {
+    "gdpr_id": "gdpr_106",
+    "policy_id": "pol_082",
+    "similarity": 0.9009,
+    "gdpr_article": 17,
+    "gdpr_text": "Where the controller has made the personal data public and is obliged pursuant to paragraph 1 to erase the personal data, the controller, taking account of available technology and the cost of implementation, shall take reasonable steps, including technical measures, to inform controllers which are processing the personal data that the data subject has requested the erasure by such controllers of any links to, or copy or replication of, those personal data.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_107",
+    "policy_id": "pol_054",
+    "similarity": 0.8868,
+    "gdpr_article": 17,
+    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for exercising the right of freedom of expression and information;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "We process your data:\n- as part of our public communications (Art. 6 para."
+  },
+  {
     "gdpr_id": "gdpr_108",
-    "policy_id": "pol_046",
+    "policy_id": "pol_082",
     "similarity": 0.8776,
     "gdpr_article": 17,
     "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for compliance with a legal obligation which requires processing by Union or Member State law to which the controller is subject or for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller;",
@@ -207,26 +396,17 @@
     "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
   },
   {
-    "gdpr_id": "gdpr_110",
-    "policy_id": "pol_022",
-    "similarity": 0.8709,
-    "gdpr_article": 17,
-    "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for archiving purposes in the public interest, scientific or historical research purposes or statistical purposes in accordance with Article 89(1) in so far as the right referred to in paragraph 1 is likely to render impossible or seriously impair the achievement of the objectives of that processing; or",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "How long will my data be saved?\n\nAfter a customer account is deactivated, the following retention periods apply:\n\nWithout product usage: 3 years\nWith product usage (invoicing): 14 years (in accordance with tax and commercial\nlaw retention obligations)\nUnverified customer accounts: 14 days after the end of the failed verification\nperiod\n\nOnce these periods have expired, your data will be archived in our long-term\nbackup systems."
-  },
-  {
     "gdpr_id": "gdpr_111",
-    "policy_id": "pol_047",
-    "similarity": 0.8835,
+    "policy_id": "pol_070",
+    "similarity": 0.9023,
     "gdpr_article": 17,
     "gdpr_text": "Paragraphs 1 and 2 shall not apply to the extent that processing is necessary: for the establishment, exercise or defence of legal claims.",
-    "policy_section": "5. What rights do I have when it comes to my data?",
-    "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations."
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "If the verification is required to provide or continue a service, the legal\nbasis is also (Art. 6 para."
   },
   {
     "gdpr_id": "gdpr_112",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8938,
     "gdpr_article": 18,
     "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the accuracy of the personal data is contested by the data subject, for a period enabling the controller to verify the accuracy of the personal data;",
@@ -235,7 +415,7 @@
   },
   {
     "gdpr_id": "gdpr_113",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8965,
     "gdpr_article": 18,
     "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the processing is unlawful and the data subject opposes the erasure of the personal data and requests the restriction of their use instead;",
@@ -244,7 +424,7 @@
   },
   {
     "gdpr_id": "gdpr_114",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8957,
     "gdpr_article": 18,
     "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the controller no longer needs the personal data for the purposes of the processing, but they are required by the data subject for the establishment, exercise or defence of legal claims;",
@@ -253,7 +433,7 @@
   },
   {
     "gdpr_id": "gdpr_115",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.9019,
     "gdpr_article": 18,
     "gdpr_text": "The data subject shall have the right to obtain from the controller restriction of processing where one of the following applies: the data subject has objected to processing pursuant to Article 21(1) pending the verification whether the legitimate grounds of the controller override those of the data subject.",
@@ -262,7 +442,7 @@
   },
   {
     "gdpr_id": "gdpr_116",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8599,
     "gdpr_article": 18,
     "gdpr_text": "Where processing has been restricted under paragraph 1, such personal data shall, with the exception of storage, only be processed with the data subject's consent or for the establishment, exercise or defence of legal claims or for the protection of the rights of another natural or legal person or for reasons of important public interest of the Union or of a Member State.",
@@ -270,8 +450,26 @@
     "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
   },
   {
+    "gdpr_id": "gdpr_117",
+    "policy_id": "pol_084",
+    "similarity": 0.8962,
+    "gdpr_article": 18,
+    "gdpr_text": "A data subject who has obtained restriction of processing pursuant to paragraph 1 shall be informed by the controller before the restriction of processing is lifted.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_122",
+    "policy_id": "pol_082",
+    "similarity": 0.8822,
+    "gdpr_article": 20,
+    "gdpr_text": "The exercise of the right referred to in paragraph 1 of this Article shall be without prejudice to Article 17. That right shall not apply to processing necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the controller.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
     "gdpr_id": "gdpr_124",
-    "policy_id": "pol_049",
+    "policy_id": "pol_085",
     "similarity": 0.9215,
     "gdpr_article": 21,
     "gdpr_text": "The data subject shall have the right to object, on grounds relating to his or her particular situation, at any time to processing of personal data concerning him or her which is based on point (e) or (f) of Article 6(1), including profiling based on those provisions. The controller shall no longer process the personal data unless the controller demonstrates compelling legitimate grounds for the processing which override the interests, rights and freedoms of the data subject or for the establishment, exercise or defence of legal claims.",
@@ -280,7 +478,7 @@
   },
   {
     "gdpr_id": "gdpr_125",
-    "policy_id": "pol_049",
+    "policy_id": "pol_085",
     "similarity": 0.9261,
     "gdpr_article": 21,
     "gdpr_text": "Where personal data are processed for direct marketing purposes, the data subject shall have the right to object at any time to processing of personal data concerning him or her for such marketing, which includes profiling to the extent that it is related to such direct marketing.",
@@ -289,7 +487,7 @@
   },
   {
     "gdpr_id": "gdpr_126",
-    "policy_id": "pol_049",
+    "policy_id": "pol_085",
     "similarity": 0.9194,
     "gdpr_article": 21,
     "gdpr_text": "Where the data subject objects to processing for direct marketing purposes, the personal data shall no longer be processed for such purposes.",
@@ -298,7 +496,7 @@
   },
   {
     "gdpr_id": "gdpr_127",
-    "policy_id": "pol_049",
+    "policy_id": "pol_085",
     "similarity": 0.8925,
     "gdpr_article": 21,
     "gdpr_text": "At the latest at the time of the first communication with the data subject, the right referred to in paragraphs 1 and 2 shall be explicitly brought to the attention of the data subject and shall be presented clearly and separately from any other information.",
@@ -306,8 +504,44 @@
     "policy_text": "Right to object:\nYou can object to the processing of your marketing-related personal data\nunless there are compelling legitimate reasons for the processing."
   },
   {
+    "gdpr_id": "gdpr_130",
+    "policy_id": "pol_070",
+    "similarity": 0.9013,
+    "gdpr_article": 22,
+    "gdpr_text": "Paragraph 1 shall not apply if the decision: is necessary for entering into, or performance of, a contract between the data subject and a data controller;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "If the verification is required to provide or continue a service, the legal\nbasis is also (Art. 6 para."
+  },
+  {
+    "gdpr_id": "gdpr_131",
+    "policy_id": "pol_070",
+    "similarity": 0.882,
+    "gdpr_article": 22,
+    "gdpr_text": "Paragraph 1 shall not apply if the decision: is authorised by Union or Member State law to which the controller is subject and which also lays down suitable measures to safeguard the data subject's rights and freedoms and legitimate interests; or",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "If the verification is required to provide or continue a service, the legal\nbasis is also (Art. 6 para."
+  },
+  {
+    "gdpr_id": "gdpr_135",
+    "policy_id": "pol_082",
+    "similarity": 0.8622,
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the purposes of the processing or categories of processing;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "Right to erasure (\"right to be forgotten\"):\nYou cannot request the deletion of your data solely on the grounds that it is no\nlonger required for its original purpose."
+  },
+  {
+    "gdpr_id": "gdpr_137",
+    "policy_id": "pol_083",
+    "similarity": 0.8574,
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the scope of the restrictions introduced;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "However, please note that immediate deletion may not be\npossible in some cases due to legal or contractual retention obligations."
+  },
+  {
     "gdpr_id": "gdpr_138",
-    "policy_id": "pol_012",
+    "policy_id": "pol_018",
     "similarity": 0.8745,
     "gdpr_article": 23,
     "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the safeguards to prevent abuse or unlawful access or transfer;",
@@ -316,7 +550,7 @@
   },
   {
     "gdpr_id": "gdpr_140",
-    "policy_id": "pol_022",
+    "policy_id": "pol_036",
     "similarity": 0.8637,
     "gdpr_article": 23,
     "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the storage periods and the applicable safeguards taking into account the nature, scope and purposes of the processing or categories of processing;",
@@ -324,53 +558,44 @@
     "policy_text": "How long will my data be saved?\n\nAfter a customer account is deactivated, the following retention periods apply:\n\nWithout product usage: 3 years\nWith product usage (invoicing): 14 years (in accordance with tax and commercial\nlaw retention obligations)\nUnverified customer accounts: 14 days after the end of the failed verification\nperiod\n\nOnce these periods have expired, your data will be archived in our long-term\nbackup systems."
   },
   {
+    "gdpr_id": "gdpr_142",
+    "policy_id": "pol_084",
+    "similarity": 0.8907,
+    "gdpr_article": 23,
+    "gdpr_text": "In particular, any legislative measure referred to in paragraph 1 shall contain specific provisions at least, where relevant, as to: the right of data subjects to be informed about the restriction, unless that may be prejudicial to the purpose of the restriction.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
     "gdpr_id": "gdpr_143",
-    "policy_id": "pol_004",
-    "similarity": 0.8799,
+    "policy_id": "pol_012",
+    "similarity": 0.8823,
     "gdpr_article": 24,
     "gdpr_text": "Taking into account the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for the rights and freedoms of natural persons, the controller shall implement appropriate technical and organisational measures to ensure and to be able to demonstrate that processing is performed in accordance with this Regulation. Those measures shall be reviewed and updated where necessary.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_144",
-    "policy_id": "pol_004",
-    "similarity": 0.9025,
-    "gdpr_article": 24,
-    "gdpr_text": "Where proportionate in relation to processing activities, the measures referred to in paragraph 1 shall include the implementation of appropriate data protection policies by the controller.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_145",
-    "policy_id": "pol_004",
-    "similarity": 0.8946,
-    "gdpr_article": 25,
-    "gdpr_text": "Taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_146",
-    "policy_id": "pol_008",
-    "similarity": 0.8849,
-    "gdpr_article": 25,
-    "gdpr_text": "The controller shall implement appropriate technical and organisational measures for ensuring that, by default, only personal data which are necessary for each specific purpose of the processing are processed. That obligation applies to the amount of personal data collected, the extent of their processing, the period of their storage and their accessibility. In particular, such measures shall ensure that by default personal data are not made accessible without the individual's intervention to an indefinite number of natural persons.",
     "policy_section": "4. How do we process your personal data?",
     "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data."
   },
   {
-    "gdpr_id": "gdpr_155",
-    "policy_id": "pol_004",
-    "similarity": 0.922,
-    "gdpr_article": 28,
-    "gdpr_text": "Where processing is to be carried out on behalf of a controller, the controller shall use only processors providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that processing will meet the requirements of this Regulation and ensure the protection of the rights of the data subject.",
+    "gdpr_id": "gdpr_145",
+    "policy_id": "pol_012",
+    "similarity": 0.8901,
+    "gdpr_article": 25,
+    "gdpr_text": "Taking into account the state of the art, the cost of implementation and the nature, scope, context and purposes of processing as well as the risks of varying likelihood and severity for rights and freedoms of natural persons posed by the processing, the controller shall, both at the time of the determination of the means for processing and at the time of the processing itself, implement appropriate technical and organisational measures, such as pseudonymisation, which are designed to implement data-protection principles, such as data minimisation, in an effective manner and to integrate the necessary safeguards into the processing in order to meet the requirements of this Regulation and protect the rights of data subjects.",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data."
+  },
+  {
+    "gdpr_id": "gdpr_154",
+    "policy_id": "pol_047",
+    "similarity": 0.8873,
+    "gdpr_article": 27,
+    "gdpr_text": "The designation of a representative by the controller or processor shall be without prejudice to legal actions which could be initiated against the controller or the processor themselves.",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "Brevo acts as an independent\ndata controller for all newsletter-related processing, and Hetzner is not\nresponsible for their data handling practices."
   },
   {
     "gdpr_id": "gdpr_157",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9032,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: processes the personal data only on documented instructions from the controller, including with regard to transfers of personal data to a third country or an international organisation, unless required to do so by Union or Member State law to which the processor is subject; in such a case, the processor shall inform the controller of that legal requirement before processing, unless that law prohibits such information on important grounds of public interest;",
@@ -379,7 +604,7 @@
   },
   {
     "gdpr_id": "gdpr_158",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9077,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: ensures that persons authorised to process the personal data have committed themselves to confidentiality or are under an appropriate statutory obligation of confidentiality;",
@@ -388,7 +613,7 @@
   },
   {
     "gdpr_id": "gdpr_159",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.8996,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: takes all measures required pursuant to Article 32;",
@@ -397,7 +622,7 @@
   },
   {
     "gdpr_id": "gdpr_160",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9015,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: respects the conditions referred to in paragraphs 2 and 4 for engaging another processor;",
@@ -406,7 +631,7 @@
   },
   {
     "gdpr_id": "gdpr_161",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.8972,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: taking into account the nature of the processing, assists the controller by appropriate technical and organisational measures, insofar as this is possible, for the fulfilment of the controller's obligation to respond to requests for exercising the data subject's rights laid down in Chapter III;",
@@ -415,7 +640,7 @@
   },
   {
     "gdpr_id": "gdpr_162",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9032,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: assists the controller in ensuring compliance with the obligations pursuant to Articles 32 to 36 taking into account the nature of processing and the information available to the processor;",
@@ -424,7 +649,7 @@
   },
   {
     "gdpr_id": "gdpr_163",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9007,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: at the choice of the controller, deletes or returns all the personal data to the controller after the end of the provision of services relating to processing, and deletes existing copies unless Union or Member State law requires storage of the personal data;",
@@ -433,7 +658,7 @@
   },
   {
     "gdpr_id": "gdpr_164",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9074,
     "gdpr_article": 28,
     "gdpr_text": "Processing by a processor shall be governed by a contract or other legal act under Union or Member State law, that is binding on the processor with regard to the controller and that sets out the subject-matter and duration of the processing, the nature and purpose of the processing, the type of personal data and categories of data subjects and the obligations and rights of the controller. That contract or other legal act shall stipulate, in particular, that the processor: makes available to the controller all information necessary to demonstrate compliance with the obligations laid down in this Article and allow for and contribute to audits, including inspections, conducted by the controller or another auditor mandated by the controller.",
@@ -442,7 +667,7 @@
   },
   {
     "gdpr_id": "gdpr_165",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.8878,
     "gdpr_article": 28,
     "gdpr_text": "With regard to point (h) of the first subparagraph, the processor shall immediately inform the controller if, in its opinion, an instruction infringes this Regulation or other Union or Member State data protection provisions.",
@@ -451,7 +676,7 @@
   },
   {
     "gdpr_id": "gdpr_166",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9058,
     "gdpr_article": 28,
     "gdpr_text": "Where a processor engages another processor for carrying out specific processing activities on behalf of the controller, the same data protection obligations as set out in the contract or other legal act between the controller and the processor as referred to in paragraph 3 shall be imposed on that other processor by way of a contract or other legal act under Union or Member State law, in particular providing sufficient guarantees to implement appropriate technical and organisational measures in such a manner that the processing will meet the requirements of this Regulation. Where that other processor fails to fulfil its data protection obligations, the initial processor shall remain fully liable to the controller for the performance of that other processor's obligations.",
@@ -460,7 +685,7 @@
   },
   {
     "gdpr_id": "gdpr_169",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.861,
     "gdpr_article": 29,
     "gdpr_text": "The processor and any person acting under the authority of the controller or of the processor, who has access to personal data, shall not process those data except on instructions from the controller, unless required to do so by Union or Member State law.",
@@ -469,16 +694,16 @@
   },
   {
     "gdpr_id": "gdpr_173",
-    "policy_id": "pol_030",
-    "similarity": 0.8923,
+    "policy_id": "pol_002",
+    "similarity": 0.8928,
     "gdpr_article": 30,
     "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: the categories of recipients to whom the personal data have been or will be disclosed including recipients in third countries or international organisations;",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "Due to Mastodon's federated structure – meaning global networking with other\nservers – it is possible that some content or metadata is transferred to servers\noutside the EU, for example, when you interact with users from other instances."
+    "policy_text": "Note: Unless otherwise specified, your data will remain within the EU and will\nnot be passed on to third parties."
   },
   {
     "gdpr_id": "gdpr_174",
-    "policy_id": "pol_030",
+    "policy_id": "pol_055",
     "similarity": 0.8863,
     "gdpr_article": 30,
     "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
@@ -487,25 +712,16 @@
   },
   {
     "gdpr_id": "gdpr_175",
-    "policy_id": "pol_022",
-    "similarity": 0.886,
+    "policy_id": "pol_011",
+    "similarity": 0.8905,
     "gdpr_article": 30,
     "gdpr_text": "Each controller and, where applicable, the controller's representative, shall maintain a record of processing activities under its responsibility. That record shall contain all of the following information: where possible, the envisaged time limits for erasure of the different categories of data;",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "How long will my data be saved?\n\nAfter a customer account is deactivated, the following retention periods apply:\n\nWithout product usage: 3 years\nWith product usage (invoicing): 14 years (in accordance with tax and commercial\nlaw retention obligations)\nUnverified customer accounts: 14 days after the end of the failed verification\nperiod\n\nOnce these periods have expired, your data will be archived in our long-term\nbackup systems."
-  },
-  {
-    "gdpr_id": "gdpr_178",
-    "policy_id": "pol_004",
-    "similarity": 0.874,
-    "gdpr_article": 30,
-    "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: the categories of processing carried out on behalf of each controller;",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "policy_text": "The length of time your data will be stored can vary depending on the results of\nyour application process:\n\nRejection or withdrawal of the application: Four weeks after the rejection or\nwithdrawal of your application."
   },
   {
     "gdpr_id": "gdpr_179",
-    "policy_id": "pol_030",
+    "policy_id": "pol_055",
     "similarity": 0.89,
     "gdpr_article": 30,
     "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where applicable, transfers of personal data to a third country or an international organisation, including the identification of that third country or international organisation and, in the case of transfers referred to in the second subparagraph of Article 49(1), the documentation of suitable safeguards;",
@@ -513,44 +729,17 @@
     "policy_text": "Due to Mastodon's federated structure – meaning global networking with other\nservers – it is possible that some content or metadata is transferred to servers\noutside the EU, for example, when you interact with users from other instances."
   },
   {
-    "gdpr_id": "gdpr_180",
-    "policy_id": "pol_004",
-    "similarity": 0.8865,
-    "gdpr_article": 30,
-    "gdpr_text": "Each processor and, where applicable, the processor's representative shall maintain a record of all categories of processing activities carried out on behalf of a controller, containing: where possible, a general description of the technical and organisational security measures referred to in Article 32(1).",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_184",
-    "policy_id": "pol_004",
-    "similarity": 0.863,
-    "gdpr_article": 31,
-    "gdpr_text": "The controller and the processor and, where applicable, their representatives, shall cooperate, on request, with the supervisory authority in the performance of its tasks.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_186",
-    "policy_id": "pol_004",
-    "similarity": 0.8729,
+    "gdpr_id": "gdpr_185",
+    "policy_id": "pol_012",
+    "similarity": 0.8899,
     "gdpr_article": 32,
-    "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the ability to ensure the ongoing confidentiality, integrity, availability and resilience of processing systems and services;",
+    "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: the pseudonymisation and encryption of personal data;",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_188",
-    "policy_id": "pol_004",
-    "similarity": 0.8759,
-    "gdpr_article": 32,
-    "gdpr_text": "Taking into account the state of the art, the costs of implementation and the nature, scope, context and purposes of processing as well as the risk of varying likelihood and severity for the rights and freedoms of natural persons, the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk, including inter alia as appropriate: a process for regularly testing, assessing and evaluating the effectiveness of technical and organisational measures for ensuring the security of the processing.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "policy_text": "To increase the protection and security of your data, we use a tool that\nautomatically detects personal data."
   },
   {
     "gdpr_id": "gdpr_189",
-    "policy_id": "pol_008",
+    "policy_id": "pol_012",
     "similarity": 0.8767,
     "gdpr_article": 32,
     "gdpr_text": "In assessing the appropriate level of security account shall be taken in particular of the risks that are presented by processing, in particular from accidental or unlawful destruction, loss, alteration, unauthorised disclosure of, or access to personal data transmitted, stored or otherwise processed.",
@@ -559,7 +748,7 @@
   },
   {
     "gdpr_id": "gdpr_190",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.8805,
     "gdpr_article": 32,
     "gdpr_text": "The controller and processor shall take steps to ensure that any natural person acting under the authority of the controller or the processor who has access to personal data does not process them except on instructions from the controller, unless he or she is required to do so by Union or Member State law.",
@@ -567,8 +756,26 @@
     "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
   },
   {
-    "gdpr_id": "gdpr_214",
+    "gdpr_id": "gdpr_194",
     "policy_id": "pol_004",
+    "similarity": 0.8809,
+    "gdpr_article": 33,
+    "gdpr_text": "The notification referred to in paragraph 1 shall at least: communicate the name and contact details of the data protection officer or other contact point where more information can be obtained;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "You can revoke your permission at any time by reaching out to our personnel team\nat: career@hetzner.com\nLegal documentation: Storing the data to protect against potential legal claims\nor to assert them if necessary."
+  },
+  {
+    "gdpr_id": "gdpr_212",
+    "policy_id": "pol_065",
+    "similarity": 0.8831,
+    "gdpr_article": 35,
+    "gdpr_text": "The assessment shall contain at least: an assessment of the necessity and proportionality of the processing operations in relation to the purposes;",
+    "policy_section": "4. How do we process your personal data?",
+    "policy_text": "During the assessment, the data you provide as well as\ntechnical characteristics are processed."
+  },
+  {
+    "gdpr_id": "gdpr_214",
+    "policy_id": "pol_008",
     "similarity": 0.9013,
     "gdpr_article": 35,
     "gdpr_text": "The assessment shall contain at least: the measures envisaged to address the risks, including safeguards, security measures and mechanisms to ensure the protection of personal data and to demonstrate compliance with this Regulation taking into account the rights and legitimate interests of data subjects and other persons concerned.",
@@ -577,16 +784,34 @@
   },
   {
     "gdpr_id": "gdpr_221",
-    "policy_id": "pol_004",
-    "similarity": 0.8797,
+    "policy_id": "pol_047",
+    "similarity": 0.8824,
     "gdpr_article": 36,
     "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the respective responsibilities of the controller, joint controllers and processors involved in the processing, in particular for processing within a group of undertakings;",
     "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "policy_text": "Brevo acts as an independent\ndata controller for all newsletter-related processing, and Hetzner is not\nresponsible for their data handling practices."
+  },
+  {
+    "gdpr_id": "gdpr_224",
+    "policy_id": "pol_084",
+    "similarity": 0.8738,
+    "gdpr_article": 36,
+    "gdpr_text": "When consulting the supervisory authority pursuant to paragraph 1, the controller shall provide the supervisory authority with: where applicable, the contact details of the data protection officer;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_229",
+    "policy_id": "pol_084",
+    "similarity": 0.8944,
+    "gdpr_article": 37,
+    "gdpr_text": "The controller and the processor shall designate a data protection officer in any case where: the core activities of the controller or the processor consist of processing operations which, by virtue of their nature, their scope and/or their purposes, require regular and systematic monitoring of data subjects on a large scale; or",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
   },
   {
     "gdpr_id": "gdpr_231",
-    "policy_id": "pol_048",
+    "policy_id": "pol_084",
     "similarity": 0.8777,
     "gdpr_article": 37,
     "gdpr_text": "In cases other than those referred to in paragraph 1, the controller or processor or associations and other bodies representing categories of controllers or processors may or, where required by Union or Member State law shall, designate a data protection officer. The data protection officer may act for such associations and other bodies representing controllers or processors.",
@@ -594,57 +819,39 @@
     "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
   },
   {
-    "gdpr_id": "gdpr_244",
-    "policy_id": "pol_004",
-    "similarity": 0.8813,
+    "gdpr_id": "gdpr_234",
+    "policy_id": "pol_084",
+    "similarity": 0.8921,
+    "gdpr_article": 38,
+    "gdpr_text": "The controller and the processor shall ensure that the data protection officer is involved, properly and in a timely manner, in all issues which relate to the protection of personal data.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_237",
+    "policy_id": "pol_084",
+    "similarity": 0.8653,
+    "gdpr_article": 38,
+    "gdpr_text": "The data protection officer shall be bound by secrecy or confidentiality concerning the performance of his or her tasks, in accordance with Union or Member State law.",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
+  },
+  {
+    "gdpr_id": "gdpr_240",
+    "policy_id": "pol_084",
+    "similarity": 0.8766,
     "gdpr_article": 39,
-    "gdpr_text": "The data protection officer shall in the performance of his or her tasks have due regard to the risk associated with processing operations, taking into account the nature, scope, context and purposes of processing.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_246",
-    "policy_id": "pol_004",
-    "similarity": 0.9086,
-    "gdpr_article": 40,
-    "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, codes of conduct approved pursuant to paragraph 5 of this Article and having general validity pursuant to paragraph 9 of this Article may also be adhered to by controllers or processors that are not subject to this Regulation pursuant to Article 3 in order to provide appropriate safeguards within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (e) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards including with regard to the rights of data subjects.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_251",
-    "policy_id": "pol_004",
-    "similarity": 0.8657,
-    "gdpr_article": 40,
-    "gdpr_text": "Where the opinion referred to in paragraph 7 confirms that the draft code, amendment or extension complies with this Regulation, or, in the situation referred to in paragraph 3, provides appropriate safeguards, the Board shall submit its opinion to the Commission.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_256",
-    "policy_id": "pol_004",
-    "similarity": 0.8846,
-    "gdpr_article": 41,
-    "gdpr_text": "Without prejudice to the tasks and powers of the competent supervisory authority and the provisions of Chapter VIII, a body as referred to in paragraph 1 of this Article shall, subject to appropriate safeguards, take appropriate action in cases of infringement of the code by a controller or processor, including suspension or exclusion of the controller or processor concerned from the code. It shall inform the competent supervisory authority of such actions and the reasons for taking them.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
+    "gdpr_text": "The data protection officer shall have at least the following tasks: to monitor compliance with this Regulation, with other Union or Member State data protection provisions and with the policies of the controller or processor in relation to the protection of personal data, including the assignment of responsibilities, awareness-raising and training of staff involved in processing operations, and the related audits;",
+    "policy_section": "5. What rights do I have when it comes to my data?",
+    "policy_text": "If, for example, you dispute the accuracy of your data or believe that the\nprocessing is unlawful, you must submit a written request by post to our data\nprotection officer to restrict the processing of your data."
   },
   {
     "gdpr_id": "gdpr_260",
-    "policy_id": "pol_004",
+    "policy_id": "pol_008",
     "similarity": 0.9123,
     "gdpr_article": 42,
     "gdpr_text": "In addition to adherence by controllers or processors subject to this Regulation, data protection certification mechanisms, seals or marks approved pursuant to paragraph 5 of this Article may be established for the purpose of demonstrating the existence of appropriate safeguards provided by controllers or processors that are not subject to this Regulation pursuant to Article 3 within the framework of personal data transfers to third countries or international organisations under the terms referred to in point (f) of Article 46(2). Such controllers or processors shall make binding and enforceable commitments, via contractual or other legally binding instruments, to apply those appropriate safeguards, including with regard to the rights of data subjects.",
     "policy_section": "4. How do we process your personal data?",
     "policy_text": "We have concluded a data processing agreement (DPA)\nwith this provider, which ensures that the data is processed only according to\nour instructions and in compliance with applicable data protection regulations."
-  },
-  {
-    "gdpr_id": "gdpr_274",
-    "policy_id": "pol_037",
-    "similarity": 0.9,
-    "gdpr_article": 43,
-    "gdpr_text": "The certification bodies referred to in paragraph 1 shall be responsible for the proper assessment leading to the certification or the withdrawal of such certification without prejudice to the responsibility of the controller or processor for compliance with this Regulation. The accreditation shall be issued for a maximum period of five years and may be renewed on the same conditions provided that the certification body meets the requirements set out in this Article.",
-    "policy_section": "4. How do we process your personal data?",
-    "policy_text": "In some cases, the identity verification is not carried out by Hetzner directly,\nbut by the certified external service provider iDenfy."
   }
 ]
