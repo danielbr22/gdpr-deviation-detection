@@ -2,6 +2,7 @@ import argparse
 import asyncio
 import json
 import os
+from collections import defaultdict
 from pathlib import Path
 from typing import Optional
 
@@ -14,6 +15,11 @@ from src.classification.prompt import (
 from src.utils import llm_client
 
 VALID_TYPES = {"none", "responsibility", "execution_style", "data", "negation", "severity"}
+
+# Maximum number of distinct GDPR articles a single policy sentence can be credited for
+# with the same deviation type. Prevents cross-article FP inflation when one modified
+# sentence is retrieved against many topically-adjacent articles.
+DEDUP_MAX_ARTICLES: int = 2
 
 
 def parse_response(content: str) -> Optional[dict]:
@@ -53,6 +59,47 @@ def _parse_stage2(content: str) -> Optional[dict]:
 
 def filter_pairs(pairs: list) -> list:
     return [p for p in pairs if p.get("policy_id") != "pol_001"]
+
+
+def deduplicate_pairs(pairs: list[dict]) -> list[dict]:
+    """Limit cross-article FP inflation from the same policy sentence.
+
+    For each (policy_text, deviation_type) group, keep only the top-DEDUP_MAX_ARTICLES
+    GDPR articles by cosine similarity. Non-deviation pairs are always preserved.
+
+    A single modified policy sentence is evidence for at most DEDUP_MAX_ARTICLES
+    article-level deviations of the same type. Cross-article flooding — where one
+    sentence is retrieved against many topically-adjacent GDPR articles — produces
+    many false positives. Deduplication credits only the most relevant articles.
+    """
+    keep_types = {"none", "parse_error"}
+    kept = [p for p in pairs if p.get("deviation_type", "none") in keep_types]
+    deviation_pairs = [p for p in pairs if p.get("deviation_type", "none") not in keep_types]
+
+    group: dict[tuple, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
+    for p in deviation_pairs:
+        key = (p.get("policy_text", "")[:150], p.get("deviation_type"))
+        art = p.get("gdpr_article", -1)
+        group[key][art].append(p)
+
+    for (_, dtype), art_map in group.items():
+        art_best: list[tuple[float, int, dict]] = []
+        for art, art_pairs in art_map.items():
+            best = max(art_pairs, key=lambda x: x.get("similarity", 0.0) or 0.0)
+            art_best.append((best.get("similarity", 0.0) or 0.0, art, best))
+
+        art_best.sort(key=lambda x: -x[0])
+        for i, (_, art, best_pair) in enumerate(art_best):
+            if i < DEDUP_MAX_ARTICLES:
+                kept.append(best_pair)
+            else:
+                downgraded = {**best_pair, "deviation_type": "none",
+                              "reasoning": f"[dedup] downgraded from {dtype} — "
+                                           f"same sentence already credited to "
+                                           f"{DEDUP_MAX_ARTICLES} higher-similarity articles"}
+                kept.append(downgraded)
+
+    return kept
 
 
 async def _classify_one(sem: asyncio.Semaphore, pair: dict) -> dict:
@@ -169,7 +216,7 @@ def main() -> None:
             "reasoning": result.get("reasoning", ""),
         })
 
-    classified_pairs = skip_pairs + new_classified
+    classified_pairs = deduplicate_pairs(skip_pairs + new_classified)
 
     classified_unmapped = [
         {

@@ -6,14 +6,20 @@ Matching is article-level:
   - constraint_coverage : TP if any unmapped GDPR constraint belongs to an affected article
   - other types         : TP if any matched pair has an affected article AND the correct type
 
-Precision is approximate: the gold standard covers 18 introduced deviations per use case
-(3 per type × 6 types). FPs may include genuine policy issues not in the gold standard.
+Precision is approximate: the gold standard covers 17 introduced deviations per use case.
+FPs may include genuine policy issues not in the gold standard.
 
-constraint_coverage FPs are further filtered by in-scope articles: GDPR articles that had
-no substantive match in the *original* (unmodified) policy are excluded from the unmapped
-set, since they were never relevant to the company and are not part of the gold standard.
-This requires data/retrieval/{use_case}_original/matched_pairs.json to exist (produced by
-Phase 0 of run_pipeline.sh). Falls back to unfiltered behaviour if the file is absent.
+Two precision improvements are applied before computing predictions:
+
+1. Stricter in-scope filter (MIN_ORIGINAL_PAIRS): GDPR articles are only considered
+   in-scope if the original policy had at least this many substantive matches.
+   Articles with only 1 spurious match are structurally irrelevant and excluded from
+   constraint_coverage predictions. Requires Phase 0 output to exist.
+
+2. Pair deduplication (DEDUP_MAX_ARTICLES_PER_SENTENCE): when the same policy sentence
+   is classified as the same deviation type against many GDPR articles, only the top-K
+   articles by cosine similarity are credited. One policy sentence is evidence for at most
+   K article-level deviations of the same type.
 """
 
 from __future__ import annotations
@@ -28,6 +34,16 @@ ROOT = Path(__file__).parent.parent.parent
 DATA_DIR = ROOT / "data"
 GOLD_DIR = ROOT / "gold_standard"
 EVAL_DIR = DATA_DIR / "evaluation"
+
+# Minimum number of matched pairs an article must have in the ORIGINAL policy to be
+# considered "in-scope" for constraint_coverage evaluation. Articles with fewer matches
+# are structurally irrelevant to the company policy and excluded to reduce FPs.
+MIN_ORIGINAL_PAIRS: int = 2
+
+# Maximum number of distinct GDPR articles a single policy sentence can be credited for
+# with the same deviation type. Prevents cross-article FP inflation when one modified
+# sentence is retrieved against many topically-adjacent GDPR articles.
+DEDUP_MAX_ARTICLES_PER_SENTENCE: int = 2
 
 DEVIATION_TYPES = [
     "constraint_coverage",
@@ -57,6 +73,48 @@ USE_CASES: dict[str, dict[str, Path]] = {
 }
 
 
+def deduplicate_pairs(pairs: list[dict], max_articles: int) -> list[dict]:
+    """Limit cross-article FP inflation: for each (policy_text, deviation_type) group,
+    keep only the top-max_articles GDPR articles by cosine similarity.
+
+    Rationale: a single modified policy sentence is evidence for at most a few GDPR
+    articles' deviations. When embedding retrieval floods many topically-adjacent
+    articles with the same sentence, only the highest-similarity articles are credited.
+    Non-deviation pairs (none, parse_error) are always kept unchanged.
+    """
+    KEEP_TYPES = {"none", "parse_error"}
+    kept = [p for p in pairs if p.get("deviation_type", "none") in KEEP_TYPES]
+    deviation_pairs = [p for p in pairs if p.get("deviation_type", "none") not in KEEP_TYPES]
+
+    # Group by (truncated policy text, deviation_type)
+    group: dict[tuple, dict[int, list[dict]]] = defaultdict(lambda: defaultdict(list))
+    for p in deviation_pairs:
+        key = (p.get("policy_text", "")[:150], p.get("deviation_type"))
+        art = p.get("gdpr_article", -1)
+        group[key][art].append(p)
+
+    for (_, _), art_map in group.items():
+        # For each article, take the pair with the highest similarity
+        art_best: list[tuple[float, int, dict]] = []
+        for art, art_pairs in art_map.items():
+            best = max(art_pairs, key=lambda x: x.get("similarity", 0.0) or 0.0)
+            art_best.append((best.get("similarity", 0.0) or 0.0, art, best))
+
+        # Keep only top max_articles unique articles; mark the rest as none
+        art_best.sort(key=lambda x: -x[0])
+        for i, (_, art, best_pair) in enumerate(art_best):
+            if i < max_articles:
+                kept.append(best_pair)
+            else:
+                # Preserve pair but downgrade to none so it doesn't inflate predictions
+                downgraded = {**best_pair, "deviation_type": "none",
+                              "reasoning": f"[dedup] downgraded from {best_pair['deviation_type']} — "
+                                           f"same sentence credited to {max_articles} higher-similarity articles"}
+                kept.append(downgraded)
+
+    return kept
+
+
 def _parse_article(article_str: str) -> int:
     m = re.search(r"\d+", article_str)
     return int(m.group()) if m else -1
@@ -78,17 +136,28 @@ def evaluate_use_case(use_case: str, article_map: dict[str, int]) -> dict:
     pairs = classified["pairs"]
     unmapped = classified["unmapped"]
 
-    # Load in-scope articles from original policy run (Phase 0 of run_pipeline.sh).
-    # GDPR articles with no substantive match in the original policy are structurally
-    # irrelevant and excluded from unmapped_articles to avoid inflating FPs.
+    # Load in-scope articles from original policy run (Phase 0 of run.sh).
+    # Only articles with >= MIN_ORIGINAL_PAIRS substantive matches in the original policy
+    # are considered in-scope. Articles with fewer matches are structurally irrelevant
+    # to the company policy and excluded from constraint_coverage to reduce FPs.
     in_scope_articles: set[int] | None = None
     orig_path: Path = cfg["original_matched"]
     if orig_path.exists():
         with open(orig_path) as f:
             orig_matched = json.load(f)
+        art_pair_counts: dict[int, int] = defaultdict(int)
+        for p in orig_matched:
+            art = p.get("gdpr_article")
+            if art is not None:
+                art_pair_counts[art] += 1
         in_scope_articles = {
-            p["gdpr_article"] for p in orig_matched if p.get("gdpr_article") is not None
+            art for art, count in art_pair_counts.items() if count >= MIN_ORIGINAL_PAIRS
         }
+
+    # Deduplication: limit cross-article FP inflation from the same policy sentence.
+    # When one modified sentence is retrieved against many topically-adjacent GDPR articles,
+    # only the DEDUP_MAX_ARTICLES_PER_SENTENCE highest-similarity articles are credited.
+    pairs = deduplicate_pairs(pairs, DEDUP_MAX_ARTICLES_PER_SENTENCE)
 
     # article → set of deviation types predicted by pipeline (non-none, non-error)
     article_predictions: dict[int, set[str]] = defaultdict(set)

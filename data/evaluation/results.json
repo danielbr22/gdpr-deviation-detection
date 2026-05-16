@@ -9,7 +9,7 @@
           "articles": [
             20
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_002",
@@ -42,7 +42,7 @@
           "articles": [
             16
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "dev_006",
@@ -82,7 +82,7 @@
           "articles": [
             7
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "dev_012",
@@ -90,7 +90,7 @@
           "articles": [
             15
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_013",
@@ -140,19 +140,27 @@
           "articles": [
             17
           ],
-          "detected": true
+          "detected": false
         }
       ],
       "type_metrics": {
         "constraint_coverage": {
-          "tp": 2,
-          "fp": 25,
-          "fn": 0,
-          "precision": 0.074,
-          "recall": 1.0,
-          "f1": 0.138
+          "tp": 1,
+          "fp": 9,
+          "fn": 1,
+          "precision": 0.1,
+          "recall": 0.5,
+          "f1": 0.167
         },
         "severity": {
+          "tp": 2,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.4,
+          "recall": 0.667,
+          "f1": 0.5
+        },
+        "execution_style": {
           "tp": 2,
           "fp": 0,
           "fn": 1,
@@ -160,25 +168,17 @@
           "recall": 0.667,
           "f1": 0.8
         },
-        "execution_style": {
-          "tp": 2,
-          "fp": 8,
-          "fn": 1,
-          "precision": 0.2,
-          "recall": 0.667,
-          "f1": 0.308
-        },
         "negation": {
           "tp": 2,
-          "fp": 7,
+          "fp": 5,
           "fn": 1,
-          "precision": 0.222,
+          "precision": 0.286,
           "recall": 0.667,
-          "f1": 0.333
+          "f1": 0.4
         },
         "responsibility": {
           "tp": 0,
-          "fp": 0,
+          "fp": 1,
           "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
@@ -186,34 +186,42 @@
         },
         "data": {
           "tp": 2,
-          "fp": 4,
+          "fp": 1,
           "fn": 1,
-          "precision": 0.333,
+          "precision": 0.667,
           "recall": 0.667,
-          "f1": 0.444
+          "f1": 0.667
         }
       },
       "overall": {
-        "tp": 10,
-        "fp": 44,
-        "fn": 7,
-        "precision": 0.185,
-        "recall": 0.588,
-        "f1": 0.282
+        "tp": 9,
+        "fp": 19,
+        "fn": 8,
+        "precision": 0.321,
+        "recall": 0.529,
+        "f1": 0.4
       }
     }
   ],
   "aggregate": {
     "type_metrics": {
       "constraint_coverage": {
-        "tp": 2,
-        "fp": 25,
-        "fn": 0,
-        "precision": 0.074,
-        "recall": 1.0,
-        "f1": 0.138
+        "tp": 1,
+        "fp": 9,
+        "fn": 1,
+        "precision": 0.1,
+        "recall": 0.5,
+        "f1": 0.167
       },
       "severity": {
+        "tp": 2,
+        "fp": 3,
+        "fn": 1,
+        "precision": 0.4,
+        "recall": 0.667,
+        "f1": 0.5
+      },
+      "execution_style": {
         "tp": 2,
         "fp": 0,
         "fn": 1,
@@ -221,25 +229,17 @@
         "recall": 0.667,
         "f1": 0.8
       },
-      "execution_style": {
-        "tp": 2,
-        "fp": 8,
-        "fn": 1,
-        "precision": 0.2,
-        "recall": 0.667,
-        "f1": 0.308
-      },
       "negation": {
         "tp": 2,
-        "fp": 7,
+        "fp": 5,
         "fn": 1,
-        "precision": 0.222,
+        "precision": 0.286,
         "recall": 0.667,
-        "f1": 0.333
+        "f1": 0.4
       },
       "responsibility": {
         "tp": 0,
-        "fp": 0,
+        "fp": 1,
         "fn": 3,
         "precision": 0.0,
         "recall": 0.0,
@@ -247,20 +247,20 @@
       },
       "data": {
         "tp": 2,
-        "fp": 4,
+        "fp": 1,
         "fn": 1,
-        "precision": 0.333,
+        "precision": 0.667,
         "recall": 0.667,
-        "f1": 0.444
+        "f1": 0.667
       }
     },
     "overall": {
-      "tp": 10,
-      "fp": 44,
-      "fn": 7,
-      "precision": 0.185,
-      "recall": 0.588,
-      "f1": 0.282
+      "tp": 9,
+      "fp": 19,
+      "fn": 8,
+      "precision": 0.321,
+      "recall": 0.529,
+      "f1": 0.4
     }
   }
 }
