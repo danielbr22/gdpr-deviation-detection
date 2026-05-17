@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+/* ── Design tokens ─────────────────────────────────────────────────────────── */
+:root {
+  --blue-primary:   #1d4ed8;
+  --blue-hover:     #1e40af;
+  --blue-subtle:    #eff6ff;
+  --blue-border:    #bfdbfe;
+  --green-text:     #15803d;
+  --green-bg:       #f0fdf4;
+  --green-border:   #bbf7d0;
+  --red-text:       #b91c1c;
+  --red-bg:         #fef2f2;
+  --red-border:     #fecaca;
+  --amber-text:     #92400e;
+  --amber-bg:       #fffbeb;
+  --amber-border:   #fde68a;
+}
+
+/* ── Base ──────────────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* ── Terminal log viewer ───────────────────────────────────────────────────── */
+.log-terminal {
+  font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', Consolas, ui-monospace, monospace;
+  font-size: 0.7rem;
+  line-height: 1.65;
+  background: #0d1117;
+  color: #8b949e;
+  border-radius: 0.75rem;
+  padding: 1.25rem 1.5rem;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  border: 1px solid #21262d;
+}
+
+/* ── Tab nav (underline style) ─────────────────────────────────────────────── */
+.tab-trigger { display: block; }
+
+.tab-inner {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 4px;
+  margin-right: 28px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  border-bottom: 2px solid transparent;
+  transition: color 150ms ease, border-color 150ms ease;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.tab-inner .tab-icon { color: #94a3b8; transition: color 150ms ease; }
+
+.tab-trigger:hover .tab-inner { color: #0f172a; }
+.tab-trigger:hover .tab-inner .tab-icon { color: #64748b; }
+
+.tab-trigger[data-state="active"] .tab-inner {
+  color: #1d4ed8;
+  border-bottom-color: #2563eb;
+  font-weight: 600;
+}
+.tab-trigger[data-state="active"] .tab-inner .tab-icon { color: #2563eb; }
+
+/* ── Phase pill animation ──────────────────────────────────────────────────── */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+.pulse-dot { animation: pulse-dot 1.4s ease-in-out infinite; }
