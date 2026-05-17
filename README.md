@@ -26,6 +26,7 @@ A gold standard is constructed by introducing deliberate deviations of known typ
 │   ├── classification/    # LLM-based deviation classification
 │   └── evaluation/        # Precision/recall/F1 metrics against gold standard
 ├── notebooks/             # Exploratory analyses
+├── ui/                    # Pipeline dashboard (FastAPI + React)
 ├── run_pipeline.sh        # End-to-end pipeline for all 3 use cases
 └── report/                # Report PDF and figures
 ```
@@ -86,6 +87,40 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 bash run_pipeline.sh
 ```
+
+---
+
+## Dashboard UI
+
+A lightweight web dashboard lets you trigger pipeline runs, stream live log output, and browse results without touching the terminal.
+
+### Start
+
+```bash
+bash ui/start.sh
+```
+
+Opens at **http://localhost:8000**. The script builds the React frontend and starts a FastAPI server. Requires Python 3.11+ and Node.js (for the one-time build).
+
+### Features
+
+- **New Run tab** — configure and launch a pipeline run with options:
+  - *Smoke test* — tiny Hetzner slice to verify the full chain (~5 min)
+  - *Force re-run* — ignore skip guards and re-run all phases from scratch
+  - *LLM Provider* — switch between Local (Ollama) and API (OpenAI); API key read from `.env` automatically
+- **Live output** — log lines stream in real time with phase progress indicator
+- **History tab** — browse past runs, view their logs, and inspect saved result snapshots
+
+### Configuration (`.env`)
+
+Copy `.env.example` to `.env` and fill in your values. At minimum, set `OPENAI_API_KEY` to use the OpenAI provider (auto-detected by the dashboard):
+
+```
+OPENAI_API_KEY=sk-...
+OPENAI_MODEL=gpt-4o-mini
+```
+
+Leave it blank (or omit the file) to default to local Ollama inference.
 
 ---
 

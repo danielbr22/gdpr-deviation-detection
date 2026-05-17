@@ -28,14 +28,14 @@ function Badge({ type }: { type: string }) {
 }
 
 function scoreColor(v: number) {
-  if (v >= 0.7) return '#16a34a'
-  if (v >= 0.4) return '#d97706'
+  if (v >= 0.5) return '#16a34a'
+  if (v >= 0.2) return '#d97706'
   return '#dc2626'
 }
 
 function scoreBg(v: number) {
-  if (v >= 0.7) return '#dcfce7'
-  if (v >= 0.4) return '#fef3c7'
+  if (v >= 0.5) return '#dcfce7'
+  if (v >= 0.2) return '#fef3c7'
   return '#fee2e2'
 }
 
@@ -75,7 +75,7 @@ function KpiCard({ label, value, sub }: { label: string; value: number; sub?: st
         fontSize: 12, fontWeight: 500,
         background: bg, color: c,
       }}>
-        {value >= 0.7 ? 'Good' : value >= 0.4 ? 'Moderate' : 'Low'}
+        {value >= 0.5 ? 'Good' : value >= 0.2 ? 'Moderate' : 'Low'}
       </div>
     </div>
   )
