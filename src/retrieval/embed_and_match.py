@@ -74,6 +74,7 @@ def match(
                     "policy_id": policy[j]["id"],
                     "similarity": round(float(row[j]), 4),
                     "policy_text": policy[j]["text"],
+                    "policy_embed_text": policy[j].get("embed_text", policy[j]["text"]),
                     "policy_section": policy[j].get("section", ""),
                 }
                 for j in top_indices
@@ -143,7 +144,7 @@ def main() -> None:
     print("Encoding …")
     model = SentenceTransformer(args.model)
     gdpr_emb = embed(model, gdpr, use_context=True)
-    policy_emb = embed(model, policy, use_context=False)
+    policy_emb = embed(model, policy, use_context=True)
 
     print("Matching …")
     matched, unmapped = match(gdpr, policy, gdpr_emb, policy_emb, args.gamma, args.top_k)

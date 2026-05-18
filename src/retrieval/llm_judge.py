@@ -34,15 +34,31 @@ def parse_judge_response(content: str, n_candidates: int):
         data = json.loads(content)
     except json.JSONDecodeError:
         return None
-    try:
-        match = int(data["match"])
-    except (KeyError, TypeError, ValueError):
-        return None
-    if match < 0 or match > n_candidates:
-        return None
     if not data.get("reasoning"):
         return None
-    return {"match": match, "reasoning": data["reasoning"]}
+
+    # New format: {"matches": [1, 3], ...}  Old format fallback: {"match": 1, ...}
+    raw = data.get("matches", data.get("match"))
+    if raw is None:
+        return None
+
+    # Normalise to a list of ints
+    if isinstance(raw, int):
+        nums = [raw]
+    elif isinstance(raw, list):
+        try:
+            nums = [int(x) for x in raw]
+        except (TypeError, ValueError):
+            return None
+    else:
+        try:
+            nums = [int(raw)]
+        except (TypeError, ValueError):
+            return None
+
+    # Filter out 0 (no-match sentinel) and out-of-range values
+    valid = [n for n in nums if 1 <= n <= n_candidates]
+    return {"matches": valid, "reasoning": data["reasoning"]}
 
 
 async def run_judge_async(topk_data: list) -> tuple:
@@ -52,9 +68,14 @@ async def run_judge_async(topk_data: list) -> tuple:
         candidates = entry["candidates"]
         user_msg = build_judge_prompt(entry["gdpr_text"], entry.get("gdpr_article", 0), candidates)
         async with sem:
-            content = await llm_client.call_async(
-                JUDGE_SYSTEM_PROMPT, user_msg, json_mode=True, timeout=120
-            )
+            try:
+                content = await llm_client.call_async(
+                    JUDGE_SYSTEM_PROMPT, user_msg, json_mode=True, timeout=120
+                )
+            except Exception:
+                # Treat API failures (rate limit exhausted, timeout, etc.) as no match
+                # so one failed call doesn't abort the entire batch.
+                return entry, None
         return entry, parse_judge_response(content, len(candidates))
 
     raw_results = await asyncio.gather(*[judge_one(e) for e in topk_data])
@@ -63,17 +84,20 @@ async def run_judge_async(topk_data: list) -> tuple:
     unmapped = []
     for entry, result in raw_results:
         candidates = entry["candidates"]
-        if result and result["match"] > 0:
-            chosen = candidates[result["match"] - 1]
-            matched.append({
-                "gdpr_id": entry["gdpr_id"],
-                "policy_id": chosen["policy_id"],
-                "similarity": chosen["similarity"],
-                "gdpr_article": entry.get("gdpr_article"),
-                "gdpr_text": entry["gdpr_text"],
-                "policy_section": chosen.get("policy_section", ""),
-                "policy_text": chosen["policy_text"],
-            })
+        match_indices = result["matches"] if result else []
+
+        if match_indices:
+            for idx in match_indices:
+                chosen = candidates[idx - 1]
+                matched.append({
+                    "gdpr_id": entry["gdpr_id"],
+                    "policy_id": chosen["policy_id"],
+                    "similarity": chosen["similarity"],
+                    "gdpr_article": entry.get("gdpr_article"),
+                    "gdpr_text": entry["gdpr_text"],
+                    "policy_section": chosen.get("policy_section", ""),
+                    "policy_text": chosen["policy_text"],
+                })
         else:
             best = candidates[0] if candidates else {}
             unmapped.append({
