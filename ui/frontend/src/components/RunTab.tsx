@@ -120,6 +120,7 @@ export function RunTab() {
   // Run options
   const [smokeTest, setSmokeTest] = useState(false)
   const [force, setForce] = useState(false)
+  const [skipScope, setSkipScope] = useState(false)
   const [provider, setProvider] = useState<Provider>('ollama')
   const [apiKey, setApiKey] = useState('')
   const [hasEnvKey, setHasEnvKey] = useState(false)
@@ -176,6 +177,7 @@ export function RunTab() {
       const body = {
         smoke_test: smokeTest,
         force,
+        skip_scope: skipScope,
         provider,
         api_key: provider === 'openai' && !hasEnvKey ? apiKey : '',
       }
@@ -308,11 +310,20 @@ export function RunTab() {
               />
               <OptionToggle
                 checked={force}
-                onChange={v => { setForce(v); if (v) setSmokeTest(false) }}
+                onChange={v => { setForce(v); if (v) setSmokeTest(false); if (!v) setSkipScope(false) }}
                 label="Force re-run"
                 description="Ignore skip guards and re-run all phases from scratch"
                 color="#0369a1"
               />
+              <div style={{ opacity: smokeTest ? 0.4 : 1, pointerEvents: smokeTest ? 'none' : 'auto' }}>
+                <OptionToggle
+                  checked={skipScope}
+                  onChange={v => { setSkipScope(v); if (v) setForce(true) }}
+                  label="Skip scope (Phase 0)"
+                  description="Skip original-policy scope detection and force re-run phases 1–5"
+                  color="#b45309"
+                />
+              </div>
             </div>
 
             {/* Row 2: provider */}

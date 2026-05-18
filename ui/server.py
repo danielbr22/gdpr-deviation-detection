@@ -31,6 +31,7 @@ app.add_middleware(
 class RunConfig(BaseModel):
     smoke_test: bool = False
     force: bool = False
+    skip_scope: bool = False
     provider: str = "ollama"  # "ollama" | "openai"
     api_key: str = ""
 
@@ -145,8 +146,11 @@ async def start_run(config: RunConfig = RunConfig()):
         cmd = ["bash", str(ROOT / "run.sh")]
         if config.smoke_test:
             cmd.append("--test")
-        elif config.force:
-            cmd.append("--force")
+        else:
+            if config.force:
+                cmd.append("--force")
+            if config.skip_scope:
+                cmd.append("--skip-scope")
 
         env = {**os.environ, "CAFFEINATED": "1", "LLM_PROVIDER": config.provider}
         if config.api_key:
