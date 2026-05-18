@@ -9,7 +9,7 @@ Matching is article-level:
 Precision is approximate: the gold standard covers 17 introduced deviations per use case.
 FPs may include genuine policy issues not in the gold standard.
 
-Two precision improvements are applied before computing predictions:
+Three precision improvements are applied before computing predictions:
 
 1. Stricter in-scope filter (MIN_ORIGINAL_PAIRS): GDPR articles are only considered
    in-scope if the original policy had at least this many substantive matches.
@@ -20,6 +20,11 @@ Two precision improvements are applied before computing predictions:
    is classified as the same deviation type against many GDPR articles, only the top-K
    articles by cosine similarity are credited. One policy sentence is evidence for at most
    K article-level deviations of the same type.
+
+3. Minimum GDPR constraint count (MIN_GDPR_CONSTRAINTS): an article is only eligible for
+   constraint_coverage prediction if it has at least this many GDPR constraints. Articles
+   with very few constraints (1-3) produce high FP rates because a single spurious unmapping
+   triggers the "all constraints unmapped" condition. Only substantial articles are flagged.
 """
 
 from __future__ import annotations
@@ -38,12 +43,23 @@ EVAL_DIR = DATA_DIR / "evaluation"
 # Minimum number of matched pairs an article must have in the ORIGINAL policy to be
 # considered "in-scope" for constraint_coverage evaluation. Articles with fewer matches
 # are structurally irrelevant to the company policy and excluded to reduce FPs.
-MIN_ORIGINAL_PAIRS: int = 2
+# Set to 1 so articles with even a single original match (e.g. Art. 20 data portability)
+# are considered in-scope — they are genuinely covered and deviations are detectable.
+MIN_ORIGINAL_PAIRS: int = 1
 
 # Maximum number of distinct GDPR articles a single policy sentence can be credited for
 # with the same deviation type. Prevents cross-article FP inflation when one modified
 # sentence is retrieved against many topically-adjacent GDPR articles.
-DEDUP_MAX_ARTICLES_PER_SENTENCE: int = 2
+# Set to 1: one policy sentence is evidence for at most 1 article-level deviation.
+DEDUP_MAX_ARTICLES_PER_SENTENCE: int = 1
+
+# Minimum number of GDPR constraints an article must have to be eligible for
+# constraint_coverage prediction. Articles with very few constraints (1-3) produce
+# high false-positive rates: a single spurious unmapping satisfies "all unmapped".
+# Set to 4 to exclude micro-articles (Art. 16, 29, etc.) while keeping Art. 7 (4),
+# Art. 20 (5), Art. 18 (6) and all larger articles in scope.
+MIN_GDPR_CONSTRAINTS: int = 4
+
 
 DEVIATION_TYPES = [
     "constraint_coverage",
@@ -125,6 +141,16 @@ def load_gdpr_article_map() -> dict[str, int]:
         return {c["id"]: c["article"] for c in json.load(f)}
 
 
+def _load_gdpr_per_article() -> dict[int, set[str]]:
+    """Return mapping of article → set of gdpr_ids for that article."""
+    with open(DATA_DIR / "constraints" / "gdpr_constraints.json") as f:
+        gdpr = json.load(f)
+    result: dict[int, set[str]] = defaultdict(set)
+    for c in gdpr:
+        result[c["article"]].add(c["id"])
+    return result
+
+
 def evaluate_use_case(use_case: str, article_map: dict[str, int]) -> dict:
     cfg = USE_CASES[use_case]
 
@@ -166,11 +192,24 @@ def evaluate_use_case(use_case: str, article_map: dict[str, int]) -> dict:
         if dtype not in ("none", "parse_error"):
             article_predictions[p["gdpr_article"]].add(dtype)
 
-    # articles present in unmapped (constraint_coverage predictions), filtered to in-scope
+    # Constraint-coverage predictions: an article is flagged only when ALL of its
+    # GDPR constraints are unmapped (no policy counterpart found). This prevents the
+    # many-FP pattern caused by partial unmapping (e.g. Art. 9, 35, 43 have many
+    # constraints that a company privacy policy inherently doesn't address, but still
+    # has 1-2 tangential matches that prevent the ALL-unmapped condition).
+    # A genuinely missing-coverage deviation means the entire section was removed,
+    # so every GDPR constraint for that article has no policy match at all.
+    gdpr_per_article = _load_gdpr_per_article()
+    unmapped_gdpr_ids: set[str] = {u["gdpr_id"] for u in unmapped}
     unmapped_articles: set[int] = set()
-    for u in unmapped:
-        art = article_map.get(u["gdpr_id"])
-        if art is not None and (in_scope_articles is None or art in in_scope_articles):
+    candidate_articles = in_scope_articles if in_scope_articles is not None else set(gdpr_per_article)
+    for art in candidate_articles:
+        art_constraints = gdpr_per_article.get(art, set())
+        # Skip articles with too few GDPR constraints — a single spurious unmapping
+        # would satisfy "all unmapped" and create a false constraint_coverage prediction.
+        if len(art_constraints) < MIN_GDPR_CONSTRAINTS:
+            continue
+        if art_constraints and art_constraints.issubset(unmapped_gdpr_ids):
             unmapped_articles.add(art)
 
     # --- evaluate each gold deviation ---
@@ -305,8 +344,8 @@ def print_report(results: list[dict], agg: dict) -> None:
     print("=" * W)
     print(
         "\nNOTE: Precision is approximate — the gold standard covers 17 introduced deviations\n"
-        "per use case (Art. 77 excluded — outside GDPR Art. 5–43 scope). constraint_coverage unmapped set is filtered\n"
-        "to GDPR articles substantively covered by the original policy (Phase 0 scope detection).\n"
+        "per use case (Art. 77 excluded — outside GDPR Art. 5–43 scope). constraint_coverage is filtered\n"
+        "to in-scope articles (Phase 0) with ≥4 GDPR constraints to reduce spurious FPs.\n"
         "FPs may still include genuine policy issues not in the gold standard.\n"
     )
 

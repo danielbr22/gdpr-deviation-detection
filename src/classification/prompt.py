@@ -10,11 +10,20 @@ the following ways:
   timeline (HOW deviates). Key signal: the GDPR grants a right or obligation without
   specifying HOW it must be exercised, but the policy adds a specific procedural
   requirement (e.g. "written request by post", "signed form", "authenticated portal
-  only", "request must be notarised"). The added procedure restricts or changes how
-  the right can be exercised, even if the underlying right itself is not denied.
+  only", "request must be notarised", "must contact in writing", "notarized objection
+  by registered post"). The added procedure restricts or changes how the right can be
+  exercised, even if the underlying right itself is not denied. This includes cases where
+  the policy requires a formal written channel for withdrawing consent, objecting to
+  processing, or requesting deletion — any procedural burden added beyond what GDPR
+  specifies is execution_style, not negation.
 - data (RCASR8): Responsibility and task match, but the scope of data covered deviates —
   e.g. "account data" instead of "personal data", or the policy narrows or broadens
   the category of data subject to a right or obligation (WHAT data deviates).
+  Key signal: the GDPR uses "personal data" broadly but the policy restricts the right
+  or obligation to a specific subset ("account and transaction data", "marketing data",
+  "profile data"). Even when the restriction is stated as part of a rights list (e.g.,
+  "right to access your account and transaction data"), this is a DATA deviation because
+  the scope of data covered by the right has been narrowed — not a change in procedure.
 - negation (RCASR6): The policy directly contradicts or negates the GDPR constraint —
   e.g. "may not" where GDPR says "may", a right is explicitly denied, or the policy
   states it is not obliged to do something the GDPR requires.
@@ -24,6 +33,13 @@ the following ways:
   not negation — even if the policy also includes other limiting language. Only classify as
   negation if the right or obligation is outright denied or reversed, not merely scoped to
   different data.
+  CRITICAL DISTINCTION — negation vs execution_style: Adding a formal PROCEDURE for
+  exercising a right (e.g., "you must submit a written request by registered post",
+  "you must send a notarized objection", "contact us in writing only", "use our online
+  portal") is EXECUTION_STYLE, NOT negation. The right itself is still granted — only the
+  procedure is specified or restricted. Negation requires the right to be completely
+  DENIED or ELIMINATED ("you may not request...", "we are not required to...",
+  "this right does not apply...").
 - severity (RCASR4): All three components match, but the policy deviates in the
   strictness of the standard — either stricter than GDPR requires (over-compliance,
   e.g. shorter deadlines than GDPR mandates, narrower retention than necessary) OR
@@ -46,8 +62,8 @@ STAGE1_SYSTEM_PROMPT = (
     + "\n\n"
     "A genuine deviation requires a concrete, specific mismatch in one of the five "
     "categories above. Superficial wording differences or reasonable paraphrases are "
-    "NOT deviations. Most retrieved pairs are compliant — default to false unless you "
-    "can identify a specific conflict category.\n\n"
+    "NOT deviations. Be thorough: check all five categories before concluding there is "
+    "no deviation. If you find a concrete mismatch in any category, set has_deviation to true.\n\n"
     "IMPORTANT EXCEPTIONS — these are NOT deviations:\n"
     "  - If the GDPR constraint itself contains exceptions (e.g. Art. 9(2) exceptions to "
     "    the processing prohibition) and the policy invokes one of those exceptions, the "
@@ -68,7 +84,17 @@ STAGE1_SYSTEM_PROMPT = (
     "    sentence that merely DISCLOSES data practices (e.g. 'data may be shared with "
     "    third parties', 'data is transferred outside the EEA') is a transparency statement "
     "    and is NOT a negation of the GDPR transparency obligation — it IS compliance with "
-    "    it. has_deviation must be false for negation in that case.\n\n"
+    "    it. has_deviation must be false for negation in that case.\n"
+    "  - LEGAL BASIS CITATION: A policy sentence that states WHICH legal basis applies for "
+    "    processing (e.g. 'we rely on Art.6(1)(f) legitimate interest', 'the legal basis is "
+    "    our legal obligation under Art.6(1)(c)', 'based on our contractual obligation') is "
+    "    NOT a negation or deviation from a GDPR lawfulness or purpose-limitation principle — "
+    "    the policy is citing a permitted GDPR legal basis. has_deviation must be false.\n"
+    "  - GDPR EXCEPTION CLAUSES: If the GDPR constraint itself contains exception language "
+    "    ('paragraph 1 shall not apply if', 'unless one of the following applies') and the "
+    "    policy invokes one of those exceptions (citing anonymisation, pseudonymisation, a "
+    "    specific Art.9(2) ground, or a statutory retention obligation), the policy is "
+    "    compliant — not negating. has_deviation must be false.\n\n"
     "You MUST quote the exact text from both documents that creates the conflict before "
     "deciding. If you cannot identify a specific conflicting quote, has_deviation is false.\n\n"
     "Respond with valid JSON only. No markdown, no explanation outside the JSON."
@@ -91,6 +117,17 @@ def build_stage1_prompt(gdpr_text: str, gdpr_article: int, policy_text: str) -> 
         f'"{gdpr_text}"\n\n'
         f"Company policy sentence:\n"
         f'"{policy_text}"\n\n'
+        "Step 0 — SCOPE CHECK (mandatory, execute first): Identify (a) what specific legal "
+        "obligation or right this GDPR constraint establishes, and (b) what topic the policy "
+        "sentence actually addresses. If they are from different legal categories — e.g. the "
+        "GDPR constraint is about transparency/information provision (what must be DISCLOSED) "
+        "but the policy sentence is about whether a right is GRANTED or DENIED; or the GDPR "
+        "constraint is about breach notification but the policy is about how to contact the "
+        "company for rights requests; or the GDPR constraint establishes a general lawfulness "
+        "principle but the policy sentence merely cites a legal basis (Art.6(1)f, Art.9(2), etc.) "
+        "— then output ONLY:\n"
+        '{"gdpr_quote": null, "policy_quote": null, "deviation_category": null, "has_deviation": false, "reasoning": "scope mismatch: GDPR constraint is about <X> but policy sentence is about <Y>"}\n'
+        "If Step 0 passes (same legal category), proceed:\n\n"
         "Step 1 — Quote the specific GDPR obligation from the constraint above.\n"
         "Step 2 — Quote the specific policy text that conflicts with it (or null if none).\n"
         "Step 3 — Identify which deviation category applies (or null if none).\n"

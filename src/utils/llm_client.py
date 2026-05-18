@@ -59,18 +59,20 @@ async def _openai(system: str, user: str, *, json_mode: bool, timeout: int) -> s
     }
     if json_mode:
         payload["response_format"] = {"type": "json_object"}
-    for attempt in range(10):
+    for attempt in range(15):
         try:
             async with httpx.AsyncClient(timeout=timeout) as client:
                 r = await client.post(_OPENAI_URL, json=payload, headers=headers)
         except (httpx.ReadError, httpx.ConnectError, httpx.RemoteProtocolError) as e:
-            if attempt == 5:
+            if attempt == 8:
                 raise
-            await asyncio.sleep(2 ** attempt + random.random())
+            await asyncio.sleep(min(2 ** attempt, 60) + random.random())
             continue
         if r.status_code == 429:
-            wait = float(r.headers.get("Retry-After", 2 ** attempt + random.random()))
-            await asyncio.sleep(wait)
+            # Respect Retry-After header; fall back to capped exponential backoff.
+            header_wait = float(r.headers.get("Retry-After", 0))
+            backoff = min(2 ** attempt, 120) + random.random()
+            await asyncio.sleep(max(header_wait, backoff))
             continue
         r.raise_for_status()
         return r.json()["choices"][0]["message"]["content"]
