@@ -1,3 +1,7 @@
+# UI (dashboard)
+ui/frontend/node_modules/
+ui/frontend/dist/
+
 # Python
 __pycache__/
 *.py[cod]
@@ -43,3 +47,6 @@ report/
 
 # Personal research notes and literature review (not for repo)
 notes/
+
+# Project proposal (working doc, not for repo)
+project_proposal.md
