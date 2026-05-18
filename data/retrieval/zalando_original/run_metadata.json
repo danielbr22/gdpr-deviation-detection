@@ -1,7 +1,7 @@
 {
   "model": "nlpaueb/legal-bert-base-uncased",
-  "top_k": 5,
+  "top_k": 20,
   "n_gdpr": 279,
-  "n_policy": 98,
+  "n_policy": 78,
   "n_topk_entries": 279
 }
