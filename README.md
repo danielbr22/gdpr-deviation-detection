@@ -10,40 +10,28 @@ This project extends Sai et al. (2023) by replacing their classical NLP pipeline
 
 A gold standard is constructed by introducing deliberate deviations of known types into a modified version of each policy. The detection pipeline runs against the modified policy; the introduced deviations serve as ground truth for evaluation.
 
-## Repository Structure
+---
 
-```
-├── data/
-│   ├── gdpr/              # GDPR source HTML and extracted plain text (Art. 5–43)
-│   ├── policy/            # Privacy policies: original + modified (gold standard)
-│   ├── constraints/       # Extracted constraint sentences (GDPR + per-use-case hybrid)
-│   ├── retrieval/         # Retrieval results per use case (*_hybrid/ subdirs)
-│   └── classification/    # LLM deviation classification results per use case
-├── gold_standard/         # Deviation manifests (ground truth) for all 3 use cases
-├── src/
-│   ├── preprocessing/     # GDPR extraction (extract_gdpr.py) + hybrid policy extraction
-│   ├── retrieval/         # Legal-BERT embedding + LLM-as-judge matching
-│   ├── classification/    # LLM-based deviation classification
-│   └── evaluation/        # Precision/recall/F1 metrics against gold standard
-├── notebooks/             # Exploratory analyses
-├── ui/                    # Pipeline dashboard (FastAPI + React)
-├── run_pipeline.sh        # End-to-end pipeline for all 3 use cases
-└── report/                # Report PDF and figures
+## Quick Start
+
+The recommended way to run the project is via Docker — no manual Python or Node installation required. Everything runs through the web dashboard.
+
+### Step 1 — Configure the LLM provider
+
+**OpenAI is strongly recommended.** Local Ollama (CPU) is extremely slow — a single pipeline run takes many hours. OpenAI completes the same run in minutes.
+
+Copy the example env file and fill in your key:
+
+```bash
+cp .env.example .env
+# then open .env and set OPENAI_API_KEY=sk-...
 ```
 
-## Quick Start (Docker)
+The dashboard auto-detects the key and switches to OpenAI automatically. No other changes needed.
 
-The full pipeline — including the local LLM (Qwen3.5 9B via Ollama) and all Python dependencies — runs inside Docker containers. No manual installation required.
+> **Local Ollama alternative:** if you prefer not to use OpenAI, leave `.env` as-is. Be aware that the 9B model requires ~7.9 GB of RAM inside Docker. On macOS/Windows you must first raise Docker Desktop's memory limit: **Settings → Resources → Advanced → Memory → 12 GB → Apply & Restart.** Expect each full pipeline run to take several hours.
 
-### Prerequisites
-
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) (macOS / Windows) **or** Docker Engine + Docker Compose plugin (Linux)
-- ~15 GB free disk space (model ~5.5 GB + image ~3 GB + runtime outputs)
-- 16 GB RAM recommended (8 GB minimum; CPU-only inference is slow — expect several hours for a full run)
-
-> Works on **macOS, Linux, and Windows** (WSL2). No GPU required, but see GPU section below for faster inference.
-
-### Run
+### Step 2 — Start
 
 ```bash
 git clone <repo-url>
@@ -51,13 +39,22 @@ cd project
 docker compose up
 ```
 
-On first run Docker will automatically:
-1. Build the Python image and install all dependencies
-2. Start Ollama and pull Qwen3.5:9b (~5.5 GB — cached in a Docker volume for subsequent runs)
-3. Download Legal-BERT embeddings (~400 MB — also cached)
-4. Execute the full pipeline across all 3 use cases
+On first run this will:
+1. Build the image (Python deps + React frontend compiled inside Docker)
+2. Start Ollama (model is downloaded on first pipeline run if using local inference)
+3. Serve the dashboard at **http://localhost:8000**
 
-Results are written to `data/` and `logs/` on your host machine so they can be inspected directly.
+### Step 3 — Run the pipeline
+
+Open **http://localhost:8000** in your browser. From the **New Run** tab:
+
+- Confirm the LLM provider shown matches your choice (OpenAI or Local)
+- Toggle **Skip scope (Phase 0)** to reuse existing outputs and save time on re-runs
+- Click **Start** — log output streams live in the browser
+
+Results land in `data/evaluation/results.json` on your host machine. Past runs are browsable in the **History** tab.
+
+> **Changing provider after startup:** edit `.env`, then run `docker compose restart ui` to pick up the new value.
 
 ### GPU acceleration (Linux / Windows with NVIDIA)
 
@@ -67,84 +64,56 @@ Install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-
 docker compose -f docker-compose.yml -f docker-compose.gpu.yml up
 ```
 
-This passes all available GPUs into the Ollama container, reducing inference time significantly.
-
-### Smoke test (~5 minutes)
-
-Verifies the full pipeline is wired up correctly on a tiny policy slice:
-
-```bash
-docker compose run --rm pipeline bash run_pipeline.sh --test
-```
-
-### Running locally (without Docker)
-
-Requires Python 3.11+, [Ollama](https://ollama.com) with `qwen3.5:9b` pulled, and:
-
-```bash
-pip install torch --index-url https://download.pytorch.org/whl/cpu
-pip install -r requirements.txt
-python -m spacy download en_core_web_sm
-bash run_pipeline.sh
-```
-
----
-
-## Dashboard UI
-
-A lightweight web dashboard lets you trigger pipeline runs, stream live log output, and browse results without touching the terminal.
-
-### Start
-
-```bash
-bash ui/start.sh
-```
-
-Opens at **http://localhost:8000**. The script builds the React frontend and starts a FastAPI server. Requires Python 3.11+ and Node.js (for the one-time build).
-
-### Features
-
-- **New Run tab** — configure and launch a pipeline run with options:
-  - *Smoke test* — tiny Hetzner slice to verify the full chain (~5 min)
-  - *Force re-run* — ignore skip guards and re-run all phases from scratch
-  - *LLM Provider* — switch between Local (Ollama) and API (OpenAI); API key read from `.env` automatically
-- **Live output** — log lines stream in real time with phase progress indicator
-- **History tab** — browse past runs, view their logs, and inspect saved result snapshots
-
-### Configuration (`.env`)
-
-Copy `.env.example` to `.env` and fill in your values. At minimum, set `OPENAI_API_KEY` to use the OpenAI provider (auto-detected by the dashboard):
-
-```
-OPENAI_API_KEY=sk-...
-OPENAI_MODEL=gpt-4o-mini
-```
-
-Leave it blank (or omit the file) to default to local Ollama inference.
-
 ---
 
 ## Pipeline
 
-1. **Preprocessing — GDPR:** Extract constraint sentences using signal words (*shall*, *should*, *must*) from the official EUR-Lex XHTML → `data/constraints/gdpr_constraints.json` (279 constraints).
+`run.sh` orchestrates the full detection chain across all three use cases.
 
-2. **Preprocessing — Policy (hybrid):** For each policy sentence, a local LLM (Qwen3.5 9B via Ollama) with ±5-sentence context decides whether the sentence describes a data-protection obligation → `data/constraints/<use_case>_hybrid_constraints.json`.
+### Phases
 
-3. **Retrieval:** Legal-BERT encodes GDPR and policy constraints. Top-5 policy candidates are retrieved per GDPR constraint, then an LLM judge confirms which (if any) substantively addresses the obligation. Unmatched GDPR constraints → `missing_coverage`.
+| # | Name | Description | Output |
+|---|------|-------------|--------|
+| 0 | Scope detection | Runs extraction + retrieval on the *original* policy to identify which GDPR articles are substantively in scope — used to filter false positives | `data/retrieval/<uc>_original/` |
+| 1 | Policy extraction | LLM (±5-sentence context) extracts data-protection obligations from the *modified* policy | `data/constraints/<uc>_hybrid_constraints.json` |
+| 2 | Retrieval | Legal-BERT top-20 candidates + LLM judge; unmatched GDPR constraints → `missing_coverage` | `data/retrieval/<uc>_hybrid/` |
+| 3 | Manifest remapping | Fills null `policy_constraint_id` fields in the gold standard manifests | — |
+| 4 | Classification | LLM labels each matched pair with a deviation type | `data/classification/<uc>_hybrid_classified.json` |
+| 5 | Evaluation | Precision / recall / F1 vs. gold standard | `data/evaluation/results.json` |
 
-4. **Classification:** For each matched pair, an LLM classifies the deviation type: `responsibility`, `execution_style`, `data`, `negation`, or `none`. Unmatched → `missing_coverage` automatically.
-
-5. **Evaluation:** Precision, recall, F1 per deviation type and overall, compared against the gold standard manifests.
-
-Run the full pipeline: `bash run_pipeline.sh`
+Phases are skipped when their output already exists (resume-safe). The **Force re-run** option in the dashboard disables this.
 
 ## Use Cases
 
 | Use Case | Policy | Deviations introduced |
 |----------|--------|----------------------|
-| Hetzner Online GmbH | `hetzner_policy_modified.txt` | 5 |
-| Zalando SE | `zalando_policy_modified.txt` | 5 |
-| Trade Republic Bank GmbH | `traderepublic_policy_modified.txt` | 5 |
+| Hetzner Online GmbH | `hetzner_policy_modified.txt` | 17 |
+| Zalando SE | `zalando_policy_modified.txt` | 17 |
+| Trade Republic Bank GmbH | `traderepublic_policy_modified.txt` | 17 |
+
+17 deviations per use case: 3 per type × 6 RCASR types (`constraint_coverage`, `severity`, `execution_style`, `negation`, `responsibility`, `data`), minus one structurally undetectable Art. 77 deviation.
+
+## Repository Structure
+
+```
+├── data/
+│   ├── gdpr/              # GDPR source HTML and extracted plain text (Art. 5–43)
+│   ├── policy/            # Privacy policies: original + modified (gold standard)
+│   ├── constraints/       # Extracted constraint sentences (GDPR + per-use-case hybrid)
+│   ├── retrieval/         # Retrieval results (*_hybrid/ and *_original/ per use case)
+│   ├── classification/    # LLM deviation classification results
+│   └── evaluation/        # results.json — precision/recall/F1
+├── gold_standard/         # Deviation manifests (ground truth) for all 3 use cases
+├── src/
+│   ├── preprocessing/     # GDPR extraction + hybrid policy extraction
+│   ├── retrieval/         # Legal-BERT embedding + LLM-as-judge
+│   ├── classification/    # LLM deviation classifier
+│   ├── evaluation/        # Metrics against gold standard
+│   └── utils/             # LLM client, manifest remapping
+├── ui/                    # Dashboard (FastAPI backend + React frontend)
+├── run.sh                 # Pipeline entry point (invoked by the dashboard)
+└── report/                # Report PDF and figures
+```
 
 ## Reference Paper
 

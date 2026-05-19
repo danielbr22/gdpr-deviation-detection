@@ -6,14 +6,18 @@ services:
     volumes:
       - ollama_models:/root/.ollama
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:11434/api/tags"]
+      test: ["CMD", "ollama", "list"]
       interval: 10s
       timeout: 5s
       retries: 18
       start_period: 20s
 
-  pipeline:
-    build: .
+  ui:
+    build:
+      context: .
+      dockerfile: ui/Dockerfile
+    ports:
+      - "8000:8000"
     depends_on:
       ollama:
         condition: service_healthy
@@ -23,6 +27,27 @@ services:
       - ./data:/app/data
       - ./logs:/app/logs
       - hf_cache:/root/.cache/huggingface
+    env_file:
+      - path: .env
+        required: false
+
+  # Headless one-shot pipeline run — opt-in only.
+  # Usage: docker compose --profile pipeline up
+  pipeline:
+    build: .
+    profiles: [pipeline]
+    depends_on:
+      ollama:
+        condition: service_healthy
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - hf_cache:/root/.cache/huggingface
+    env_file:
+      - path: .env
+        required: false
 
 volumes:
   ollama_models:

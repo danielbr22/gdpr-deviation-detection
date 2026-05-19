@@ -24,12 +24,14 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export PYTHONPATH="$ROOT"
 
-# Load .env if present (does not override already-exported vars).
+# Load .env if present — only sets vars not already in the environment,
+# so docker-compose environment: values always take precedence.
 if [ -f "$ROOT/.env" ]; then
-  set -o allexport
-  # shellcheck disable=SC1091
-  source "$ROOT/.env"
-  set +o allexport
+  while IFS= read -r line || [ -n "$line" ]; do
+    case "$line" in ''|\#*) continue ;; esac   # skip blanks and comments
+    key="${line%%=*}"
+    [ -z "${!key+set}" ] && export "$line"     # skip if already exported
+  done < "$ROOT/.env"
 fi
 
 TOP_K=${TOP_K:-20}

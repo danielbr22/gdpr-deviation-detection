@@ -50,3 +50,4 @@ notes/
 
 # Project proposal (working doc, not for repo)
 project_proposal.md
+.claude/settings.local.json
