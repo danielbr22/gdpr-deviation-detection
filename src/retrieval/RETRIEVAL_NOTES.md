@@ -6,8 +6,9 @@ The retrieval step is a two-stage hybrid:
 
 1. **Stage 1 — Embedding top-k** (`embed_and_match.py`): Legal-BERT encodes all
    GDPR constraints and policy passages. For each GDPR constraint, the top-k most
-   similar policy passages (k=5) are retrieved by cosine similarity. This keeps
-   the LLM call count to ~1,400 (279 × 5) rather than a full pairwise comparison.
+   similar policy passages (k=5) are retrieved by cosine similarity. This reduces
+   the LLM judge to 279 calls (one per GDPR constraint, all 5 candidates in one
+   prompt) rather than ~16,000+ naïve pairwise checks (279 × policy length).
 
 2. **Stage 2 — LLM-as-judge** (`llm_judge.py`): For each GDPR constraint, its
    top-k candidates are sent to Qwen3.5 9B (via Ollama) with a structured prompt

@@ -9,7 +9,7 @@
           "articles": [
             20
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "dev_002",
@@ -17,7 +17,7 @@
           "articles": [
             18
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_003",
@@ -25,7 +25,7 @@
           "articles": [
             17
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_004",
@@ -34,7 +34,7 @@
             12,
             37
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_005",
@@ -82,7 +82,7 @@
           "articles": [
             7
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_012",
@@ -99,7 +99,7 @@
             5,
             17
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "dev_014",
@@ -145,12 +145,12 @@
       ],
       "type_metrics": {
         "constraint_coverage": {
-          "tp": 0,
-          "fp": 1,
-          "fn": 2,
-          "precision": 0.0,
-          "recall": 0.0,
-          "f1": 0.0
+          "tp": 1,
+          "fp": 3,
+          "fn": 1,
+          "precision": 0.25,
+          "recall": 0.5,
+          "f1": 0.333
         },
         "severity": {
           "tp": 1,
@@ -161,45 +161,45 @@
           "f1": 0.25
         },
         "execution_style": {
-          "tp": 3,
-          "fp": 0,
-          "fn": 0,
-          "precision": 1.0,
-          "recall": 1.0,
-          "f1": 1.0
+          "tp": 1,
+          "fp": 1,
+          "fn": 2,
+          "precision": 0.5,
+          "recall": 0.333,
+          "f1": 0.4
         },
         "negation": {
-          "tp": 2,
-          "fp": 8,
-          "fn": 1,
-          "precision": 0.2,
-          "recall": 0.667,
-          "f1": 0.308
+          "tp": 0,
+          "fp": 7,
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         },
         "responsibility": {
-          "tp": 1,
+          "tp": 0,
           "fp": 2,
-          "fn": 2,
-          "precision": 0.333,
-          "recall": 0.333,
-          "f1": 0.333
+          "fn": 3,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
         },
         "data": {
           "tp": 2,
-          "fp": 5,
+          "fp": 1,
           "fn": 1,
-          "precision": 0.286,
+          "precision": 0.667,
           "recall": 0.667,
-          "f1": 0.4
+          "f1": 0.667
         }
       },
       "overall": {
-        "tp": 9,
-        "fp": 20,
-        "fn": 8,
-        "precision": 0.31,
-        "recall": 0.529,
-        "f1": 0.391
+        "tp": 5,
+        "fp": 18,
+        "fn": 12,
+        "precision": 0.217,
+        "recall": 0.294,
+        "f1": 0.25
       }
     },
     {
@@ -261,7 +261,7 @@
           "articles": [
             12
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "zal_dev_009",
@@ -278,7 +278,7 @@
             33,
             34
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "zal_dev_011",
@@ -286,7 +286,7 @@
           "articles": [
             7
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "zal_dev_012",
@@ -348,11 +348,11 @@
       "type_metrics": {
         "constraint_coverage": {
           "tp": 1,
-          "fp": 0,
+          "fp": 1,
           "fn": 1,
-          "precision": 1.0,
+          "precision": 0.5,
           "recall": 0.5,
-          "f1": 0.667
+          "f1": 0.5
         },
         "severity": {
           "tp": 1,
@@ -363,12 +363,12 @@
           "f1": 0.333
         },
         "execution_style": {
-          "tp": 1,
-          "fp": 3,
-          "fn": 2,
-          "precision": 0.25,
-          "recall": 0.333,
-          "f1": 0.286
+          "tp": 2,
+          "fp": 2,
+          "fn": 1,
+          "precision": 0.5,
+          "recall": 0.667,
+          "f1": 0.571
         },
         "negation": {
           "tp": 3,
@@ -380,7 +380,7 @@
         },
         "responsibility": {
           "tp": 0,
-          "fp": 3,
+          "fp": 2,
           "fn": 3,
           "precision": 0.0,
           "recall": 0.0,
@@ -388,20 +388,20 @@
         },
         "data": {
           "tp": 2,
-          "fp": 7,
+          "fp": 6,
           "fn": 1,
-          "precision": 0.222,
+          "precision": 0.25,
           "recall": 0.667,
-          "f1": 0.333
+          "f1": 0.364
         }
       },
       "overall": {
-        "tp": 8,
-        "fp": 24,
-        "fn": 9,
-        "precision": 0.25,
-        "recall": 0.471,
-        "f1": 0.327
+        "tp": 9,
+        "fp": 22,
+        "fn": 8,
+        "precision": 0.29,
+        "recall": 0.529,
+        "f1": 0.375
       }
     },
     {
@@ -421,7 +421,7 @@
           "articles": [
             12
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "tr_dev_003",
@@ -439,7 +439,7 @@
             38,
             39
           ],
-          "detected": true
+          "detected": false
         },
         {
           "id": "tr_dev_005",
@@ -447,7 +447,7 @@
           "articles": [
             5
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "tr_dev_006",
@@ -504,7 +504,7 @@
           "articles": [
             22
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "tr_dev_014",
@@ -529,7 +529,7 @@
           "articles": [
             28
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "tr_dev_017",
@@ -537,7 +537,7 @@
           "articles": [
             15
           ],
-          "detected": false
+          "detected": true
         },
         {
           "id": "tr_dev_018",
@@ -545,7 +545,7 @@
           "articles": [
             17
           ],
-          "detected": true
+          "detected": false
         }
       ],
       "type_metrics": {
@@ -559,113 +559,113 @@
         },
         "severity": {
           "tp": 2,
-          "fp": 3,
+          "fp": 4,
           "fn": 1,
-          "precision": 0.4,
+          "precision": 0.333,
           "recall": 0.667,
-          "f1": 0.5
+          "f1": 0.444
         },
         "execution_style": {
-          "tp": 2,
-          "fp": 3,
-          "fn": 1,
-          "precision": 0.4,
-          "recall": 0.667,
-          "f1": 0.5
-        },
-        "negation": {
-          "tp": 2,
-          "fp": 11,
-          "fn": 1,
-          "precision": 0.154,
-          "recall": 0.667,
-          "f1": 0.25
-        },
-        "responsibility": {
-          "tp": 1,
-          "fp": 2,
-          "fn": 2,
-          "precision": 0.333,
-          "recall": 0.333,
-          "f1": 0.333
-        },
-        "data": {
           "tp": 1,
           "fp": 5,
           "fn": 2,
           "precision": 0.167,
           "recall": 0.333,
           "f1": 0.222
+        },
+        "negation": {
+          "tp": 3,
+          "fp": 12,
+          "fn": 0,
+          "precision": 0.2,
+          "recall": 1.0,
+          "f1": 0.333
+        },
+        "responsibility": {
+          "tp": 1,
+          "fp": 0,
+          "fn": 2,
+          "precision": 1.0,
+          "recall": 0.333,
+          "f1": 0.5
+        },
+        "data": {
+          "tp": 2,
+          "fp": 6,
+          "fn": 1,
+          "precision": 0.25,
+          "recall": 0.667,
+          "f1": 0.364
         }
       },
       "overall": {
-        "tp": 8,
-        "fp": 24,
-        "fn": 9,
+        "tp": 9,
+        "fp": 27,
+        "fn": 8,
         "precision": 0.25,
-        "recall": 0.471,
-        "f1": 0.327
+        "recall": 0.529,
+        "f1": 0.34
       }
     }
   ],
   "aggregate": {
     "type_metrics": {
       "constraint_coverage": {
-        "tp": 1,
-        "fp": 1,
-        "fn": 5,
-        "precision": 0.5,
-        "recall": 0.167,
-        "f1": 0.25
+        "tp": 2,
+        "fp": 4,
+        "fn": 4,
+        "precision": 0.333,
+        "recall": 0.333,
+        "f1": 0.333
       },
       "severity": {
         "tp": 4,
-        "fp": 9,
+        "fp": 10,
         "fn": 5,
-        "precision": 0.308,
+        "precision": 0.286,
         "recall": 0.444,
-        "f1": 0.364
+        "f1": 0.348
       },
       "execution_style": {
-        "tp": 6,
-        "fp": 6,
-        "fn": 3,
-        "precision": 0.5,
-        "recall": 0.667,
-        "f1": 0.571
+        "tp": 4,
+        "fp": 8,
+        "fn": 5,
+        "precision": 0.333,
+        "recall": 0.444,
+        "f1": 0.381
       },
       "negation": {
-        "tp": 7,
+        "tp": 6,
         "fp": 28,
-        "fn": 2,
-        "precision": 0.2,
-        "recall": 0.778,
-        "f1": 0.318
+        "fn": 3,
+        "precision": 0.176,
+        "recall": 0.667,
+        "f1": 0.279
       },
       "responsibility": {
-        "tp": 2,
-        "fp": 7,
-        "fn": 7,
-        "precision": 0.222,
-        "recall": 0.222,
-        "f1": 0.222
+        "tp": 1,
+        "fp": 4,
+        "fn": 8,
+        "precision": 0.2,
+        "recall": 0.111,
+        "f1": 0.143
       },
       "data": {
-        "tp": 5,
-        "fp": 17,
-        "fn": 4,
-        "precision": 0.227,
-        "recall": 0.556,
-        "f1": 0.323
+        "tp": 6,
+        "fp": 13,
+        "fn": 3,
+        "precision": 0.316,
+        "recall": 0.667,
+        "f1": 0.429
       }
     },
     "overall": {
-      "tp": 25,
-      "fp": 68,
-      "fn": 26,
-      "precision": 0.269,
-      "recall": 0.49,
-      "f1": 0.347
+      "tp": 23,
+      "fp": 67,
+      "fn": 28,
+      "precision": 0.256,
+      "recall": 0.451,
+      "f1": 0.326
     }
   }
 }

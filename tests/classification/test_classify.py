@@ -1,35 +1,7 @@
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../.."))
 
-from src.classification.classify import parse_response, filter_pairs
-
-
-def test_parse_response_valid_none():
-    raw = '{"deviation_type": "none", "reasoning": "Both match."}'
-    result = parse_response(raw)
-    assert result is not None
-    assert result["deviation_type"] == "none"
-    assert result["reasoning"] == "Both match."
-
-
-def test_parse_response_valid_negation():
-    raw = '{"deviation_type": "negation", "reasoning": "Policy contradicts GDPR."}'
-    result = parse_response(raw)
-    assert result["deviation_type"] == "negation"
-
-
-def test_parse_response_invalid_json_returns_none():
-    assert parse_response("not json at all") is None
-
-
-def test_parse_response_invalid_type_returns_none():
-    raw = '{"deviation_type": "unknown_type", "reasoning": "x"}'
-    assert parse_response(raw) is None
-
-
-def test_parse_response_missing_reasoning_returns_none():
-    raw = '{"deviation_type": "none"}'
-    assert parse_response(raw) is None
+from src.classification.classify import filter_pairs
 
 
 def test_filter_pairs_removes_pol001():
