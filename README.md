@@ -111,7 +111,7 @@ Phases are skipped when their output already exists (resume-safe). The **Force r
 │   └── utils/             # LLM client, manifest remapping
 ├── ui/                    # Dashboard (FastAPI backend + React frontend)
 ├── run.sh                 # Pipeline entry point (invoked by the dashboard)
-└── report/                # Report PDF and figures
+└── report/report.pdf      # Final report 
 ```
 
 ## Reference Paper

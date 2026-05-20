@@ -44,8 +44,9 @@ docs/
 # Accidental Finder duplicates
 *\ 2.json
 
-# Report (not ready to commit)
-report/
+# Report 
+report/*
+!report/report.pdf
 
 # Personal research notes and literature review (not for repo)
 notes/
