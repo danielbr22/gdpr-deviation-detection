@@ -20,7 +20,7 @@ The recommended way to run the project is via Docker — no manual Python or Nod
 
 ```bash
 git clone <repo-url>
-cd project
+cd gdpr-deviation-detection
 ```
 
 ### Step 2 — Configure the LLM provider
@@ -41,8 +41,10 @@ The dashboard auto-detects the key and switches to OpenAI automatically. No othe
 ### Step 3 — Start
 
 ```bash
-docker compose up
+bash start.sh
 ```
+
+On macOS this wraps `docker compose up` with `caffeinate` so the machine does not sleep mid-run and interrupt API calls. On Linux/Windows it is equivalent to `docker compose up`.
 
 On first run this will:
 1. Build the image (Python deps + React frontend compiled inside Docker)
