@@ -1,0 +1,402 @@
+[08:09:40] Checking LLM provider (openai)…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+[08:09:41] Pre-flight checks…
+[08:09:41]   All required input files present ✓
+[08:09:41] 
+[08:09:41] Pipeline starting — log: /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/logs/pipeline_20260518_080940.log
+[08:09:41] FORCE mode: skip guards disabled
+[08:09:41] ━━━ PHASE 0: Original policy scope detection ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:09:41]   Purpose: identify which GDPR articles are substantively covered by each
+[08:09:41]            original policy, so structural missing_coverage FPs are excluded.
+[08:09:41]   [scope/hetzner] Extracting policy obligations from original policy…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from hetzner_privacy_policy.txt …
+  Context window: ±5 sentences
+→ 51 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/hetzner_original_constraints.json
+[08:09:55]   [scope/hetzner] Extracted 51 constraints
+[08:09:55]   [scope/hetzner] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 51 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:00<00:05,  1.44it/s]Batches:  22%|██▏       | 2/9 [00:01<00:03,  2.12it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.64it/s]Batches:  44%|████▍     | 4/9 [00:01<00:01,  3.19it/s]Batches:  56%|█████▌    | 5/9 [00:01<00:01,  3.77it/s]Batches:  67%|██████▋   | 6/9 [00:01<00:00,  4.28it/s]Batches:  78%|███████▊  | 7/9 [00:01<00:00,  4.81it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  5.51it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  4.08it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  3.78it/s]Batches: 100%|██████████| 2/2 [00:00<00:00,  6.18it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/hetzner_original/topk_candidates.json
+[08:10:04]   [scope/hetzner] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  257
+Unmapped: 144
+Coverage: 92.1%
+──────────────────────────────────────────────────
+[08:11:38]   [scope/hetzner] Done — 257 in-scope GDPR articles
+[08:11:38]   [scope/zalando] Extracting policy obligations from original policy…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from zalando_privacy_policy.txt …
+  Context window: ±5 sentences
+→ 78 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/zalando_original_constraints.json
+[08:12:24]   [scope/zalando] Extracted 78 constraints
+[08:12:24]   [scope/zalando] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 78 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:00<00:05,  1.40it/s]Batches:  22%|██▏       | 2/9 [00:01<00:03,  2.09it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.67it/s]Batches:  44%|████▍     | 4/9 [00:01<00:01,  3.25it/s]Batches:  56%|█████▌    | 5/9 [00:01<00:01,  3.82it/s]Batches:  67%|██████▋   | 6/9 [00:01<00:00,  4.35it/s]Batches:  78%|███████▊  | 7/9 [00:01<00:00,  4.87it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  5.60it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  4.11it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:00,  2.71it/s]Batches:  67%|██████▋   | 2/3 [00:00<00:00,  4.41it/s]Batches: 100%|██████████| 3/3 [00:00<00:00,  5.37it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/zalando_original/topk_candidates.json
+[08:12:32]   [scope/zalando] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  358
+Unmapped: 124
+Coverage: 128.3%
+──────────────────────────────────────────────────
+[08:15:02]   [scope/zalando] Done — 358 in-scope GDPR articles
+[08:15:02]   [scope/traderepublic] Extracting policy obligations from original policy…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from traderepublic_privacy_policy.txt …
+  Context window: ±5 sentences
+→ 64 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/traderepublic_original_constraints.json
+[08:15:26]   [scope/traderepublic] Extracted 64 constraints
+[08:15:26]   [scope/traderepublic] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 64 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:00<00:05,  1.38it/s]Batches:  22%|██▏       | 2/9 [00:01<00:03,  2.07it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.64it/s]Batches:  44%|████▍     | 4/9 [00:01<00:01,  3.22it/s]Batches:  56%|█████▌    | 5/9 [00:01<00:01,  3.80it/s]Batches:  67%|██████▋   | 6/9 [00:01<00:00,  4.33it/s]Batches:  78%|███████▊  | 7/9 [00:02<00:00,  4.85it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  5.62it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  4.09it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  1.13it/s]Batches: 100%|██████████| 2/2 [00:00<00:00,  2.05it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/traderepublic_original/topk_candidates.json
+[08:15:35]   [scope/traderepublic] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  286
+Unmapped: 140
+Coverage: 102.5%
+──────────────────────────────────────────────────
+[08:19:07]   [scope/traderepublic] Done — 286 in-scope GDPR articles
+[08:19:07]   Phase 0 done in 9m26s
+[08:19:07] ━━━ PHASE 1: Modified policy extraction ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:19:07]   [extraction/hetzner] Extracting policy obligations…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from hetzner_policy_modified.txt …
+  Context window: ±5 sentences
+→ 53 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/hetzner_hybrid_constraints.json
+[08:19:28]   [extraction/hetzner] Done — 53 constraints extracted
+[08:19:28]   [extraction/zalando] Extracting policy obligations…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from zalando_policy_modified.txt …
+  Context window: ±5 sentences
+→ 76 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/zalando_hybrid_constraints.json
+[08:19:53]   [extraction/zalando] Done — 76 constraints extracted
+[08:19:53]   [extraction/traderepublic] Extracting policy obligations…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Extracting from traderepublic_policy_modified.txt …
+  Context window: ±5 sentences
+→ 65 constraints saved to /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/constraints/traderepublic_hybrid_constraints.json
+[08:20:14]   [extraction/traderepublic] Done — 65 constraints extracted
+[08:20:14]   Phase 1 done in 1m07s
+[08:20:14] ━━━ PHASE 2: Modified policy retrieval ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:20:14]   [retrieval/hetzner] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 53 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:00<00:06,  1.27it/s]Batches:  22%|██▏       | 2/9 [00:01<00:03,  1.95it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.53it/s]Batches:  44%|████▍     | 4/9 [00:01<00:01,  3.08it/s]Batches:  56%|█████▌    | 5/9 [00:01<00:01,  3.63it/s]Batches:  67%|██████▋   | 6/9 [00:01<00:00,  4.14it/s]Batches:  78%|███████▊  | 7/9 [00:02<00:00,  4.63it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  5.20it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  5.99it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  3.81it/s]
+Batches:   0%|          | 0/2 [00:00<?, ?it/s]Batches:  50%|█████     | 1/2 [00:00<00:00,  3.85it/s]Batches: 100%|██████████| 2/2 [00:00<00:00,  5.78it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/hetzner_hybrid/topk_candidates.json
+[08:20:24]   [retrieval/hetzner] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  265
+Unmapped: 126
+Coverage: 95.0%
+──────────────────────────────────────────────────
+[08:22:15]   [retrieval/hetzner] Done — matched=265  unmapped=126
+[08:22:15]   [retrieval/zalando] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 76 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:00<00:07,  1.09it/s]Batches:  22%|██▏       | 2/9 [00:01<00:04,  1.60it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.09it/s]Batches:  44%|████▍     | 4/9 [00:01<00:01,  2.54it/s]Batches:  56%|█████▌    | 5/9 [00:02<00:01,  3.13it/s]Batches:  67%|██████▋   | 6/9 [00:02<00:00,  3.63it/s]Batches:  78%|███████▊  | 7/9 [00:02<00:00,  4.13it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  4.24it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  4.66it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  3.16it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:01,  1.93it/s]Batches:  67%|██████▋   | 2/3 [00:00<00:00,  3.12it/s]Batches: 100%|██████████| 3/3 [00:00<00:00,  3.92it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/zalando_hybrid/topk_candidates.json
+[08:22:26]   [retrieval/zalando] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  371
+Unmapped: 110
+Coverage: 133.0%
+──────────────────────────────────────────────────
+[08:25:26]   [retrieval/zalando] Done — matched=371  unmapped=110
+[08:25:26]   [retrieval/traderepublic] Embedding + top-20 retrieval…
+/Users/daniel.bier/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+No sentence-transformers model found with name nlpaueb/legal-bert-base-uncased. Creating a new one with mean pooling.
+Model: nlpaueb/legal-bert-base-uncased  |  γ = 0.7
+Loaded 279 GDPR constraints, 65 policy constraints
+Encoding …
+Batches:   0%|          | 0/9 [00:00<?, ?it/s]Batches:  11%|█         | 1/9 [00:01<00:08,  1.05s/it]Batches:  22%|██▏       | 2/9 [00:01<00:04,  1.54it/s]Batches:  33%|███▎      | 3/9 [00:01<00:02,  2.03it/s]Batches:  44%|████▍     | 4/9 [00:01<00:02,  2.48it/s]Batches:  56%|█████▌    | 5/9 [00:02<00:01,  2.92it/s]Batches:  67%|██████▋   | 6/9 [00:02<00:00,  3.28it/s]Batches:  78%|███████▊  | 7/9 [00:02<00:00,  3.71it/s]Batches:  89%|████████▉ | 8/9 [00:02<00:00,  4.18it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  4.74it/s]Batches: 100%|██████████| 9/9 [00:02<00:00,  3.02it/s]
+Batches:   0%|          | 0/3 [00:00<?, ?it/s]Batches:  33%|███▎      | 1/3 [00:00<00:01,  1.01it/s]Batches:  67%|██████▋   | 2/3 [00:01<00:00,  2.08it/s]Batches: 100%|██████████| 3/3 [00:01<00:00,  2.50it/s]
+Matching …
+
+Top-k mode (k=20): 279 entries → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/retrieval/traderepublic_hybrid/topk_candidates.json
+[08:25:39]   [retrieval/traderepublic] LLM judge filtering top-20 candidates…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Loaded 279 GDPR constraints
+
+──────────────────────────────────────────────────
+Matched:  327
+Unmapped: 123
+Coverage: 117.2%
+──────────────────────────────────────────────────
+[08:28:07]   [retrieval/traderepublic] Done — matched=327  unmapped=123
+[08:28:07]   Phase 2 done in 7m53s
+[08:28:07] ━━━ PHASE 3: Manifest remapping ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:28:07]   Filling null policy_constraint_id fields in gold standard manifests…
+
+Remapping: hetzner
+
+Remapping: zalando
+  [zalando] zal_dev_015 (responsibility) — no match (best sim=0.37)
+
+Remapping: traderepublic
+  [traderepublic] tr_dev_010 (severity) — no match (best sim=0.42)
+  [traderepublic] tr_dev_018 (data) — no match (best sim=0.44)
+
+Total entries updated: 0
+[08:28:07]   Phase 3 done in 0m00s
+[08:28:07] ━━━ PHASE 4: Classification ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[08:28:07]   Cleared stale: hetzner_hybrid_classified.json
+[08:28:07]   Cleared stale: zalando_hybrid_classified.json
+[08:28:07]   [classify/hetzner] Running LLM classifier…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Classifying 259 pairs …
+Done: 192 pairs classified, 126 unmapped auto-labeled.
+Output: /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/classification/hetzner_hybrid_classified.json
+[08:32:08]   [classify/hetzner] Done — 192 pairs classified
+[08:32:08]   [classify/zalando] Running LLM classifier…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Classifying 371 pairs …
+Done: 305 pairs classified, 110 unmapped auto-labeled.
+Output: /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/classification/zalando_hybrid_classified.json
+[08:37:13]   [classify/zalando] Done — 305 pairs classified
+[08:37:13]   [classify/traderepublic] Running LLM classifier…
+  Provider : OpenAI
+  Model    : gpt-4o-mini
+  Concurrency: 10
+Classifying 314 pairs …
+Done: 261 pairs classified, 123 unmapped auto-labeled.
+Output: /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/classification/traderepublic_hybrid_classified.json
+[09:00:15]   [classify/traderepublic] Done — 261 pairs classified
+[09:00:15]   Phase 4 done in 32m08s
+[09:00:15] ━━━ PHASE 5: Evaluation ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Results saved → /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/data/evaluation/results.json
+
+======================================================================
+DEVIATION DETECTION EVALUATION
+======================================================================
+
+NOTE: Precision is approximate — the gold standard covers 17 introduced deviations
+per use case (Art. 77 excluded — outside GDPR Art. 5–43 scope). constraint_coverage is filtered
+to in-scope articles (Phase 0) with ≥4 GDPR constraints to reduce spurious FPs.
+FPs may still include genuine policy issues not in the gold standard.
+
+──────────────────────────────────────────────────────────────────────
+USE CASE: HETZNER
+──────────────────────────────────────────────────────────────────────
+Gold deviations:
+  ✗  dev_001  constraint_coverage     (Art. 20)
+  ✓  dev_002  execution_style         (Art. 18)
+  ✓  dev_003  negation                (Art. 17)
+  ✓  dev_004  responsibility          (Art. 12, Art. 37)
+  ✓  dev_005  data                    (Art. 16)
+  ✗  dev_006  constraint_coverage     (Art. 22)
+  ✓  dev_008  severity                (Art. 12)
+  ✗  dev_009  severity                (Art. 5)
+  ✗  dev_010  severity                (Art. 5)
+  ✓  dev_011  execution_style         (Art. 7)
+  ✓  dev_012  execution_style         (Art. 15)
+  ✓  dev_013  negation                (Art. 5, Art. 17)
+  ✗  dev_014  negation                (Art. 34)
+  ✗  dev_015  responsibility          (Art. 28)
+  ✗  dev_016  responsibility          (Art. 37, Art. 38)
+  ✓  dev_017  data                    (Art. 21)
+  ✗  dev_018  data                    (Art. 17)
+
+  Type                         P       R      F1   TP / FP / FN
+  ──────────────────────  ───────  ───────  ───────   ──────────────
+  constraint_coverage       0.000    0.000    0.000   0 / 1 / 2
+  severity                  0.200    0.333    0.250   1 / 4 / 2
+  execution_style           1.000    1.000    1.000   3 / 0 / 0
+  negation                  0.200    0.667    0.308   2 / 8 / 1
+  responsibility            0.333    0.333    0.333   1 / 2 / 2
+  data                      0.286    0.667    0.400   2 / 5 / 1
+
+  OVERALL                   0.310    0.529    0.391   9 / 20 / 8
+
+──────────────────────────────────────────────────────────────────────
+USE CASE: ZALANDO
+──────────────────────────────────────────────────────────────────────
+Gold deviations:
+  ✓  zal_dev_001  constraint_coverage     (Art. 20)
+  ✓  zal_dev_002  execution_style         (Art. 12)
+  ✓  zal_dev_003  negation                (Art. 21)
+  ✗  zal_dev_004  responsibility          (Art. 12, Art. 37)
+  ✓  zal_dev_005  data                    (Art. 5, Art. 17)
+  ✗  zal_dev_007  constraint_coverage     (Art. 7)
+  ✗  zal_dev_008  severity                (Art. 12)
+  ✗  zal_dev_009  severity                (Art. 5)
+  ✓  zal_dev_010  severity                (Art. 33, Art. 34)
+  ✗  zal_dev_011  execution_style         (Art. 7)
+  ✗  zal_dev_012  execution_style         (Art. 17)
+  ✓  zal_dev_013  negation                (Art. 7)
+  ✓  zal_dev_014  negation                (Art. 21)
+  ✗  zal_dev_015  responsibility          (Art. 26)
+  ✗  zal_dev_016  responsibility          (Art. 46)
+  ✗  zal_dev_017  data                    (Art. 15)
+  ✓  zal_dev_018  data                    (Art. 5)
+
+  Type                         P       R      F1   TP / FP / FN
+  ──────────────────────  ───────  ───────  ───────   ──────────────
+  constraint_coverage       1.000    0.500    0.667   1 / 0 / 1
+  severity                  0.333    0.333    0.333   1 / 2 / 2
+  execution_style           0.250    0.333    0.286   1 / 3 / 2
+  negation                  0.250    1.000    0.400   3 / 9 / 0
+  responsibility            0.000    0.000    0.000   0 / 3 / 3
+  data                      0.222    0.667    0.333   2 / 7 / 1
+
+  OVERALL                   0.250    0.471    0.327   8 / 24 / 9
+
+──────────────────────────────────────────────────────────────────────
+USE CASE: TRADEREPUBLIC
+──────────────────────────────────────────────────────────────────────
+Gold deviations:
+  ✗  tr_dev_001  constraint_coverage     (Art. 20)
+  ✓  tr_dev_002  execution_style         (Art. 12)
+  ✓  tr_dev_003  negation                (Art. 7)
+  ✓  tr_dev_004  responsibility          (Art. 37, Art. 38, Art. 39)
+  ✗  tr_dev_005  data                    (Art. 5)
+  ✗  tr_dev_006  constraint_coverage     (Art. 18)
+  ✗  tr_dev_008  severity                (Art. 12)
+  ✓  tr_dev_009  severity                (Art. 5)
+  ✓  tr_dev_010  severity                (Art. 33, Art. 34)
+  ✓  tr_dev_011  execution_style         (Art. 21)
+  ✗  tr_dev_012  execution_style         (Art. 7)
+  ✗  tr_dev_013  negation                (Art. 22)
+  ✓  tr_dev_014  negation                (Art. 13, Art. 14)
+  ✗  tr_dev_015  responsibility          (Art. 26)
+  ✗  tr_dev_016  responsibility          (Art. 28)
+  ✗  tr_dev_017  data                    (Art. 15)
+  ✓  tr_dev_018  data                    (Art. 17)
+
+  Type                         P       R      F1   TP / FP / FN
+  ──────────────────────  ───────  ───────  ───────   ──────────────
+  constraint_coverage       0.000    0.000    0.000   0 / 0 / 2
+  severity                  0.400    0.667    0.500   2 / 3 / 1
+  execution_style           0.400    0.667    0.500   2 / 3 / 1
+  negation                  0.154    0.667    0.250   2 / 11 / 1
+  responsibility            0.333    0.333    0.333   1 / 2 / 2
+  data                      0.167    0.333    0.222   1 / 5 / 2
+
+  OVERALL                   0.250    0.471    0.327   8 / 24 / 9
+
+======================================================================
+AGGREGATE (all use cases combined)
+======================================================================
+
+  Type                         P       R      F1   TP / FP / FN
+  ──────────────────────  ───────  ───────  ───────   ──────────────
+  constraint_coverage       0.500    0.167    0.250   1 / 1 / 5
+  severity                  0.308    0.444    0.364   4 / 9 / 5
+  execution_style           0.500    0.667    0.571   6 / 6 / 3
+  negation                  0.200    0.778    0.318   7 / 28 / 2
+  responsibility            0.222    0.222    0.222   2 / 7 / 7
+  data                      0.227    0.556    0.323   5 / 17 / 4
+
+  OVERALL                   0.269    0.490    0.347   25 / 68 / 26
+
+[09:00:15]   Phase 5 done in 0m00s
+[09:00:15] 
+[09:00:15] ━━━ PIPELINE SUMMARY ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[09:00:15]   use case          in-scope   matched  unmapped  classified
+[09:00:15]   ────────────────  ────────  ────────  ────────  ──────────
+[09:00:15]   hetzner                257       265       126       192
+[09:00:15]   zalando                358       371       110       305
+[09:00:15]   traderepublic          286       327       123       261
+[09:00:15] 
+[09:00:15]   Total elapsed: 50m35s
+[09:00:15]   Results file : data/evaluation/results.json
+[09:00:15]   Log file     : /Users/daniel.bier/Library/Mobile Documents/com~apple~CloudDocs/TUM/SS 26/PRAKTIKUM/project/logs/pipeline_20260518_080940.log
+[09:00:15] ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

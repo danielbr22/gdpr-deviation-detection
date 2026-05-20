@@ -32,8 +32,10 @@ PDFs/
 # Local presentation working files (outline, notes — not for repo)
 presentation/
 
-# Pipeline runtime logs
-logs/
+# Pipeline runtime logs — ignore everything except the committed reference run
+logs/*
+!logs/pipeline_20260518_080940.log
+!logs/pipeline_20260518_080940_results.json
 excalidraw.log
 
 # Claude Code internal planning files

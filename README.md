@@ -16,7 +16,14 @@ A gold standard is constructed by introducing deliberate deviations of known typ
 
 The recommended way to run the project is via Docker — no manual Python or Node installation required. Everything runs through the web dashboard.
 
-### Step 1 — Configure the LLM provider
+### Step 1 — Clone the repo
+
+```bash
+git clone <repo-url>
+cd project
+```
+
+### Step 2 — Configure the LLM provider
 
 **OpenAI is strongly recommended.** Local Ollama (CPU) is extremely slow — a single pipeline run takes many hours. OpenAI completes the same run in minutes.
 
@@ -31,11 +38,9 @@ The dashboard auto-detects the key and switches to OpenAI automatically. No othe
 
 > **Local Ollama alternative:** if you prefer not to use OpenAI, leave `.env` as-is. Be aware that the 9B model requires ~7.9 GB of RAM inside Docker. On macOS/Windows you must first raise Docker Desktop's memory limit: **Settings → Resources → Advanced → Memory → 12 GB → Apply & Restart.** Expect each full pipeline run to take several hours.
 
-### Step 2 — Start
+### Step 3 — Start
 
 ```bash
-git clone <repo-url>
-cd project
 docker compose up
 ```
 
@@ -44,7 +49,7 @@ On first run this will:
 2. Start Ollama (model is downloaded on first pipeline run if using local inference)
 3. Serve the dashboard at **http://localhost:8000**
 
-### Step 3 — Run the pipeline
+### Step 4 — Run the pipeline
 
 Open **http://localhost:8000** in your browser. From the **New Run** tab:
 
@@ -55,14 +60,6 @@ Open **http://localhost:8000** in your browser. From the **New Run** tab:
 Results land in `data/evaluation/results.json` on your host machine. Past runs are browsable in the **History** tab.
 
 > **Changing provider after startup:** edit `.env`, then run `docker compose restart ui` to pick up the new value.
-
-### GPU acceleration (Linux / Windows with NVIDIA)
-
-Install the [NVIDIA Container Toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html), then:
-
-```bash
-docker compose -f docker-compose.yml -f docker-compose.gpu.yml up
-```
 
 ---
 
